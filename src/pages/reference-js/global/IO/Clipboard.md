@@ -7,6 +7,8 @@ jsDoc: true
 # Clipboard
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Clipboard  
 
+<JsDocParameters/>
+
 
 <a name="new-clipboard-new" id="new-clipboard-new"></a>
 
