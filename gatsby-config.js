@@ -19,110 +19,61 @@ module.exports = {
     globalNav,
     versions: [
       {
-        title: 'v2.0'
-      },
-      {
-        title: 'v1.4',
-        path: 'https://github.com/AdobeDocs/analytics-1.4-apis'
+        title: 'v4.1'
       }
     ],
     pages: [
       {
-        title: 'Adobe Analytics',
+        title: 'UXP',
         path: '/'
       },
       {
-        title: 'Guides',
-        path: '/guides/'
+        title: 'JavaScript Reference',
+        path: '/reference-js/'
       },
       {
-        title: 'API Reference',
-        path: '/api/'
+        title: 'CSS Reference',
+        path: '/reference-css/'
       },
       {
-        title: 'Support',
-        path: '/support/'
+        title: 'Developer Tool',
+        path: '/developer-tool/'
       }
     ],
     subPages: [
       {
-        title: 'Get Started',
-        path: '/guides/',
+        title: 'JavaScript Reference',
+        path: '/reference-js/',
+        pages: require("./toc.js")//.flat(10)
+        /*[
+          {
+            title: 'Classes',
+            path: '/reference-js/class/'
+          },
+          {
+            title: 'Functions',
+            path: '/reference-js/function/'
+          },
+          {
+            title: 'Modules',
+            path: '/reference-js/module/'
+          }
+        ]*/
+      },
+      {
+        title: 'CSS Reference',
+        path: '/reference-css/',
         pages: [
           {
-            title: 'Overview',
-            path: '/guides/'
+            title: 'Index',
+            path: '/reference-css/'
           },
-          {
-            title: 'Creating an OAuth Client',
-            path: '/guides/creating_oauth_client/'
-          },
-          {
-            title: 'OAuth using cURL',
-            path: '/guides/oauth_using_curl/'
-          },
-          {
-            title: 'OAuth using POSTMAN',
-            path: '/guides/oauth_using_postman/'
-          },
-          {
-            title: 'JWT Authentication',
-            path: '/guides/jwt_authentication/'
-          }
         ]
       },
       {
-        title: 'Reporting API',
-        path: '/guides/reporting_api/',
-        pages: [
-          {
-            title: 'Overview',
-            path: '/guides/reporting_api/'
-          },
-          {
-            title: 'Reporting with breakdowns',
-            path: '/guides/reporting_api/reporting_breakdowns/',
-            pages: [
-              {
-                title: 'Reporting with single breakdowns',
-                path: '/guides/reporting_api/reporting_breakdowns/',
-              },
-              {
-                title: 'Reporting with multiple breakdowns',
-                path: '/guides/reporting_api/reporting_breakdowns/reporting_multiple_breakdowns/',
-              },
-            ]
-          },
-          {
-            title: 'Reporting tips and tricks',
-            path: '/guides/reporting_api/reporting_tips_tricks/'
-          }
-        ]
+        title: 'Developer Tool',
+        path: '/developer-tool/'
       },
-      {
-        title: 'Discovery API',
-        path: '/guides/discovery_api/'
-      },
-      {
-        title: 'Segments API',
-        path: '/guides/segments_api/'
-      },
-      {
-        title: 'Calculated Metrics API',
-        path: '/guides/calculated_metrics_api/'
-      },
-      {
-        title: 'Migrating',
-        path: '/guides/migrating/'
-      },
-      {
-        title: 'FAQ',
-        path: '/support/FAQ/'
-      },
-      {
-        title: 'How to contribute',
-        path: '/support/contribute/'
-      }
     ]
   },
   plugins: [`@adobe/gatsby-theme-parliament`],
