@@ -4,20 +4,22 @@ jsDoc: true
 
 <a name="htmlimageelement" id="htmlimageelement"></a>
 
-## HTMLImageElement
+# HTMLImageElement
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement  
 
 
+<JsDocParameters/>
+
 <a name="htmlimageelement-src" id="htmlimageelement-src"></a>
 
-### src : `string` \| `File`
+## src : `string` \| `File`
 The source of the image
 
 
 
 <a name="htmlelement-dataset" id="htmlelement-dataset"></a>
 
-### dataset
+## dataset
 Access to all the custom data attributes (data-*) set.
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset  
@@ -25,270 +27,270 @@ Access to all the custom data attributes (data-*) set.
 
 <a name="element-nodename" id="element-nodename"></a>
 
-### nodeName : `string`
+## nodeName : `string`
 **Read only**
 
 
 <a name="element-localname" id="element-localname"></a>
 
-### localName : `string`
+## localName : `string`
 **Read only**
 
 
 <a name="element-tagname" id="element-tagname"></a>
 
-### tagName : `string`
+## tagName : `string`
 **Read only**
 
 
 <a name="element-nodetype" id="element-nodetype"></a>
 
-### nodeType : `number`
+## nodeType : `number`
 **Read only**
 
 
 <a name="element-namespaceuri" id="element-namespaceuri"></a>
 
-### namespaceURI : `string`
+## namespaceURI : `string`
 **Read only**
 
 
 <a name="element-id" id="element-id"></a>
 
-### id : `string`
+## id : `string`
 
 
 <a name="element-tabindex" id="element-tabindex"></a>
 
-### tabIndex : `number`
+## tabIndex : `number`
 
 
 <a name="element-classname" id="element-classname"></a>
 
-### className : `string`
+## className : `string`
 
 
 <a name="element-attributes" id="element-attributes"></a>
 
-### attributes : `NamedNodeMap`
+## attributes : `NamedNodeMap`
 **Read only**
 
 
 <a name="element-style" id="element-style"></a>
 
-### style : `Style`
+## style : `Style`
 **Read only**
 
 
 <a name="element-clientleft" id="element-clientleft"></a>
 
-### clientLeft : `number`
+## clientLeft : `number`
 **Read only**
 
 
 <a name="element-clienttop" id="element-clienttop"></a>
 
-### clientTop : `number`
+## clientTop : `number`
 **Read only**
 
 
 <a name="element-clientwidth" id="element-clientwidth"></a>
 
-### clientWidth : `number`
+## clientWidth : `number`
 **Read only**
 
 
 <a name="element-clientheight" id="element-clientheight"></a>
 
-### clientHeight : `number`
+## clientHeight : `number`
 **Read only**
 
 
 <a name="element-height" id="element-height"></a>
 
-### height : `string` \| `Number`
+## height : `string` \| `Number`
 The height of the element
 
 
 
 <a name="element-width" id="element-width"></a>
 
-### width : `string` \| `Number`
+## width : `string` \| `Number`
 The width of the element
 
 
 
 <a name="element-offsetparent" id="element-offsetparent"></a>
 
-### offsetParent : `Element`
+## offsetParent : `Element`
 **Read only**
 
 
 <a name="element-offsetleft" id="element-offsetleft"></a>
 
-### offsetLeft : `number`
+## offsetLeft : `number`
 **Read only**
 
 
 <a name="element-offsettop" id="element-offsettop"></a>
 
-### offsetTop : `number`
+## offsetTop : `number`
 **Read only**
 
 
 <a name="element-offsetwidth" id="element-offsetwidth"></a>
 
-### offsetWidth : `number`
+## offsetWidth : `number`
 **Read only**
 
 
 <a name="element-offsetheight" id="element-offsetheight"></a>
 
-### offsetHeight : `number`
+## offsetHeight : `number`
 **Read only**
 
 
 <a name="element-scrollleft" id="element-scrollleft"></a>
 
-### scrollLeft : `number`
+## scrollLeft : `number`
 
 
 <a name="element-scrolltop" id="element-scrolltop"></a>
 
-### scrollTop : `number`
+## scrollTop : `number`
 
 
 <a name="element-scrollwidth" id="element-scrollwidth"></a>
 
-### scrollWidth : `number`
+## scrollWidth : `number`
 **Read only**
 
 
 <a name="element-scrollheight" id="element-scrollheight"></a>
 
-### scrollHeight : `number`
+## scrollHeight : `number`
 **Read only**
 
 
 <a name="element-uxpcontainer" id="element-uxpcontainer"></a>
 
-### uxpContainer : `number`
+## uxpContainer : `number`
 **Read only**
 
 
 <a name="element-disabled" id="element-disabled"></a>
 
-### disabled : `boolean`
+## disabled : `boolean`
 
 
 <a name="element-innerhtml" id="element-innerhtml"></a>
 
-### innerHTML : `string`
+## innerHTML : `string`
 
 
 <a name="element-outerhtml" id="element-outerhtml"></a>
 
-### outerHTML : `string`
+## outerHTML : `string`
 
 
 <a name="node-contenteditable" id="node-contenteditable"></a>
 
-### contentEditable
+## contentEditable
 **Read only**
 
 
 <a name="node-isconnected" id="node-isconnected"></a>
 
-### isConnected : `boolean`
+## isConnected : `boolean`
 **Read only**
 
 
 <a name="node-parentnode" id="node-parentnode"></a>
 
-### parentNode : `Node`
+## parentNode : `Node`
 **Read only**
 
 
 <a name="node-parentelement" id="node-parentelement"></a>
 
-### parentElement : `Element`
+## parentElement : `Element`
 **Read only**
 
 
 <a name="node-firstchild" id="node-firstchild"></a>
 
-### firstChild : `Node`
+## firstChild : `Node`
 **Read only**
 
 
 <a name="node-lastchild" id="node-lastchild"></a>
 
-### lastChild : `Node`
+## lastChild : `Node`
 **Read only**
 
 
 <a name="node-previoussibling" id="node-previoussibling"></a>
 
-### previousSibling : `Node`
+## previousSibling : `Node`
 **Read only**
 
 
 <a name="node-nextsibling" id="node-nextsibling"></a>
 
-### nextSibling : `Node`
+## nextSibling : `Node`
 **Read only**
 
 
 <a name="node-firstelementchild" id="node-firstelementchild"></a>
 
-### firstElementChild : `Node`
+## firstElementChild : `Node`
 **Read only**
 
 
 <a name="node-lastelementchild" id="node-lastelementchild"></a>
 
-### lastElementChild : `Node`
+## lastElementChild : `Node`
 **Read only**
 
 
 <a name="node-previouselementsibling" id="node-previouselementsibling"></a>
 
-### previousElementSibling : `Node`
+## previousElementSibling : `Node`
 **Read only**
 
 
 <a name="node-nextelementsibling" id="node-nextelementsibling"></a>
 
-### nextElementSibling : `Node`
+## nextElementSibling : `Node`
 **Read only**
 
 
 <a name="node-textcontent" id="node-textcontent"></a>
 
-### textContent : `string`
+## textContent : `string`
 
 
 <a name="node-childnodes" id="node-childnodes"></a>
 
-### childNodes : `NodeList`
+## childNodes : `NodeList`
 **Read only**
 
 
 <a name="node-children" id="node-children"></a>
 
-### children : `HTMLCollection`
+## children : `HTMLCollection`
 **Read only**
 
 
 <a name="node-ownerdocument" id="node-ownerdocument"></a>
 
-### ownerDocument
+## ownerDocument
 **Read only**
 
 
 <a name="element-scrollto" id="element-scrollto"></a>
 
-### scrollTo(xOrOptions, y)
+## scrollTo(xOrOptions, y)
 Scrolls the element to the new x and y positions. If options object is used with behavior: "smooth" then the element is smoothly scrolled.
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo  
@@ -302,7 +304,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-scrollintoview" id="element-scrollintoview"></a>
 
-### scrollIntoView(alignToTop)
+## scrollIntoView(alignToTop)
 
 | Param | Type |
 | --- | --- |
@@ -312,22 +314,22 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-scrollintoviewifneeded" id="element-scrollintoviewifneeded"></a>
 
-### scrollIntoViewIfNeeded()
+## scrollIntoViewIfNeeded()
 
 
 <a name="element-focus" id="element-focus"></a>
 
-### focus()
+## focus()
 
 
 <a name="element-blur" id="element-blur"></a>
 
-### blur()
+## blur()
 
 
 <a name="element-getattribute" id="element-getattribute"></a>
 
-### getAttribute(name)
+## getAttribute(name)
 **Returns**: `string`  
 
 | Param | Type |
@@ -338,7 +340,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-setattribute" id="element-setattribute"></a>
 
-### setAttribute(name, value)
+## setAttribute(name, value)
 
 | Param | Type |
 | --- | --- |
@@ -349,7 +351,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-removeattribute" id="element-removeattribute"></a>
 
-### removeAttribute(name)
+## removeAttribute(name)
 
 | Param | Type |
 | --- | --- |
@@ -359,7 +361,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-hasattribute" id="element-hasattribute"></a>
 
-### hasAttribute(name)
+## hasAttribute(name)
 **Returns**: `boolean`  
 
 | Param | Type |
@@ -370,7 +372,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-getattributenode" id="element-getattributenode"></a>
 
-### getAttributeNode(name)
+## getAttributeNode(name)
 **Returns**: `*`  
 
 | Param | Type |
@@ -381,7 +383,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-setattributenode" id="element-setattributenode"></a>
 
-### setAttributeNode(newAttr)
+## setAttributeNode(newAttr)
 
 | Param | Type |
 | --- | --- |
@@ -391,7 +393,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-removeattributenode" id="element-removeattributenode"></a>
 
-### removeAttributeNode(oldAttr)
+## removeAttributeNode(oldAttr)
 
 | Param | Type |
 | --- | --- |
@@ -401,12 +403,12 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-click" id="element-click"></a>
 
-### click()
+## click()
 
 
 <a name="element-getelementsbyclassname" id="element-getelementsbyclassname"></a>
 
-### getElementsByClassName(name)
+## getElementsByClassName(name)
 **Returns**: `NodeList`  
 
 | Param | Type |
@@ -417,7 +419,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-getelementsbytagname" id="element-getelementsbytagname"></a>
 
-### getElementsByTagName(name)
+## getElementsByTagName(name)
 **Returns**: `NodeList`  
 
 | Param | Type |
@@ -428,7 +430,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-queryselector" id="element-queryselector"></a>
 
-### querySelector(selector)
+## querySelector(selector)
 **Returns**: `Element`  
 
 | Param | Type |
@@ -439,7 +441,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-queryselectorall" id="element-queryselectorall"></a>
 
-### querySelectorAll(selector)
+## querySelectorAll(selector)
 **Returns**: `NodeList`  
 
 | Param | Type |
@@ -450,13 +452,13 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-getboundingclientrect" id="element-getboundingclientrect"></a>
 
-### getBoundingClientRect()
+## getBoundingClientRect()
 **Returns**: `*`  
 
 
 <a name="element-insertadjacenthtml" id="element-insertadjacenthtml"></a>
 
-### insertAdjacentHTML(position, value)
+## insertAdjacentHTML(position, value)
 
 | Param | Type |
 | --- | --- |
@@ -467,7 +469,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-insertadjacentelement" id="element-insertadjacentelement"></a>
 
-### insertAdjacentElement(position, node)
+## insertAdjacentElement(position, node)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -479,7 +481,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="element-insertadjacenttext" id="element-insertadjacenttext"></a>
 
-### insertAdjacentText(position, text)
+## insertAdjacentText(position, text)
 
 | Param | Type |
 | --- | --- |
@@ -490,13 +492,13 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="node-haschildnodes" id="node-haschildnodes"></a>
 
-### hasChildNodes()
+## hasChildNodes()
 **Returns**: `boolean`  
 
 
 <a name="node-clonenode" id="node-clonenode"></a>
 
-### cloneNode(deep)
+## cloneNode(deep)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -507,7 +509,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="node-appendchild" id="node-appendchild"></a>
 
-### appendChild(child)
+## appendChild(child)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -518,7 +520,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="node-insertbefore" id="node-insertbefore"></a>
 
-### insertBefore(child, before)
+## insertBefore(child, before)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -530,7 +532,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="node-replacechild" id="node-replacechild"></a>
 
-### replaceChild(newChild, oldChild)
+## replaceChild(newChild, oldChild)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -542,7 +544,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="node-removechild" id="node-removechild"></a>
 
-### removeChild(child)
+## removeChild(child)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -553,12 +555,12 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="node-remove" id="node-remove"></a>
 
-### remove()
+## remove()
 
 
 <a name="node-before" id="node-before"></a>
 
-### before(...nodes)
+## before(...nodes)
 
 | Param | Type |
 | --- | --- |
@@ -568,7 +570,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="node-after" id="node-after"></a>
 
-### after(...nodes)
+## after(...nodes)
 
 | Param | Type |
 | --- | --- |
@@ -578,7 +580,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="node-replacewith" id="node-replacewith"></a>
 
-### replaceWith(...nodes)
+## replaceWith(...nodes)
 
 | Param | Type |
 | --- | --- |
@@ -588,7 +590,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="node-contains" id="node-contains"></a>
 
-### contains(node)
+## contains(node)
 
 | Param | Type |
 | --- | --- |
@@ -598,7 +600,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
 
-### addEventListener(eventName, callback, [capture])
+## addEventListener(eventName, callback, [capture])
 
 | Param | Type | Default |
 | --- | --- | --- |
@@ -610,7 +612,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
 
-### removeEventListener(eventName, callback, [capture])
+## removeEventListener(eventName, callback, [capture])
 
 | Param | Type | Default |
 | --- | --- | --- |
@@ -622,7 +624,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 <a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
 
-### dispatchEvent(event)
+## dispatchEvent(event)
 
 | Param | Type |
 | --- | --- |

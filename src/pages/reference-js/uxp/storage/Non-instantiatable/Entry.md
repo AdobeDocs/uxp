@@ -4,7 +4,7 @@ jsDoc: true
 
 <a name="module-storage-entry" id="module-storage-entry"></a>
 
-## Entry
+# Entry
 An `Entry` is the base class for `File` and `Folder`. You'll
 typically never instantiate an `Entry` directly, but it provides
 the common fields and methods that both `File` and `Folder`
@@ -12,9 +12,11 @@ share.
 
 
 
+<JsDocParameters/>
+
 <a name="new-module-storage-entry-new" id="new-module-storage-entry-new"></a>
 
-### Entry(name, provider, id)
+## Entry(name, provider, id)
 Creates an instance of Entry.
 
 
@@ -28,7 +30,7 @@ Creates an instance of Entry.
 
 <a name="module-storage-entry-isentry" id="module-storage-entry-isentry"></a>
 
-### isEntry : `boolean`
+## isEntry : `boolean`
 Indicates that this instance is an `Entry`. Useful for type-checking.
 
 **Example**  
@@ -41,7 +43,7 @@ if (something.isEntry) {
 
 <a name="module-storage-entry-isfile" id="module-storage-entry-isfile"></a>
 
-### isFile : `boolean`
+## isFile : `boolean`
 **Read only**
 Indicates that this instance is **not** a `File`. Useful for type-
 checking.
@@ -56,7 +58,7 @@ if (!anEntry.isFile) {
 
 <a name="module-storage-entry-isfolder" id="module-storage-entry-isfolder"></a>
 
-### isFolder : `boolean`
+## isFolder : `boolean`
 **Read only**
 Indicates that this instance is **not** a folder. Useful for type-
 checking.
@@ -71,7 +73,7 @@ if (!anEntry.isFolder) {
 
 <a name="module-storage-entry-name" id="module-storage-entry-name"></a>
 
-### name : `string`
+## name : `string`
 **Read only**
 The name of this entry. Read-only.
 
@@ -83,7 +85,7 @@ console.log(anEntry.name);
 
 <a name="module-storage-entry-provider" id="module-storage-entry-provider"></a>
 
-### provider : `FileSystemProvider`
+## provider : `FileSystemProvider`
 **Read only**
 The associated provider that services this entry. Read-only.
 
@@ -97,7 +99,7 @@ if (entryOne.provider !== entryTwo.provider) {
 
 <a name="module-storage-entry-url" id="module-storage-entry-url"></a>
 
-### url : `string`
+## url : `string`
 **Read only**
 The url of this entry. You can use this url as input to other entities of the extension system like for eg: set as src attribute of a Image widget in UI. Read-only.
 
@@ -109,7 +111,7 @@ console.log(anEntry.url);
 
 <a name="module-storage-entry-nativepath" id="module-storage-entry-nativepath"></a>
 
-### nativePath : `string`
+## nativePath : `string`
 **Read only**
 The platform native file-system path of this entry. Read-only
 
@@ -121,14 +123,14 @@ console.log(anEntry.nativePath);
 
 <a name="module-storage-entry-tostring" id="module-storage-entry-tostring"></a>
 
-### toString()
+## toString()
 returns the details of the given entry like name, type and native path in a readable string format.
 
 
 
 <a name="module-storage-entry-copyto" id="module-storage-entry-copyto"></a>
 
-### copyTo(folder, options)
+## copyTo(folder, options)
 Copies this entry to the specified `folder`.
 
 **Throws**:
@@ -160,7 +162,7 @@ await someFolder.copyTo(anotherFolder, {overwrite: true});
 
 <a name="module-storage-entry-moveto" id="module-storage-entry-moveto"></a>
 
-### moveTo(folder, options)
+## moveTo(folder, options)
 Moves this entry to the target folder, optionally specifying a new name.
 
 
@@ -195,7 +197,7 @@ await someFile.moveTo(someFolder, {newName: 'novel.txt', {overwrite: true})
 
 <a name="module-storage-entry-delete" id="module-storage-entry-delete"></a>
 
-### delete()
+## delete()
 Removes this entry from the file system. If the entry is a folder, all the
 contents will also be removed.
 
@@ -207,7 +209,7 @@ await aFile.delete();
 
 <a name="module-storage-entry-getmetadata" id="module-storage-entry-getmetadata"></a>
 
-### getMetadata()
+## getMetadata()
 Returns this entry's metadata.
 
 **Returns**: `Promise.<EntryMetadata>`  

@@ -4,7 +4,7 @@ jsDoc: true
 
 <a name="module-global-fetch" id="module-global-fetch"></a>
 
-## fetch(input, [init])
+# fetch(input, [init])
 **Returns**: `Promise.<Response>` - @see Response  
 **Throws**:
 

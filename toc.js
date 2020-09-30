@@ -2,12 +2,10 @@ module.exports=[
   {
     "title": "global",
     "header": true,
-    "path": "/reference-js/global/IO/Clipboard/",
     "pages": [
       {
         "title": "IO",
         "header": true,
-        "path": "/reference-js/global/IO/Clipboard/",
         "pages": [
           {
             "title": "Clipboard",
@@ -25,12 +23,12 @@ module.exports=[
             "title": "fetch",
             "path": "/reference-js/global/IO/fetch/"
           }
-        ]
+        ],
+        "path": "/reference-js/global/IO/Clipboard/"
       },
       {
         "title": "Events",
         "header": true,
-        "path": "/reference-js/global/Events/BaseUIEvent/",
         "pages": [
           {
             "title": "BaseUIEvent",
@@ -76,12 +74,12 @@ module.exports=[
             "title": "ErrorEvent",
             "path": "/reference-js/global/Events/ErrorEvent/"
           }
-        ]
+        ],
+        "path": "/reference-js/global/Events/BaseUIEvent/"
       },
       {
         "title": "DOM",
         "header": true,
-            "path": "/reference-js/global/DOM/DOMException/",
         "pages": [
           {
             "title": "DOMException",
@@ -139,12 +137,12 @@ module.exports=[
             "title": "Text",
             "path": "/reference-js/global/DOM/Text/"
           }
-        ]
+        ],
+        "path": "/reference-js/global/DOM/DOMException/"
       },
       {
         "title": "Elements",
         "header": true,
-            "path": "/reference-js/global/Elements/HTMLAnchorElement/",
         "pages": [
           {
             "title": "HTMLAnchorElement",
@@ -222,46 +220,45 @@ module.exports=[
             "title": "HTMLTextAreaElement",
             "path": "/reference-js/global/Elements/HTMLTextAreaElement/"
           }
-        ]
+        ],
+        "path": "/reference-js/global/Elements/HTMLAnchorElement/"
       }
-    ]
+    ],
+    "path": "/reference-js/global/IO/Clipboard/"
   },
   {
     "title": "os",
     "header": true,
-      "path": "/reference-js/os/OS/",
     "pages": [
       {
         "title": "OS",
         "path": "/reference-js/os/OS/"
       }
-    ]
+    ],
+    "path": "/reference-js/os/OS/"
   },
   {
     "title": "shell",
     "header": true,
-        "path": "/reference-js/shell/Shell/",
     "pages": [
       {
         "title": "Shell",
         "path": "/reference-js/shell/Shell/"
       }
-    ]
+    ],
+    "path": "/reference-js/shell/Shell/"
   },
   {
     "title": "uxp",
     "header": true,
-                "path": "/reference-js/uxp/storage/localFileSystem/FileSystemProvider/",
     "pages": [
       {
         "title": "storage",
         "header": true,
-                "path": "/reference-js/uxp/storage/localFileSystem/FileSystemProvider/",
         "pages": [
           {
             "title": "_",
             "header": true,
-                "path": "/reference-js/uxp/storage/_/domains/",
             "pages": [
               {
                 "title": "storage.domains",
@@ -287,12 +284,12 @@ module.exports=[
                 "title": "storage.errors",
                 "path": "/reference-js/uxp/storage/_/errors/"
               }
-            ]
+            ],
+            "path": "/reference-js/uxp/storage/_/domains/"
           },
           {
             "title": "Non-instantiatable",
             "header": true,
-                "path": "/reference-js/uxp/storage/Non-instantiatable/Entry/",
             "pages": [
               {
                 "title": "storage.Entry",
@@ -310,12 +307,12 @@ module.exports=[
                 "title": "storage.Folder",
                 "path": "/reference-js/uxp/storage/Non-instantiatable/Folder/"
               }
-            ]
+            ],
+            "path": "/reference-js/uxp/storage/Non-instantiatable/Entry/"
           },
           {
             "title": "localFileSystem",
             "header": true,
-                "path": "/reference-js/uxp/storage/localFileSystem/FileSystemProvider/",
             "pages": [
               {
                 "title": "storage.localFileSystem",
@@ -325,65 +322,68 @@ module.exports=[
                 "title": "storage.FileSystemProvider",
                 "path": "/reference-js/uxp/storage/localFileSystem/FileSystemProvider/"
               }
-            ]
+            ],
+            "path": "/reference-js/uxp/storage/localFileSystem/localFileSystem/"
           },
           {
             "title": "localStorage",
             "header": true,
-                "path": "/reference-js/uxp/storage/localStorage/LocalStorage/",
             "pages": [
               {
                 "title": "storage.LocalStorage",
                 "path": "/reference-js/uxp/storage/localStorage/LocalStorage/"
               }
-            ]
+            ],
+            "path": "/reference-js/uxp/storage/localStorage/LocalStorage/"
           },
           {
             "title": "secureStorage",
             "header": true,
-                "path": "/reference-js/uxp/storage/secureStorage/SecureStorage/",
             "pages": [
               {
                 "title": "storage.SecureStorage",
                 "path": "/reference-js/uxp/storage/secureStorage/SecureStorage/"
               }
-            ]
+            ],
+            "path": "/reference-js/uxp/storage/secureStorage/SecureStorage/"
           },
           {
             "title": "sessionStorage",
             "header": true,
-                "path": "/reference-js/uxp/storage/sessionStorage/SessionStorage/",
             "pages": [
               {
                 "title": "storage.SessionStorage",
                 "path": "/reference-js/uxp/storage/sessionStorage/SessionStorage/"
               }
-            ]
+            ],
+            "path": "/reference-js/uxp/storage/sessionStorage/SessionStorage/"
           }
-        ]
+        ],
+        "path": "/reference-js/uxp/storage/_/domains/"
       },
       {
         "title": "versions",
         "header": true,
-            "path": "/reference-js/uxp/versions/Versions/",
         "pages": [
           {
             "title": "Versions",
             "path": "/reference-js/uxp/versions/Versions/"
           }
-        ]
+        ],
+        "path": "/reference-js/uxp/versions/Versions/"
       },
       {
         "title": "host",
         "header": true,
-            "path": "/reference-js/uxp/host/Host/",
         "pages": [
           {
             "title": "Host",
             "path": "/reference-js/uxp/host/Host/"
           }
-        ]
+        ],
+        "path": "/reference-js/uxp/host/Host/"
       }
-    ]
+    ],
+    "path": "/reference-js/uxp/storage/_/domains/"
   }
 ]

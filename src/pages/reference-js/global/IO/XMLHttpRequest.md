@@ -4,19 +4,21 @@ jsDoc: true
 
 <a name="module-global-xmlhttprequest" id="module-global-xmlhttprequest"></a>
 
-## XMLHttpRequest
+# XMLHttpRequest
 
+
+<JsDocParameters/>
 
 <a name="new-module-global-xmlhttprequest-new" id="new-module-global-xmlhttprequest-new"></a>
 
-### XMLHttpRequest()
+## XMLHttpRequest()
 The constructor initializes an XMLHttpRequest. It must be called before any other method calls.
 
 
 
 <a name="module-global-xmlhttprequest-readystate" id="module-global-xmlhttprequest-readystate"></a>
 
-### readyState ⇒ `int`
+## readyState ⇒ `int`
 **Read only**
 Returns an unsigned short, the state of the request.
 
@@ -25,7 +27,7 @@ Returns an unsigned short, the state of the request.
 
 <a name="module-global-xmlhttprequest-responsetext" id="module-global-xmlhttprequest-responsetext"></a>
 
-### responseText ⇒ `string`
+## responseText ⇒ `string`
 **Read only**
 Returns a DOMString that contains the response to the request as text, or null if the request was unsuccessful or has not yet been sent.
 
@@ -34,7 +36,7 @@ Returns a DOMString that contains the response to the request as text, or null i
 
 <a name="module-global-xmlhttprequest-responsexml" id="module-global-xmlhttprequest-responsexml"></a>
 
-### responseXML ⇒ `object`
+## responseXML ⇒ `object`
 **Read only**
 Returns the XML document that supports W3C DOM level2 specification.
 The XML document is constructed with received bytes using XMLHttpRequest.
@@ -48,7 +50,7 @@ The XML document is constructed with received bytes using XMLHttpRequest.
 
 <a name="module-global-xmlhttprequest-response" id="module-global-xmlhttprequest-response"></a>
 
-### response ⇒ `string` \| `ArrayBuffer` \| `Blob` \| `Object`
+## response ⇒ `string` \| `ArrayBuffer` \| `Blob` \| `Object`
 **Read only**
 Returns the response from the server in the type specified by responseType.
 Only valid after the load event fires.
@@ -59,21 +61,21 @@ XMLHttpRequest.responseType that contains the response entity body.
 
 <a name="module-global-xmlhttprequest-status" id="module-global-xmlhttprequest-status"></a>
 
-### status ⇒ `string`
+## status ⇒ `string`
 **Read only**
 **Returns**: `string` - returns the HTTP status code received from the server.  
 
 
 <a name="module-global-xmlhttprequest-statustext" id="module-global-xmlhttprequest-statustext"></a>
 
-### statusText ⇒ `string`
+## statusText ⇒ `string`
 **Read only**
 **Returns**: `string` - returns the response's status message with regard to the HTTP status code received from the server.  
 
 
 <a name="module-global-xmlhttprequest-timeout" id="module-global-xmlhttprequest-timeout"></a>
 
-### timeout
+## timeout
 The number of milliseconds a request can take before automatically being terminated.
 The default value is 0, which means there is no timeout.
 
@@ -81,7 +83,7 @@ The default value is 0, which means there is no timeout.
 
 <a name="module-global-xmlhttprequest-timeout" id="module-global-xmlhttprequest-timeout"></a>
 
-### timeout
+## timeout
 Terminates a request and a timeout event will be dispatched after the given time has passed.
 
 **Throws**:
@@ -97,14 +99,14 @@ Terminates a request and a timeout event will be dispatched after the given time
 
 <a name="module-global-xmlhttprequest-responsetype" id="module-global-xmlhttprequest-responsetype"></a>
 
-### responseType ⇒ `string`
+## responseType ⇒ `string`
 **Returns**: `string` - returns a string taken from the XMLHttpRequestResponseType enum which specifies;
 what type of data the response contains.  
 
 
 <a name="module-global-xmlhttprequest-responsetype" id="module-global-xmlhttprequest-responsetype"></a>
 
-### responseType
+## responseType
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -114,7 +116,7 @@ what type of data the response contains.
 
 <a name="module-global-xmlhttprequest-withcredentials" id="module-global-xmlhttprequest-withcredentials"></a>
 
-### withCredentials
+## withCredentials
 Indicates whether to send cookies on a HTTP request.
 When the value is set to true, XMLHttpRequest sends cookies. Otherwise, cookies are not sent.
 
@@ -122,7 +124,7 @@ When the value is set to true, XMLHttpRequest sends cookies. Otherwise, cookies 
 
 <a name="module-global-xmlhttprequest-withcredentials" id="module-global-xmlhttprequest-withcredentials"></a>
 
-### withCredentials
+## withCredentials
 **Throws**:
 
 - `DOMException` when set if state is not unsent or opened.
@@ -136,7 +138,7 @@ When the value is set to true, XMLHttpRequest sends cookies. Otherwise, cookies 
 
 <a name="module-global-xmlhttprequest-upload" id="module-global-xmlhttprequest-upload"></a>
 
-### upload ⇒ `XMLHttpRequestEventUpload`
+## upload ⇒ `XMLHttpRequestEventUpload`
 **Read only**
 If XMLHttpRequest has data in the body to upload, upload related event will be notified via XMLHttpRequest.upload.
 
@@ -145,14 +147,14 @@ If XMLHttpRequest has data in the body to upload, upload related event will be n
 
 <a name="module-global-xmlhttprequest-abort" id="module-global-xmlhttprequest-abort"></a>
 
-### abort()
+## abort()
 Aborts the request if it has already been sent.
 
 
 
 <a name="module-global-xmlhttprequest-getallresponseheaders" id="module-global-xmlhttprequest-getallresponseheaders"></a>
 
-### getAllResponseHeaders()
+## getAllResponseHeaders()
 **Read only**
 Returns sorted and combined response’s header list.
 Each header field is defined by a group of [lower cased name]": "[value]"\r\n". Combined value is separated by ", ".
@@ -162,7 +164,7 @@ Each header field is defined by a group of [lower cased name]": "[value]"\r\n". 
 
 <a name="module-global-xmlhttprequest-getresponseheader" id="module-global-xmlhttprequest-getresponseheader"></a>
 
-### getResponseHeader(name)
+## getResponseHeader(name)
 **Read only**
 Returns the matching value of the given field name in response's header.
 The search key value is case-insensitive
@@ -177,7 +179,7 @@ The search key value is case-insensitive
 
 <a name="module-global-xmlhttprequest-open" id="module-global-xmlhttprequest-open"></a>
 
-### open(method, url, [async], [user], [password])
+## open(method, url, [async], [user], [password])
 Initializes a request. This method is to be used from JavaScript code; to initialize a request from native code, use openRequest() instead.
 Self-signed certificates are not currently supported for HTTPS connections.
 
@@ -194,7 +196,7 @@ Self-signed certificates are not currently supported for HTTPS connections.
 
 <a name="module-global-xmlhttprequest-overridemimetype" id="module-global-xmlhttprequest-overridemimetype"></a>
 
-### overrideMimeType(mimetype)
+## overrideMimeType(mimetype)
 Use a MIME type other than the one provided by the server when interpreting the data being transferred in a request.
 If parsing the MIME type fails, "application/octet-stream" will be used to interpret the data.
 
@@ -211,7 +213,7 @@ If parsing the MIME type fails, "application/octet-stream" will be used to inter
 
 <a name="module-global-xmlhttprequest-setrequestheader" id="module-global-xmlhttprequest-setrequestheader"></a>
 
-### setRequestHeader(header, data)
+## setRequestHeader(header, data)
 Sets the value of an HTTP request header. You must call setRequestHeader()after open(), but before send().
 
 
@@ -224,7 +226,7 @@ Sets the value of an HTTP request header. You must call setRequestHeader()after 
 
 <a name="module-global-xmlhttprequest-send" id="module-global-xmlhttprequest-send"></a>
 
-### send([data])
+## send([data])
 Sends the request. If the request is asynchronous (which is the default), this method returns as soon as the request is sent.
 
 

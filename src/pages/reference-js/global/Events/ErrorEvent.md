@@ -4,7 +4,7 @@ jsDoc: true
 
 <a name="errorevent" id="errorevent"></a>
 
-## ErrorEvent
+# ErrorEvent
 **See**
 
 - https://developer.mozilla.org/en-US/docs/Web/API/ErrorEvent
@@ -12,92 +12,94 @@ jsDoc: true
 
 
 
+<JsDocParameters/>
+
 <a name="errorevent-message" id="errorevent-message"></a>
 
-### message
+## message
 **Read only**
 
 
 <a name="errorevent-filename" id="errorevent-filename"></a>
 
-### filename
+## filename
 **Read only**
 
 
 <a name="errorevent-lineno" id="errorevent-lineno"></a>
 
-### lineno
+## lineno
 **Read only**
 
 
 <a name="errorevent-colno" id="errorevent-colno"></a>
 
-### colno
+## colno
 **Read only**
 
 
 <a name="errorevent-error" id="errorevent-error"></a>
 
-### error
+## error
 **Read only**
 
 
 <a name="event-type" id="event-type"></a>
 
-### type
+## type
 **Read only**
 
 
 <a name="event-istrusted" id="event-istrusted"></a>
 
-### isTrusted : `boolean`
+## isTrusted : `boolean`
 **Read only**
 
 
 <a name="event-target" id="event-target"></a>
 
-### target : `Node`
+## target : `Node`
 **Read only**
 
 
 <a name="event-currenttarget" id="event-currenttarget"></a>
 
-### currentTarget : `Node`
+## currentTarget : `Node`
 **Read only**
 
 
 <a name="event-bubbles" id="event-bubbles"></a>
 
-### bubbles : `boolean`
+## bubbles : `boolean`
 **Read only**
 
 
 <a name="event-cancelable" id="event-cancelable"></a>
 
-### cancelable : `boolean`
+## cancelable : `boolean`
 **Read only**
 
 
 <a name="event-eventphase" id="event-eventphase"></a>
 
-### eventPhase
+## eventPhase
 **Read only**
 
 
 <a name="event-defaultprevented" id="event-defaultprevented"></a>
 
-### defaultPrevented : `boolean`
+## defaultPrevented : `boolean`
 **Read only**
 
 
 <a name="event-returnvalue" id="event-returnvalue"></a>
 
-### returnValue : `*`
+## returnValue : `*`
 
 
 <a name="event-initevent" id="event-initevent"></a>
 
-### initEvent(typeArg, bubblesArg, cancelableArg)
+## initEvent(typeArg, bubblesArg, cancelableArg)
 
 | Param | Type |
 | --- | --- |
@@ -109,27 +111,27 @@ jsDoc: true
 
 <a name="event-preventdefault" id="event-preventdefault"></a>
 
-### preventDefault()
+## preventDefault()
 
 
 <a name="event-stopimmediatepropagation" id="event-stopimmediatepropagation"></a>
 
-### stopImmediatePropagation()
+## stopImmediatePropagation()
 
 
 <a name="event-stoppropagation" id="event-stoppropagation"></a>
 
-### stopPropagation()
+## stopPropagation()
 
 
 <a name="errorevent-errorevent" id="errorevent-errorevent"></a>
 
-### ErrorEvent
+## ErrorEvent
 
 
 <a name="new-errorevent-errorevent-new" id="new-errorevent-errorevent-new"></a>
 
-#### ErrorEvent(typeArg, [eventInit])
+### ErrorEvent(typeArg, [eventInit])
 Creates an instance of ErrorEvent.
 
 

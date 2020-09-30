@@ -4,19 +4,21 @@ jsDoc: true
 
 <a name="namednodemap" id="namednodemap"></a>
 
-## NamedNodeMap
+# NamedNodeMap
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/NamedNodeMap  
 
 
+<JsDocParameters/>
+
 <a name="namednodemap-length" id="namednodemap-length"></a>
 
-### length : `number`
+## length : `number`
 **Read only**
 
 
 <a name="namednodemap-getnameditem" id="namednodemap-getnameditem"></a>
 
-### getNamedItem(name)
+## getNamedItem(name)
 **Returns**: `*`  
 
 | Param | Type |
@@ -27,7 +29,7 @@ jsDoc: true
 
 <a name="namednodemap-setnameditem" id="namednodemap-setnameditem"></a>
 
-### setNamedItem(attr)
+## setNamedItem(attr)
 
 | Param | Type |
 | --- | --- |
@@ -37,7 +39,7 @@ jsDoc: true
 
 <a name="namednodemap-removenameditem" id="namednodemap-removenameditem"></a>
 
-### removeNamedItem(name)
+## removeNamedItem(name)
 
 | Param | Type |
 | --- | --- |
@@ -47,7 +49,7 @@ jsDoc: true
 
 <a name="namednodemap-item" id="namednodemap-item"></a>
 
-### item(index)
+## item(index)
 **Returns**: `*`  
 
 | Param | Type |
@@ -58,12 +60,12 @@ jsDoc: true
 
 <a name="namednodemap-namednodemap" id="namednodemap-namednodemap"></a>
 
-### NamedNodeMap
+## NamedNodeMap
 
 
 <a name="new-namednodemap-namednodemap-new" id="new-namednodemap-namednodemap-new"></a>
 
-#### NamedNodeMap(node)
+### NamedNodeMap(node)
 Creates an instance of NamedNodeMap.
 
 

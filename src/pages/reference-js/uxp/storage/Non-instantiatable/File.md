@@ -4,16 +4,18 @@ jsDoc: true
 
 <a name="module-storage-file" id="module-storage-file"></a>
 
-## File
+# File
 Represents a file on a file system. Provides methods for reading from and
 writing to the file. You'll never instantiate a `File` directly; instead
 you'll get access via a [FileSystemProvider](#module-storage-filesystemprovider).
 
 
 
+<JsDocParameters/>
+
 <a name="module-storage-file-isfile" id="module-storage-file-isfile"></a>
 
-### isFile
+## isFile
 Indicates that this instance is a file.
 
 **Example**  
@@ -26,7 +28,7 @@ if (anEntry.isFile) {
 
 <a name="module-storage-file-mode" id="module-storage-file-mode"></a>
 
-### mode : `Symbol`
+## mode : `Symbol`
 Indicates whether this file is read-only or read-write. See [readOnly](readOnly) and [readWrite](readWrite).
 
 **Example**  
@@ -39,7 +41,7 @@ if (aFile.mode === modes.readOnly) {
 
 <a name="module-storage-file-read" id="module-storage-file-read"></a>
 
-### read(options)
+## read(options)
 Reads data from the file and returns it. The file format can be specified
 with the `format` option. If a format is not supplied, the file is assumed
 to be a text file using UTF8 encoding.
@@ -63,7 +65,7 @@ const data = await myNovel.read({format: formats.binary});
 
 <a name="module-storage-file-write" id="module-storage-file-write"></a>
 
-### write(data, options)
+## write(data, options)
 Writes data to a file, appending if desired. The format of the file
 is controlled via the `format` option, and defaults to UTF8.
 
@@ -94,7 +96,7 @@ await aDataFile.write(data, {format: formats.binary});
 
 <a name="module-storage-file-isfile" id="module-storage-file-isfile"></a>
 
-### isFile(entry)
+## isFile(entry)
 Determines if the entry is a file or not. This is safe to use even if the
 entry is `null` or `undefined`.
 

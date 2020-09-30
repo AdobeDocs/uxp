@@ -4,13 +4,15 @@ jsDoc: true
 
 <a name="eventtarget" id="eventtarget"></a>
 
-## EventTarget
+# EventTarget
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget  
 
 
+<JsDocParameters/>
+
 <a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
 
-### addEventListener(eventName, callback, [capture])
+## addEventListener(eventName, callback, [capture])
 
 | Param | Type | Default |
 | --- | --- | --- |
@@ -22,7 +24,7 @@ jsDoc: true
 
 <a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
 
-### removeEventListener(eventName, callback, [capture])
+## removeEventListener(eventName, callback, [capture])
 
 | Param | Type | Default |
 | --- | --- | --- |
@@ -34,7 +36,7 @@ jsDoc: true
 
 <a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
 
-### dispatchEvent(event)
+## dispatchEvent(event)
 
 | Param | Type |
 | --- | --- |

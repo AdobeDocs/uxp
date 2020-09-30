@@ -4,130 +4,132 @@ jsDoc: true
 
 <a name="characterdata" id="characterdata"></a>
 
-## CharacterData
+# CharacterData
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/CharacterData  
 
 
+<JsDocParameters/>
+
 <a name="characterdata-data" id="characterdata-data"></a>
 
-### data : `string`
+## data : `string`
 
 
 <a name="characterdata-textcontent" id="characterdata-textcontent"></a>
 
-### textContent : `string`
+## textContent : `string`
 
 
 <a name="characterdata-nodevalue" id="characterdata-nodevalue"></a>
 
-### nodeValue : `string`
+## nodeValue : `string`
 
 
 <a name="characterdata-length" id="characterdata-length"></a>
 
-### length : `number`
+## length : `number`
 **Read only**
 
 
 <a name="node-contenteditable" id="node-contenteditable"></a>
 
-### contentEditable
+## contentEditable
 **Read only**
 
 
 <a name="node-isconnected" id="node-isconnected"></a>
 
-### isConnected : `boolean`
+## isConnected : `boolean`
 **Read only**
 
 
 <a name="node-parentnode" id="node-parentnode"></a>
 
-### parentNode : `Node`
+## parentNode : `Node`
 **Read only**
 
 
 <a name="node-parentelement" id="node-parentelement"></a>
 
-### parentElement : `Element`
+## parentElement : `Element`
 **Read only**
 
 
 <a name="node-firstchild" id="node-firstchild"></a>
 
-### firstChild : `Node`
+## firstChild : `Node`
 **Read only**
 
 
 <a name="node-lastchild" id="node-lastchild"></a>
 
-### lastChild : `Node`
+## lastChild : `Node`
 **Read only**
 
 
 <a name="node-previoussibling" id="node-previoussibling"></a>
 
-### previousSibling : `Node`
+## previousSibling : `Node`
 **Read only**
 
 
 <a name="node-nextsibling" id="node-nextsibling"></a>
 
-### nextSibling : `Node`
+## nextSibling : `Node`
 **Read only**
 
 
 <a name="node-firstelementchild" id="node-firstelementchild"></a>
 
-### firstElementChild : `Node`
+## firstElementChild : `Node`
 **Read only**
 
 
 <a name="node-lastelementchild" id="node-lastelementchild"></a>
 
-### lastElementChild : `Node`
+## lastElementChild : `Node`
 **Read only**
 
 
 <a name="node-previouselementsibling" id="node-previouselementsibling"></a>
 
-### previousElementSibling : `Node`
+## previousElementSibling : `Node`
 **Read only**
 
 
 <a name="node-nextelementsibling" id="node-nextelementsibling"></a>
 
-### nextElementSibling : `Node`
+## nextElementSibling : `Node`
 **Read only**
 
 
 <a name="node-childnodes" id="node-childnodes"></a>
 
-### childNodes : `NodeList`
+## childNodes : `NodeList`
 **Read only**
 
 
 <a name="node-children" id="node-children"></a>
 
-### children : `HTMLCollection`
+## children : `HTMLCollection`
 **Read only**
 
 
 <a name="node-ownerdocument" id="node-ownerdocument"></a>
 
-### ownerDocument
+## ownerDocument
 **Read only**
 
 
 <a name="node-attributes" id="node-attributes"></a>
 
-### attributes
+## attributes
 **Read only**
 
 
 <a name="characterdata-substringdata" id="characterdata-substringdata"></a>
 
-### substringData(offset, count)
+## substringData(offset, count)
 **Returns**: `string`  
 
 | Param | Type |
@@ -139,7 +141,7 @@ jsDoc: true
 
 <a name="characterdata-appenddata" id="characterdata-appenddata"></a>
 
-### appendData(arg)
+## appendData(arg)
 
 | Param | Type |
 | --- | --- |
@@ -149,7 +151,7 @@ jsDoc: true
 
 <a name="characterdata-insertdata" id="characterdata-insertdata"></a>
 
-### insertData(offset, arg)
+## insertData(offset, arg)
 
 | Param | Type |
 | --- | --- |
@@ -160,7 +162,7 @@ jsDoc: true
 
 <a name="characterdata-deletedata" id="characterdata-deletedata"></a>
 
-### deleteData(offset, count)
+## deleteData(offset, count)
 
 | Param | Type |
 | --- | --- |
@@ -171,7 +173,7 @@ jsDoc: true
 
 <a name="characterdata-replacedata" id="characterdata-replacedata"></a>
 
-### replaceData(offset, count, arg)
+## replaceData(offset, count, arg)
 
 | Param | Type |
 | --- | --- |
@@ -183,13 +185,13 @@ jsDoc: true
 
 <a name="node-haschildnodes" id="node-haschildnodes"></a>
 
-### hasChildNodes()
+## hasChildNodes()
 **Returns**: `boolean`  
 
 
 <a name="node-clonenode" id="node-clonenode"></a>
 
-### cloneNode(deep)
+## cloneNode(deep)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -200,7 +202,7 @@ jsDoc: true
 
 <a name="node-appendchild" id="node-appendchild"></a>
 
-### appendChild(child)
+## appendChild(child)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -211,7 +213,7 @@ jsDoc: true
 
 <a name="node-insertbefore" id="node-insertbefore"></a>
 
-### insertBefore(child, before)
+## insertBefore(child, before)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -223,7 +225,7 @@ jsDoc: true
 
 <a name="node-replacechild" id="node-replacechild"></a>
 
-### replaceChild(newChild, oldChild)
+## replaceChild(newChild, oldChild)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -235,7 +237,7 @@ jsDoc: true
 
 <a name="node-removechild" id="node-removechild"></a>
 
-### removeChild(child)
+## removeChild(child)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -246,12 +248,12 @@ jsDoc: true
 
 <a name="node-remove" id="node-remove"></a>
 
-### remove()
+## remove()
 
 
 <a name="node-before" id="node-before"></a>
 
-### before(...nodes)
+## before(...nodes)
 
 | Param | Type |
 | --- | --- |
@@ -261,7 +263,7 @@ jsDoc: true
 
 <a name="node-after" id="node-after"></a>
 
-### after(...nodes)
+## after(...nodes)
 
 | Param | Type |
 | --- | --- |
@@ -271,7 +273,7 @@ jsDoc: true
 
 <a name="node-replacewith" id="node-replacewith"></a>
 
-### replaceWith(...nodes)
+## replaceWith(...nodes)
 
 | Param | Type |
 | --- | --- |
@@ -281,7 +283,7 @@ jsDoc: true
 
 <a name="node-contains" id="node-contains"></a>
 
-### contains(node)
+## contains(node)
 
 | Param | Type |
 | --- | --- |
@@ -291,7 +293,7 @@ jsDoc: true
 
 <a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
 
-### addEventListener(eventName, callback, [capture])
+## addEventListener(eventName, callback, [capture])
 
 | Param | Type | Default |
 | --- | --- | --- |
@@ -303,7 +305,7 @@ jsDoc: true
 
 <a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
 
-### removeEventListener(eventName, callback, [capture])
+## removeEventListener(eventName, callback, [capture])
 
 | Param | Type | Default |
 | --- | --- | --- |
@@ -315,7 +317,7 @@ jsDoc: true
 
 <a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
 
-### dispatchEvent(event)
+## dispatchEvent(event)
 
 | Param | Type |
 | --- | --- |

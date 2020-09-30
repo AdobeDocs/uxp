@@ -4,13 +4,15 @@ jsDoc: true
 
 <a name="document" id="document"></a>
 
-## Document
+# Document
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Document  
 
 
+<JsDocParameters/>
+
 <a name="document-online" id="document-online"></a>
 
-### onLine : `boolean`
+## onLine : `boolean`
 **Read only**
 Indicates if the computer is online
 
@@ -18,162 +20,162 @@ Indicates if the computer is online
 
 <a name="document-nodename" id="document-nodename"></a>
 
-### nodeName : `string`
+## nodeName : `string`
 **Read only**
 
 
 <a name="document-nodetype" id="document-nodetype"></a>
 
-### nodeType : `number`
+## nodeType : `number`
 **Read only**
 
 
 <a name="document-uxpcontainer" id="document-uxpcontainer"></a>
 
-### uxpContainer ⇒ `UXPContainer`
+## uxpContainer ⇒ `UXPContainer`
 **Returns**: `UXPContainer`  
 
 
 <a name="document-activeelement" id="document-activeelement"></a>
 
-### activeElement : `Node`
+## activeElement : `Node`
 **Read only**
 
 
 <a name="document-documentelement" id="document-documentelement"></a>
 
-### documentElement : `Document`
+## documentElement : `Document`
 **Read only**
 
 
 <a name="document-head" id="document-head"></a>
 
-### head : `HTMLHeadElement`
+## head : `HTMLHeadElement`
 **Read only**
 
 
 <a name="document-body" id="document-body"></a>
 
-### body : `HTMLBodyElement`
+## body : `HTMLBodyElement`
 **Read only**
 
 
 <a name="document-clipboard" id="document-clipboard"></a>
 
-### clipboard : `Clippoard`
+## clipboard : `Clippoard`
 **Read only**
 
 
 <a name="document-stylesheets" id="document-stylesheets"></a>
 
-### styleSheets : `StyleSheetList`
+## styleSheets : `StyleSheetList`
 **Read only**
 
 
 <a name="node-contenteditable" id="node-contenteditable"></a>
 
-### contentEditable
+## contentEditable
 **Read only**
 
 
 <a name="node-isconnected" id="node-isconnected"></a>
 
-### isConnected : `boolean`
+## isConnected : `boolean`
 **Read only**
 
 
 <a name="node-parentnode" id="node-parentnode"></a>
 
-### parentNode : `Node`
+## parentNode : `Node`
 **Read only**
 
 
 <a name="node-parentelement" id="node-parentelement"></a>
 
-### parentElement : `Element`
+## parentElement : `Element`
 **Read only**
 
 
 <a name="node-firstchild" id="node-firstchild"></a>
 
-### firstChild : `Node`
+## firstChild : `Node`
 **Read only**
 
 
 <a name="node-lastchild" id="node-lastchild"></a>
 
-### lastChild : `Node`
+## lastChild : `Node`
 **Read only**
 
 
 <a name="node-previoussibling" id="node-previoussibling"></a>
 
-### previousSibling : `Node`
+## previousSibling : `Node`
 **Read only**
 
 
 <a name="node-nextsibling" id="node-nextsibling"></a>
 
-### nextSibling : `Node`
+## nextSibling : `Node`
 **Read only**
 
 
 <a name="node-firstelementchild" id="node-firstelementchild"></a>
 
-### firstElementChild : `Node`
+## firstElementChild : `Node`
 **Read only**
 
 
 <a name="node-lastelementchild" id="node-lastelementchild"></a>
 
-### lastElementChild : `Node`
+## lastElementChild : `Node`
 **Read only**
 
 
 <a name="node-previouselementsibling" id="node-previouselementsibling"></a>
 
-### previousElementSibling : `Node`
+## previousElementSibling : `Node`
 **Read only**
 
 
 <a name="node-nextelementsibling" id="node-nextelementsibling"></a>
 
-### nextElementSibling : `Node`
+## nextElementSibling : `Node`
 **Read only**
 
 
 <a name="node-textcontent" id="node-textcontent"></a>
 
-### textContent : `string`
+## textContent : `string`
 
 
 <a name="node-childnodes" id="node-childnodes"></a>
 
-### childNodes : `NodeList`
+## childNodes : `NodeList`
 **Read only**
 
 
 <a name="node-children" id="node-children"></a>
 
-### children : `HTMLCollection`
+## children : `HTMLCollection`
 **Read only**
 
 
 <a name="node-ownerdocument" id="node-ownerdocument"></a>
 
-### ownerDocument
+## ownerDocument
 **Read only**
 
 
 <a name="node-attributes" id="node-attributes"></a>
 
-### attributes
+## attributes
 **Read only**
 
 
 <a name="document-createelement" id="document-createelement"></a>
 
-### createElement(name)
+## createElement(name)
 **Returns**: `Element`  
 
 | Param | Type |
@@ -184,7 +186,7 @@ Indicates if the computer is online
 
 <a name="document-createelementns" id="document-createelementns"></a>
 
-### createElementNS(ns, name)
+## createElementNS(ns, name)
 **Returns**: `Element`  
 
 | Param | Type |
@@ -196,7 +198,7 @@ Indicates if the computer is online
 
 <a name="document-createattribute" id="document-createattribute"></a>
 
-### createAttribute(nodeName)
+## createAttribute(nodeName)
 **Returns**: `Attr`  
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Document/createAttribute  
 
@@ -208,7 +210,7 @@ Indicates if the computer is online
 
 <a name="document-createtextnode" id="document-createtextnode"></a>
 
-### createTextNode([text])
+## createTextNode([text])
 **Returns**: `Text`  
 
 | Param | Type | Default |
@@ -219,7 +221,7 @@ Indicates if the computer is online
 
 <a name="document-createcomment" id="document-createcomment"></a>
 
-### createComment([comment])
+## createComment([comment])
 **Returns**: `Comment`  
 
 | Param | Type | Default |
@@ -230,13 +232,13 @@ Indicates if the computer is online
 
 <a name="document-createdocumentfragment" id="document-createdocumentfragment"></a>
 
-### createDocumentFragment()
+## createDocumentFragment()
 **Returns**: `DocumentFragment`  
 
 
 <a name="document-clonenode" id="document-clonenode"></a>
 
-### cloneNode(deep)
+## cloneNode(deep)
 **Returns**: `Document`  
 
 | Param | Type |
@@ -247,7 +249,7 @@ Indicates if the computer is online
 
 <a name="document-adoptnode" id="document-adoptnode"></a>
 
-### adoptNode(externalNode, deep)
+## adoptNode(externalNode, deep)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -259,7 +261,7 @@ Indicates if the computer is online
 
 <a name="document-importnode" id="document-importnode"></a>
 
-### importNode(externalNode, deep)
+## importNode(externalNode, deep)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -271,7 +273,7 @@ Indicates if the computer is online
 
 <a name="document-queryselector" id="document-queryselector"></a>
 
-### querySelector(selector)
+## querySelector(selector)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -282,7 +284,7 @@ Indicates if the computer is online
 
 <a name="document-queryselectorall" id="document-queryselectorall"></a>
 
-### querySelectorAll(selector)
+## querySelectorAll(selector)
 **Returns**: `NodeList`  
 
 | Param | Type |
@@ -293,7 +295,7 @@ Indicates if the computer is online
 
 <a name="document-getelementsbyclassname" id="document-getelementsbyclassname"></a>
 
-### getElementsByClassName(name)
+## getElementsByClassName(name)
 **Returns**: `NodeList`  
 
 | Param | Type |
@@ -304,7 +306,7 @@ Indicates if the computer is online
 
 <a name="document-getelementsbytagname" id="document-getelementsbytagname"></a>
 
-### getElementsByTagName(name)
+## getElementsByTagName(name)
 **Returns**: `NodeList`  
 
 | Param | Type |
@@ -315,7 +317,7 @@ Indicates if the computer is online
 
 <a name="document-getelementbyid" id="document-getelementbyid"></a>
 
-### getElementById(id)
+## getElementById(id)
 **Returns**: `Element`  
 
 | Param | Type |
@@ -326,13 +328,13 @@ Indicates if the computer is online
 
 <a name="node-haschildnodes" id="node-haschildnodes"></a>
 
-### hasChildNodes()
+## hasChildNodes()
 **Returns**: `boolean`  
 
 
 <a name="node-appendchild" id="node-appendchild"></a>
 
-### appendChild(child)
+## appendChild(child)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -343,7 +345,7 @@ Indicates if the computer is online
 
 <a name="node-insertbefore" id="node-insertbefore"></a>
 
-### insertBefore(child, before)
+## insertBefore(child, before)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -355,7 +357,7 @@ Indicates if the computer is online
 
 <a name="node-replacechild" id="node-replacechild"></a>
 
-### replaceChild(newChild, oldChild)
+## replaceChild(newChild, oldChild)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -367,7 +369,7 @@ Indicates if the computer is online
 
 <a name="node-removechild" id="node-removechild"></a>
 
-### removeChild(child)
+## removeChild(child)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -378,12 +380,12 @@ Indicates if the computer is online
 
 <a name="node-remove" id="node-remove"></a>
 
-### remove()
+## remove()
 
 
 <a name="node-before" id="node-before"></a>
 
-### before(...nodes)
+## before(...nodes)
 
 | Param | Type |
 | --- | --- |
@@ -393,7 +395,7 @@ Indicates if the computer is online
 
 <a name="node-after" id="node-after"></a>
 
-### after(...nodes)
+## after(...nodes)
 
 | Param | Type |
 | --- | --- |
@@ -403,7 +405,7 @@ Indicates if the computer is online
 
 <a name="node-replacewith" id="node-replacewith"></a>
 
-### replaceWith(...nodes)
+## replaceWith(...nodes)
 
 | Param | Type |
 | --- | --- |
@@ -413,7 +415,7 @@ Indicates if the computer is online
 
 <a name="node-contains" id="node-contains"></a>
 
-### contains(node)
+## contains(node)
 
 | Param | Type |
 | --- | --- |
@@ -423,7 +425,7 @@ Indicates if the computer is online
 
 <a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
 
-### addEventListener(eventName, callback, [capture])
+## addEventListener(eventName, callback, [capture])
 
 | Param | Type | Default |
 | --- | --- | --- |
@@ -435,7 +437,7 @@ Indicates if the computer is online
 
 <a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
 
-### removeEventListener(eventName, callback, [capture])
+## removeEventListener(eventName, callback, [capture])
 
 | Param | Type | Default |
 | --- | --- | --- |
@@ -447,7 +449,7 @@ Indicates if the computer is online
 
 <a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
 
-### dispatchEvent(event)
+## dispatchEvent(event)
 
 | Param | Type |
 | --- | --- |
@@ -457,12 +459,12 @@ Indicates if the computer is online
 
 <a name="document-document" id="document-document"></a>
 
-### Document
+## Document
 
 
 <a name="new-document-document-new" id="new-document-document-new"></a>
 
-#### Document()
+### Document()
 Creates an instance of Document.
 
 

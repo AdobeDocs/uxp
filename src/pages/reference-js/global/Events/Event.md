@@ -4,66 +4,68 @@ jsDoc: true
 
 <a name="event" id="event"></a>
 
-## Event
+# Event
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Event  
 
 
+<JsDocParameters/>
+
 <a name="event-type" id="event-type"></a>
 
-### type
+## type
 **Read only**
 
 
 <a name="event-istrusted" id="event-istrusted"></a>
 
-### isTrusted : `boolean`
+## isTrusted : `boolean`
 **Read only**
 
 
 <a name="event-target" id="event-target"></a>
 
-### target : `Node`
+## target : `Node`
 **Read only**
 
 
 <a name="event-currenttarget" id="event-currenttarget"></a>
 
-### currentTarget : `Node`
+## currentTarget : `Node`
 **Read only**
 
 
 <a name="event-bubbles" id="event-bubbles"></a>
 
-### bubbles : `boolean`
+## bubbles : `boolean`
 **Read only**
 
 
 <a name="event-cancelable" id="event-cancelable"></a>
 
-### cancelable : `boolean`
+## cancelable : `boolean`
 **Read only**
 
 
 <a name="event-eventphase" id="event-eventphase"></a>
 
-### eventPhase
+## eventPhase
 **Read only**
 
 
 <a name="event-defaultprevented" id="event-defaultprevented"></a>
 
-### defaultPrevented : `boolean`
+## defaultPrevented : `boolean`
 **Read only**
 
 
 <a name="event-returnvalue" id="event-returnvalue"></a>
 
-### returnValue : `*`
+## returnValue : `*`
 
 
 <a name="event-initevent" id="event-initevent"></a>
 
-### initEvent(typeArg, bubblesArg, cancelableArg)
+## initEvent(typeArg, bubblesArg, cancelableArg)
 
 | Param | Type |
 | --- | --- |
@@ -75,27 +77,27 @@ jsDoc: true
 
 <a name="event-preventdefault" id="event-preventdefault"></a>
 
-### preventDefault()
+## preventDefault()
 
 
 <a name="event-stopimmediatepropagation" id="event-stopimmediatepropagation"></a>
 
-### stopImmediatePropagation()
+## stopImmediatePropagation()
 
 
 <a name="event-stoppropagation" id="event-stoppropagation"></a>
 
-### stopPropagation()
+## stopPropagation()
 
 
 <a name="event-event" id="event-event"></a>
 
-### Event
+## Event
 
 
 <a name="new-event-event-new" id="new-event-event-new"></a>
 
-#### Event(eventType, eventInit)
+### Event(eventType, eventInit)
 Creates an instance of Event.
 
 
@@ -108,20 +110,20 @@ Creates an instance of Event.
 
 <a name="event-none" id="event-none"></a>
 
-### NONE
+## NONE
 
 
 <a name="event-capturing-phase" id="event-capturing-phase"></a>
 
-### CAPTURING\_PHASE
+## CAPTURING\_PHASE
 
 
 <a name="event-at-target" id="event-at-target"></a>
 
-### AT\_TARGET
+## AT\_TARGET
 
 
 <a name="event-bubbling-phase" id="event-bubbling-phase"></a>
 
-### BUBBLING\_PHASE
+## BUBBLING\_PHASE
 

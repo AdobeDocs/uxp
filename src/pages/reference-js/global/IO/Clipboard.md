@@ -5,73 +5,48 @@ jsDoc: true
 <a name="clipboard" id="clipboard"></a>
 
 # Clipboard
+Clipboard support.
+
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Clipboard  
+
 
 <JsDocParameters/>
 
-
-<a name="new-clipboard-new" id="new-clipboard-new"></a>
-
-### Clipboard()
-Support for the clipboard.
-
-
-
 <a name="clipboard-setcontent" id="clipboard-setcontent"></a>
 
-### setContent(data)
+## setContent(data)
 **Returns**: `Promise`  
+**Nonstandard**: This method is non-standard.  
 
-| Param | Type |
-| --- | --- |
-| data | `*` | 
+| Param | Type | Description |
+| --- | --- | --- |
+| data | `Object` | The data to store in the clipboard. The object keys are the mime types, so for text, use `text/plain` as a key. |
 
-
-
-<a name="clipboard-getcontent" id="clipboard-getcontent"></a>
-
-### getContent()
-**Returns**: `Promise`  
+**Example**  
+```js
+navigator.clipboard.setContent({"text/plain": "Hello!"});
+```
 
 
 <a name="clipboard-writetext" id="clipboard-writetext"></a>
 
-### writeText(text)
-https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText
+## writeText(text)
+Sets the clipboard's contents.
 
+**Bugged**: The standard does not support an object for `text`; when this is fixed in the future, your plugin may break.  
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText  
 
-| Param | Type |
-| --- | --- |
-| text | `*` | 
-
-
-
-<a name="clipboard-readtext" id="clipboard-readtext"></a>
-
-### readText()
-https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/readText
+| Param | Type | Description |
+| --- | --- | --- |
+| text | `*` | The text to set. Note, currently this will fail unless this is an object of the form `{"text/plain": "text to set"}`. This will be fixed in a future release. |
 
 
 
 <a name="clipboard-clearcontent" id="clipboard-clearcontent"></a>
 
-### clearContent()
+## clearContent()
+Clears the contents of the clipboard.
+
 **Returns**: `Promise`  
-
-
-<a name="clipboard-clipboard" id="clipboard-clipboard"></a>
-
-### Clipboard
-
-
-<a name="new-clipboard-clipboard-new" id="new-clipboard-clipboard-new"></a>
-
-#### Clipboard(document)
-Creates an instance of Clipboard.
-
-
-| Param | Type |
-| --- | --- |
-| document | `*` | 
-
+**Nonstandard**: This method is non-standard.  
 

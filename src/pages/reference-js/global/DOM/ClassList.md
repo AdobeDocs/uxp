@@ -4,25 +4,27 @@ jsDoc: true
 
 <a name="classlist" id="classlist"></a>
 
-## ClassList
+# ClassList
 **See**: https://dom.spec.whatwg.org/#dom-element-classlist  
 
 
+<JsDocParameters/>
+
 <a name="new-classlist-new" id="new-classlist-new"></a>
 
-### ClassList()
+## ClassList()
 Implements classlist
 
 
 
 <a name="classlist-value" id="classlist-value"></a>
 
-### value : `string`
+## value : `string`
 
 
 <a name="domtokenlist-length" id="domtokenlist-length"></a>
 
-### length
+## length
 **Read only**
 Returns the number of tokens in the list
 
@@ -31,7 +33,7 @@ Returns the number of tokens in the list
 
 <a name="domtokenlist-add" id="domtokenlist-add"></a>
 
-### add(...tokens)
+## add(...tokens)
 Adds the specified tokens to the token list. If the token is already present, no error is thrown.
 
 **Throws**:
@@ -48,7 +50,7 @@ Adds the specified tokens to the token list. If the token is already present, no
 
 <a name="domtokenlist-remove" id="domtokenlist-remove"></a>
 
-### remove(...tokens)
+## remove(...tokens)
 Removes the specified items from the token list. If the token is not present, no error is thrown.
 
 **Throws**:
@@ -65,7 +67,7 @@ Removes the specified items from the token list. If the token is not present, no
 
 <a name="domtokenlist-replace" id="domtokenlist-replace"></a>
 
-### replace(oldToken, newToken)
+## replace(oldToken, newToken)
 Replaces an old token with a new token. If the old token doesn't exist,
 no action occurs, and `false` is returned.
 
@@ -84,7 +86,7 @@ no action occurs, and `false` is returned.
 
 <a name="domtokenlist-toggle" id="domtokenlist-toggle"></a>
 
-### toggle(token, force)
+## toggle(token, force)
 Toggles a token within the list. If `force` is not present, then the following
 rules are applied:
 
@@ -112,7 +114,7 @@ If `force` is supplied, then:
 
 <a name="domtokenlist-item" id="domtokenlist-item"></a>
 
-### item(index)
+## item(index)
 Return the item at the specified index, or `null` if the index is out-of-range
 
 **Returns**: `string` - the item at the index, or null if index is out of range  
@@ -130,7 +132,7 @@ Return the item at the specified index, or `null` if the index is out-of-range
 
 <a name="domtokenlist-contains" id="domtokenlist-contains"></a>
 
-### contains(token)
+## contains(token)
 Returns whether the token is in the list or not.
 
 **Returns**: `boolean` - if `true`, the token is in the list, otherwise it isn't  
@@ -148,7 +150,7 @@ Returns whether the token is in the list or not.
 
 <a name="domtokenlist-supports" id="domtokenlist-supports"></a>
 
-### supports(token)
+## supports(token)
 Returns `true` if the token is acceptable to the list; otherwise returns `false`.
 If `false` is returned, passing the token would throw an error when calling
 any other method.
@@ -164,12 +166,12 @@ any other method.
 
 <a name="classlist-classlist" id="classlist-classlist"></a>
 
-### ClassList
+## ClassList
 
 
 <a name="new-classlist-classlist-new" id="new-classlist-classlist-new"></a>
 
-#### ClassList(node)
+### ClassList(node)
 Creates an instance of ClassList.
 
 

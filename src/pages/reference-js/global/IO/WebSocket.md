@@ -4,12 +4,14 @@ jsDoc: true
 
 <a name="module-global-websocket" id="module-global-websocket"></a>
 
-## WebSocket
+# WebSocket
 
+
+<JsDocParameters/>
 
 <a name="new-module-global-websocket-new" id="new-module-global-websocket-new"></a>
 
-### WebSocket(url, protocols)
+## WebSocket(url, protocols)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -20,14 +22,14 @@ jsDoc: true
 
 <a name="module-global-websocket-protocol" id="module-global-websocket-protocol"></a>
 
-### protocol ⇒ `string`
+## protocol ⇒ `string`
 **Returns**: `string` - returns a string indicating the name of the sub-protocol the server selected;
 this will be one of the strings specified in the protocols parameter when creating the WebSocket object.  
 
 
 <a name="module-global-websocket-bufferedamount" id="module-global-websocket-bufferedamount"></a>
 
-### bufferedAmount ⇒ `number`
+## bufferedAmount ⇒ `number`
 **Returns**: `number` - returns the number of bytes of data that have been queued using calls to send() but not yet transmitted to the network.
 This value resets to zero once all queued data has been sent.
 This value does not reset to zero when the connection is closed;
@@ -36,7 +38,7 @@ if you keep calling send(), this will continue to climb. Read only
 
 <a name="module-global-websocket-binarytype" id="module-global-websocket-binarytype"></a>
 
-### binaryType
+## binaryType
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -46,13 +48,13 @@ if you keep calling send(), this will continue to climb. Read only
 
 <a name="module-global-websocket-binarytype" id="module-global-websocket-binarytype"></a>
 
-### binaryType ⇒ `string`
+## binaryType ⇒ `string`
 **Returns**: `string` - returns the string indicating the binary data type.  
 
 
 <a name="module-global-websocket-send" id="module-global-websocket-send"></a>
 
-### send(data)
+## send(data)
 Enqueues the specified data to be transmitted to the other end over the WebSocket connection,
 increasing the value of bufferedAmount by the number of bytes needed to contain the data.
 If the data can't be sent (for example, because it needs to be buffered but the buffer is full), the socket is closed automatically.
@@ -66,7 +68,7 @@ If the data can't be sent (for example, because it needs to be buffered but the 
 
 <a name="module-global-websocket-close" id="module-global-websocket-close"></a>
 
-### close([code], [reason])
+## close([code], [reason])
 Closes the websocket connection
 
 

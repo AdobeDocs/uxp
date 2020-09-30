@@ -4,19 +4,21 @@ jsDoc: true
 
 <a name="module-storage-errors" id="module-storage-errors"></a>
 
-## errors : `Errors`
+# errors : `Errors`
 
+
+<JsDocParameters/>
 
 <a name="module-storage-errors-abstractmethodinvocationerror" id="module-storage-errors-abstractmethodinvocationerror"></a>
 
-### AbstractMethodInvocationError
+## AbstractMethodInvocationError
 Attempted to invoke an abstract method.
 
 
 
 <a name="module-storage-errors-providermismatcherror" id="module-storage-errors-providermismatcherror"></a>
 
-### ProviderMismatchError
+## ProviderMismatchError
 Attempted to execute a command that required the providers of all
 entries to match.
 
@@ -24,42 +26,42 @@ entries to match.
 
 <a name="module-storage-errors-entryisnotanentryerror" id="module-storage-errors-entryisnotanentryerror"></a>
 
-### EntryIsNotAnEntryError
+## EntryIsNotAnEntryError
 The object passed as an entry is not actually an `Entry`.
 
 
 
 <a name="module-storage-errors-entryisnotafoldererror" id="module-storage-errors-entryisnotafoldererror"></a>
 
-### EntryIsNotAFolderError
+## EntryIsNotAFolderError
 The entry is not a folder, but was expected to be a folder.
 
 
 
 <a name="module-storage-errors-entryisnotafileerror" id="module-storage-errors-entryisnotafileerror"></a>
 
-### EntryIsNotAFileError
+## EntryIsNotAFileError
 The entry is not a file, but was expected to be.
 
 
 
 <a name="module-storage-errors-notafilesystemerror" id="module-storage-errors-notafilesystemerror"></a>
 
-### NotAFileSystemError
+## NotAFileSystemError
 The instance was expected to be a file system, but wasn't.
 
 
 
 <a name="module-storage-errors-outofspaceerror" id="module-storage-errors-outofspaceerror"></a>
 
-### OutOfSpaceError
+## OutOfSpaceError
 The file system is out of space (or quota has been exceeded)
 
 
 
 <a name="module-storage-errors-permissiondeniederror" id="module-storage-errors-permissiondeniederror"></a>
 
-### PermissionDeniedError
+## PermissionDeniedError
 The file system revoked permission to complete the requested
 action.
 
@@ -67,7 +69,7 @@ action.
 
 <a name="module-storage-errors-entryexistserror" id="module-storage-errors-entryexistserror"></a>
 
-### EntryExistsError
+## EntryExistsError
 An attempt was made to overwrite an entry without indicating
 that it was safe to do so via `overwrite: true`.
 
@@ -75,7 +77,7 @@ that it was safe to do so via `overwrite: true`.
 
 <a name="module-storage-errors-fileisreadonlyerror" id="module-storage-errors-fileisreadonlyerror"></a>
 
-### FileIsReadOnlyError
+## FileIsReadOnlyError
 An attempt was made to write to a file that was opened as
 read-only.
 
@@ -83,7 +85,7 @@ read-only.
 
 <a name="module-storage-errors-domainnotsupportederror" id="module-storage-errors-domainnotsupportederror"></a>
 
-### DomainNotSupportedError
+## DomainNotSupportedError
 Domain is not supported by the current FileSystemProvider
 instance.
 
@@ -91,21 +93,21 @@ instance.
 
 <a name="module-storage-errors-invalidfilenameerror" id="module-storage-errors-invalidfilenameerror"></a>
 
-### InvalidFileNameError
+## InvalidFileNameError
 The file name contains invalid characters
 
 
 
 <a name="module-storage-errors-invalidfileformaterror" id="module-storage-errors-invalidfileformaterror"></a>
 
-### InvalidFileFormatError
+## InvalidFileFormatError
 Unsupported format type
 
 
 
 <a name="module-storage-errors-datafileformatmismatcherror" id="module-storage-errors-datafileformatmismatcherror"></a>
 
-### DataFileFormatMismatchError
+## DataFileFormatMismatchError
 Data and Format mismatch
 
 

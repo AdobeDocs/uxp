@@ -4,19 +4,21 @@ jsDoc: true
 
 <a name="htmlcollection" id="htmlcollection"></a>
 
-## HTMLCollection
+# HTMLCollection
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection  
 
 
+<JsDocParameters/>
+
 <a name="nodelist-length" id="nodelist-length"></a>
 
-### length : `number`
+## length : `number`
 **Read only**
 
 
 <a name="nodelist-item" id="nodelist-item"></a>
 
-### item(index)
+## item(index)
 **Returns**: `Node`  
 
 | Param | Type |
@@ -27,22 +29,22 @@ jsDoc: true
 
 <a name="nodelist-keys" id="nodelist-keys"></a>
 
-### keys()
+## keys()
 
 
 <a name="nodelist-values" id="nodelist-values"></a>
 
-### values()
+## values()
 
 
 <a name="nodelist-entries" id="nodelist-entries"></a>
 
-### entries()
+## entries()
 
 
 <a name="nodelist-foreach" id="nodelist-foreach"></a>
 
-### forEach(callback)
+## forEach(callback)
 
 | Param | Type |
 | --- | --- |
