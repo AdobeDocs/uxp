@@ -44,7 +44,7 @@
     globby "^11.0.1"
     graphql-fetch "^1.0.1"
 
-"@adobe/gatsby-theme-parliament@^2.1.7":
+"@adobe/gatsby-theme-parliament@^2.1.13":
   version "2.1.13"
   resolved "https://registry.yarnpkg.com/@adobe/gatsby-theme-parliament/-/gatsby-theme-parliament-2.1.13.tgz#0a01bb05ce396bfb733f07ed3250398291971524"
   integrity sha512-yFLfhEccadqpqboUhYOUJ+viwg6DUHISemq5uFKLr0E0u/GZWTGK53MMmtPMlEKhptekiXZ4+pMelqFFKxm4xw==
