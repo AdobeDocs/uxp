@@ -40,25 +40,11 @@ module.exports = {
         path: '/developer-tool/'
       }
     ],
-    subPages: [
+    subPages: [//...require("./toc.js"),
       {
         title: 'JavaScript Reference',
         path: '/reference-js/',
-        pages: require("./toc.js")//.flat(10)
-        /*[
-          {
-            title: 'Classes',
-            path: '/reference-js/class/'
-          },
-          {
-            title: 'Functions',
-            path: '/reference-js/function/'
-          },
-          {
-            title: 'Modules',
-            path: '/reference-js/module/'
-          }
-        ]*/
+        pages: require("./toc.js")
       },
       {
         title: 'CSS Reference',
