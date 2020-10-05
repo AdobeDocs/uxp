@@ -378,7 +378,12 @@ module.exports=[
           {
             "title": "Host Information",
             "header": true,
-            "pages": [],
+            "pages": [
+              {
+                "title": "Host",
+                "path": "/reference-js/Modules/uxp/Host%20Information/Host/"
+              }
+            ],
             "path": "/reference-js/Modules/uxp/Host%20Information/"
           }
         ],

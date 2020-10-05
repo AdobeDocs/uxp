@@ -44,7 +44,7 @@ module.exports = {
       {
         title: 'JavaScript Reference',
         path: '/reference-js/',
-        pages: require("./toc.js")
+        pages: require("./reference-js.js")
       },
       {
         title: 'CSS Reference',
