@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "uxp-documentation",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -24,6 +24,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "postbuild": "touch public/.nojekyll"
+    "postbuild": "touch public/.nojekyll",
+    "copy-docs": ". .env && rm -rf src/pages/uxp && mkdir -p src/pages/uxp && cp -r \"$UXP_REPO_SOURCE\"/uxp src/pages && mv src/pages/uxp/reference-js/reference-js.js reference-js.js",
+    "copy-transclusions": ". .env && rm -rf ./_transclusions && mkdir ./_transclusions && cp -r \"$UXP_REPO_SOURCE\"/_transclusions ."
   }
 }
