@@ -29,11 +29,11 @@ module.exports = {
       },
       {
         title: 'JavaScript Reference',
-        path: '/reference-js/'
+        path: '/uxp/reference-js/'
       },
       {
         title: 'CSS Reference',
-        path: '/reference-css/'
+        path: '/uxp/reference-css/'
       },
       {
         title: 'Developer Tool',
@@ -43,16 +43,16 @@ module.exports = {
     subPages: [//...require("./toc.js"),
       {
         title: 'JavaScript Reference',
-        path: '/reference-js/',
+        path: '/uxp/reference-js/',
         pages: require("./reference-js.js")
       },
       {
         title: 'CSS Reference',
-        path: '/reference-css/',
+        path: '/uxp/reference-css/',
         pages: [
           {
             title: 'Index',
-            path: '/reference-css/'
+            path: '/uxp/reference-css/'
           },
         ]
       },
