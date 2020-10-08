@@ -4,7 +4,7 @@ jsDoc: true
 
 <a name="securestorage" id="securestorage"></a>
 
-# window.secureStorage
+# require('uxp').storage.secureStorage
 SecureStorage provides a protected storage which can be used to store sensitive data
 per plugin. SecureStorage takes a key-value pair and encrypts the value before being
 stored. After encryption, it stores the key and the encrypted value pair. When the value

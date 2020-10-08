@@ -27,6 +27,21 @@ module.exports=[
         "path": "/uxp/reference-js/Global%20Members/Data%20Transfers/"
       },
       {
+        "title": "Data Storage",
+        "header": true,
+        "pages": [
+          {
+            "title": "LocalStorage",
+            "path": "/uxp/reference-js/Global%20Members/Data%20Storage/LocalStorage/"
+          },
+          {
+            "title": "SessionStorage",
+            "path": "/uxp/reference-js/Global%20Members/Data%20Storage/SessionStorage/"
+          }
+        ],
+        "path": "/uxp/reference-js/Global%20Members/Data%20Storage/"
+      },
+      {
         "title": "HTML Events",
         "header": true,
         "pages": [
@@ -235,7 +250,7 @@ module.exports=[
             "path": "/uxp/reference-js/Modules/os/OS/"
           }
         ],
-        "path": "/uxp/reference-js/Modules/os/"
+        "path": "/uxp/reference-js/Modules/os/OS/"
       },
       {
         "title": "shell",
@@ -246,17 +261,46 @@ module.exports=[
             "path": "/uxp/reference-js/Modules/shell/Shell/"
           }
         ],
-        "path": "/uxp/reference-js/Modules/shell/"
+        "path": "/uxp/reference-js/Modules/shell/Shell/"
       },
       {
         "title": "uxp",
         "header": true,
         "pages": [
           {
-            "title": "Entrypoints",
+            "title": "Entry Points",
             "header": true,
-            "pages": [],
-            "path": "/uxp/reference-js/Modules/uxp/Entrypoints/"
+            "pages": [
+              {
+                "title": "EntryPoints",
+                "path": "/uxp/reference-js/Modules/uxp/Entry%20Points/EntryPoints/"
+              },
+              {
+                "title": "EntryPointsError",
+                "path": "/uxp/reference-js/Modules/uxp/Entry%20Points/EntryPointsError/"
+              },
+              {
+                "title": "UxpCommandInfo",
+                "path": "/uxp/reference-js/Modules/uxp/Entry%20Points/UxpCommandInfo/"
+              },
+              {
+                "title": "UxpMenuItem",
+                "path": "/uxp/reference-js/Modules/uxp/Entry%20Points/UxpMenuItem/"
+              },
+              {
+                "title": "UxpMenuItems",
+                "path": "/uxp/reference-js/Modules/uxp/Entry%20Points/UxpMenuItems/"
+              },
+              {
+                "title": "UxpPanelInfo",
+                "path": "/uxp/reference-js/Modules/uxp/Entry%20Points/UxpPanelInfo/"
+              },
+              {
+                "title": "UxpPluginInfo",
+                "path": "/uxp/reference-js/Modules/uxp/Entry%20Points/UxpPluginInfo/"
+              }
+            ],
+            "path": "/uxp/reference-js/Modules/uxp/Entry%20Points/"
           },
           {
             "title": "Persistent File Storage",
@@ -318,21 +362,22 @@ module.exports=[
             "header": true,
             "pages": [
               {
-                "title": "LocalStorage",
-                "path": "/uxp/reference-js/Modules/uxp/Key-Value%20Storage/LocalStorage/"
-              },
-              {
                 "title": "SecureStorage",
                 "path": "/uxp/reference-js/Modules/uxp/Key-Value%20Storage/SecureStorage/"
               }
             ],
-            "path": "/uxp/reference-js/Modules/uxp/Key-Value%20Storage/"
+            "path": "/uxp/reference-js/Modules/uxp/Key-Value%20Storage/SecureStorage/"
           },
           {
             "title": "Versions",
             "header": true,
-            "pages": [],
-            "path": "/uxp/reference-js/Modules/uxp/Versions/"
+            "pages": [
+              {
+                "title": "Versions",
+                "path": "/uxp/reference-js/Modules/uxp/Versions/Versions/"
+              }
+            ],
+            "path": "/uxp/reference-js/Modules/uxp/Versions/Versions/"
           },
           {
             "title": "Host Information",
@@ -343,7 +388,7 @@ module.exports=[
                 "path": "/uxp/reference-js/Modules/uxp/Host%20Information/Host/"
               }
             ],
-            "path": "/uxp/reference-js/Modules/uxp/Host%20Information/"
+            "path": "/uxp/reference-js/Modules/uxp/Host%20Information/Host/"
           }
         ],
         "path": "/uxp/reference-js/Modules/uxp/"
