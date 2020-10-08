@@ -263,73 +263,52 @@ module.exports=[
             "header": true,
             "pages": [
               {
-                "title": "Enums",
-                "header": true,
-                "pages": [
-                  {
-                    "title": "domains",
-                    "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Enums/domains/"
-                  },
-                  {
-                    "title": "types",
-                    "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Enums/types/"
-                  },
-                  {
-                    "title": "formats",
-                    "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Enums/formats/"
-                  },
-                  {
-                    "title": "modes",
-                    "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Enums/modes/"
-                  },
-                  {
-                    "title": "fileTypes",
-                    "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Enums/fileTypes/"
-                  },
-                  {
-                    "title": "errors",
-                    "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Enums/errors/"
-                  }
-                ],
-                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Enums/"
+                "title": "localFileSystem",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/localFileSystem/"
               },
               {
-                "title": "Classes",
-                "header": true,
-                "pages": [
-                  {
-                    "title": "Entry",
-                    "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Classes/Entry/"
-                  },
-                  {
-                    "title": "EntryMetadata",
-                    "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Classes/EntryMetadata/"
-                  },
-                  {
-                    "title": "File",
-                    "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Classes/File/"
-                  },
-                  {
-                    "title": "Folder",
-                    "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Classes/Folder/"
-                  },
-                  {
-                    "title": "FileSystemProvider",
-                    "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Classes/FileSystemProvider/"
-                  }
-                ],
-                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Classes/"
+                "title": "Entry",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Entry/"
               },
               {
-                "title": "Instances",
-                "header": true,
-                "pages": [
-                  {
-                    "title": "localFileSystem",
-                    "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Instances/localFileSystem/"
-                  }
-                ],
-                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Instances/"
+                "title": "EntryMetadata",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/EntryMetadata/"
+              },
+              {
+                "title": "File",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/File/"
+              },
+              {
+                "title": "Folder",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Folder/"
+              },
+              {
+                "title": "FileSystemProvider",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/FileSystemProvider/"
+              },
+              {
+                "title": "domains",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/domains/"
+              },
+              {
+                "title": "types",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/types/"
+              },
+              {
+                "title": "formats",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/formats/"
+              },
+              {
+                "title": "modes",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/modes/"
+              },
+              {
+                "title": "fileTypes",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/fileTypes/"
+              },
+              {
+                "title": "errors",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/errors/"
               }
             ],
             "path": "/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/"
@@ -339,32 +318,12 @@ module.exports=[
             "header": true,
             "pages": [
               {
-                "title": "localStorage",
-                "header": true,
-                "pages": [
-                  {
-                    "title": "LocalStorage",
-                    "path": "/uxp/reference-js/Modules/uxp/Key-Value%20Storage/localStorage/LocalStorage/"
-                  }
-                ],
-                "path": "/uxp/reference-js/Modules/uxp/Key-Value%20Storage/localStorage/"
+                "title": "LocalStorage",
+                "path": "/uxp/reference-js/Modules/uxp/Key-Value%20Storage/LocalStorage/"
               },
               {
-                "title": "secureStorage",
-                "header": true,
-                "pages": [
-                  {
-                    "title": "SecureStorage",
-                    "path": "/uxp/reference-js/Modules/uxp/Key-Value%20Storage/secureStorage/SecureStorage/"
-                  }
-                ],
-                "path": "/uxp/reference-js/Modules/uxp/Key-Value%20Storage/secureStorage/"
-              },
-              {
-                "title": "sessionStorage",
-                "header": true,
-                "pages": [],
-                "path": "/uxp/reference-js/Modules/uxp/Key-Value%20Storage/sessionStorage/"
+                "title": "SecureStorage",
+                "path": "/uxp/reference-js/Modules/uxp/Key-Value%20Storage/SecureStorage/"
               }
             ],
             "path": "/uxp/reference-js/Modules/uxp/Key-Value%20Storage/"
