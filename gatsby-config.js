@@ -10,9 +10,12 @@
  * governing permissions and limitations under the License.
  */
 
-const globalNav = require('@adobe/gatsby-theme-parliament/globalNav.json');
+const fs = require('fs');
 
-globalNav.menus = [globalNav.menus[1]];
+const globalNavFilePath = require.resolve('@adobe/gatsby-theme-parliament/globalNav.json');
+const globalNav = JSON.parse(fs.readFileSync(globalNavFilePath, 'utf8'));
+
+globalNav.menus = [globalNav.menus[2]];
 
 module.exports = {
   siteMetadata: {
