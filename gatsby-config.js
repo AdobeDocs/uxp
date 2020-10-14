@@ -49,12 +49,7 @@ module.exports = {
       {
         title: 'CSS Reference',
         path: '/uxp/reference-css/',
-        pages: [
-          {
-            title: 'Index',
-            path: '/uxp/reference-css/'
-          },
-        ]
+        pages: require("./reference-css.js")
       },
       {
         title: 'Developer Tool',
