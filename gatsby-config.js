@@ -39,6 +39,14 @@ module.exports = {
         path: '/uxp/reference-css/'
       },
       {
+        title: 'HTML Reference',
+        path: '/uxp/reference-html/'
+      },
+      {
+        title: 'Spectrum Reference',
+        path: '/uxp/reference-spectrum/'
+      },
+      {
         title: 'Developer Tool',
         path: '/developer-tool/'
       }
@@ -53,6 +61,16 @@ module.exports = {
         title: 'CSS Reference',
         path: '/uxp/reference-css/',
         pages: require("./reference-css.js")
+      },
+      {
+        title: 'HTML Reference',
+        path: '/uxp/reference-html/',
+        pages: require("./reference-html.js")
+      },
+      {
+        title: 'Spectrum UXP Reference',
+        path: '/uxp/reference-spectrum/',
+        pages: require("./reference-spectrum.js")
       },
       {
         title: 'Developer Tool',

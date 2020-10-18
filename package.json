@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "uxp-documentation",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -25,7 +25,11 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "postbuild": "touch public/.nojekyll",
-    "copy-docs": ". .env && rm -rf src/pages/uxp && mkdir -p src/pages/uxp && cp -r \"$UXP_REPO_SOURCE\"/uxp src/pages && mv src/pages/uxp/reference-js/reference-js.js reference-js.js && mv src/pages/uxp/reference-css/reference-css.js reference-css.js",
+    "copy-docs-html":     ". .env && rm -rf src/pages/uxp/reference-html     && mkdir -p src/pages/uxp/reference-html     && cp -r \"$UXP_REPO_SOURCE\"/uxp/reference-html     src/pages/uxp/ && mv src/pages/uxp/reference-html/reference-html.js reference-html.js",
+    "copy-docs-spectrum": ". .env && rm -rf src/pages/uxp/reference-spectrum && mkdir -p src/pages/uxp/reference-spectrum && cp -r \"$UXP_REPO_SOURCE\"/uxp/reference-spectrum src/pages/uxp/ && mv src/pages/uxp/reference-spectrum/reference-spectrum.js reference-spectrum.js",
+    "copy-docs-css":      ". .env && rm -rf src/pages/uxp/reference-css      && mkdir -p src/pages/uxp/reference-css      && cp -r \"$UXP_REPO_SOURCE\"/uxp/reference-css      src/pages/uxp/ && mv src/pages/uxp/reference-css/reference-css.js reference-css.js",
+    "copy-docs-js":       ". .env && rm -rf src/pages/uxp/reference-js       && mkdir -p src/pages/uxp/reference-js       && cp -r \"$UXP_REPO_SOURCE\"/uxp/reference-js       src/pages/uxp/ && mv src/pages/uxp/reference-js/reference-js.js reference-js.js",
+    "copy-docs": "npm run copy-docs-js && npm run copy-docs-css && npm run copy-docs-html && npm run copy-docs-spectrum",
     "copy-transclusions": ". .env && rm -rf ./_transclusions && mkdir ./_transclusions && cp -r \"$UXP_REPO_SOURCE\"/_transclusions ."
   }
 }
