@@ -10,8 +10,7 @@ Renders a menu item, with an optional checkmark indicating selection.
 ![Links](../assets/sp-menu.png)
 
 **See**:
-- https://spectrum.adobe.com/page/menu-item/
-- https://opensource.adobe.com/spectrum-web-components/components/menu-item
+- https://opensource.adobe.com/spectrum-web-components/components/menu
 
 **Example**
 

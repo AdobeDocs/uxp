@@ -10,7 +10,7 @@ Renders a dropdown with menu items. The dropdown must contain a [sp-menu](/uxp/r
 ![Dropdowns](../assets/sp-dropdown.png)
 
 **See**:
-- https://spectrum.adobe.com/page/dropdown/
+- https://spectrum.adobe.com/page/picker/
 - https://opensource.adobe.com/spectrum-web-components/components/dropdown
 
 **Example**
