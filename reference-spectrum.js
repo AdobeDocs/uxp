@@ -2,7 +2,16 @@ module.exports=[
   {
     "title": "Overview",
     "header": true,
-    "pages": [],
+    "pages": [
+      {
+        "title": "About Spectrum UXP",
+        "path": "/uxp/reference-spectrum/Overview/About%20Spectrum%20UXP/"
+      },
+      {
+        "title": "Using with React",
+        "path": "/uxp/reference-spectrum/Overview/Using%20with%20React/"
+      }
+    ],
     "path": "/uxp/reference-spectrum/Overview/"
   },
   {
@@ -10,12 +19,6 @@ module.exports=[
     "header": true,
     "pages": [],
     "path": "/uxp/reference-spectrum/Typography/"
-  },
-  {
-    "title": "Containers",
-    "header": true,
-    "pages": [],
-    "path": "/uxp/reference-spectrum/Containers/"
   },
   {
     "title": "User Interface",
