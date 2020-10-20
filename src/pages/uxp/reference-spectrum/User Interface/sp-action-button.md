@@ -79,3 +79,13 @@ There are several variations that are supported.
     </div>
 </sp-action-button>
 ```
+
+## Responding to events
+
+You can respond to a click on the action button using the `click` event.
+
+```js
+document.querySelector(".yourActionButton").addEventListener("click", evt => {
+    console.log("Action Button clicked");
+})
+```

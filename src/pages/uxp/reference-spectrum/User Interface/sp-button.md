@@ -7,6 +7,8 @@ jsDoc: true
 
 Renders a button.
 
+![Buttons](../assets/sp-button.png)
+
 **See**:
 - https://spectrum.adobe.com/page/button/
 - https://opensource.adobe.com/spectrum-web-components/components/button
@@ -104,4 +106,14 @@ Quiet buttons do not support the `cta` variant.
     </div>
     Edit Text
 </sp-button>
+```
+
+## Responding to events
+
+You can respond to a click on the button using the `click` event.
+
+```js
+document.querySelector(".yourButton").addEventListener("click", evt => {
+    console.log("Button clicked");
+})
 ```

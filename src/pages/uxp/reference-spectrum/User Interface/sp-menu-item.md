@@ -1,0 +1,34 @@
+---
+jsDoc: true
+---
+# sp-menu-item
+
+**Since:** UXP 4.1, PS 22.0.0
+
+Renders a menu item, with an optional checkmark indicating selection.
+
+![Links](../assets/sp-menu.png)
+
+**See**:
+- https://spectrum.adobe.com/page/menu-item/
+- https://opensource.adobe.com/spectrum-web-components/components/menu-item
+
+**Example**
+
+```html
+<sp-menu-item>Chicago</sp-menu-item>
+<sp-menu-item selected>New York City</sp-menu-item>
+<sp-menu-item disabled>St. Louis</sp-menu-item>
+```
+
+## Responding to events
+
+You can respond to a click on the menu item using the `click` event. 
+
+```js
+document.querySelector(".yourMenuItem").addEventListener("click", evt => {
+    console.log("You clicked a menu item");
+    evt.target.selected = !evt.target.selected;
+}):
+```
+
