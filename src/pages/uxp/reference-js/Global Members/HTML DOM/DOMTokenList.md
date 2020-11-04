@@ -14,8 +14,6 @@ DOMTokenList supports the ClassList and other token list functionality
 
 
 
-<JsDocParameters/>
-
 <a name="domtokenlist-length" id="domtokenlist-length"></a>
 
 ## length

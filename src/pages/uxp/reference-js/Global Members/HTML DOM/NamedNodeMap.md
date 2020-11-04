@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/NamedNodeMap  
 
 
-<JsDocParameters/>
-
 <a name="namednodemap-length" id="namednodemap-length"></a>
 
 ## length : `number`

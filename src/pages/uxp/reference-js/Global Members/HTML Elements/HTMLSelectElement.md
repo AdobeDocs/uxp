@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement  
 
 
-<JsDocParameters/>
-
 <a name="htmlselectelement-value" id="htmlselectelement-value"></a>
 
 ## value : `string`

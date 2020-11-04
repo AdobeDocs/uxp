@@ -9,8 +9,6 @@ Class describing a panel of the plugin.
 
 
 
-<JsDocParameters/>
-
 <a name="uxppanelinfo-id" id="uxppanelinfo-id"></a>
 
 ## id ⇒ `string`

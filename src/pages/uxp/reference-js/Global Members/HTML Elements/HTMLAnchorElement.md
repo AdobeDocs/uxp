@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement  
 
 
-<JsDocParameters/>
-
 <a name="htmlanchorelement-href" id="htmlanchorelement-href"></a>
 
 ## href : `string`

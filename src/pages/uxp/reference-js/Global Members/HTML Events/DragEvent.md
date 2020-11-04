@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/DragEvent  
 
 
-<JsDocParameters/>
-
 <a name="dragevent-datatransfer" id="dragevent-datatransfer"></a>
 
 ## dataTransfer

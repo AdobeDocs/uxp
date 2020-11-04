@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/CharacterData  
 
 
-<JsDocParameters/>
-
 <a name="characterdata-data" id="characterdata-data"></a>
 
 ## data : `string`

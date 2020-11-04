@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Event  
 
 
-<JsDocParameters/>
-
 <a name="event-type" id="event-type"></a>
 
 ## type

@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/CloseEvent  
 
 
-<JsDocParameters/>
-
 <a name="closeevent-code" id="closeevent-code"></a>
 
 ## code ⇒ `number`

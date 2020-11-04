@@ -12,8 +12,6 @@ or via [Folder.getEntries](/uxp/reference-js/Modules/uxp/Persistent%20File%20Sto
 
 
 
-<JsDocParameters/>
-
 <a name="module-storage-folder-isfolder" id="module-storage-folder-isfolder"></a>
 
 ## isFolder

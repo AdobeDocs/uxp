@@ -9,8 +9,6 @@ This namespace describes the file open modes. for eg: open file in read-only or 
 
 
 
-<JsDocParameters/>
-
 <a name="module-storage-modes-readonly" id="module-storage-modes-readonly"></a>
 
 ## readOnly : `Symbol`

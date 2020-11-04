@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Document  
 
 
-<JsDocParameters/>
-
 <a name="document-online" id="document-online"></a>
 
 ## onLine : `boolean`

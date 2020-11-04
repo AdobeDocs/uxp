@@ -16,8 +16,6 @@ You'll not instantiate this directly; use [Entry#getMetadata](/uxp/reference-js/
 
 
 
-<JsDocParameters/>
-
 <a name="module-storage-entrymetadata-name" id="module-storage-entrymetadata-name"></a>
 
 ## name : `string`

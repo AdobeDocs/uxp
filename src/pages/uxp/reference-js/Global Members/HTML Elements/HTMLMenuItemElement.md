@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menuitem  
 
 
-<JsDocParameters/>
-
 <a name="htmlmenuitemelement-checked" id="htmlmenuitemelement-checked"></a>
 
 ## checked : `boolean`

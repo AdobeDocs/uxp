@@ -15,8 +15,6 @@ Do not store passwords or other secure forms of data using `localStorage`. Inste
 
 
 
-<JsDocParameters/>
-
 <a name="localstorage-length" id="localstorage-length"></a>
 
 ## length ⇒ `int`

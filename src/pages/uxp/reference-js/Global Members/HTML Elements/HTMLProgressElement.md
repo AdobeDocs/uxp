@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLProgressElement  
 
 
-<JsDocParameters/>
-
 <a name="htmlprogresselement-max" id="htmlprogresselement-max"></a>
 
 ## max : `number`

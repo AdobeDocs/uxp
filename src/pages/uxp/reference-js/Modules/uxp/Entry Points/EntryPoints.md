@@ -7,8 +7,6 @@ jsDoc: true
 # require('uxp').entrypoints
 
 
-<JsDocParameters/>
-
 <a name="entrypoints-setup" id="entrypoints-setup"></a>
 
 ## setup(entrypoints)

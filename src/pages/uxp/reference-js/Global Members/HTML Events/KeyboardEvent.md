@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent  
 
 
-<JsDocParameters/>
-
 <a name="keyboardevent-altkey" id="keyboardevent-altkey"></a>
 
 ## altKey

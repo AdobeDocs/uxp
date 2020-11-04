@@ -9,8 +9,6 @@ Version information. To get an instance: require("uxp").versions
 
 
 
-<JsDocParameters/>
-
 <a name="versions-uxp" id="versions-uxp"></a>
 
 ## uxp : `string`

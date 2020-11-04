@@ -10,8 +10,6 @@ This is a public object which is passed as parameter in plugin.create() and plug
 
 
 
-<JsDocParameters/>
-
 <a name="uxpplugininfo-id" id="uxpplugininfo-id"></a>
 
 ## id ⇒ `String`

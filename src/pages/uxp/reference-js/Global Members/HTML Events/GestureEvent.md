@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/GestureEvent  
 
 
-<JsDocParameters/>
-
 <a name="gestureevent-expansion" id="gestureevent-expansion"></a>
 
 ## expansion : `number`

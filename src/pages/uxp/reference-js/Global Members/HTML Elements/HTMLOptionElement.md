@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLOptionElement  
 
 
-<JsDocParameters/>
-
 <a name="htmloptionelement-value" id="htmloptionelement-value"></a>
 
 ## value : `string`

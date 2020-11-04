@@ -12,8 +12,6 @@ share.
 
 
 
-<JsDocParameters/>
-
 <a name="new-module-storage-entry-new" id="new-module-storage-entry-new"></a>
 
 ## Entry(name, provider, id)

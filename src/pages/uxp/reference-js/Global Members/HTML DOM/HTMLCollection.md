@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection  
 
 
-<JsDocParameters/>
-
 <a name="nodelist-length" id="nodelist-length"></a>
 
 ## length : `number`

@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement  
 
 
-<JsDocParameters/>
-
 <a name="htmldialogelement-open" id="htmldialogelement-open"></a>
 
 ## open : `boolean`

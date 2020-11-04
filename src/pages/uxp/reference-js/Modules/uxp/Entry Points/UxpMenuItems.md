@@ -10,8 +10,6 @@ Todo(tagarg) : make Iterable
 
 
 
-<JsDocParameters/>
-
 <a name="uxpmenuitems-size" id="uxpmenuitems-size"></a>
 
 ## size ⇒ `Number`

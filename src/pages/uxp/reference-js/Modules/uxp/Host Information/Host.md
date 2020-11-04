@@ -10,8 +10,6 @@ Includes useful information about the operating environment the plugin finds its
 
 <JsDocParameters/>
 
-<JsDocParameters/>
-
 <a name="host-uilocale" id="host-uilocale"></a>
 
 ## uiLocale : `string`

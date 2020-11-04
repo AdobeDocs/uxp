@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Attr  
 
 
-<JsDocParameters/>
-
 <a name="attr-nodename" id="attr-nodename"></a>
 
 ## nodeName : `string`

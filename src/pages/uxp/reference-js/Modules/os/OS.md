@@ -10,8 +10,6 @@ Class to give info about the operating system. To get an instance: `require("os"
 **See**: https://nodejs.org/api/os.html  
 
 
-<JsDocParameters/>
-
 <a name="os-platform" id="os-platform"></a>
 
 ## platform()

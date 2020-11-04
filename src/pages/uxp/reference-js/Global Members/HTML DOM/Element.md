@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Element  
 
 
-<JsDocParameters/>
-
 <a name="element-nodename" id="element-nodename"></a>
 
 ## nodeName : `string`

@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement  
 
 
-<JsDocParameters/>
-
 <a name="htmlinputelement-value" id="htmlinputelement-value"></a>
 
 ## value : `*`

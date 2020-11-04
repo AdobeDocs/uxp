@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLLabelElement  
 
 
-<JsDocParameters/>
-
 <a name="htmllabelelement-control" id="htmllabelelement-control"></a>
 
 ## control : `HTMLElement`

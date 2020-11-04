@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Comment  
 
 
-<JsDocParameters/>
-
 <a name="comment-nodename" id="comment-nodename"></a>
 
 ## nodeName : `string`

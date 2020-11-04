@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/UIEvent  
 
 
-<JsDocParameters/>
-
 <a name="baseuievent-pointerid" id="baseuievent-pointerid"></a>
 
 ## pointerId

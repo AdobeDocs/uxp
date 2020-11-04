@@ -11,8 +11,6 @@ already been created for you by UXP.
 
 
 
-<JsDocParameters/>
-
 <a name="module-storage-filesystemprovider-isfilesystemprovider" id="module-storage-filesystemprovider-isfilesystemprovider"></a>
 
 ## isFileSystemProvider

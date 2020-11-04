@@ -9,8 +9,6 @@ This namespace describes the various file type extensions that can used be used 
 
 
 
-<JsDocParameters/>
-
 <a name="module-storage-filetypes-text" id="module-storage-filetypes-text"></a>
 
 ## text

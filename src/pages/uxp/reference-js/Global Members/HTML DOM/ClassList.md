@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://dom.spec.whatwg.org/#dom-element-classlist  
 
 
-<JsDocParameters/>
-
 <a name="new-classlist-new" id="new-classlist-new"></a>
 
 ## ClassList()

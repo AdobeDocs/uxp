@@ -7,8 +7,6 @@ jsDoc: true
 # window.XMLHttpRequest
 
 
-<JsDocParameters/>
-
 <a name="new-module-global-xmlhttprequest-new" id="new-module-global-xmlhttprequest-new"></a>
 
 ## XMLHttpRequest()

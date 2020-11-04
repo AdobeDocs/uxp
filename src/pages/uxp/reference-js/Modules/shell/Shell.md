@@ -9,8 +9,6 @@ To get an instance: `require("uxp").shell`
 
 
 
-<JsDocParameters/>
-
 <a name="shell-openexternal" id="shell-openexternal"></a>
 
 ## openExternal(url)

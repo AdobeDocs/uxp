@@ -7,8 +7,6 @@ jsDoc: true
 # UxpCommandInfo
 
 
-<JsDocParameters/>
-
 <a name="uxpcommandinfo-id" id="uxpcommandinfo-id"></a>
 
 ## id ⇒ `string`

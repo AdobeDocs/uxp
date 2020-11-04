@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget  
 
 
-<JsDocParameters/>
-
 <a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
 
 ## addEventListener(eventName, callback, [capture])

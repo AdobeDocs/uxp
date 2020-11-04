@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement  
 
 
-<JsDocParameters/>
-
 <a name="htmlscriptelement-type" id="htmlscriptelement-type"></a>
 
 ## type : `string`

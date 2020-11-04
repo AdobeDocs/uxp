@@ -9,8 +9,6 @@ This namespace describes the type of the entry. Whether file or folder etc.
 
 
 
-<JsDocParameters/>
-
 <a name="module-storage-types-file" id="module-storage-types-file"></a>
 
 ## file : `Symbol`

@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/MessageEvent  
 
 
-<JsDocParameters/>
-
 <a name="messageevent-data" id="messageevent-data"></a>
 
 ## data ⇒ `string`

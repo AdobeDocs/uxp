@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement  
 
 
-<JsDocParameters/>
-
 <a name="htmltextareaelement-value" id="htmltextareaelement-value"></a>
 
 ## value : `string`

@@ -9,8 +9,6 @@ Class describing a single menu item of a panel
 
 
 
-<JsDocParameters/>
-
 <a name="uxpmenuitem-id" id="uxpmenuitem-id"></a>
 
 ## id ⇒ `string`

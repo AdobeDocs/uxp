@@ -11,8 +11,6 @@ you'll get access via a [storage.FileSystemProvider](/uxp/reference-js/Modules/u
 
 
 
-<JsDocParameters/>
-
 <a name="module-storage-file-isfile" id="module-storage-file-isfile"></a>
 
 ## isFile

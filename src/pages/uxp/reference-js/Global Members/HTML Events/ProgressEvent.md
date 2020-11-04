@@ -12,8 +12,6 @@ jsDoc: true
 
 
 
-<JsDocParameters/>
-
 <a name="progressevent-lengthcomputable" id="progressevent-lengthcomputable"></a>
 
 ## lengthComputable

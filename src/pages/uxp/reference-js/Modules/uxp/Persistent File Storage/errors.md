@@ -7,8 +7,6 @@ jsDoc: true
 # require('uxp').storage.errors : `Errors`
 
 
-<JsDocParameters/>
-
 <a name="module-storage-errors-abstractmethodinvocationerror" id="module-storage-errors-abstractmethodinvocationerror"></a>
 
 ## AbstractMethodInvocationError

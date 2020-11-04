@@ -7,8 +7,6 @@ jsDoc: true
 # window.WebSocket
 
 
-<JsDocParameters/>
-
 <a name="new-module-global-websocket-new" id="new-module-global-websocket-new"></a>
 
 ## WebSocket(url, protocols)

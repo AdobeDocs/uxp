@@ -9,8 +9,6 @@ Common locations that we can use when displaying a file picker.
 
 
 
-<JsDocParameters/>
-
 <a name="module-storage-domains-userdesktop" id="module-storage-domains-userdesktop"></a>
 
 ## userDesktop : `Symbol`

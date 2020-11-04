@@ -25,8 +25,6 @@ should be able to be regenerated from plugins after the time of loss.
 
 
 
-<JsDocParameters/>
-
 <a name="securestorage-length" id="securestorage-length"></a>
 
 ## length ⇒ `int`

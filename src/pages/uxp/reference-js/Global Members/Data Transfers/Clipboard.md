@@ -10,8 +10,6 @@ Clipboard support.
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Clipboard  
 
 
-<JsDocParameters/>
-
 <a name="clipboard-setcontent" id="clipboard-setcontent"></a>
 
 ## setContent(data)

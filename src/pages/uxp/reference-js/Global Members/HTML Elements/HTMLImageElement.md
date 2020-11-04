@@ -8,8 +8,6 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement  
 
 
-<JsDocParameters/>
-
 <a name="htmlimageelement-src" id="htmlimageelement-src"></a>
 
 ## src : `string` \| `File`

@@ -12,8 +12,6 @@ jsDoc: true
 
 
 
-<JsDocParameters/>
-
 <a name="errorevent-message" id="errorevent-message"></a>
 
 ## message
