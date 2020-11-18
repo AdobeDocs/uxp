@@ -39,7 +39,7 @@ The function throws in case of any error in entrypoints data or if its called mo
 
 **Example**  
 ```
- const { entrypoints } = require("uxp"); 
+ const { entrypoints } = require("uxp");
  entrypoints.setup({
       plugin: {
          create() {..},

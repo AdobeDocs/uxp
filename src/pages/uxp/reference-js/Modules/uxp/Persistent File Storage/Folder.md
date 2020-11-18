@@ -7,7 +7,7 @@ jsDoc: true
 # require('uxp').storage.Folder
 Represents a folder on a file system. You'll never instantiate this directly,
 but will get it by calling [FileSystemProvider.getTemporaryFolder](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/FileSystemProvider/#module-storage-filesystemprovider-gettemporaryfolder),
-[FileSystemProvider.getFolder](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/FileSystemProvider/#module-storage-filesystemprovider-getfolder), 
+[FileSystemProvider.getFolder](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/FileSystemProvider/#module-storage-filesystemprovider-getfolder),
 or via [Folder.getEntries](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Folder/#module-storage-folder-getentries).
 
 
