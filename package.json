@@ -6,37 +6,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/AdobeDocs/uxp"
-  },
-  "author": {
-    "name": "Stephan Ringel",
-    "url": "https://github.com/icaraps"
-  },
-  "dependencies": {
-    "@adobe/gatsby-theme-parliament": "2.7.0",
-    "gatsby": "2.24.65",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
-  },
-  "scripts": {
-    "start": "gatsby build && gatsby serve",
-    "start:prefix": "gatsby build --prefix-paths && gatsby serve --prefix-paths",
-    "predev": "npm run copy-docs && npm run copy-transclusions && npm run copy-assets",
-    "dev": "gatsby develop",
-    "prebuild": "npm run copy-docs && npm run copy-transclusions && npm run copy-assets",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "postbuild": "touch public/.nojekyll",
-    "copy-docs-html": ". .env && rm -rf src/pages/uxp/reference-html     && mkdir -p src/pages/uxp/reference-html     && cp -r \"$UXP_REPO_SOURCE\"/uxp/reference-html     src/pages/uxp/ && mv src/pages/uxp/reference-html/reference-html.js reference-html.js",
-    "copy-docs-spectrum": ". .env && rm -rf src/pages/uxp/reference-spectrum && mkdir -p src/pages/uxp/reference-spectrum && cp -r \"$UXP_REPO_SOURCE\"/uxp/reference-spectrum src/pages/uxp/ && mv src/pages/uxp/reference-spectrum/reference-spectrum.js reference-spectrum.js",
-    "copy-docs-css": ". .env && rm -rf src/pages/uxp/reference-css      && mkdir -p src/pages/uxp/reference-css      && cp -r \"$UXP_REPO_SOURCE\"/uxp/reference-css      src/pages/uxp/ && mv src/pages/uxp/reference-css/reference-css.js reference-css.js",
-    "copy-docs-js": ". .env && rm -rf src/pages/uxp/reference-js       && mkdir -p src/pages/uxp/reference-js       && cp -r \"$UXP_REPO_SOURCE\"/uxp/reference-js       src/pages/uxp/ && mv src/pages/uxp/reference-js/reference-js.js reference-js.js",
-    "copy-docs": "npm run copy-docs-js && npm run copy-docs-css && npm run copy-docs-html && npm run copy-docs-spectrum",
-    "copy-spectrum-assets-transclusions": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/assets ./_transclusions/photoshop/uxp/reference-spectrum/",
-    "copy-spectrum-assets": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/assets ./src/pages/uxp/reference-spectrum/",
-    "copy-html-assets-transclusions": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-html/assets ./_transclusions/photoshop/uxp/reference-html/",
-    "copy-html-assets": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-html/assets ./src/pages/uxp/reference-html/",
-    "copy-assets": "npm run copy-spectrum-assets && npm run copy-spectrum-assets-transclusions && npm run copy-html-assets && npm run copy-html-assets-transclusions",
-    "copy-transclusions": ". .env && rm -rf ./_transclusions && mkdir ./_transclusions && cp -r \"$UXP_REPO_SOURCE\"/_transclusions ."
   }
 }
