@@ -12,7 +12,7 @@ jsDoc: true
 
 ## nodeName : `string`
 **Read only**
-**Default**: <code>&quot;\&quot;#text\&quot;&quot;</code>  
+**Default**: <code>"#text"</code>  
 
 
 <a name="text-nodetype" id="text-nodetype"></a>
