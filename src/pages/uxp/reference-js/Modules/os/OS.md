@@ -33,3 +33,22 @@ Gets the platform architecture we are running on (eg. "x32, x64, x86_64 etc")
 
 **Returns**: `string` - the string representing the architecture  
 
+## networkInterfaces()
+Gets the network interfaces that have been assigned a network address
+
+**Returns**: `Object` - an object containing network interfaces that have been assigned a network address. Each key on the returned object identifies a network interface. The associated value is an object that has the following properties.
+
+| Name | Type | Description |
+| --- | --- | --- |
+| mac | `string` | The MAC address of the network interface |
+
+Note that networkInterfaces() is available only for 1P plugins.
+
+**Example**
+```
+const os = require("torq-native").os;
+let networkInterfaces = os.networkInterfaces();
+for (let name in networkInterfaces) {
+  console.log(`NetworkInterface name=[${name}], MAC address=[${interfaces[name].mac}`);
+}
+```
