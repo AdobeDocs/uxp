@@ -143,7 +143,7 @@ Copies this entry to the specified `folder`.
 | folder | `Folder` |  | the folder to which to copy this entry |
 | options | `*` |  |  |
 | [options.overwrite] | `boolean` | `false` | if `true`, allows overwriting existing entries |
-| [options.allowFolderCopy] | `boolean` | <code>false</code> if `true`, allows copying the folder |
+| [options.allowFolderCopy] | `boolean` | `false` if `true`, allows copying the folder |
 
 **Example**  
 ```js
