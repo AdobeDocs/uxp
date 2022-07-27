@@ -4,7 +4,7 @@ Spectrum UXP is an implementation of the [Spectrum Web Components](https://opens
 
 <InlineAlert variant="warning" slots="text"/>
 
-The Spectrum UXP component API for UXP 4.1 is not perfectly compatible with the published version of the Spectrum Web Components API. Future versions of UXP will have a way to specify the version you need to use, but this is not yet availablein UXP 4.1.
+The Spectrum UXP component API for UXP 4.1 is not perfectly compatible with the published version of the Spectrum Web Components API. Future versions of UXP will have a way to specify the version you need to use, but this is not yet available in UXP 4.1.
 
 ## Why Spectrum UXP?
 
