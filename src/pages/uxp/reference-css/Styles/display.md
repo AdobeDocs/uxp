@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # display
 
-**Since:**  UXP 3, PS 22.0.0
+**Since:**  UXP 3
 
 Determines the layout semantics for the element. Supports `none`, `inline`, `block`, `inline-block`, `flex`, and `inline-flex`.
 

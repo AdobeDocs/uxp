@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # :nth-last-child
 
-**Since:** UXP 3, PS 22.0.0
+**Since:** UXP 3
 
 Matches only the Nth child from the end. Can use an expression or `even` or `odd`.
 

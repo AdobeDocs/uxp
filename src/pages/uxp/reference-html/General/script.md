@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # script
 
-**Since:** UXP 3, PS 22.0.0
+**Since:** UXP 3
 
 Loads and executes a script.
 

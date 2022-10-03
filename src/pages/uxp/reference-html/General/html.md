@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # html
 
-**Since:** UXP 2, PS 22.0.0
+**Since:** UXP 2
 
 Indicates the root element of an UXP plugin's UI.
 

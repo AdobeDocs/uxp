@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # top
 
-**Since:**  UXP 2, PS 22.0.0
+**Since:**  UXP 2
 
 Sets the top position for an element that is relatively or absolutely positioned.
 

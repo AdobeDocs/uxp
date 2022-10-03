@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # font-size
 
-**Since:** UXP 2, PS 22.0.0
+**Since:** UXP 2
 
 Specifies the size of the font.
 

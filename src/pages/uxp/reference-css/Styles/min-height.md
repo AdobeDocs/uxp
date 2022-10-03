@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # min-height
 
-**Since:** UXP 2, PS 22.0.0
+**Since:** UXP 2
 
 Specifies the minimum height for an element.
 

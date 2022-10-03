@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # :nth-child
 
-**Since:** UXP 3, PS 22.0.0
+**Since:** UXP 3
 
 Matches only the Nth child. Can use an expression or `even` or `odd`.
 

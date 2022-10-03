@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-textarea
 
-**Since:** UXP 4.1, PS 22.0.0
+**Since:** UXP 4.1
 
 Renders a text area with optional associated label.
 

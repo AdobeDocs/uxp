@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # right
 
-**Since:**  UXP 2, PS 22.0.0
+**Since:**  UXP 2
 
 Sets the right position for an element that is relatively or absolutely positioned.
 

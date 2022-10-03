@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # background
 
-**Since:**  UXP 2, PS 22.0.0
+**Since:**  UXP 2
 
 Specifies an element's background. Supports colors, multiple background images, as well as linear and radial gradients.
 

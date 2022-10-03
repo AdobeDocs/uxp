@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # background-attachment
 
-**Since:**  UXP 3, PS 22.0.0
+**Since:**  UXP 3
 
 Sets the attachment for the background image. Only `scroll` is supported (the default).
 

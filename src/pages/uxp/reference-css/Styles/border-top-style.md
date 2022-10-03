@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-top-style
 
-**Since:**  UXP 2, PS 22.0.0
+**Since:**  UXP 2
 
 Specifies the [style](../border-style/) of top border to render.
 

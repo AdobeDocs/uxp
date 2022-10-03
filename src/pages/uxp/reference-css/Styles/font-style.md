@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # font-style
 
-**Since:** UXP 2, PS 22.0.0
+**Since:** UXP 2
 
 Sets the font style for the element. Supports `normal` (default) and `italic`.
 

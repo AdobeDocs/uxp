@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # white-space
 
-**Since:**  UXP 3, PS 22.0.0
+**Since:**  UXP 3
 
 Determines how white space is handled. Supports `wrap` (default), `nowrap`, `pre`, `pre-line`, and `pre-wrap`.
 

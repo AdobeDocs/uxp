@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # :enabled
 
-**Since:** UXP 3, PS 22.0.0
+**Since:** UXP 3
 
 Matches when the selected element is enabled. 
 

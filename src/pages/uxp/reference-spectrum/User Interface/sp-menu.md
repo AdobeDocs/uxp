@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-menu
 
-**Since:** UXP 4.1, PS 22.0.0
+**Since:** UXP 4.1
 
 Renders a menu with menu items. Inside the `sp-menu`, a series of `sp-menu-item` or `sp-menu-divider` elements may exist.
 

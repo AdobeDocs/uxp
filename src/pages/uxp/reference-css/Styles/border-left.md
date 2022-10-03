@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-left
 
-**Since:** UXP 2, PS 22.0.0
+**Since:** UXP 2
 
 Shorthand for specifying the [style](../border-left-style/), [color](../border-left-color/), and [width](../border-left-width) of the top border.
 

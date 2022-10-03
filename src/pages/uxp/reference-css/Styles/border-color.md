@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-color
 
-**Since:** UXP 2, PS 22.0.0
+**Since:** UXP 2
 
 Specifies the border color for an element. Supported color formats are as follows:
 

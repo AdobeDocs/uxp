@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-slider
 
-**Since:** UXP 4.1, PS 22.0.0
+**Since:** UXP 4.1
 
 Renders a slider with optional associated label.
 

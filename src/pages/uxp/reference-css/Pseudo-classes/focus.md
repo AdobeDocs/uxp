@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # :focus
 
-**Since:** UXP 3, PS 22.0.0
+**Since:** UXP 3
 
 Matches when the selected element is focused. An element is considered to be active when the element has keyboard focus.
 

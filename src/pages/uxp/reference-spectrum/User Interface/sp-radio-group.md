@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-radio-group
 
-**Since:** UXP 4.1, PS 22.0.0
+**Since:** UXP 4.1
 
 Renders a group of radio buttons horizontally or vertically (column layout), with an optional field label.
 
