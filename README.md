@@ -33,6 +33,6 @@ UXP_REPO_SOURCE="<path-to>/torq-native/docs/dist"
 UXP_REPO_SOURCE_DOCS="<path-to>/torq-native/docs/dist"
 ```
 
-## Work in progress
+### Work in progress
 
-This work is in attempt to make this repo work with specific branch in UXP source branch: https://git.corp.adobe.com/torq/torq-native/tree/sgoswami/jsdocrefactor. This repo expects torq-native to supply `_transclusions`, or files like `reference-js.js` etc. The sgoswami/jsdocrefactor brnach does not product these files. Hence, use `npm run experiment`, which is the shorter version of the actual commands.
+This work is in attempt to make this repo work with specific branch in UXP source branch: https://git.corp.adobe.com/torq/torq-native/tree/sgoswami/jsdocrefactor. This repo expects `torq-native` to supply `_transclusions`, or files like `reference-js.js` etc. The sgoswami/jsdocrefactor brnach does not produce these files. Hence, use `npm run experiment`, which is the shorter version of the actual commands.
