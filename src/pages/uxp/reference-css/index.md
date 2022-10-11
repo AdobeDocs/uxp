@@ -1,10 +1,10 @@
 # CSS Reference
 
-
-
-* [General](/uxp/reference-css/General/)
-* [Selectors](/uxp/reference-css/Selectors/)
-* [Media Queries](/uxp/reference-css/Media%20Queries/)
-* [Pseudo-elements](/uxp/reference-css/Pseudo-elements/)
-* [Pseudo-classes](/uxp/reference-css/Pseudo-classes/)
-* [Styles](/uxp/reference-css/Styles/)
+Technical documentation regarding the kinds of CSS styles and features available in UXP.
+## Pages in this section
+* [General](General/index.md)
+* [Media Queries](Media%20Queries/index.md)
+* [Pseudo-classes](Pseudo-classes/index.md)
+* [Pseudo-elements](Pseudo-elements/index.md)
+* [Selectors](Selectors/index.md)
+* [Styles](Styles/index.md)
