@@ -80,6 +80,8 @@ is controlled via the `format` option, and defaults to UTF8.
 | [options.format] | `Symbol` | `formats.utf8` | the format of the file; see [utf8](utf8) and [binary](binary) |
 | [options.append] | `boolean` | `false` | if `true`, the data is written to the end of the file |
 
+**Returns**: `Promise<void>`
+
 **Example**  
 ```js
 await myNovel.write("It was a dark and stormy night.\n");

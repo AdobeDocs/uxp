@@ -122,14 +122,16 @@ console.log(anEntry.nativePath);
 <a name="module-storage-entry-tostring" id="module-storage-entry-tostring"></a>
 
 ## toString()
-returns the details of the given entry like name, type and native path in a readable string format.
+Returns the details of the given entry like name, type and native path in a readable string format.
 
-
+**Returns**: `string`
 
 <a name="module-storage-entry-copyto" id="module-storage-entry-copyto"></a>
 
 ## copyTo(folder, options)
 Copies this entry to the specified `folder`.
+
+**Returns**: `Promise<void>`
 
 **Throws**:
 
@@ -172,6 +174,8 @@ Moves this entry to the target folder, optionally specifying a new name.
 | [options.overwrite] | `boolean` | `false` | If `true` allows the move to overwrite existing files |
 | [options.newName] | `string` |  | If specified, the entry is renamed to this name |
 
+**Returns**: `Promise<void>`
+
 **Example**  
 ```js
 await someFile.moveTo(someFolder);
@@ -199,6 +203,8 @@ await someFile.moveTo(someFolder, {newName: 'novel.txt', {overwrite: true})
 ## delete()
 Removes this entry from the file system. If the entry is a folder, all the
 contents will also be removed.
+
+**Returns**: `Promise<void>`
 
 **Example**  
 ```js
