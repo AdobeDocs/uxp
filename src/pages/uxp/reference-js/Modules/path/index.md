@@ -1,2 +1,0 @@
-# path
-* [Path](Path.md)
