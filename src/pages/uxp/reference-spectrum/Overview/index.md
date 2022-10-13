@@ -1,4 +1,3 @@
 # Overview
-
-* [About Spectrum UXP](/uxp/reference-spectrum/Overview/About%20Spectrum%20UXP/)
-* [Using with React](/uxp/reference-spectrum/Overview/Using%20with%20React/)
+* [About Spectrum UXP](About%20Spectrum%20UXP.md)
+* [Using with React](Using%20with%20React.md)

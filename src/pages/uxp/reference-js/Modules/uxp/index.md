@@ -1,7 +1,7 @@
 # uxp
-
-* [Entry Points](/uxp/reference-js/Modules/uxp/Entry%20Points/)
-* [Persistent File Storage](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/)
-* [Key-Value Storage](/uxp/reference-js/Modules/uxp/Key-Value%20Storage/SecureStorage/)
-* [Versions](/uxp/reference-js/Modules/uxp/Versions/Versions/)
-* [Host Information](/uxp/reference-js/Modules/uxp/Host%20Information/Host/)
+* [Entry Points](Entry%20Points/index.md)
+* [Host Information](Host%20Information/index.md)
+* [Key-Value Storage](Key-Value%20Storage/index.md)
+* [Persistent File Storage](Persistent%20File%20Storage/index.md)
+* [PluginManager](PluginManager/index.md)
+* [Versions](Versions/index.md)
