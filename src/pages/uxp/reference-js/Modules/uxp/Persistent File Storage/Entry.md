@@ -217,7 +217,7 @@ await aFile.delete();
 ## getMetadata()
 Returns this entry's metadata.
 
-**Returns**: `Promise.<EntryMetadata>`  
+**Returns**: `Promise<EntryMetadata>`  
 **Example**  
 ```js
 const metadata = aFile.getMetadata();

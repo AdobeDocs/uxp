@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # letter-spacing
 
-**Since:** UXP 2
+**Since:** UXP v2.0
 
 Sets the width inserted between letters.
 

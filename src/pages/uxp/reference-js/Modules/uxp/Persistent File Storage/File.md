@@ -44,7 +44,7 @@ Reads data from the file and returns it. The file format can be specified
 with the `format` option. If a format is not supplied, the file is assumed
 to be a text file using UTF8 encoding.
 
-**Returns**: `Promise.<(string\|ArrayBuffer)>` - the contents of the file  
+**Returns**: `Promise<(string\|ArrayBuffer)>` - the contents of the file  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |

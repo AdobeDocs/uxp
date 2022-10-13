@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # text-align
 
-**Since:** UXP 3
+**Since:** UXP v3.0
 
 Aligns text within its parent container. Supports `left`, `center`, `right`.
 

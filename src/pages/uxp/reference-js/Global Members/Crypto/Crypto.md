@@ -1,18 +1,19 @@
 
 <a name="crypto" id="crypto"></a>
 
-## `window.crypto`
+# window.crypto
 **See**
 
 - https://developer.mozilla.org/en-US/docs/Web/API/Crypto
 - https://w3c.github.io/webcrypto/#Crypto-method-getRandomValues
 - https://w3c.github.io/webcrypto/#Crypto-method-randomUUID
 
+**Since**: UXP v6.2  
 
 
 <a name="crypto-getrandomvalues" id="crypto-getrandomvalues"></a>
 
-### getRandomValues(array)
+## getRandomValues(array)
 Generates cryptographically strong random values
 
 **Returns**: The same array passed as 'array' but with its contents replaced with the newly generated random numbers  
@@ -24,13 +25,13 @@ Generates cryptographically strong random values
 
 | Param | Type | Description |
 | --- | --- | --- |
-| array | `\*` | An integer-based TypedArray, that is one of Int8Array, Uint8Array, Uint8ClampedArray, Int16Array, Uint16Array, Int32Array, Uint32Array, BigInt64Array, BigUint64Array but not Float32Array nor Float64Array |
+| array | `*` | An integer-based TypedArray, that is one of Int8Array, Uint8Array, Uint8ClampedArray, Int16Array, Uint16Array, Int32Array, Uint32Array, BigInt64Array, BigUint64Array but not Float32Array nor Float64Array |
 
 
 
 <a name="crypto-randomuuid" id="crypto-randomuuid"></a>
 
-### randomUUID()
+## randomUUID()
 Generates a new version 4 UUID
 
 **Returns**: `String` - A string containing a randomly generated, 36 character long v4 UUID  

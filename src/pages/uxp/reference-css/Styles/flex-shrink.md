@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # flex-shrink
 
-**Since:** UXP 3
+**Since:** UXP v3.0
 
 Determines if a flexible item can shrink, and if so, how it shrinks relative to other items in the flexible container.
 

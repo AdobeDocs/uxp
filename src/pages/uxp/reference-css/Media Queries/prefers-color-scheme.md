@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # prefers-color-scheme
 
-**Since:** UXP 4.1
+**Since:** UXP v4.1
 
 Enables you to restrict a set of CSS rules to match only when a specific theme is being used by the host application. 
 

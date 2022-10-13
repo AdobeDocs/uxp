@@ -1,11 +1,15 @@
----
-jsDoc: true
----
 
 <a name="document" id="document"></a>
 
 # window.Document
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Document  
+
+
+<a name="new-document-new" id="new-document-new"></a>
+
+## Document()
+Creates an instance of Document.
+
 
 
 <a name="document-online" id="document-online"></a>
@@ -191,6 +195,17 @@ Indicates if the computer is online
 | --- | --- |
 | ns | `string` | 
 | name | `string` | 
+
+
+
+<a name="document-createevent" id="document-createevent"></a>
+
+## createEvent(eventType)
+**See**: https://dom.spec.whatwg.org/#dom-document-createevent  
+
+| Param | Type |
+| --- | --- |
+| eventType | `string` | 
 
 
 
@@ -387,7 +402,7 @@ Indicates if the computer is online
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -397,7 +412,7 @@ Indicates if the computer is online
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -407,7 +422,7 @@ Indicates if the computer is online
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -454,15 +469,4 @@ Indicates if the computer is online
 | event | `*` | 
 
 
-
-<a name="document-document" id="document-document"></a>
-
-## Document
-
-
-<a name="new-document-document-new" id="new-document-document-new"></a>
-
-### Document()
-Creates an instance of Document.
-
-
+  

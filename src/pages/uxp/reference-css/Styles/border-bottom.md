@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-bottom
 
-**Since:** UXP 2
+**Since:** UXP v2.0
 
 Shorthand for specifying the [style](../border-bottom-style/), [color](../border-bottom-color/), and [width](../border-bottom-width) of the top border.
 

@@ -1,11 +1,21 @@
----
-jsDoc: true
----
 
 <a name="gestureevent" id="gestureevent"></a>
 
 # window.GestureEvent
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/GestureEvent  
+
+
+<a name="new-gestureevent-new" id="new-gestureevent-new"></a>
+
+## GestureEvent(type, eventInit)
+Creates an instance of GestureEvent.
+
+
+| Param | Type |
+| --- | --- |
+| type | `*` | 
+| eventInit | `*` | 
+
 
 
 <a name="gestureevent-expansion" id="gestureevent-expansion"></a>
@@ -309,21 +319,4 @@ jsDoc: true
 
 ## stopPropagation()
 
-
-<a name="gestureevent-gestureevent" id="gestureevent-gestureevent"></a>
-
-## GestureEvent
-
-
-<a name="new-gestureevent-gestureevent-new" id="new-gestureevent-gestureevent-new"></a>
-
-### GestureEvent(type, eventInit)
-Creates an instance of GestureEvent.
-
-
-| Param | Type |
-| --- | --- |
-| type | `*` | 
-| eventInit | `*` | 
-
-
+  

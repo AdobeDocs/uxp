@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # flex-wrap
 
-**Since:** UXP 3
+**Since:** UXP v3.0
 
 Controls if wrapping is allowed within a flexible container. Supports `nowrap` (default) and `wrap`.
 

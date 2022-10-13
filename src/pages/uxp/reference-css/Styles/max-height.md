@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # max-height
 
-**Since:** UXP 2
+**Since:** UXP v2.0
 
 Specifies the maximum height for an element.
 

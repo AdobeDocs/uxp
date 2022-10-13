@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # style
 
-**Since:** UXP 2
+**Since:** UXP v2.0
 
 Specifies an inline stylesheet.
 

@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # color
 
-**Since:** UXP 2
+**Since:** UXP v2.0
 
 Specifies the text color for an element. Supported color formats are as follows:
 

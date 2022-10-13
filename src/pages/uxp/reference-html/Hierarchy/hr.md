@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # hr
 
-**Since:** UXP 2
+**Since:** UXP v2.0
 
 Renders a horizontal rule.
 

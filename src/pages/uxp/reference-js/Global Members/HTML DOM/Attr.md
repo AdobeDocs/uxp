@@ -1,11 +1,21 @@
----
-jsDoc: true
----
 
 <a name="attr" id="attr"></a>
 
 # window.Attr
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Attr  
+
+
+<a name="new-attr-new" id="new-attr-new"></a>
+
+## Attr(document, nodeName)
+Creates an instance of Attr.
+
+
+| Param | Type |
+| --- | --- |
+| document | `Document` | 
+| nodeName | `string` | 
+
 
 
 <a name="attr-nodename" id="attr-nodename"></a>
@@ -229,7 +239,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -239,7 +249,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -249,7 +259,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -296,21 +306,4 @@ jsDoc: true
 | event | `*` | 
 
 
-
-<a name="attr-attr" id="attr-attr"></a>
-
-## Attr
-
-
-<a name="new-attr-attr-new" id="new-attr-attr-new"></a>
-
-### Attr(document, nodeName)
-Creates an instance of Attr.
-
-
-| Param | Type |
-| --- | --- |
-| document | `Document` | 
-| nodeName | `string` | 
-
-
+  

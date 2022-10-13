@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # :disabled
 
-**Since:** UXP 3
+**Since:** UXP v3.0
 
 Matches when the selected element is disabled. 
 

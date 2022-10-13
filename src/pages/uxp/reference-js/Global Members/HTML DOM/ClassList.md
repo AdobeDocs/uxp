@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="classlist" id="classlist"></a>
 
@@ -12,6 +9,18 @@ jsDoc: true
 
 ## ClassList()
 Implements classlist
+
+
+
+<a name="new-classlist-new" id="new-classlist-new"></a>
+
+## ClassList(node)
+Creates an instance of ClassList.
+
+
+| Param | Type |
+| --- | --- |
+| node | `any` | 
 
 
 
@@ -161,20 +170,4 @@ any other method.
 | token | `string` | 
 
 
-
-<a name="classlist-classlist" id="classlist-classlist"></a>
-
-## ClassList
-
-
-<a name="new-classlist-classlist-new" id="new-classlist-classlist-new"></a>
-
-### ClassList(node)
-Creates an instance of ClassList.
-
-
-| Param | Type |
-| --- | --- |
-| node | `any` | 
-
-
+  

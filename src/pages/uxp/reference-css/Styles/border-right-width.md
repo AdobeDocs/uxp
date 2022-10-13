@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-right-width
 
-**Since:** UXP 2
+**Since:** UXP v2.0
 
 Sets the width of the right border.
 

@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-heading
 
-**Since:** UXP 4.1
+**Since:** UXP v4.1
 
 Renders heading text that is theme aware.
 

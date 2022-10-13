@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # Descendant combinator
 
-**Since:** UXP 3
+**Since:** UXP v3.0
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator
 

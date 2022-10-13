@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # :hover
 
-**Since:** UXP 3
+**Since:** UXP v3.0
 
 Matches when the selected element is underneath the mouse cursor.
 

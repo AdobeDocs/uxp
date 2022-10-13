@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-checkbox
 
-**Since:** UXP 4.1
+**Since:** UXP v4.1
 
 Renders a checkbox with associated label.
 

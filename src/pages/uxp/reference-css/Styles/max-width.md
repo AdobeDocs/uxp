@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # max-width
 
-**Since:** UXP 2
+**Since:** UXP v2.0
 
 Specifies the maximum width for an element.
 

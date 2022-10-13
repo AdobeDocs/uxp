@@ -1,11 +1,21 @@
----
-jsDoc: true
----
 
 <a name="keyboardevent" id="keyboardevent"></a>
 
 # window.KeyboardEvent
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent  
+
+
+<a name="new-keyboardevent-new" id="new-keyboardevent-new"></a>
+
+## KeyboardEvent(type, eventInit)
+Creates an instance of KeyboardEvent.
+
+
+| Param | Type |
+| --- | --- |
+| type | `*` | 
+| eventInit | `*` | 
+
 
 
 <a name="keyboardevent-altkey" id="keyboardevent-altkey"></a>
@@ -152,21 +162,4 @@ jsDoc: true
 
 ## stopPropagation()
 
-
-<a name="keyboardevent-keyboardevent" id="keyboardevent-keyboardevent"></a>
-
-## KeyboardEvent
-
-
-<a name="new-keyboardevent-keyboardevent-new" id="new-keyboardevent-keyboardevent-new"></a>
-
-### KeyboardEvent(type, eventInit)
-Creates an instance of KeyboardEvent.
-
-
-| Param | Type |
-| --- | --- |
-| type | `*` | 
-| eventInit | `*` | 
-
-
+  

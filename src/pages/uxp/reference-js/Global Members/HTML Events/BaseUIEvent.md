@@ -1,11 +1,21 @@
----
-jsDoc: true
----
 
 <a name="baseuievent" id="baseuievent"></a>
 
 # window.BaseUIEvent
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/UIEvent  
+
+
+<a name="new-baseuievent-new" id="new-baseuievent-new"></a>
+
+## BaseUIEvent(type, eventInit)
+Creates an instance of BaseUIEvent.
+
+
+| Param | Type |
+| --- | --- |
+| type | `*` | 
+| eventInit | `*` | 
+
 
 
 <a name="baseuievent-pointerid" id="baseuievent-pointerid"></a>
@@ -255,27 +265,4 @@ jsDoc: true
 
 ## stopPropagation()
 
-
-<a name="baseuievent-baseuievent" id="baseuievent-baseuievent"></a>
-
-## BaseUIEvent
-
-
-<a name="new-baseuievent-baseuievent-new" id="new-baseuievent-baseuievent-new"></a>
-
-### BaseUIEvent(type, eventInit)
-Creates an instance of BaseUIEvent.
-
-
-| Param | Type |
-| --- | --- |
-| type | `*` | 
-| eventInit | `*` | 
-
-
-
-<a name="baseuievent-wheelevent-deltamove" id="baseuievent-wheelevent-deltamove"></a>
-
-## WheelEvent#deltaMove : `number`
-**Read only**
-
+  

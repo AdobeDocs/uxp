@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # justify-content
 
-**Since:** UXP 3
+**Since:** UXP v3.0
 
 Supported values are `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `stretch`.
 

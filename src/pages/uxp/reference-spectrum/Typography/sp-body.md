@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-body
 
-**Since:** UXP 4.1
+**Since:** UXP v4.1
 
 Renders body text that is theme aware
 

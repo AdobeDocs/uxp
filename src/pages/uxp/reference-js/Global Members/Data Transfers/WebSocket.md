@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="module-global-websocket" id="module-global-websocket"></a>
 
@@ -10,12 +7,20 @@ jsDoc: true
 <a name="new-module-global-websocket-new" id="new-module-global-websocket-new"></a>
 
 ## WebSocket(url, protocols)
+**Throws**:
+
+- `Error` if invalid url or protocols is passed
+
 
 | Param | Type | Description |
 | --- | --- | --- |
 | url | `string` | The URL to which to connect; this should be the URL to which the WebSocket server will respond. |
-| protocols | `string` \| `Array.<string>` | Either a single protocol string or an array of protocol strings. Example usage: var ws = new WebSocket("ws://demos.kaazing.com/echo","xmpp"); Throws an exception of Error Object if invalid url or protocols is passed |
+| protocols | `string` \| `Array<string>` | Either a single protocol string or an array of protocol strings. |
 
+**Example**  
+```js
+var ws = new WebSocket("ws://demos.kaazing.com/echo","xmpp");
+```
 
 
 <a name="module-global-websocket-protocol" id="module-global-websocket-protocol"></a>
@@ -60,8 +65,16 @@ If the data can't be sent (for example, because it needs to be buffered but the 
 
 | Param | Type | Description |
 | --- | --- | --- |
-| data | `string` \| `ArrayBuffer` \| `ArrayBufferView` | Data to be sent Example usage: ws.send(new Float32Array([ 5, 2, 1, 3, 6, -1 ]))                ws.send(new Int32Array([5,-1]).buffer) |
+| data | `string` \| `ArrayBuffer` \| `ArrayBufferView` | Data to be sent |
 
+**Example**  
+```js
+ws.send(new Float32Array([ 5, 2, 1, 3, 6, -1 ]))
+```
+**Example**  
+```js
+ws.send(new Int32Array([5,-1]).buffer)
+```
 
 
 <a name="module-global-websocket-close" id="module-global-websocket-close"></a>
@@ -69,10 +82,15 @@ If the data can't be sent (for example, because it needs to be buffered but the 
 ## close([code], [reason])
 Closes the websocket connection
 
+**Throws**:
+
+- `Error` if invalid code or reason is passed
+
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [code] | `integer` | `1000` | A integer value as per https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#close(). |
-| [reason] | `string` | `&quot;\&quot;\&quot;&quot;` | A human-readable string explaining why the connection is closing. Throws an exception of Error Object if invalid code or reason is passed Refer https://wiki.corp.adobe.com/pages/viewpage.action?pageId=1455687313#FileandNetworkI/OTestCases-CloseMethodbehaviorforWebSockets |
+| [reason] | `string` | `&quot;​&quot;` | A human-readable string explaining why the connection is closing. |
 
 
+  

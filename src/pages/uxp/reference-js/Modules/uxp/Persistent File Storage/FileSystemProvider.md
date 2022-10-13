@@ -47,7 +47,7 @@ Multiple files can be returned if the `allowMultiple` option` is `true`.
 | --- | --- | --- | --- |
 | options | `*` |  |  |
 | [options.initialDomain] | `Symbol` |  | the preferred initial location of the file picker. If not defined, the most recently used domain from a file picker is used instead. |
-| [options.types] | `Array.<string>` | `[&#x27;.*&#x27;]` | array of file types that the file open picker displays. |
+| [options.types] | `Array<string>` | `[&#x27;.*&#x27;]` | array of file types that the file open picker displays. |
 | [options.initialLocation] | `File` \| `Folder` |  | the initial location of the file picker. You can pass an existing file or folder entry to suggest the picker to start at this location. If this is a file entry then the method will pick its parent folder as initial location. This will override initialDomain option. |
 | [options.allowMultiple] | `boolean` | `false` | if true, multiple files can be selected (as an array) |
 

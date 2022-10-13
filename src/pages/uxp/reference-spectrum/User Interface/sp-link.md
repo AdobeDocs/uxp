@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-link
 
-**Since:** UXP 4.1
+**Since:** UXP v4.1
 
 Renders a link, that when clicked can launch a webpage in the user's default browser.
 

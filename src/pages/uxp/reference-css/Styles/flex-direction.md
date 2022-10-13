@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # flex-direction
 
-**Since:** UXP 3
+**Since:** UXP v3.0
 
 Determines the direction items are stacked in the flexible container. The default is `row`, and `row`, `row-reverse`, `column`, and `column-reverse` are supported.
 

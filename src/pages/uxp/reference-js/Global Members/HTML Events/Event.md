@@ -1,11 +1,21 @@
----
-jsDoc: true
----
 
 <a name="event" id="event"></a>
 
 # window.Event
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Event  
+
+
+<a name="new-event-new" id="new-event-new"></a>
+
+## Event(eventType, eventInit)
+Creates an instance of Event.
+
+
+| Param | Type |
+| --- | --- |
+| eventType | `*` | 
+| eventInit | `*` | 
+
 
 
 <a name="event-type" id="event-type"></a>
@@ -88,24 +98,6 @@ jsDoc: true
 ## stopPropagation()
 
 
-<a name="event-event" id="event-event"></a>
-
-## Event
-
-
-<a name="new-event-event-new" id="new-event-event-new"></a>
-
-### Event(eventType, eventInit)
-Creates an instance of Event.
-
-
-| Param | Type |
-| --- | --- |
-| eventType | `*` | 
-| eventInit | `*` | 
-
-
-
 <a name="event-none" id="event-none"></a>
 
 ## NONE
@@ -125,3 +117,4 @@ Creates an instance of Event.
 
 ## BUBBLING\_PHASE
 
+  

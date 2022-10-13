@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-detail
 
-**Since:** UXP 4.1
+**Since:** UXP v4.1
 
 Renders detail text in a smaller font.
 

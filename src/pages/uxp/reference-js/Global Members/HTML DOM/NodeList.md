@@ -1,11 +1,21 @@
----
-jsDoc: true
----
 
 <a name="nodelist" id="nodelist"></a>
 
 # window.NodeList
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/NodeList  
+
+
+<a name="new-nodelist-new" id="new-nodelist-new"></a>
+
+## NodeList(staticList, updater)
+Creates an instance of NodeList.
+
+
+| Param | Type |
+| --- | --- |
+| staticList | `*` | 
+| updater | `*` | 
+
 
 
 <a name="nodelist-length" id="nodelist-length"></a>
@@ -49,21 +59,4 @@ jsDoc: true
 | callback | `*` | 
 
 
-
-<a name="nodelist-nodelist" id="nodelist-nodelist"></a>
-
-## NodeList
-
-
-<a name="new-nodelist-nodelist-new" id="new-nodelist-nodelist-new"></a>
-
-### NodeList(staticList, updater)
-Creates an instance of NodeList.
-
-
-| Param | Type |
-| --- | --- |
-| staticList | `*` | 
-| updater | `*` | 
-
-
+  

@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="text" id="text"></a>
 
@@ -8,18 +5,31 @@ jsDoc: true
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Text  
 
 
+<a name="new-text-new" id="new-text-new"></a>
+
+## Text(document, textContent)
+Creates an instance of Text.
+
+
+| Param | Type |
+| --- | --- |
+| document | `*` | 
+| textContent | `*` | 
+
+
+
 <a name="text-nodename" id="text-nodename"></a>
 
 ## nodeName : `string`
 **Read only**
-**Default**: <code>"#text"</code>  
+**Default**: `&quot;\&quot;#text\&quot;&quot;`  
 
 
 <a name="text-nodetype" id="text-nodetype"></a>
 
 ## nodeType : `number`
 **Read only**
-**Default**: <code>Node.TEXT_NODE</code>  
+**Default**: `Node.TEXT_NODE`  
 
 
 <a name="text-nodevalue" id="text-nodevalue"></a>
@@ -269,7 +279,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -279,7 +289,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -289,7 +299,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -336,21 +346,4 @@ jsDoc: true
 | event | `*` | 
 
 
-
-<a name="text-text" id="text-text"></a>
-
-## Text
-
-
-<a name="new-text-text-new" id="new-text-text-new"></a>
-
-### Text(document, textContent)
-Creates an instance of Text.
-
-
-| Param | Type |
-| --- | --- |
-| document | `*` | 
-| textContent | `*` | 
-
-
+  

@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # ::after
 
-**Since:** UXP 3
+**Since:** UXP v3.0
 
 Creates a pseudo-element after the matched element. 
 

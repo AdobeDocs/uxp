@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="htmlcollection" id="htmlcollection"></a>
 
@@ -49,3 +46,4 @@ jsDoc: true
 | callback | `*` | 
 
 
+  

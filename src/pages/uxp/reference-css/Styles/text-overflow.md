@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # text-overflow
 
-**Since:** UXP 3
+**Since:** UXP v3.0
 
 Determines if an ellipsis should be shown when text is clipped. Supports `clip` (default) and `ellipsis`.
 

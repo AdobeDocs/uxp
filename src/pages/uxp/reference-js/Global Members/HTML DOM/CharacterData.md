@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="characterdata" id="characterdata"></a>
 
@@ -255,7 +252,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -265,7 +262,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -275,7 +272,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -322,3 +319,4 @@ jsDoc: true
 | event | `*` | 
 
 
+  

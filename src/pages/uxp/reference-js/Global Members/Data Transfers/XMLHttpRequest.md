@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="module-global-xmlhttprequest" id="module-global-xmlhttprequest"></a>
 
@@ -12,6 +9,15 @@ jsDoc: true
 ## XMLHttpRequest()
 The constructor initializes an XMLHttpRequest. It must be called before any other method calls.
 
+
+
+<a name="module-global-xmlhttprequest-responseurl" id="module-global-xmlhttprequest-responseurl"></a>
+
+## responseURL ⇒ `string`
+**Read only**
+It's the final URL obtained after any redirects.
+
+**Returns**: `string` - URL of the response  
 
 
 <a name="module-global-xmlhttprequest-readystate" id="module-global-xmlhttprequest-readystate"></a>
@@ -115,7 +121,7 @@ what type of data the response contains.
 <a name="module-global-xmlhttprequest-withcredentials" id="module-global-xmlhttprequest-withcredentials"></a>
 
 ## withCredentials
-Indicates whether to send cookies on a HTTP request.
+Get the value of withCredentials. It indicates whether to send cookies on a HTTP request.
 When the value is set to true, XMLHttpRequest sends cookies. Otherwise, cookies are not sent.
 
 
@@ -123,14 +129,16 @@ When the value is set to true, XMLHttpRequest sends cookies. Otherwise, cookies 
 <a name="module-global-xmlhttprequest-withcredentials" id="module-global-xmlhttprequest-withcredentials"></a>
 
 ## withCredentials
+Set the value of withCredentials.
+
 **Throws**:
 
-- `DOMException` when set if state is not unsent or opened.
+- `DOMException` when set if the state is not unsent or opened.
 
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [value] | `Boolean` | `true` | whether to send cookies on a HTTP request. |
+| value | `Boolean` | `true` | whether to send cookies on a HTTP request. |
 
 
 
@@ -230,6 +238,7 @@ Sends the request. If the request is asynchronous (which is the default), this m
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [data] | `*` | `` | A body of data to be sent in the XHR request. This can be: A Document, in which case it is serialized before being sent. A BodyInit, which as per the Fetch spec can be a Blob, BufferSource, FormData, URLSearchParams, ReadableStream, or USVString object. If no value is specified for the body, a default value of null is used. The best way to send binary content (e.g. in file uploads) is by using an ArrayBufferView or Blob in conjunction with the send() method. There is a caveat for sending a FormData object. The files in the FormData object are being read after calling this method. To ensure uploading files as-is, the file contents or files shouldn't be changed until uploading files to the server is done. @see XMLHttpRequest.upload. If there is a problem during reading files, the XMLHttpRequest transaction initiated by this method can be aborted with an error event fired. |
+| [data] | `*` | `\null` | A body of data to be sent in the XHR request. This can be: A Document, in which case it is serialized before being sent. A BodyInit, which as per the Fetch spec can be a Blob, BufferSource, FormData, URLSearchParams, ReadableStream, or USVString object. If no value is specified for the body, a default value of null is used. The best way to send binary content (e.g. in file uploads) is by using an ArrayBufferView or Blob in conjunction with the send() method. There is a caveat for sending a FormData object. The files in the FormData object are being read after calling this method. To ensure uploading files as-is, the file contents or files shouldn't be changed until uploading files to the server is done. see [XMLHttpRequest.upload](#module-global-xmlhttprequest-upload). If there is a problem during reading files, the XMLHttpRequest transaction initiated by this method can be aborted with an error event fired. |
 
 
+  

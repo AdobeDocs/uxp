@@ -1,11 +1,23 @@
----
-jsDoc: true
----
 
 <a name="messageevent" id="messageevent"></a>
 
 # window.MessageEvent
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/MessageEvent  
+
+
+<a name="new-messageevent-new" id="new-messageevent-new"></a>
+
+## MessageEvent(data, origin, source, eventInit)
+Creates an instance of MessageEvent.
+
+
+| Param | Type |
+| --- | --- |
+| data | `*` | 
+| origin | `*` | 
+| source | `*` | 
+| eventInit | `*` | 
+
 
 
 <a name="messageevent-data" id="messageevent-data"></a>
@@ -105,23 +117,4 @@ jsDoc: true
 
 ## stopPropagation()
 
-
-<a name="messageevent-messageevent" id="messageevent-messageevent"></a>
-
-## MessageEvent
-
-
-<a name="new-messageevent-messageevent-new" id="new-messageevent-messageevent-new"></a>
-
-### MessageEvent(data, origin, source, eventInit)
-Creates an instance of MessageEvent.
-
-
-| Param | Type |
-| --- | --- |
-| data | `*` | 
-| origin | `*` | 
-| source | `*` | 
-| eventInit | `*` | 
-
-
+  

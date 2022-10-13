@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # flex-grow
 
-**Since:** UXP 3
+**Since:** UXP v3.0
 
 Determines if a flexible item can grow, and if so, how it grows relative to other items in the flexible container.
 

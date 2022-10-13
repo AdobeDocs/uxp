@@ -24,7 +24,7 @@ Indicates that this instance is a folder. Useful for type checking.
 ## getEntries()
 Returns an array of entries contained within this folder.
 
-**Returns**: `Array.<Entry>` - The entries within the folder.  
+**Returns**: `Array<Entry>` - The entries within the folder.  
 **Example**  
 ```js
 const entries = await aFolder.getEntries();

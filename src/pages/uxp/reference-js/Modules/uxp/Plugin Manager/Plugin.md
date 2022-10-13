@@ -1,14 +1,14 @@
 
 <a name="plugin" id="plugin"></a>
 
-## Plugin
+# Plugin
 Plugin object receveied in the PluginManager.getPlugins list,used for IPC(Inter Plugin Communication)
 
 
 
 <a name="plugin-id" id="plugin-id"></a>
 
-### id ⇒ `String`
+## id ⇒ `String`
 Get plugin id
 
 **Returns**: `String`  
@@ -16,7 +16,7 @@ Get plugin id
 
 <a name="plugin-version" id="plugin-version"></a>
 
-### version ⇒ `String`
+## version ⇒ `String`
 Get plugin version
 
 **Returns**: `String`  
@@ -24,7 +24,7 @@ Get plugin version
 
 <a name="plugin-name" id="plugin-name"></a>
 
-### name ⇒ `String`
+## name ⇒ `String`
 Get plugin name
 
 **Returns**: `String`  
@@ -32,7 +32,7 @@ Get plugin name
 
 <a name="plugin-manifest" id="plugin-manifest"></a>
 
-### manifest ⇒ `JSON`
+## manifest ⇒ `JSON`
 Get plugin manifest
 
 **Returns**: `JSON`  
@@ -40,7 +40,7 @@ Get plugin manifest
 
 <a name="plugin-enabled" id="plugin-enabled"></a>
 
-### enabled ⇒ `Boolean`
+## enabled ⇒ `Boolean`
 Get plugin enabled/disabled state
 
 **Returns**: `Boolean`  
@@ -48,7 +48,7 @@ Get plugin enabled/disabled state
 
 <a name="plugin-showpanel" id="plugin-showpanel"></a>
 
-### showPanel(panelId)
+## showPanel(panelId)
 Show panel with the given ID. This api may be routed to the host app which can chose to disallow it.Used for commmunicating with other plugins (IPC : Inter Plugin Communication)Note: There is API to hide a panel, panels can be shown but can not be hid.
 
 **Returns**: `Promise`  
@@ -61,7 +61,7 @@ Show panel with the given ID. This api may be routed to the host app which can c
 
 <a name="plugin-invokecommand" id="plugin-invokecommand"></a>
 
-### invokeCommand(commandId, ...params)
+## invokeCommand(commandId, ...params)
 Invoke command with given ID. This api may be routed to the host app which can chose to disallow it.Used for commmunicating with other plugins (IPC : Inter Plugin Communication)
 
 **Returns**: `Promise`  

@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="progressevent" id="progressevent"></a>
 
@@ -9,6 +6,19 @@ jsDoc: true
 
 - https://developer.mozilla.org/en-US/docs/Web/API/ProgressEvent
 - https://xhr.spec.whatwg.org/#progressevent
+
+
+
+<a name="new-progressevent-new" id="new-progressevent-new"></a>
+
+## ProgressEvent(typeArg, [eventInit])
+Creates an instance of ProgressEvent.
+
+
+| Param | Type | Default |
+| --- | --- | --- |
+| typeArg | `*` |  | 
+| [eventInit] | `*` | `{}` | 
 
 
 
@@ -109,21 +119,4 @@ jsDoc: true
 
 ## stopPropagation()
 
-
-<a name="progressevent-progressevent" id="progressevent-progressevent"></a>
-
-## ProgressEvent
-
-
-<a name="new-progressevent-progressevent-new" id="new-progressevent-progressevent-new"></a>
-
-### ProgressEvent(typeArg, [eventInit])
-Creates an instance of ProgressEvent.
-
-
-| Param | Type | Default |
-| --- | --- | --- |
-| typeArg | `*` |  | 
-| [eventInit] | `*` | `{}` | 
-
-
+  

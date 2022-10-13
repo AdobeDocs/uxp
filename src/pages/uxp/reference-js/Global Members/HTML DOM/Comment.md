@@ -1,11 +1,21 @@
----
-jsDoc: true
----
 
 <a name="comment" id="comment"></a>
 
 # window.Comment
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Comment  
+
+
+<a name="new-comment-new" id="new-comment-new"></a>
+
+## Comment(document, comment)
+Creates an instance of Comment.
+
+
+| Param | Type |
+| --- | --- |
+| document | `Document` | 
+| comment | `string` | 
+
 
 
 <a name="comment-nodename" id="comment-nodename"></a>
@@ -267,7 +277,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -277,7 +287,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -287,7 +297,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -334,21 +344,4 @@ jsDoc: true
 | event | `*` | 
 
 
-
-<a name="comment-comment" id="comment-comment"></a>
-
-## Comment
-
-
-<a name="new-comment-comment-new" id="new-comment-comment-new"></a>
-
-### Comment(document, comment)
-Creates an instance of Comment.
-
-
-| Param | Type |
-| --- | --- |
-| document | `Document` | 
-| comment | `string` | 
-
-
+  

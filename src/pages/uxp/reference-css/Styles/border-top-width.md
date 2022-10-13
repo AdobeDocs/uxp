@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-top-width
 
-**Since:** UXP 2
+**Since:** UXP v2.0
 
 Sets the width of the top border.
 

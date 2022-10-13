@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # Universal selector
 
-**Since:** UXP 3
+**Since:** UXP v3.0
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
 
