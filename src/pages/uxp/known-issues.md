@@ -2,23 +2,6 @@
 index_desc: List of known issues in UXP
 -->
 
----
-keywords:
-  - Creative Cloud
-  - API Documentation
-  - UXP
-  - Plugins
-  - JavaScript
-  - ExtendScript
-  - SDK
-  - C++
-  - Scripting
-title: Known UXP Issues in Photoshop
-description: Known issues in UXP for Photoshop.
-contributors:
-  - https://github.com/sujaisivanandan
----
-
 # Known Issues
 
 The following issues are known. Please check this page with future updates, as known issues will be fixed over time, and new issues will likely be discovered.
