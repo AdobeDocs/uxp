@@ -335,6 +335,10 @@ module.exports=[
                 "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/Folder/"
               },
               {
+                "title": "FileSystem",
+                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/FileSystem/"
+              },
+              {
                 "title": "FileSystemProvider",
                 "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/FileSystemProvider/"
               },
