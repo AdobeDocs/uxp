@@ -8,29 +8,18 @@
     "url": "https://github.com/AdobeDocs/uxp"
   },
   "scripts": {
-    "predev": "npm run copy-docs && npm run copy-transclusions && npm run copy-assets",
-    "prebuild": "npm run copy-docs && npm run copy-transclusions && npm run copy-assets",
+    "predev": "npm run prepare-docs",
+    "prebuild": "npm run prepare-docs",
     "postbuild": "touch public/.nojekyll",
-    "_copy-docs-html": ". .env && rm -rf src/pages/uxp/reference-html     && mkdir -p src/pages/uxp/reference-html     && cp -r \"$UXP_REPO_SOURCE\"/uxp/reference-html   src/pages/uxp/ && mv src/pages/uxp/reference-html/reference-html.js reference-html.js",
-    "_copy-docs-spectrum": ". .env && rm -rf src/pages/uxp/reference-spectrum && mkdir -p src/pages/uxp/reference-spectrum && cp -r \"$UXP_REPO_SOURCE\"/uxp/reference-spectrum src/pages/uxp/ && mv src/pages/uxp/reference-spectrum/reference-spectrum.js reference-spectrum.js",
-    "_copy-docs-css": ". .env && rm -rf src/pages/uxp/reference-css      && mkdir -p src/pages/uxp/reference-css      && cp -r \"$UXP_REPO_SOURCE\"/uxp/reference-css      src/pages/uxp/ && mv src/pages/uxp/reference-css/reference-css.js reference-css.js",
-    "_copy-docs-js": ". .env && rm -rf src/pages/uxp/reference-js       && mkdir -p src/pages/uxp/reference-js       && cp -r \"$UXP_REPO_SOURCE\"/uxp/reference-js       src/pages/uxp/ && mv src/pages/uxp/reference-js/reference-js.js reference-js.js",
+    
+    "_copy-docs-html": ". .env && rm -rf src/pages/uxp/reference-html     && mkdir -p src/pages/uxp/reference-html     && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-html/ src/pages/uxp/reference-html/",
+    "_copy-docs-spectrum": ". .env && rm -rf src/pages/uxp/reference-spectrum && mkdir -p src/pages/uxp/reference-spectrum && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/ src/pages/uxp/reference-spectrum/",
+    "_copy-docs-css": ". .env && rm -rf src/pages/uxp/reference-css      && mkdir -p src/pages/uxp/reference-css      && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-css/ src/pages/uxp/reference-css/",
+    "_copy-docs-js": ". .env && rm -rf src/pages/uxp/reference-js       && mkdir -p src/pages/uxp/reference-js       && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-js/ src/pages/uxp/reference-js/",
     "copy-docs": "npm run _copy-docs-js && npm run _copy-docs-css && npm run _copy-docs-html && npm run _copy-docs-spectrum",
     "_copy-spectrum-assets-transclusions": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/assets ./_transclusions/photoshop/uxp/reference-spectrum/",
     "_copy-spectrum-assets": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/assets ./src/pages/uxp/reference-spectrum/",
-    "_copy-html-assets-transclusions": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-html/assets ./_transclusions/photoshop/uxp/reference-html/",
-    "_copy-html-assets": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-html/assets ./src/pages/uxp/reference-html/",
-    "copy-assets": "npm run _copy-spectrum-assets && npm run _copy-spectrum-assets-transclusions && npm run _copy-html-assets && npm run _copy-html-assets-transclusions",
-    "copy-transclusions": ". .env && rm -rf ./_transclusions && mkdir ./_transclusions && cp -r \"$UXP_REPO_SOURCE\"/_transclusions .",
-
-    "experiment": "npm run copy-docs-new && npm run copy-assets-new",
-    "_copy-docs-html-new": ". .env && rm -rf src/pages/uxp/reference-html     && mkdir -p src/pages/uxp/reference-html     && cp -r \"$UXP_REPO_SOURCE\"/HTML/ src/pages/uxp/reference-html/",
-    "_copy-docs-spectrum-new": ". .env && rm -rf src/pages/uxp/reference-spectrum && mkdir -p src/pages/uxp/reference-spectrum && cp -r \"$UXP_REPO_SOURCE\"/spectrum/ src/pages/uxp/reference-spectrum/",
-    "_copy-docs-css-new": ". .env && rm -rf src/pages/uxp/reference-css      && mkdir -p src/pages/uxp/reference-css      && cp -r \"$UXP_REPO_SOURCE\"/CSS/ src/pages/uxp/reference-css/",
-    "_copy-docs-js-new": ". .env && rm -rf src/pages/uxp/reference-js       && mkdir -p src/pages/uxp/reference-js       && cp -r \"$UXP_REPO_SOURCE\"/JS/ src/pages/uxp/reference-js/",
-    "copy-docs-new": "npm run _copy-docs-js-new && npm run _copy-docs-css-new && npm run _copy-docs-html-new && npm run _copy-docs-spectrum-new",
-    "_copy-spectrum-assets-transclusions-new": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/spectrum/assets ./_transclusions/photoshop/uxp/reference-spectrum/",
-    "_copy-spectrum-assets-new": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/spectrum/assets ./src/pages/uxp/reference-spectrum/",
-    "copy-assets-new": "npm run _copy-spectrum-assets-new && npm run _copy-spectrum-assets-transclusions-new"
+    "copy-assets": "npm run _copy-spectrum-assets && npm run _copy-spectrum-assets-transclusions",
+    "prepare-docs": "npm run copy-docs && npm run copy-assets"
   }
 }
