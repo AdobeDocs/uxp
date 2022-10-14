@@ -38,9 +38,19 @@ UXP_REPO_SOURCE_DOCS="<path-to-torq-native>/docs/dist"
 
 The side navigation panel in the devsite is generated from the `reference-*.js` files.
 
-### Work in progress
+### Work in progress or TODO
 
-- For Persistent file storage APIs, `storage.md` is not utilized yet. Some fixes to the old files were manually added. Refer to https://github.com/AdobeDocs/uxp/commit/b3c0c783bf3195704abfe18e1190ca7b5c0d534d.
-- Files: version3P.md, known-issues.md, changelog3P.md, and src/pages/uxp/index.md, reference-spectrum/index.md were formatted manually in this repo. This should be done in `torq-native` instead. Refer to https://github.com/AdobeDocs/uxp/commit/dbb4671b6746ddeda3fb3ea5ac6e6e0da9d21715
-- In the future, `_transclusions` should be generated from `torq-native`. For now, any new files should be manually added to `_transclusions` and `reference-*.js` files. Otherwise, it will not appear in the devsite.
+1. For Persistent file storage APIs, `storage.md` is not utilized yet. Some fixes to the old files were manually added. Refer to https://github.com/AdobeDocs/uxp/commit/b3c0c783bf3195704abfe18e1190ca7b5c0d534d. Make sure you dont update `Persistent file storage/index.md` until you want to use storage.md. 
+2. In the future, `_transclusions` should be generated from `torq-native`. For now, any new files should be manually added to `_transclusions` and `reference-*.js` files. Otherwise, it will not appear in the devsite.
+43.  Few files were manually changed in this repo. Be careful while merging their content. The incomming changes might be missing some information or change formatting. In the future, move these changes to the UXP source files.
+    * `reference-js/index.md`
+    * `LocalStorage.md`
+    * `SessionStorage.md`
+    * `Versions.md`
+    * `version3P.md`
+    * `known-issues.md`
+    * `changelog3P.md`
+    * `src/pages/uxp/index.md`
+    * `reference-spectrum/index`
+
 

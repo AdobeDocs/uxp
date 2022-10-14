@@ -40,6 +40,9 @@ The following issues are known. Please check this page with future updates, as k
 * The `location` attribute for `sp-tooltip` seems like it would control the position of the tooltip relative to its attachment. This is not how the attribute actually works -- it instead controls the tooltip's "tip" direction. If `location` is set to `bottom`, the tip will be pointed upwards under the assumption that your code has already placed the tooltip below the control. (PS-56708) _Better tooltip handling is coming in a future release_.
 * The numeric `sp-textfield` can trigger numeric validation errors, even when the entered value would seem to be correct. This will be addressed in a future release. The limitation on valid ranges is an issue with numeric fields in Photoshop in general and is a separate issue. (PS-57698)
 
+## WebView
+* Mouuse/Keyboard events within Webview doesn't work in XD v55 and Win 10 due to a [Microsoft issue](https://github.com/microsoft/microsoft-ui-xaml/issues/6427). Fix for this is in progress.
+
 ## Events
 
 * `uxpshowpanel` and the corresponding `show` callback occurs only once, when the panel is initially made visible. It will not recur. This will be fixed in the future. (PS-57284)
@@ -95,10 +98,7 @@ The following issues are known. Please check this page with future updates, as k
 
 ## File I/O
 
-* Copying a file from a folder outside the plugin's data folder into the plugin's data folder (using `getDataFolder`) may fail on Windows with the error `fs.copyFile fallback failed - Error: Route not found". (PS-57707)
 * The list of images in `require("uxp").storage.fileTypes.images` is not intended to be a complete representation of all supported image types by the host. Instead, this array includes some of the more common images. You can pass your own array with the desired file types instead. (PS-57601)
-* It's not currently possible to obtain metadata for file objects in the plugin's bundle. The date or size will be invalid. Metadata from other sources (such as `getDataFolder`) are unaffected. This will be fixed in a future release. (PS-57307)
-
 
 ## Debugging
 

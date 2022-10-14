@@ -20,6 +20,7 @@
     "_copy-spectrum-assets-transclusions": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/assets ./_transclusions/photoshop/uxp/reference-spectrum/",
     "_copy-spectrum-assets": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/assets ./src/pages/uxp/reference-spectrum/",
     "copy-assets": "npm run _copy-spectrum-assets && npm run _copy-spectrum-assets-transclusions",
-    "prepare-docs": "npm run copy-docs && npm run copy-assets"
+    "_copy-other-files": ". .env && cp \"$UXP_REPO_SOURCE_DOCS\"/*.md src/pages/uxp/",
+    "prepare-docs": "npm run copy-docs && npm run copy-assets && npm run _copy-other-files"
   }
 }
