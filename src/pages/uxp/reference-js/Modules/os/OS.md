@@ -5,16 +5,6 @@
 **See**: https://nodejs.org/api/os.html  
 
 
-<a name="os-networkinterfaces" id="os-networkinterfaces"></a>
-
-## networkInterfaces()
-Gets the network interfaces that have been assigned a network address
-
-**Returns**: `Array` - a list of network interface identifiers.
-The associated value has the following property:
-     mac {String} MAC address of the network interface  
-
-
 <a name="os-platform" id="os-platform"></a>
 
 ## platform()
@@ -65,5 +55,13 @@ Gets the total amount of system memory in bytes
 Gets the total amount of free system memory in bytes
 
 **Returns**: `integer` - the total amount of free system memory in bytes as an integer  
+
+
+<a name="os-homedir" id="os-homedir"></a>
+
+## homedir()
+Gets the home directory path of the user
+
+**Returns**: `string` - the home directory path of the user  
 
   
