@@ -6,7 +6,7 @@ index_desc: General information on UXP and its dependencies for 3rd party plugin
 - ECMAScript Version in UXP v6.3 : ECMA-262
 - React Version Supported in UXP v6.3: React 16 or lower
 
-# Applications integrated with UXP
+## Applications Integrated with UXP
 
 | Application | UXP v6.3| UXP v6.2 | UXP v6.1 | UXP v6.0 | UXP v5.6 | UXP v5.5 |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
@@ -15,7 +15,7 @@ index_desc: General information on UXP and its dependencies for 3rd party plugin
 |InDesign Server|	18.0 |-|-|-|-|-|
 |XD|	55 | 54	|-|-|53| 45 |
 
-# UXP Features Supported in Applications
+## UXP Features Supported in Applications
 | Application | Plugin Support | UXP Scripting Support |
 | ------------- | ------------- | ------------- | 
 |Photoshop| ✅	 | ✅ from v23.5|
