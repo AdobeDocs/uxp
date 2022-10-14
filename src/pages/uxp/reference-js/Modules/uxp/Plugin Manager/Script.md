@@ -1,7 +1,7 @@
 
 <a name="script" id="script"></a>
 
-# `require('uxp').script;`
+# require('uxp').script;
 Script module, which contains essential properties and methods while writing scripts.
 
 

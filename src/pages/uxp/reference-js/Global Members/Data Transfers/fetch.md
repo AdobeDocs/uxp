@@ -1,7 +1,7 @@
 
 <a name="module-global-fetch" id="module-global-fetch"></a>
 
-# `window.fetch(input, [init])`
+# window.fetch(input, [init])
 **Returns**: `Promise<Response>` - see [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response)  
 **Throws**:
 
