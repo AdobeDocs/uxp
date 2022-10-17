@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-right-style
 
-**Since:**  UXP 2
+**Since:**  UXP v2.0
 
 Specifies the [style](../border-style/) of right border to render.
 

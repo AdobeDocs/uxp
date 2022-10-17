@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # margin-bottom
 
-**Since:**  UXP 2
+**Since:**  UXP v2.0
 
 Specifies the bottom margin for an element.
 
