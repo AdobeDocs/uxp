@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # background-size
 
-**Since:**  UXP 3
+**Since:**  UXP v3.0
 
 Determines the size of the background content. Also supports `cover` and `contain`.
 

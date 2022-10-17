@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-bottom-left-radius
 
-**Since:**  UXP 2
+**Since:**  UXP v2.0
 
 Sets the bottom left border radius.
 
