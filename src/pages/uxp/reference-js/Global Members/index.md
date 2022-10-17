@@ -1,7 +1,7 @@
 # Global Members
-
-* [Data Transfers](/uxp/reference-js/Global%20Members/Data%20Transfers/)
-* [Data Storage](/uxp/reference-js/Global%20Members/Data%20Storage/)
-* [HTML Events](/uxp/reference-js/Global%20Members/HTML%20Events/)
-* [HTML DOM](/uxp/reference-js/Global%20Members/HTML%20DOM/)
-* [HTML Elements](/uxp/reference-js/Global%20Members/HTML%20Elements/)
+* [Crypto](Crypto/index.md)
+* [Data Storage](Data%20Storage/index.md)
+* [Data Transfers](Data%20Transfers/index.md)
+* [HTML DOM](HTML%20DOM/index.md)
+* [HTML Elements](HTML%20Elements/index.md)
+* [HTML Events](HTML%20Events/index.md)

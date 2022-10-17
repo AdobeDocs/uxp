@@ -1,11 +1,21 @@
----
-jsDoc: true
----
 
 <a name="dragevent" id="dragevent"></a>
 
 # window.DragEvent
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/DragEvent  
+
+
+<a name="new-dragevent-new" id="new-dragevent-new"></a>
+
+## DragEvent(type, eventInit)
+Creates an instance of DragEvent.
+
+
+| Param | Type |
+| --- | --- |
+| type | `*` | 
+| eventInit | `*` | 
+
 
 
 <a name="dragevent-datatransfer" id="dragevent-datatransfer"></a>
@@ -261,21 +271,4 @@ jsDoc: true
 
 ## stopPropagation()
 
-
-<a name="dragevent-dragevent" id="dragevent-dragevent"></a>
-
-## DragEvent
-
-
-<a name="new-dragevent-dragevent-new" id="new-dragevent-dragevent-new"></a>
-
-### DragEvent(type, eventInit)
-Creates an instance of DragEvent.
-
-
-| Param | Type |
-| --- | --- |
-| type | `*` | 
-| eventInit | `*` | 
-
-
+  

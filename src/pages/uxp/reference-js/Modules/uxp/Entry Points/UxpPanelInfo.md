@@ -1,13 +1,8 @@
----
-jsDoc: true
----
 
 <a name="uxppanelinfo" id="uxppanelinfo"></a>
 
 # UxpPanelInfo
 Class describing a panel of the plugin.
-
-
 
 <a name="uxppanelinfo-id" id="uxppanelinfo-id"></a>
 
@@ -20,17 +15,17 @@ Get panel id
 <a name="uxppanelinfo-label" id="uxppanelinfo-label"></a>
 
 ## label ⇒ `string`
-Get panel label
+Get panel label, localized string
 
-**Returns**: `string` - - a localized string  
+**Returns**: `string`  
 
 
 <a name="uxppanelinfo-description" id="uxppanelinfo-description"></a>
 
 ## description ⇒ `string`
-Get panel description
+Get panel description, localized string
 
-**Returns**: `string` - - a localized string  
+**Returns**: `string`  
 
 
 <a name="uxppanelinfo-shortcut" id="uxppanelinfo-shortcut"></a>
@@ -49,17 +44,17 @@ Get panel shortcut
 <a name="uxppanelinfo-title" id="uxppanelinfo-title"></a>
 
 ## title ⇒ `string`
-Get panel title
+Get panel title, localized string
 
-**Returns**: `string` - - a localized string  
+**Returns**: `string`  
 
 
 <a name="uxppanelinfo-icons" id="uxppanelinfo-icons"></a>
 
-## icons ⇒ `Array.<Object>`
+## icons ⇒ `Array`
 Get panel icons
 
-**Returns**: `Array.<Object>` - each object contains following properties:
+**Returns**: `Array` - each object contains following properties:
                            {string} path
                            {Array of Number} scale
                            {Array of string} theme
@@ -113,3 +108,4 @@ Get panel menu items
 
 **Returns**: `UxpMenuItems`  
 
+  

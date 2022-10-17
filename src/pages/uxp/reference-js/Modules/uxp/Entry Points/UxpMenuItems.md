@@ -1,13 +1,8 @@
----
-jsDoc: true
----
 
 <a name="uxpmenuitems" id="uxpmenuitems"></a>
 
 # UxpMenuItems
 Class describing the menu of a panel.
-Todo(tagarg) : make Iterable
-
 
 
 <a name="uxpmenuitems-size" id="uxpmenuitems-size"></a>
@@ -47,7 +42,10 @@ Get menu item at specified index
 <a name="uxpmenuitems-insertat" id="uxpmenuitems-insertat"></a>
 
 ## insertAt(index, newItem)
-Inserts the new menu item at the specified index.
+Inserts/replaces the menu item at the specified index with the new menu item.
+         index < size of menuItems array : replaces the existing menu item
+         index = size of menuItems array : Inserts menu item at end
+         index > size of menuItems array : throws invalid index exception
 
 
 | Param | Type | Description |
@@ -68,3 +66,4 @@ Removes menu item from specified index.
 | index | `Number` | 
 
 
+  

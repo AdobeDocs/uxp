@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # ::before
 
-**Since:** UXP 3, PS 22.0.0
+**Since:** UXP v3.0
 
 Creates a pseudo-element before the matched element. 
 

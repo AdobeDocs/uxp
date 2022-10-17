@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="securestorage" id="securestorage"></a>
 
@@ -39,7 +36,7 @@ Returns number of items stored in the secure storage.
 ## setItem(key, value)
 Store a key and value pair after the value is encrypted in a secure storage
 
-**Returns**: `Promise` - : resolved when the value is stored. rejected when the value is empty or not stored.  
+**Returns**: `Promise<void>` - : resolved when the value is stored. rejected when the value is empty or not stored.  
 **Throws**:
 
 - `TypeError` : thrown when either key or value doesn't have one of acceptable types.
@@ -57,7 +54,7 @@ Store a key and value pair after the value is encrypted in a secure storage
 ## getItem(key)
 Retrieve a value associated with a provided key after the value is being decrypted from a secure storage.
 
-**Returns**: `Promise.<Uint8Array>` - : a value as buffer  
+**Returns**: `Promise<Uint8Array>` - : a value as buffer  
 **Throws**:
 
 - `TypeError` : thrown when a key doesn't have an acceptable type.
@@ -74,7 +71,7 @@ Retrieve a value associated with a provided key after the value is being decrypt
 ## removeItem(key)
 Remove a value associated with a provided key
 
-**Returns**: `Promise` - : resolved when the value associated with the key is removed. rejected when the value is neither removed nor found.  
+**Returns**: `Promise<void>` - : resolved when the value associated with the key is removed. rejected when the value is neither removed nor found.  
 **Throws**:
 
 - `TypeError` : thrown when a key doesn't have an acceptable type.
@@ -104,5 +101,6 @@ Returns a key which is stored at the given index
 ## clear()
 Clear all values in a secure storage.
 
-**Returns**: `Promise` - : resolved when all the items are cleared. rejected when there is no item to clear or clear failed.  
+**Returns**: `Promise<void>` - : resolved when all the items are cleared. rejected when there is no item to clear or clear failed.  
 
+  

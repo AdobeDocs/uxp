@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # flex
 
-**Since:** UXP 3, PS 22.0.0
+**Since:** UXP v3.0
 
 Shorthand for the `flex-grow`, `flex-shrink`, and `flex-basis` styles.
 

@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # flex-basis
 
-**Since:** UXP 3, PS 22.0.0
+**Since:** UXP v3.0
 
 Sets the basis for determining the size of an item in a flexible layout container.
 

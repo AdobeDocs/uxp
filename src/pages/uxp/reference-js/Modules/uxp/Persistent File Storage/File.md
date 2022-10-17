@@ -44,7 +44,7 @@ Reads data from the file and returns it. The file format can be specified
 with the `format` option. If a format is not supplied, the file is assumed
 to be a text file using UTF8 encoding.
 
-**Returns**: `Promise.<(string\|ArrayBuffer)>` - the contents of the file  
+**Returns**: `Promise<(string\|ArrayBuffer)>` - the contents of the file  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -79,6 +79,8 @@ is controlled via the `format` option, and defaults to UTF8.
 | options | `any` |  |  |
 | [options.format] | `Symbol` | `formats.utf8` | the format of the file; see [utf8](utf8) and [binary](binary) |
 | [options.append] | `boolean` | `false` | if `true`, the data is written to the end of the file |
+
+**Returns**: `Promise<void>`
 
 **Example**  
 ```js

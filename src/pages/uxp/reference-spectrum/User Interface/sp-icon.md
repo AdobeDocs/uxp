@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-icon
 
-**Since:** UXP 4.1, PS 22.0.0
+**Since:** UXP v4.1
 
 Display a named icon.
 

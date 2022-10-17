@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-label
 
-**Since:** UXP 4.1, PS 22.0.0
+**Since:** UXP v4.1
 
 Renders a text label. Can also be used to add a label to many Spectrum UXP UI elements when using the `slot="label"` attribute.
 

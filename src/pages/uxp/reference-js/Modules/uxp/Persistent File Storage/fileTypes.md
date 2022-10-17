@@ -11,21 +11,21 @@ This namespace describes the various file type extensions that can used be used 
 
 <a name="module-storage-filetypes-text" id="module-storage-filetypes-text"></a>
 
-## text
+## text: `Symbol`
 Text file extensions
 
 
 
 <a name="module-storage-filetypes-images" id="module-storage-filetypes-images"></a>
 
-## images
+## images: `Symbol`
 Image file extensions
 
 
 
 <a name="module-storage-filetypes-all" id="module-storage-filetypes-all"></a>
 
-## all
+## all: `Symbol`
 All file types
 
 

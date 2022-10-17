@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # :enabled
 
-**Since:** UXP 3, PS 22.0.0
+**Since:** UXP v3.0
 
 Matches when the selected element has no children.
 

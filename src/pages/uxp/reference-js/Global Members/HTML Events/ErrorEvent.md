@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="errorevent" id="errorevent"></a>
 
@@ -9,6 +6,19 @@ jsDoc: true
 
 - https://developer.mozilla.org/en-US/docs/Web/API/ErrorEvent
 - https://html.spec.whatwg.org/#the-errorevent-interface
+
+
+
+<a name="new-errorevent-new" id="new-errorevent-new"></a>
+
+## ErrorEvent(typeArg, [eventInit])
+Creates an instance of ErrorEvent.
+
+
+| Param | Type | Default |
+| --- | --- | --- |
+| typeArg | `*` |  | 
+| [eventInit] | `*` | `{}` | 
 
 
 
@@ -121,21 +131,4 @@ jsDoc: true
 
 ## stopPropagation()
 
-
-<a name="errorevent-errorevent" id="errorevent-errorevent"></a>
-
-## ErrorEvent
-
-
-<a name="new-errorevent-errorevent-new" id="new-errorevent-errorevent-new"></a>
-
-### ErrorEvent(typeArg, [eventInit])
-Creates an instance of ErrorEvent.
-
-
-| Param | Type | Default |
-| --- | --- | --- |
-| typeArg | `*` |  | 
-| [eventInit] | `*` | `{}` | 
-
-
+  

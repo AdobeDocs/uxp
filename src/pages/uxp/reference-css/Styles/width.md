@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # width
 
-**Since:** UXP 2, PS 22.0.0
+**Since:** UXP v2.0
 
 Specifies the width for an element.
 

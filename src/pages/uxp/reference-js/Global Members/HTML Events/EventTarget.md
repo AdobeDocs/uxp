@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="eventtarget" id="eventtarget"></a>
 
@@ -41,3 +38,4 @@ jsDoc: true
 | event | `*` | 
 
 
+  

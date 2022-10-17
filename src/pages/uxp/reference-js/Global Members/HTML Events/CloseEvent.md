@@ -1,11 +1,22 @@
----
-jsDoc: true
----
 
 <a name="closeevent" id="closeevent"></a>
 
 # window.CloseEvent
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/CloseEvent  
+
+
+<a name="new-closeevent-new" id="new-closeevent-new"></a>
+
+## CloseEvent(code, reason, wasClean)
+Creates an instance of CloseEvent.
+
+
+| Param | Type |
+| --- | --- |
+| code | `*` | 
+| reason | `*` | 
+| wasClean | `*` | 
+
 
 
 <a name="closeevent-code" id="closeevent-code"></a>
@@ -105,22 +116,4 @@ jsDoc: true
 
 ## stopPropagation()
 
-
-<a name="closeevent-closeevent" id="closeevent-closeevent"></a>
-
-## CloseEvent
-
-
-<a name="new-closeevent-closeevent-new" id="new-closeevent-closeevent-new"></a>
-
-### CloseEvent(code, reason, wasClean)
-Creates an instance of CloseEvent.
-
-
-| Param | Type |
-| --- | --- |
-| code | `*` | 
-| reason | `*` | 
-| wasClean | `*` | 
-
-
+  

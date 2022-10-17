@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # link
 
-**Since:** UXP 3, PS 22.0.0
+**Since:** UXP v3.0
 
 Refers to other, related content. In UXP, this tag allows you to load an external stylesheet. No other use is supported.
 

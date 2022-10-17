@@ -1,11 +1,21 @@
----
-jsDoc: true
----
 
 <a name="pointerevent" id="pointerevent"></a>
 
 # window.PointerEvent
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent  
+
+
+<a name="new-pointerevent-new" id="new-pointerevent-new"></a>
+
+## PointerEvent(type, eventInit)
+Creates an instance of PointerEvent.
+
+
+| Param | Type |
+| --- | --- |
+| type | `*` | 
+| eventInit | `*` | 
+
 
 
 <a name="baseuievent-pointerid" id="baseuievent-pointerid"></a>
@@ -255,21 +265,4 @@ jsDoc: true
 
 ## stopPropagation()
 
-
-<a name="pointerevent-pointerevent" id="pointerevent-pointerevent"></a>
-
-## PointerEvent
-
-
-<a name="new-pointerevent-pointerevent-new" id="new-pointerevent-pointerevent-new"></a>
-
-### PointerEvent(type, eventInit)
-Creates an instance of PointerEvent.
-
-
-| Param | Type |
-| --- | --- |
-| type | `*` | 
-| eventInit | `*` | 
-
-
+  

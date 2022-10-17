@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-action-button
 
-**Since:** UXP 4.1, PS 22.0.0
+**Since:** UXP v4.1
 
 Renders an action button.
 

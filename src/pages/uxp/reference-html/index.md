@@ -1,6 +1,6 @@
 # HTML Reference
 
-
-
-* [General](/uxp/reference-html/General/)
-* [Hierarchy](/uxp/reference-html/Hierarchy/)
+Technical documentation regarding some of the HTML elements and attributes that are supported.
+## Pages in this section
+* [General](General/index.md)
+* [Hierarchy](Hierarchy/index.md)

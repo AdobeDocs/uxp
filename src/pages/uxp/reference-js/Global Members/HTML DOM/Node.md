@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="node" id="node"></a>
 
@@ -183,7 +180,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -193,7 +190,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -203,7 +200,7 @@ jsDoc: true
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -280,3 +277,4 @@ jsDoc: true
 
 ## COMMENT\_NODE
 
+  

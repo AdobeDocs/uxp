@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="htmltextareaelement" id="htmltextareaelement"></a>
 
@@ -11,6 +8,20 @@ jsDoc: true
 <a name="htmltextareaelement-value" id="htmltextareaelement-value"></a>
 
 ## value : `string`
+
+
+<a name="htmltextareaelement-innerhtml" id="htmltextareaelement-innerhtml"></a>
+
+## innerHTML : `string`
+Override implementation in base class Element
+
+
+
+<a name="htmltextareaelement-defaultvalue" id="htmltextareaelement-defaultvalue"></a>
+
+## defaultValue : `string`
+The defaultValue for the textarea element
+
 
 
 <a name="htmltextareaelement-placeholder" id="htmltextareaelement-placeholder"></a>
@@ -25,16 +36,16 @@ jsDoc: true
 
 <a name="htmltextareaelement-selectionstart" id="htmltextareaelement-selectionstart"></a>
 
-## selectionStart : `Number`
-Returns the beginning index of the selected text. When nothing is selected,
+## selectionStart : `number`
+Returns/Sets the beginning index of the selected text. When nothing is selected,
 this returns the position of the text input cursor (caret) inside of the `<textarea>` element.
 
 
 
 <a name="htmltextareaelement-selectionend" id="htmltextareaelement-selectionend"></a>
 
-## selectionEnd : `Number`
-Returns the end index of the selected text. When there's no selection,
+## selectionEnd : `number`
+Returns/Sets the end index of the selected text. When there's no selection,
 this returns the offset of the character immediately following the current text input cursor position.
 
 
@@ -45,6 +56,11 @@ this returns the offset of the character immediately following the current text 
 Access to all the custom data attributes (data-*) set.
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset  
+
+
+<a name="htmlelement-innertext" id="htmlelement-innertext"></a>
+
+## innerText : `string`
 
 
 <a name="element-nodename" id="element-nodename"></a>
@@ -194,6 +210,13 @@ The width of the element
 **Read only**
 
 
+<a name="element-autofocus" id="element-autofocus"></a>
+
+## autofocus : `boolean`
+Indicates if the element will focus automatically when it is loaded
+
+
+
 <a name="element-uxpcontainer" id="element-uxpcontainer"></a>
 
 ## uxpContainer : `number`
@@ -203,11 +226,6 @@ The width of the element
 <a name="element-disabled" id="element-disabled"></a>
 
 ## disabled : `boolean`
-
-
-<a name="element-innerhtml" id="element-innerhtml"></a>
-
-## innerHTML : `string`
 
 
 <a name="element-outerhtml" id="element-outerhtml"></a>
@@ -478,6 +496,30 @@ Scrolls the element to the new x and y positions. If options object is used with
 **Returns**: `*`  
 
 
+<a name="element-closest" id="element-closest"></a>
+
+## closest(selectorString)
+**Returns**: `Element`  
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/closest  
+
+| Param | Type |
+| --- | --- |
+| selectorString | `string` | 
+
+
+
+<a name="element-matches" id="element-matches"></a>
+
+## matches(selectorString)
+**Returns**: `boolean`  
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/matches  
+
+| Param | Type |
+| --- | --- |
+| selectorString | `string` | 
+
+
+
 <a name="element-insertadjacenthtml" id="element-insertadjacenthtml"></a>
 
 ## insertAdjacentHTML(position, value)
@@ -586,7 +628,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -596,7 +638,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -606,7 +648,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 | Param | Type |
 | --- | --- |
-| ...nodes | `Array.<Node>` | 
+| ...nodes | `Array<Node>` | 
 
 
 
@@ -653,3 +695,4 @@ Scrolls the element to the new x and y positions. If options object is used with
 | event | `*` | 
 
 
+  

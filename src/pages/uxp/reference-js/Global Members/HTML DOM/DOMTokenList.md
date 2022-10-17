@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="domtokenlist" id="domtokenlist"></a>
 
@@ -164,3 +161,4 @@ any other method.
 | token | `string` | 
 
 
+  

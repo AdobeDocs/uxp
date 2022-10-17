@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-menu-item
 
-**Since:** UXP 4.1, PS 22.0.0
+**Since:** UXP v4.1
 
 Renders a menu item, with an optional checkmark indicating selection.
 

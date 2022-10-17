@@ -1,12 +1,8 @@
----
-jsDoc: true
----
 
 <a name="uxpmenuitem" id="uxpmenuitem"></a>
 
 # UxpMenuItem
 Class describing a single menu item of a panel
-
 
 
 <a name="uxpmenuitem-id" id="uxpmenuitem-id"></a>
@@ -20,9 +16,9 @@ Get menu item id
 <a name="uxpmenuitem-label" id="uxpmenuitem-label"></a>
 
 ## label ⇒ `string`
-Get menu item label
+Get menu item label, localized string
 
-**Returns**: `string` - - a localized string  
+**Returns**: `string`  
 
 
 <a name="uxpmenuitem-enabled" id="uxpmenuitem-enabled"></a>
@@ -99,3 +95,4 @@ Set checked state of the menu item. The state will be updated immediately, async
 Remove the menu item
 
 
+  

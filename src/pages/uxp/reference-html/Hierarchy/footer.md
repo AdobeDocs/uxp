@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # footer
 
-**Since:** UXP 3, PS 22.0.0
+**Since:** UXP v3.0
 
 The `<footer>` element is used in dialogs to help align buttons to the right-side of a dialog. You aren't required to use this element, and you can override any styles if you so choose.
 

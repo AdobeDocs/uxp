@@ -1,13 +1,7 @@
----
-jsDoc: true
----
 
 <a name="uxpplugininfo" id="uxpplugininfo"></a>
 
 # UxpPluginInfo
-This is a public object which is passed as parameter in plugin.create() and plugin.destroy() entrypoint events.
-(Not in 4.1)
-
 
 
 <a name="uxpplugininfo-id" id="uxpplugininfo-id"></a>
@@ -41,3 +35,12 @@ Get plugin manifest
 
 **Returns**: `JSON`  
 
+
+<a name="uxpplugininfo-isfirstparty" id="uxpplugininfo-isfirstparty"></a>
+
+## isFirstParty()
+Check if the plugin is First Party Plugin
+
+**Returns**: `Boolean`  
+
+  

@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # height
 
-**Since:** UXP 4.1, PS 22.0.0
+**Since:** UXP v4.1
 
 Enables you to restrict a set of CSS rules to match when the size of the plugin's dialog or panel meets your specified criteria.
 

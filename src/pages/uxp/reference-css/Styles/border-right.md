@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-right
 
-**Since:** UXP 2, PS 22.0.0
+**Since:** UXP v2.0
 
 Shorthand for specifying the [style](../border-right-style/), [color](../border-right-color/), and [width](../border-right-width) of the top border.
 

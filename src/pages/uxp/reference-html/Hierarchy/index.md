@@ -1,10 +1,9 @@
 # Hierarchy
-
-* [footer](/uxp/reference-html/Hierarchy/footer/)
-* [h1](/uxp/reference-html/Hierarchy/h1/)
-* [h2](/uxp/reference-html/Hierarchy/h2/)
-* [h3](/uxp/reference-html/Hierarchy/h3/)
-* [h4](/uxp/reference-html/Hierarchy/h4/)
-* [h5](/uxp/reference-html/Hierarchy/h5/)
-* [h6](/uxp/reference-html/Hierarchy/h6/)
-* [hr](/uxp/reference-html/Hierarchy/hr/)
+* [footer](footer.md)
+* [h1](h1.md)
+* [h2](h2.md)
+* [h3](h3.md)
+* [h4](h4.md)
+* [h5](h5.md)
+* [h6](h6.md)
+* [hr](hr.md)

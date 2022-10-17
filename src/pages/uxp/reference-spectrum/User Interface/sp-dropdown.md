@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # sp-dropdown
 
-**Since:** UXP 4.1, PS 22.0.0
+**Since:** UXP v4.1
 
 Renders a dropdown with menu items. The dropdown must contain a [sp-menu](/uxp/reference-spectrum/User%20Interface/sp-menu/) with `slot="options"`, and inside the `sp-menu`, a series of `sp-menu-item` or `sp-menu-divider` elements.
 

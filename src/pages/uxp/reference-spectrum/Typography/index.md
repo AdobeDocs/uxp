@@ -1,6 +1,5 @@
 # Typography
-
-* [sp-body](/uxp/reference-spectrum/Typography/sp-body/)
-* [sp-detail](/uxp/reference-spectrum/Typography/sp-detail/)
-* [sp-heading](/uxp/reference-spectrum/Typography/sp-heading/)
-* [sp-label](/uxp/reference-spectrum/Typography/sp-label/)
+* [sp-body](sp-body.md)
+* [sp-detail](sp-detail.md)
+* [sp-heading](sp-heading.md)
+* [sp-label](sp-label.md)

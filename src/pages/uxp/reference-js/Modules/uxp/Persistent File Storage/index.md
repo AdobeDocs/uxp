@@ -5,6 +5,7 @@
 * [EntryMetadata](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/EntryMetadata/)
 * [File](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/File/)
 * [Folder](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/Folder/)
+* [FileSystem](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/FileSystem/)
 * [FileSystemProvider](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/FileSystemProvider/)
 * [domains](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/domains/)
 * [types](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/types/)

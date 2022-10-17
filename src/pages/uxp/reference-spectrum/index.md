@@ -21,8 +21,6 @@ Using a Spectrum UXP component in a UXP plugin is easy. There are no libraries o
 ```
 
 ## Pages in this section
-
-
-* [Overview](/uxp/reference-spectrum/Overview/)
-* [Typography](/uxp/reference-spectrum/Typography/)
-* [User Interface](/uxp/reference-spectrum/User%20Interface/)
+* [Overview](Overview/index.md)
+* [Typography](Typography/index.md)
+* [User Interface](User%20Interface/index.md)

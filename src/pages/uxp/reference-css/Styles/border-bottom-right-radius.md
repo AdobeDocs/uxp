@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-bottom-right-radius
 
-**Since:**  UXP 2, PS 22.0.0
+**Since:**  UXP v2.0
 
 Sets the bottom right border radius.
 
