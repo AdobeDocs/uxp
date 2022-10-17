@@ -238,6 +238,10 @@ module.exports=[
           {
             "title": "HTMLTextAreaElement",
             "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLTextAreaElement/"
+          },
+          {
+            "title": "HTMLWebViewElement",
+            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLWebViewElement/"
           }
         ],
         "path": "/uxp/reference-js/Global Members/HTML Elements/"
