@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-top-left-radius
 
-**Since:**  UXP 2
+**Since:**  UXP v2.0
 
 Sets the top left border radius.
 

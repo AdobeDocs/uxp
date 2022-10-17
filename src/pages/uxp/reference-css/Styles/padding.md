@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # padding
 
-**Since:**  UXP 2
+**Since:**  UXP v2.0
 
 Specifies the padding for an element.
 

@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-style
 
-**Since:**  UXP 2
+**Since:**  UXP v2.0
 
 Specifies the type of border to render.
 

@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # visibility
 
-**Since:**  UXP 3
+**Since:**  UXP v3.0
 
 Determines if an element is visible. Supports `visible` and `hidden`. Unlike `display: none`, a hidden element still takes up the same space in the surrounding layout.
 

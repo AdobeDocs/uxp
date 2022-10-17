@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # margin
 
-**Since:**  UXP 2
+**Since:**  UXP v2.0
 
 Specifies the margin for an element.
 

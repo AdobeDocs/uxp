@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # padding-left
 
-**Since:**  UXP 2
+**Since:**  UXP v2.0
 
 Specifies the left padding for an element.
 

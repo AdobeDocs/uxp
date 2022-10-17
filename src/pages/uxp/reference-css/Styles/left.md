@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # left
 
-**Since:**  UXP 2
+**Since:**  UXP v2.0
 
 Sets the left position for an element that is relatively or absolutely positioned.
 

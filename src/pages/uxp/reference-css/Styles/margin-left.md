@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # margin-left
 
-**Since:**  UXP 2
+**Since:**  UXP v2.0
 
 Specifies the left margin for an element.
 

@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-radius
 
-**Since:**  UXP 2
+**Since:**  UXP v2.0
 
 Shorthand for setting the border radius.
 

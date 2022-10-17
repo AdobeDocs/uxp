@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # padding-top
 
-**Since:**  UXP 2
+**Since:**  UXP v2.0
 
 Specifies the top padding for an element.
 
