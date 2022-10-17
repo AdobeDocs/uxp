@@ -279,7 +279,7 @@ Renames or moves, if required, the file from the oldPath to the newPath
 | --- | --- | --- |
 | oldPath | `string` | path where the old file name to change is located |
 | newPath | `string` | path where the new file name will be |
-| callback | `Array<n` | if not provided, this function will return Promise object |
+| callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
 ```js
@@ -366,7 +366,7 @@ await fs.rmdir("plugin-data:/dirToRemove");
 ## readdir(path, callback)
 Reads a directory to list the containing files and directories asynchronously
 
-**Returns**: `Promise<strings>` - string array of containing files and directories in the path  
+**Returns**: `Promise<Array<string>>` - string array of containing files and directories in the path  
 
 | Param | Type | Description |
 | --- | --- | --- |

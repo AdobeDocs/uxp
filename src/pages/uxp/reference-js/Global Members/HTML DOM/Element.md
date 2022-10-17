@@ -184,12 +184,6 @@ Indicates if the element will focus automatically when it is loaded
 - https://w3c.github.io/DOM-Parsing/#the-innerhtml-mixin
 
 
-| Param | Type |
-| --- | --- |
-| value | `string` | 
-
-
-
 <a name="element-outerhtml" id="element-outerhtml"></a>
 
 ## outerHTML : `string`
