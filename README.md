@@ -54,6 +54,7 @@ The side navigation panel in the devsite is generated from the `reference-*.js` 
     * `src/pages/uxp/index.md`
     * `reference-spectrum/index.md`
     * `reference-js/index.md`
+    * `HTMLWebViewElement.md`
 4. Maintain a consistent order for the API information. 
     * Since
     * Description
@@ -73,9 +74,8 @@ The side navigation panel in the devsite is generated from the `reference-*.js` 
 6. Other fixes done manually in this repo which should be fixed in sourve files:
     * Backticks in H1 titles in source files.
     * Extra dots. Example `Promise.<void>` in SecureStorage.md
+    * `<br>` tags without a closing `</br>`
 7. Index pages (coming from index.md) show links ordered alphabetically. For example: https://developer.adobe.com/photoshop/uxp/2022/uxp/reference-js/Global%20Members/HTML%20DOM/. But the left side panel (coming from reference-*.js) is not necessarily alphabetical. Make them consistent.
-
-
 
 
 

@@ -6,7 +6,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| uxpallowinspector | `boolean` | Enable Developer tools for WebView <br>&nbsp;&nbsp;e.g., \<webview src="https://www.adobe.com" uxpallowinspector="true"\>\<\/webview\> |
+| uxpallowinspector | `boolean` | Enable Developer tools for WebView e.g., `<webview src="https://www.adobe.com" uxpallowinspector="true"></webview>` |
 
 
 
@@ -310,27 +310,25 @@ Plugin can receive the messages from WebView via 'message' event.
 
 [Plugin]
 - send messages to the content in the WebView
-<br>&nbsp;&nbsp;HTMLWebViewElement.postMessage(msg)
+`HTMLWebViewElement.postMessage(msg)`
 - receive messages from the content in the WebView
-<br>&nbsp;&nbsp;window.addEventListener("message", (e) => { ... })
-<br>&nbsp;&nbsp;
-     e: Event {
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; origin: URL of the content
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; source: window.uxpHost,
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data: message
-<br>&nbsp;&nbsp;&nbsp;}
+`window.addEventListener("message", (e) => { ... })`
+<br></br>&nbsp;&nbsp;e: Event {
+<br></br>&nbsp;&nbsp;&nbsp;&nbsp;origin: URL of the content,
+<br></br>&nbsp;&nbsp;&nbsp;&nbsp;source: window.uxpHost,
+<br></br>&nbsp;&nbsp;&nbsp;&nbsp;data: message
+<br></br>&nbsp;&nbsp;}
 
 [Content in the WebView]
 - send messages to plugin
-<br>&nbsp;&nbsp;window.uxpHost.postMessage(message)
+`window.uxpHost.postMessage(message)`
 - receive messages from plugin
-<br>&nbsp;&nbsp;window.addEventListener("message", (e) => { ... })
-<br>&nbsp;&nbsp;
-     e: Event {
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; origin: plugin id,
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; source: WebView element
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data: message
-<br>&nbsp;&nbsp;&nbsp;}
+`window.addEventListener("message", (e) => { ... })`
+<br></br>&nbsp;&nbsp;e: Event {
+<br></br>&nbsp;&nbsp;&nbsp;&nbsp;origin: plugin id,
+<br></br>&nbsp;&nbsp;&nbsp;&nbsp;source: WebView element,
+<br></br>&nbsp;&nbsp;&nbsp;&nbsp;data: message
+<br></br>&nbsp;&nbsp;}
 
 
 | Param | Type | Description |
@@ -706,6 +704,3 @@ Scrolls the element to the new x and y positions. If options object is used with
 | Param | Type |
 | --- | --- |
 | event | `*` | 
-
-
-  

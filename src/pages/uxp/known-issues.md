@@ -41,7 +41,7 @@ The following issues are known. Please check this page with future updates, as k
 * The numeric `sp-textfield` can trigger numeric validation errors, even when the entered value would seem to be correct. This will be addressed in a future release. The limitation on valid ranges is an issue with numeric fields in Photoshop in general and is a separate issue. (PS-57698)
 
 ## WebView
-* Mouuse/Keyboard events within Webview doesn't work in XD v55 and Win 10 due to a [Microsoft issue](https://github.com/microsoft/microsoft-ui-xaml/issues/6427). Fix for this is in progress.
+* Mouse/Keyboard events within Webview doesn't work in XD v55 and Win 10 due to a [Microsoft issue](https://github.com/microsoft/microsoft-ui-xaml/issues/6427). Fix for this is in progress.
 
 ## Events
 
