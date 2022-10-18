@@ -50,7 +50,7 @@ Get plugin enabled/disabled state
 ## showPanel(panelId)
 Show panel with the given ID. This api may be routed to the host app which can chose to disallow it. Used for commmunicating with other plugins (IPC : Inter Plugin Communication)
 
-Note: There is API to hide a panel, panels can be shown but can not be hid.
+Note: There isn't an API to hide a panel. Panels can be shown but can not be hid.
 
 **Returns**: `Promise`  
 
