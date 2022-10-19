@@ -1,9 +1,9 @@
 <a name="module-storage-filesystem" id="module-storage-filesystem"></a>
 
-# require('uxp').storage.FileSystem
+# require('fs')
 
 UXP Provides Node.js style file system API, FSAPI.
-Unlike [Entry](./Entry/) based [File](./File/) or [Folder](./Folder/) classes,
+Unlike [Entry](./uxp/Persistent%20File%20Storage/Entry/) based [File](./uxp/Persistent%20File%20Storage/File/) or [Folder](./uxp/Persistent%20File%20Storage/Folder/) classes,
 these methods can directly access a local file or folder with path or file descriptor.
 The starting point of a path in the native filesystem depends on the scheme.
 UXP supports plugin-specific storage schemes, such as "plugin:", "plugin-data:",

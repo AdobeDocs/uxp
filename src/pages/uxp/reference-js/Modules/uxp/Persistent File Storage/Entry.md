@@ -131,7 +131,7 @@ Returns the details of the given entry like name, type and native path in a read
 ## copyTo(folder, options)
 Copies this entry to the specified `folder`.
 
-**Returns**: `Promise<void>`
+**Returns**: `Promise<File|Folder>`
 
 **Throws**:
 
@@ -204,7 +204,7 @@ await someFile.moveTo(someFolder, {newName: 'novel.txt', {overwrite: true})
 Removes this entry from the file system. If the entry is a folder, all the
 contents will also be removed.
 
-**Returns**: `Promise<void>`
+**Returns**: `Promise<number>` - the number is 0 if succeeded, otherwise throws an Error 
 
 **Example**  
 ```js

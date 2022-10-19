@@ -254,6 +254,10 @@ module.exports=[
     "header": true,
     "pages": [
       {
+        "title": "fs",
+        "path": "/uxp/reference-js/Modules/FileSystem/"
+      },
+      {
         "title": "os",
         "header": true,
         "pages": [
@@ -337,10 +341,6 @@ module.exports=[
               {
                 "title": "Folder",
                 "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/Folder/"
-              },
-              {
-                "title": "FileSystem",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/FileSystem/"
               },
               {
                 "title": "FileSystemProvider",
