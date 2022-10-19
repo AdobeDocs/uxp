@@ -41,7 +41,7 @@ opening them. Files are read-only.
 
 Multiple files can be returned if the `allowMultiple` option` is `true`.
 
-**Returns**: `Promise<File | Array<File>>` - based on allowMultiple is true or false, or empty if no file were selected.  
+**Returns**: `Promise<File|Array<File>>` - based on `allowMultiple`. Returns empty if no file was selected.  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -49,7 +49,7 @@ Multiple files can be returned if the `allowMultiple` option` is `true`.
 | [options.initialDomain] | `Symbol` |  | the preferred initial location of the file picker. If not defined, the most recently used domain from a file picker is used instead. |
 | [options.types] | `Array<string>` | `[&#x27;.*&#x27;]` | array of file types that the file open picker displays. |
 | [options.initialLocation] | `File` \| `Folder` |  | the initial location of the file picker. You can pass an existing file or folder entry to suggest the picker to start at this location. If this is a file entry then the method will pick its parent folder as initial location. This will override initialDomain option. |
-| [options.allowMultiple] | `boolean` | `false` | if true, multiple files can be selected (as an array) |
+| [options.allowMultiple] | `boolean` | `false` | if true, multiple files can be selected |
 
 **Example**  
 ```js
@@ -73,8 +73,7 @@ if (files.length === 0) {
 <a name="module-storage-filesystemprovider-getfileforsaving" id="module-storage-filesystemprovider-getfileforsaving"></a>
 
 ## getFileForSaving(suggestedName, options)
-Gets a file reference suitable for read-write by displaying a "Save" file
-picker dialog to the user.
+Gets a file reference suitable for read-write. Displays a file picker to select a location to "Save" the file.
 
 If the act of writing to the file would overwrite it, the file picker
 will prompt the user to confirm before returning a result to you.
@@ -83,7 +82,7 @@ will prompt the user to confirm before returning a result to you.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| suggestedName | `string` | Required. The file extension should match one of the options specified in the `types` option. |
+| suggestedName | `string` | Required when `options.types` is not defined. |
 | options | `Object` |  |
 | [options.types] | `Array<string>` | Allowed file extensions, with no "." prefix. |
 | [options.initialDomain] | `Symbol` | The preferred initial location of the file picker. If not defined, the most recently used domain from a file picker is used instead. |
@@ -191,7 +190,7 @@ serialize the token to persistent storage, as the token will be invalid in the f
 a session token -- Photoshop will convert the entry into a session token automatically
 on your behalf.
 
-**Returns**: `Promise<string>` - the session token for the given entry  
+**Returns**: `string` - the session token for the given entry  
 
 | Param | Type |
 | --- | --- |
@@ -201,7 +200,7 @@ on your behalf.
 ```js
 const fs = require('uxp').storage.localFileSystem;
 let entry = await fs.getFileForOpening();
-let token = await fs.createSessionToken(entry);
+let token = fs.createSessionToken(entry);
 let result = await require('photoshop').action.batchPlay([{
     _obj: "open",
     "target": {
@@ -217,7 +216,7 @@ let result = await require('photoshop').action.batchPlay([{
 ## getEntryForSessionToken(token)
 Returns the file system Entry that corresponds to the session token obtained from `createSessionToken`. If an entry cannot be found that matches the token, then a `Reference Error: token is not defined` error is thrown.
 
-**Returns**: `Promise<Entry>` - the corresponding entry for the session token  
+**Returns**: `Entry` - the corresponding entry for the session token  
 
 | Param | Type |
 | --- | --- |
