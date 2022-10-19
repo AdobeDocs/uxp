@@ -313,22 +313,22 @@ Plugin can receive the messages from WebView via 'message' event.
 `HTMLWebViewElement.postMessage(msg)`
 - receive messages from the content in the WebView
 `window.addEventListener("message", (e) => { ... })`
-<br></br>&nbsp;&nbsp;e: Event {
+<br></br>&nbsp;&nbsp;e: Event &#123;
 <br></br>&nbsp;&nbsp;&nbsp;&nbsp;origin: URL of the content,
 <br></br>&nbsp;&nbsp;&nbsp;&nbsp;source: window.uxpHost,
 <br></br>&nbsp;&nbsp;&nbsp;&nbsp;data: message
-<br></br>&nbsp;&nbsp;}
+<br></br>&nbsp;&nbsp;&#125;
 
 [Content in the WebView]
 - send messages to plugin
 `window.uxpHost.postMessage(message)`
 - receive messages from plugin
 `window.addEventListener("message", (e) => { ... })`
-<br></br>&nbsp;&nbsp;e: Event {
+<br></br>&nbsp;&nbsp;e: Event &#123;
 <br></br>&nbsp;&nbsp;&nbsp;&nbsp;origin: plugin id,
 <br></br>&nbsp;&nbsp;&nbsp;&nbsp;source: WebView element,
 <br></br>&nbsp;&nbsp;&nbsp;&nbsp;data: message
-<br></br>&nbsp;&nbsp;}
+<br></br>&nbsp;&nbsp;&#125;
 
 
 | Param | Type | Description |
