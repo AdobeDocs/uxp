@@ -13,6 +13,7 @@ you'll get access via a [storage.FileSystemProvider](/uxp/reference-js/Modules/u
 
 <a name="module-storage-file-isfile" id="module-storage-file-isfile"></a>
 
+
 ## isFile
 Indicates that this instance is a file.
 
@@ -44,7 +45,7 @@ Reads data from the file and returns it. The file format can be specified
 with the `format` option. If a format is not supplied, the file is assumed
 to be a text file using UTF8 encoding.
 
-**Returns**: `Promise<(string\|ArrayBuffer)>` - the contents of the file  
+**Returns**: `Promise<(String\|ArrayBuffer)>` - the contents of the file  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -67,6 +68,7 @@ const data = await myNovel.read({format: formats.binary});
 Writes data to a file, appending if desired. The format of the file
 is controlled via the `format` option, and defaults to UTF8.
 
+**Returns**: `Promise<number>` -  the length of the contents written to the file  
 **Throws**:
 
 - `FileIsReadOnly` if writing to a read-only file
@@ -75,12 +77,10 @@ is controlled via the `format` option, and defaults to UTF8.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| data | `string` \| `ArrayBuffer` |  | the data to write to the file |
+| data | `String` \| `ArrayBuffer` |  | the data to write to the file |
 | options | `any` |  |  |
 | [options.format] | `Symbol` | `formats.utf8` | the format of the file; see [utf8](utf8) and [binary](binary) |
-| [options.append] | `boolean` | `false` | if `true`, the data is written to the end of the file |
-
-**Returns**: `Promise<number>` - the length of the contents written to the file
+| [options.append] | `Boolean` | `false` | if `true`, the data is written to the end of the file |
 
 **Example**  
 ```js
@@ -100,7 +100,7 @@ await aDataFile.write(data, {format: formats.binary});
 Determines if the entry is a file or not. This is safe to use even if the
 entry is `null` or `undefined`.
 
-**Returns**: `boolean` - if `true`, the entry is a file.  
+**Returns**: `Boolean` - if `true`, the entry is a file.  
 
 | Param | Type | Description |
 | --- | --- | --- |

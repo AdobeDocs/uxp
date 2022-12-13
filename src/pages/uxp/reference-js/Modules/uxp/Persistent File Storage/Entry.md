@@ -28,7 +28,7 @@ Creates an instance of Entry.
 
 <a name="module-storage-entry-isentry" id="module-storage-entry-isentry"></a>
 
-## isEntry : `boolean`
+## isEntry : `Boolean`
 Indicates that this instance is an `Entry`. Useful for type-checking.
 
 **Example**  
@@ -41,7 +41,7 @@ if (something.isEntry) {
 
 <a name="module-storage-entry-isfile" id="module-storage-entry-isfile"></a>
 
-## isFile : `boolean`
+## isFile : `Boolean`
 **Read only**
 Indicates that this instance is **not** a `File`. Useful for type-
 checking.
@@ -56,7 +56,7 @@ if (!anEntry.isFile) {
 
 <a name="module-storage-entry-isfolder" id="module-storage-entry-isfolder"></a>
 
-## isFolder : `boolean`
+## isFolder : `Boolean`
 **Read only**
 Indicates that this instance is **not** a folder. Useful for type-
 checking.
@@ -71,7 +71,7 @@ if (!anEntry.isFolder) {
 
 <a name="module-storage-entry-name" id="module-storage-entry-name"></a>
 
-## name : `string`
+## name : `String`
 **Read only**
 The name of this entry. Read-only.
 
@@ -97,7 +97,7 @@ if (entryOne.provider !== entryTwo.provider) {
 
 <a name="module-storage-entry-url" id="module-storage-entry-url"></a>
 
-## url : `string`
+## url : `String`
 **Read only**
 The url of this entry. You can use this url as input to other entities of the extension system like for eg: set as src attribute of a Image widget in UI. Read-only.
 
@@ -109,7 +109,7 @@ console.log(anEntry.url);
 
 <a name="module-storage-entry-nativepath" id="module-storage-entry-nativepath"></a>
 
-## nativePath : `string`
+## nativePath : `String`
 **Read only**
 The platform native file-system path of this entry. Read-only
 
@@ -124,15 +124,15 @@ console.log(anEntry.nativePath);
 ## toString()
 Returns the details of the given entry like name, type and native path in a readable string format.
 
-**Returns**: `string`
+**Returns**: `String`  
+
 
 <a name="module-storage-entry-copyto" id="module-storage-entry-copyto"></a>
 
 ## copyTo(folder, options)
 Copies this entry to the specified `folder`.
 
-**Returns**: `Promise<File|Folder>`
-
+**Returns**: `Promise<File | Folder>`  
 **Throws**:
 
 - `EntryExists` if the attempt would overwrite an entry and `overwrite` is `false`
@@ -144,8 +144,8 @@ Copies this entry to the specified `folder`.
 | --- | --- | --- | --- |
 | folder | `Folder` |  | the folder to which to copy this entry |
 | options | `*` |  |  |
-| [options.overwrite] | `boolean` | `false` | if `true`, allows overwriting existing entries |
-| [options.allowFolderCopy] | `boolean` | `false` | if `true`, allows copying the folder |
+| [options.overwrite] | `Boolean` | `false` | if `true`, allows overwriting existing entries |
+| [options.allowFolderCopy] | `Boolean` | `false` | if `true`, allows copying the folder |
 
 **Example**  
 ```js
@@ -166,15 +166,14 @@ await someFolder.copyTo(anotherFolder, {overwrite: true, allowFolderCopy: true})
 ## moveTo(folder, options)
 Moves this entry to the target folder, optionally specifying a new name.
 
+**Returns**: `Promise<void>`  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | folder | `Folder` |  | the folder to which to move this entry |
 | options | `*` |  |  |
-| [options.overwrite] | `boolean` | `false` | If `true` allows the move to overwrite existing files |
-| [options.newName] | `string` |  | If specified, the entry is renamed to this name |
-
-**Returns**: `Promise<void>`
+| [options.overwrite] | `Boolean` | `false` | If `true` allows the move to overwrite existing files |
+| [options.newName] | `String` |  | If specified, the entry is renamed to this name |
 
 **Example**  
 ```js
@@ -204,8 +203,7 @@ await someFile.moveTo(someFolder, {newName: 'novel.txt', {overwrite: true})
 Removes this entry from the file system. If the entry is a folder, all the
 contents will also be removed.
 
-**Returns**: `Promise<number>` - the number is 0 if succeeded, otherwise throws an Error 
-
+**Returns**: `Promise<number>` - the number is 0 if succeeded, otherwise throws an Error  
 **Example**  
 ```js
 await aFile.delete();
