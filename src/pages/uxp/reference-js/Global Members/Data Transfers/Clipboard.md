@@ -17,7 +17,7 @@ Note: Clipboard access is not supported for 3P plugins with manifest version upt
 <a name="clipboard-setcontent" id="clipboard-setcontent"></a>
 
 ## setContent(data)
-Set data to clipboard. 
+Set data to clipboard.
 Note: This is a non-standard API.
 
 **Returns**: `Promise`  
@@ -35,7 +35,7 @@ navigator.clipboard.setContent({"text/plain": "Hello!"});
 <a name="clipboard-getcontent" id="clipboard-getcontent"></a>
 
 ## getContent()
-Get data from clipboard. 
+Get data from clipboard.
 Note: This is a non-standard API.
 
 **Returns**: `Promise`  
@@ -114,7 +114,7 @@ navigator.clipboard.readText();
 <a name="clipboard-clearcontent" id="clipboard-clearcontent"></a>
 
 ## clearContent()
-Clear clipboard content. 
+Clear clipboard content.
 Note: Nonstandard: This method is non-standard.
 
 **Returns**: `Promise`  

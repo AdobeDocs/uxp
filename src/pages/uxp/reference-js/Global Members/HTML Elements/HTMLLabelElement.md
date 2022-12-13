@@ -24,6 +24,11 @@ Access to all the custom data attributes (data-*) set.
 ## innerText : `string`
 
 
+<a name="htmlelement-lang" id="htmlelement-lang"></a>
+
+## lang : `string`
+
+
 <a name="element-nodename" id="element-nodename"></a>
 
 ## nodeName : `string`

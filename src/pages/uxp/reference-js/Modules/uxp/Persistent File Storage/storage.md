@@ -1,8 +1,7 @@
-<!-- For future use -->
 
 <a name="module-storage" id="module-storage"></a>
 
-# `require('uxp').storage`
+# require('uxp').storage
 
 
 <a name="module-storage-entry" id="module-storage-entry"></a>
@@ -31,7 +30,7 @@ Creates an instance of Entry.
 
 <a name="module-storage-entry-isentry" id="module-storage-entry-isentry"></a>
 
-## isEntry : `boolean`
+## isEntry : `Boolean`
 Indicates that this instance is an `Entry`. Useful for type-checking.
 
 **Example**  
@@ -44,7 +43,7 @@ if (something.isEntry) {
 
 <a name="module-storage-entry-isfile" id="module-storage-entry-isfile"></a>
 
-## isFile : `boolean`
+## isFile : `Boolean`
 **Read only**
 Indicates that this instance is **not** a `File`. Useful for type-
 checking.
@@ -59,7 +58,7 @@ if (!anEntry.isFile) {
 
 <a name="module-storage-entry-isfolder" id="module-storage-entry-isfolder"></a>
 
-## isFolder : `boolean`
+## isFolder : `Boolean`
 **Read only**
 Indicates that this instance is **not** a folder. Useful for type-
 checking.
@@ -74,7 +73,7 @@ if (!anEntry.isFolder) {
 
 <a name="module-storage-entry-name" id="module-storage-entry-name"></a>
 
-## name : `string`
+## name : `String`
 **Read only**
 The name of this entry. Read-only.
 
@@ -100,7 +99,7 @@ if (entryOne.provider !== entryTwo.provider) {
 
 <a name="module-storage-entry-url" id="module-storage-entry-url"></a>
 
-## url : `string`
+## url : `String`
 **Read only**
 The url of this entry. You can use this url as input to other entities of the extension system like for eg: set as src attribute of a Image widget in UI. Read-only.
 
@@ -112,7 +111,7 @@ console.log(anEntry.url);
 
 <a name="module-storage-entry-nativepath" id="module-storage-entry-nativepath"></a>
 
-## nativePath : `string`
+## nativePath : `String`
 **Read only**
 The platform native file-system path of this entry. Read-only
 
@@ -125,8 +124,9 @@ console.log(anEntry.nativePath);
 <a name="module-storage-entry-tostring" id="module-storage-entry-tostring"></a>
 
 ## toString()
-returns the details of the given entry like name, type and native path in a readable string format.
+Returns the details of the given entry like name, type and native path in a readable string format.
 
+**Returns**: `String`  
 
 
 <a name="module-storage-entry-copyto" id="module-storage-entry-copyto"></a>
@@ -134,6 +134,7 @@ returns the details of the given entry like name, type and native path in a read
 ## copyTo(folder, options)
 Copies this entry to the specified `folder`.
 
+**Returns**: `Promise<File | Folder>`  
 **Throws**:
 
 - `EntryExists` if the attempt would overwrite an entry and `overwrite` is `false`
@@ -145,8 +146,8 @@ Copies this entry to the specified `folder`.
 | --- | --- | --- | --- |
 | folder | `Folder` |  | the folder to which to copy this entry |
 | options | `*` |  |  |
-| [options.overwrite] | `boolean` | `false` | if `true`, allows overwriting existing entries |
-| [options.allowFolderCopy] | `boolean` | `false` | if `true`, allows copying the folder |
+| [options.overwrite] | `Boolean` | `false` | if `true`, allows overwriting existing entries |
+| [options.allowFolderCopy] | `Boolean` | `false` | if `true`, allows copying the folder |
 
 **Example**  
 ```js
@@ -167,13 +168,14 @@ await someFolder.copyTo(anotherFolder, {overwrite: true, allowFolderCopy: true})
 ## moveTo(folder, options)
 Moves this entry to the target folder, optionally specifying a new name.
 
+**Returns**: `Promise<void>`  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | folder | `Folder` |  | the folder to which to move this entry |
 | options | `*` |  |  |
-| [options.overwrite] | `boolean` | `false` | If `true` allows the move to overwrite existing files |
-| [options.newName] | `string` |  | If specified, the entry is renamed to this name |
+| [options.overwrite] | `Boolean` | `false` | If `true` allows the move to overwrite existing files |
+| [options.newName] | `String` |  | If specified, the entry is renamed to this name |
 
 **Example**  
 ```js
@@ -203,6 +205,7 @@ await someFile.moveTo(someFolder, {newName: 'novel.txt', {overwrite: true})
 Removes this entry from the file system. If the entry is a folder, all the
 contents will also be removed.
 
+**Returns**: `Promise<number>` - the number is 0 if succeeded, otherwise throws an Error  
 **Example**  
 ```js
 await aFile.delete();
@@ -237,7 +240,7 @@ You'll not instantiate this directly; use [Entry#getMetadata](#module-storage-en
 
 <a name="module-storage-entrymetadata-name" id="module-storage-entrymetadata-name"></a>
 
-## name : `string`
+## name : `String`
 The name of the entry.
 
 
@@ -265,14 +268,14 @@ The date this entry was modified.
 
 <a name="module-storage-entrymetadata-isfile" id="module-storage-entrymetadata-isfile"></a>
 
-## isFile : `boolean`
+## isFile : `Boolean`
 Indicates if the entry is a file
 
 
 
 <a name="module-storage-entrymetadata-isfolder" id="module-storage-entrymetadata-isfolder"></a>
 
-## isFolder : `boolean`
+## isFolder : `Boolean`
 Indicates if the entry is a folder
 
 
@@ -319,7 +322,7 @@ Reads data from the file and returns it. The file format can be specified
 with the `format` option. If a format is not supplied, the file is assumed
 to be a text file using UTF8 encoding.
 
-**Returns**: `Promise<(string\|ArrayBuffer)>` - the contents of the file  
+**Returns**: `Promise<(String\|ArrayBuffer)>` - the contents of the file  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -342,6 +345,7 @@ const data = await myNovel.read({format: formats.binary});
 Writes data to a file, appending if desired. The format of the file
 is controlled via the `format` option, and defaults to UTF8.
 
+**Returns**: `Promise<number>` -  the length of the contents written to the file  
 **Throws**:
 
 - `FileIsReadOnly` if writing to a read-only file
@@ -350,10 +354,10 @@ is controlled via the `format` option, and defaults to UTF8.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| data | `string` \| `ArrayBuffer` |  | the data to write to the file |
+| data | `String` \| `ArrayBuffer` |  | the data to write to the file |
 | options | `any` |  |  |
 | [options.format] | `Symbol` | `formats.utf8` | the format of the file; see [utf8](#module-storage-formats-utf8) and [binary](#module-storage-formats-binary). |
-| [options.append] | `boolean` | `false` | if `true`, the data is written to the end of the file |
+| [options.append] | `Boolean` | `false` | if `true`, the data is written to the end of the file |
 
 **Example**  
 ```js
@@ -373,7 +377,7 @@ await aDataFile.write(data, {format: formats.binary});
 Determines if the entry is a file or not. This is safe to use even if the
 entry is `null` or `undefined`.
 
-**Returns**: `boolean` - if `true`, the entry is a file.  
+**Returns**: `Boolean` - if `true`, the entry is a file.  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -385,25 +389,23 @@ entry is `null` or `undefined`.
 
 ## FileSystemProvider
 Provides access to files and folders on a file system. You'll typically not
-instantiate this directlArray<ead you'll use an instance of one that has
-already been created for you. This class is abstract, meaning that you'll
-need to provide your own implementation in order to use it effectively.
+instantiate this directly; instead you'll use an instance of one that has
+already been created for you by UXP.
 
 
 
-<a name="module-storaArray<systemprovider-isfilesystemprovider" id="module-storage-filesystemprovider-isfilesystemprovider"></a>
+<a name="module-storage-filesystemprovider-isfilesystemprovider" id="module-storage-filesystemprovider-isfilesystemprovider"></a>
 
-## isFileSystemProvider
+## isFileSystemProvider : `Boolean`
 Indicates that this is a `FileSystemProvider`. Useful for type-checking.
 
 
 
 <a name="module-storage-filesystemprovider-supporteddomains" id="module-storage-filesystemprovider-supporteddomains"></a>
 
-## supportedDomains
+## supportedDomains : `Array<Symbol>`
 An array of the domains this file system supports. If the file system can
-open a file picker to the user's `documents` folder, for example, then
-[userDocuments](userDocuments) will be in this list.
+open a file picker to the user's `documents` folder, for example, then [userDocuments](#module-storage-domains-userdocuments) will be in this list.
 
 **Example**  
 ```js
@@ -416,20 +418,20 @@ if (fs.supportedDomains.contains(domains.userDocuments)) {
 <a name="module-storage-filesystemprovider-getfileforopening" id="module-storage-filesystemprovider-getfileforopening"></a>
 
 ## getFileForOpening(options)
-Gets a file (or filesArray<the file system provider for the purpose of
+Gets a file (or files) from the file system provider for the purpose of
 opening them. Files are read-only.
 
 Multiple files can be returned if the `allowMultiple` option` is `true`.
 
-**Returns**: `File` \| `Array.<File>` - based on allowMultiple is true or false, or empty if no file were selected.  
+**Returns**: `Promise<File|Array<File>>` based on `allowMultiple`. Return empty if no file was selected.  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | options | `*` |  |  |
 | [options.initialDomain] | `Symbol` |  | the preferred initial location of the file picker. If not defined, the most recently used domain from a file picker is used instead. |
-| [options.types] | `Array.<string>` | `[&quot;.*&quot;]` | array of file types that the file open picker displays. |
+| [options.types] | `Array<String>` | `[&quot;.*&quot;]` | array of file types that the file open picker displays. |
 | [options.initialLocation] | `File` \| `Folder` |  | the initial location of the file picker. You can pass an existing file or folder entry to suggest the picker to start at this location. If this is a file entry then the method will pick its parent folder as initial location. This will override initialDomain option. |
-| [options.allowMultiple] | `boolean` | `false` | if true, multiple files can be returned (as an array) |
+| [options.allowMultiple] | `Boolean` | `false` | if true, multiple files can be selected |
 
 **Example**  
 ```js
@@ -452,30 +454,26 @@ if (files.length === 0) {
 
 <a name="module-storage-filesystemprovider-getfileforsaving" id="module-storage-filesystemprovider-getfileforsaving"></a>
 
-## getFileForSaving(options)
-Gets a file reference suitable for saving. The file is read-write. Any
-file picker displayed will be of the "save" variety.
-
-If the user attempts to save a file that doesn't exist, the file is
-created automatically.
+## getFileForSaving(suggestedName, options)
+Gets a file reference suitable for read-write. Displays a file picker to select a location to "Save" the file.
 
 If the act of writing to the file would overwrite it, the file picker
-should prompt the user if they are OK with that action. If not, the file
-should not be returned.
+will prompt the user to confirm before returning a result to you.
 
-**Returns**: `File` - returns the selected file, or `null` if no file were selected.  
+**Returns**: `Promise<File>` - returns the selected file, or `null` if no file were selected.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | `*` |  |
-| [options.initialDomain] | `Symbol` | the preferred initial location of the file picker. If not defined, the most recently used domain from a file picker is used instead. |
-| [options.types] | `Array.<string>` | array of valid file types that the user can choose to assign to a file. |
+| suggestedName | `String` | Required when `options.types` is not defined. |
+| options | `Object` |  |
+| [options.initialDomain] | `Symbol` | The preferred initial location of the file picker. If not defined, the most recently used domain from a file picker is used instead. |
+| [options.types] | `Array<String>` | Allowed file extensions, with no "." prefix. |
 
 **Example**  
 ```js
-const file = await fs.getFileForSaving({ types = [ "txt" ]});
+const file = await fs.getFileForSaving("output.txt", { types: [ "txt" ]});
 if (!file) {
-    // no file selected, or the user didn't want to overwrite one they did select
+    // file picker was cancelled
     return;
 }
 await file.write("It was a dark and stormy night");
@@ -486,12 +484,12 @@ await file.write("It was a dark and stormy night");
 
 ## getFolder(options)
 Gets a folder from the file system via a folder picker dialog. The files
-and folders within can be accessed via [Folder#getEntries](Folder#getEntries). Any
+and folders within can be accessed via [Folder#getEntries](#module-storage-folder-getentries). Any
 files within are read-write.
 
 If the user dismisses the picker, `null` is returned instead.
 
-**Returns**: `Folder` - the selected folder or `null` if no folder is selected.  
+**Returns**: `Promise<Folder | null>` - the selected folder or `null` if no folder is selected.  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -512,6 +510,7 @@ const text = await myNovel.read();
 Returns a temporary folder. The contents of the folder will be removed when
 the extension is disposed.
 
+**Returns**: `Promise<Folder>`  
 **Example**  
 ```js
 const temp = await fs.getTemporaryFolder();
@@ -524,14 +523,16 @@ const temp = await fs.getTemporaryFolder();
 Returns a folder that can be used for extension's data storage without user interaction.
 It is persistent across host-app version upgrades.
 
+**Returns**: `Promise<Folder>`  
 
-Array<
+
 <a name="module-storage-filesystemprovider-getpluginfolder" id="module-storage-filesystemprovider-getpluginfolder"></a>
 
 ## getPluginFolder()
 Returns an plugin's folder – this folder and everything within it are read only.
 This contains all the Plugin related packaged assets.
 
+**Returns**: `Promise<Folder>`  
 
 
 <a name="module-storage-filesystemprovider-getfsurl" id="module-storage-filesystemprovider-getfsurl"></a>
@@ -539,6 +540,7 @@ This contains all the Plugin related packaged assets.
 ## getFsUrl(entry)
 Returns the fs url of given entry.
 
+**Returns**: `String`  
 
 | Param | Type |
 | --- | --- |
@@ -551,11 +553,108 @@ Returns the fs url of given entry.
 ## getNativePath(entry)
 Returns the platform native file system path of given entry.
 
+**Returns**: `String`  
 
 | Param | Type |
 | --- | --- |
 | entry | `Entry` | 
 
+
+
+<a name="module-storage-filesystemprovider-createsessiontoken" id="module-storage-filesystemprovider-createsessiontoken"></a>
+
+## createSessionToken(entry)
+Returns a token suitable for use with certain host-specific APIs (such as Photoshop). This token is valid only for the current plugin session. As such, it is of no use if you serialize the token to persistent storage, as the token will be invalid in the future.
+
+Note: When using the Photoshop DOM API, pass the instance of the file instead of a session token -- Photoshop will convert the entry into a session token automatically on your behalf.
+
+**Returns**: `String` - the session token for the given entry  
+
+| Param | Type |
+| --- | --- |
+| entry | `Entry` | 
+
+**Example**  
+```js
+const fs = require('uxp').storage.localFileSystem;
+let entry = await fs.getFileForOpening();
+let token = fs.createSessionToken(entry);
+let result = await require('photoshop').action.batchPlay([{
+    _obj: "open",
+    "target": {
+       _path: token, // Rather than a system path, this expects a session token
+        _kind: "local",
+    }
+}], {});
+```
+
+
+<a name="module-storage-filesystemprovider-getentryforsessiontoken" id="module-storage-filesystemprovider-getentryforsessiontoken"></a>
+
+## getEntryForSessionToken(token)
+Returns the file system Entry that corresponds to the session token obtained from `createSessionToken`. If an entry cannot be found that matches the token, then a `Reference Error: token is not defined` error is thrown.
+
+**Returns**: `Entry` - the corresponding entry for the session token  
+
+| Param | Type |
+| --- | --- |
+| token | `String` | 
+
+
+
+<a name="module-storage-filesystemprovider-createpersistenttoken" id="module-storage-filesystemprovider-createpersistenttoken"></a>
+
+## createPersistentToken(entry)
+Returns a token suitable for use with host-specific APIs (such as Photoshop), or for storing a persistent reference to an entry (useful if you want to only ask for permission to access a file or folder once). A persistent token is not guaranteed to last forever -- certain scenarios can cause the token to longer work (including moving files, changing permissions, or OS-specific limitations). If a persistent token cannot be reused, you'll get an error at the time of use.
+
+**Returns**: `Promise<String>` - the persistent token for the given entry  
+
+| Param | Type |
+| --- | --- |
+| entry | `Entry` | 
+
+**Example**  
+```js
+const fs = require('uxp').storage.localFileSystem;
+let entry = await fs.getFileForOpening();
+let token = await fs.createPersistentToken(entry);
+localStorage.setItem("persistent-file", token);
+```
+
+
+<a name="module-storage-filesystemprovider-getentryforpersistenttoken" id="module-storage-filesystemprovider-getentryforpersistenttoken"></a>
+
+## getEntryForPersistentToken(token)
+Returns the file system Entry that corresponds to the persistent token obtained from `createPersistentToken`. If an entry cannot be found that matches the token, then a `Reference Error: token is not defined` error is thrown.
+
+Note: retrieving an entry for a persistent token does _not_ guarantee that the entry is valid for use. You'll need to properly handle the case where the entry no longer exists on the disk, or the permissions have changed by catching the appropriate errors. If that occurs, the suggested practice is to prompt the user for the entry again and store the new token.
+
+**Returns**: `Promise<Entry>` - the corresponding entry for the persistent token  
+
+| Param | Type |
+| --- | --- |
+| token | `String` | 
+
+**Example**  
+```js
+const fs = require('uxp').storage.localFileSystem;
+let entry, contents, tries = 3, success = false;
+while (tries > 0) {
+    try {
+        entry = await fs.getEntryForPersistentToken(localStorage.getItem("persistent-file"));
+        contents = await entry.read();
+        tries = 0;
+        success = true;
+    } catch (err) {
+        entry = await fs.getFileForOpening();
+        localStorage.setItem("persistent-token", await fs.createPersistentToken(entry));
+        tries--;
+    }
+}
+if (!success) {
+    // fail gracefully somehow
+}
+```
 
 
 <a name="module-storage-filesystemprovider-isfilesystemprovider" id="module-storage-filesystemprovider-isfilesystemprovider"></a>
@@ -564,7 +663,7 @@ Returns the platform native file system path of given entry.
 Checks if the supplied object is a `FileSystemProvider`. It's safe to use even
 if the object is `null` or `undefined`. Useful for type checking.
 
-**Returns**: `boolean` - If `true`, the object is a file system provider  
+**Returns**: `Boolean` - If `true`, the object is a file system provider  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -576,8 +675,8 @@ if the object is `null` or `undefined`. Useful for type checking.
 
 ## Folder
 Represents a folder on a file system. You'll never instantiate this directly,
-but will get it by calling [FileSystemProvider#getTemporaryFolder](FileSystemProvider#getTemporaryFolder),
-[FileSystemProvider#getFolder](FileSystemProvider#getFolder), or via [Folder#getEntries](Folder#getEntries).
+but will get it by calling [FileSystemProvider.getTemporaryFolder](#module-storage-filesystemprovider-gettemporaryfolder),
+[FileSystemProvider.getFolder](#module-storage-filesystemprovider-getfolder), or via [Folder.getEntries](#module-storage-folder-getentries).
 
 
 
@@ -593,7 +692,7 @@ Indicates that this instance is a folder. Useful for type checking.
 ## getEntries()
 Returns an array of entries contained within this folder.
 
-**Returns**: `Array.<Entry>` - The entries within the folder.  
+**Returns**: `Promise<Array<Entry>>` - The entries within the folder.  
 **Example**  
 ```js
 const entries = await aFolder.getEntries();
@@ -606,14 +705,14 @@ const allFiles = entries.filter(entry => entry.isFile);
 ## createEntry(name, options)
 Creates an entry within this folder and returns the appropriate instance.
 
-**Returns**: `File` \| `Folder` - the created entry  
+**Returns**: `Promise<File | Folder>` the created entry  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| name | `string` |  | the name of the entry to create |
+| name | `String` |  | the name of the entry to create |
 | options | `any` |  |  |
-| [options.type] | `Symbol` | `types.file` | Indicates which kind of entry to create. Pass [folder](folder) to create a new folder. Note that if the type is file then this method just create a file entry object and not the actual file on the disk. The file actually gets created when you call for eg: write method on the file entry object. |
-| [options.overwrite] | `boolean` | `false` | If `true`, the create attempt can overwrite an existing file |
+| [options.type] | `Symbol` | `types.file` | Indicates which kind of entry to create. Pass [Folder](#module-storage-folder) to create a new folder. Note that if the type is file then this method just create a file entry object and not the actual file on the disk. The file actually gets created when you call for eg: write method on the file entry object. |
+| [options.overwrite] | `Boolean` | `false` | If `true`, the create attempt can overwrite an existing file |
 
 **Example**  
 ```js
@@ -621,7 +720,7 @@ const myNovel = await aFolder.createEntry("mynovel.txt");
 ```
 **Example**  
 ```js
-const catImageCollection = await aFolder.createEntry("cats", {type = types.folder});
+const catImageCollection = await aFolder.createEntry("cats", {type: types.folder});
 ```
 
 
@@ -632,13 +731,13 @@ Creates a File Entry object within this folder and returns the appropriate insta
 Note that this method just create a file entry object and not the actual file on the disk.
 The file actually gets created when you call for eg: write method on the file entry object.
 
-**Returns**: `File` - the created file entry  
+**Returns**: `Promise<File>` - the created file entry  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| name | `string` |  | the name of the file to create. |
+| name | `String` |  | the name of the file to create. |
 | options | `any` |  |  |
-| [options.overwrite] | `boolean` | `false` | If `true`, the create attempt can overwrite an existing file |
+| [options.overwrite] | `Boolean` | `false` | If `true`, the create attempt can overwrite an existing file |
 
 **Example**  
 ```js
@@ -651,11 +750,11 @@ const myNovelTxtFile = await aFolder.createFile("mynovel.txt");
 ## createFolder(name)
 Creates a Folder within this folder and returns the appropriate instance.
 
-**Returns**: `Folder` - the created folder entry object  
+**Returns**: `Promise<Folder>` - the created folder entry object  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| name | `string` | the name of the folder to create. |
+| name | `String` | the name of the folder to create. |
 
 **Example**  
 ```js
@@ -668,11 +767,11 @@ const myCollectionsFolder = await aFolder.createFolder("collections");
 ## getEntry(filePath)
 Gets an entry from within this folder and returns the appropriate instance.
 
-**Returns**: `File` \| `Folder` - the fetched entry.  
+**Returns**: `Promise<File | Folder>` the fetched entry.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| filePath | `string` | the name/path of the entry to fetch |
+| filePath | `String` | the name/path of the entry to fetch |
 
 **Example**  
 ```js
@@ -685,13 +784,14 @@ const myNovel = await aFolder.getEntry("mynovel.txt");
 ## renameEntry(entry, newName, options)
 Renames an entry to a new name.
 
+**Returns**: `Promise<void>`  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | entry | `Entry` |  | the entry to rename |
-| newName | `string` |  | the new name to assign |
+| newName | `String` |  | the new name to assign |
 | options | `any` |  |  |
-| [options.overwrite] | `boolean` | `false` | if `true`, renaming can overwrite an existing entry |
+| [options.overwrite] | `Boolean` | `false` | if `true`, renaming can overwrite an existing entry |
 
 **Example**  
 ```js
@@ -701,11 +801,11 @@ await myNovels.rename(myNovel, "myFantasticNovel.txt");
 
 <a name="module-storage-folder-isfolder" id="module-storage-folder-isfolder"></a>
 
-## isFolder(entry)
+## isFolder ⇒ `Boolean`
 Checks if an entry is a folder. Safe to use if entry might be `null` or
 `undefined`. Useful for type checking.
 
-**Returns**: `boolean` - if `true`, the entry is a folder  
+**Returns**: `Boolean` - if `true`, the entry is a folder  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -737,13 +837,13 @@ Reads data from the path asynchronously.
 The file format can be specified with the encoding options.
 If an encoding is not supplied, the file is assumed to be a binary format.
 
-**Returns**: `Promise<(string\|ArrayBuffer)>` - the contents of the file  
+**Returns**: `Promise<String|ArrayBuffer>` - the contents of the file  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `string` | path where the file to read is located |
+| path | `String` | path where the file to read is located |
 | options | `any` |  |
-| [options.encoding] | `string` | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
+| [options.encoding] | `String` | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -763,13 +863,13 @@ Reads data from the path synchronously.
 The file format can be specified with the encoding options.
 If an encoding is not supplied, the file is assumed to be a binary format.
 
-**Returns**: `string` \| `ArrayBuffer` - the contents of the file  
+**Returns**: `String` \| `ArrayBuffer` - the contents of the file  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `string` | path where the file to read is located |
+| path | `String` | path where the file to read is located |
 | options | `any` |  |
-| [options.encoding] | `string` | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
+| [options.encoding] | `String` | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
 
 **Example**  
 ```js
@@ -791,12 +891,12 @@ The format of the file is controlled via the encoding option, and defaults to a 
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| path | `string` |  | path where the file to write is located |
-| data | `string` \| `ArrayBuffer` \| `ArrayBufferView` |  | the data to write to the file |
+| path | `String` |  | path where the file to write is located |
+| data | `String` \| `ArrayBuffer` \| `ArrayBufferView` |  | the data to write to the file |
 | options | `any` |  |  |
-| [options.flag] | `int` \| `string` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
-| [options.mode] | `int` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
-| [options.encoding] | `string` |  | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
+| [options.flag] | `int` \| `String` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
+| [options.mode] | `int` \| `String` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
+| [options.encoding] | `String` |  | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
 | callback | `function` |  | if not provided, this function will return Promise object |
 
 **Example**  
@@ -819,12 +919,12 @@ The format of the file is controlled via the encoding option, and defaults to a 
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| path | `string` |  | path where the file to write is located |
-| data | `string` \| `ArrayBuffer` \| `ArrayBufferView` |  | the data to write to the file |
+| path | `String` |  | path where the file to write is located |
+| data | `String` \| `ArrayBuffer` \| `ArrayBufferView` |  | the data to write to the file |
 | options | `any` |  |  |
-| [options.flag] | `int` \| `string` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
-| [options.mode] | `int` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
-| [options.encoding] | `string` |  | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
+| [options.flag] | `int` \| `String` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
+| [options.mode] | `int` \| `String` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
+| [options.encoding] | `String` |  | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
 
 **Example**  
 ```js
@@ -845,9 +945,9 @@ Opens or a creates a file asynchronously
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| path | `string` |  | path where to open a file |
-| [flag] | `int` \| `string` | `r` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
-| [mode] | `int` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
+| path | `String` |  | path where to open a file |
+| [flag] | `int` \| `String` | `r` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
+| [mode] | `int` \| `String` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
 | callback | `function` |  | if not provided, this function will return Promise object |
 
 **Example**  
@@ -953,7 +1053,7 @@ Note: Some methods or properties may not be supportive for the return object due
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `string` | path where the file to get its information is located |
+| path | `String` | path where the file to get its information is located |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -973,7 +1073,7 @@ Note: Some methods or properties may not be supportive for the return object due
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `string` | path where the file to get its information is located |
+| path | `String` | path where the file to get its information is located |
 
 **Example**  
 ```js
@@ -991,9 +1091,9 @@ Renames or moves, if required, the file from the oldPath to the newPath
 
 | Param | Type | Description |
 | --- | --- | --- |
-| oldPath | `string` | path where the old file name to change is located |
-| newPath | `string` | path where the new file name will be |
-| callback | `Array<n` | if not provided, this function will return Promise object |
+| oldPath | `String` | path where the old file name to change is located |
+| newPath | `String` | path where the new file name will be |
+| callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
 ```js
@@ -1010,8 +1110,8 @@ Copies a file or a folder from the source path to the destination path
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| srcPath | `string` |  | path where the source file to copy is located |
-| destPath | `string` |  | path where the source file will be copied to |
+| srcPath | `String` |  | path where the source file to copy is located |
+| destPath | `String` |  | path where the source file will be copied to |
 | flags | `int` | `0` | see flags in [uv_fs_copyfile](https://docs.libuv.org/en/v1.x/fs.html) |
 | callback | `function` |  | if not provided, this function will return Promise object |
 
@@ -1030,7 +1130,7 @@ Deletes a name with the file it refers to asynchronously
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `string` | path where the file to delete is located |
+| path | `String` | path where the file to delete is located |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -1048,7 +1148,7 @@ Creates a directory of the path asynchronously
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `string` | path where to create the directory |
+| path | `String` | path where to create the directory |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -1066,7 +1166,7 @@ Removes a directory asynchronously
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `string` | path where to remove the directory |
+| path | `String` | path where to remove the directory |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -1080,11 +1180,11 @@ await fs.rmdir("plugin-data:/dirToRemove");
 ## readdir(path, callback)
 Reads a directory to list the containing files and directories asynchronously
 
-**Returns**: `Promise<strings>` - string array of containing files and directories in the path  
+**Returns**: `Promise<Array<String>>` - string array of containing files and directories in the path  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `string` | path where to read the directory |
+| path | `String` | path where to read the directory |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -1098,11 +1198,11 @@ const paths = await fs.readdir("plugin-data:/dirToRead");
 ## readdirSync(path)
 Reads a directory to list the containing files and directories synchronously
 
-**Returns**: `Array.<string>` - string array of containing files and directories in the path  
+**Returns**: `Array<String>` - string array of containing files and directories in the path  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `string` | path where to read the directory |
+| path | `String` | path where to read the directory |
 
 **Example**  
 ```js
@@ -1330,21 +1430,21 @@ This namespace describes the various file type extensions that can used be used 
 
 <a name="module-storage-filetypes-text" id="module-storage-filetypes-text"></a>
 
-## text
+## text : `Array<String>`
 Text file extensions
 
 
 
 <a name="module-storage-filetypes-images" id="module-storage-filetypes-images"></a>
 
-## images
+## images : `Array<String>`
 Image file extensions
 
 
 
 <a name="module-storage-filetypes-all" id="module-storage-filetypes-all"></a>
 
-## all
+## all : `Array<String>`
 All file types
 
 
