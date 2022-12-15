@@ -109,8 +109,3 @@ Unsupported format type
 Data and Format mismatch
 
 
-
-<a name="module-storage-errors-notsupported" id="module-storage-errors-notsupported"></a>
-
-## NotSupported
-Not supported error
