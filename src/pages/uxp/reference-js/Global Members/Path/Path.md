@@ -12,21 +12,21 @@ However, local file schemes, such as `plugin-data:` or `plugin-temp:`, will not 
 
 <a name="path-sep" id="path-sep"></a>
 
-## sep
+## sep: `string`
 The platform-specific file separator. '\\' or '/'.
 
 
 
 <a name="path-delimiter" id="path-delimiter"></a>
 
-## delimiter
+## delimiter: `string`
 The platform-specific file delimiter. ';' or ':'.
 
 
 
 <a name="path-posix" id="path-posix"></a>
 
-## posix
+## posix: `Object`
 Posix specific pathing.
 Same as parent object on posix.
 
@@ -34,7 +34,7 @@ Same as parent object on posix.
 
 <a name="path-win32" id="path-win32"></a>
 
-## win32
+## win32: `Object`
 Windows specific pathing.
 Same as parent object on windows
 
@@ -46,7 +46,7 @@ Same as parent object on windows
 Normalize a string path, reducing '..' and '.' parts.
 When multiple slashes are found, they're replaced by a single one; when the path contains a trailing slash, it is preserved. On Windows backslashes are used.
 
-**Returns**: `String` - normalized string path  
+**Returns**: `string` - normalized string path  
 **Throws**:
 
 - `Error` if `path` is not a string
@@ -54,7 +54,7 @@ When multiple slashes are found, they're replaced by a single one; when the path
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` \| `Entry` | path to normalize |
+| path | `string` \| `Entry` | path to normalize |
 
 
 
@@ -63,7 +63,7 @@ When multiple slashes are found, they're replaced by a single one; when the path
 ## join(paths)
 Join all arguments together and normalize the resulting path.
 
-**Returns**: `String` - joined string path  
+**Returns**: `string` - joined string path  
 **Throws**:
 
 - `Error` if any of the path segments is not a string
@@ -71,7 +71,7 @@ Join all arguments together and normalize the resulting path.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| paths | `Array<(String\|Entry)>` | paths to join |
+| paths | `Array<(string\|Entry)>` | paths to join |
 
 
 
@@ -87,7 +87,7 @@ until an absolute path is found. If after using all {from} paths still no absolu
 the current working directory is used as well. The resulting path is normalized,
 and trailing slashes are removed unless the path gets resolved to the root directory.
 
-**Returns**: `String` - resolved string path  
+**Returns**: `string` - resolved string path  
 **Throws**:
 
 - `Error` if any of the arguments is not a string
@@ -95,7 +95,7 @@ and trailing slashes are removed unless the path gets resolved to the root direc
 
 | Param | Type | Description |
 | --- | --- | --- |
-| paths | `Array<(String\|Entry)>` | a sequence of paths or path segments |
+| paths | `Array<(string\|Entry)>` | a sequence of paths or path segments |
 
 
 
@@ -106,7 +106,7 @@ Determines whether {path} is an absolute path. An absolute path will always reso
 
 If the given {path} is a zero-length string, `false` will be returned.
 
-**Returns**: `Boolean` - if the path is an absolute path or not  
+**Returns**: `boolean` - if the path is an absolute path or not  
 **Throws**:
 
 - `Error` if `path` is not a string
@@ -114,7 +114,7 @@ If the given {path} is a zero-length string, `false` will be returned.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` \| `Entry` | path to test |
+| path | `string` \| `Entry` | path to test |
 
 
 
@@ -124,7 +124,7 @@ If the given {path} is a zero-length string, `false` will be returned.
 Solve the relative path from {from} to {to} based on the current working directory.
 At times we have two absolute paths, and we need to derive the relative path from one to the other. This is actually the reverse transform of path.resolve.
 
-**Returns**: `String` - relative string path  
+**Returns**: `string` - relative string path  
 **Throws**:
 
 - `Error` if either `from` or `to` is not a string
@@ -132,8 +132,8 @@ At times we have two absolute paths, and we need to derive the relative path fro
 
 | Param | Type | Description |
 | --- | --- | --- |
-| from | `String` | base path to find from |
-| to | `String` | relative path to find to |
+| from | `string` | base path to find from |
+| to | `string` | relative path to find to |
 
 
 
@@ -142,7 +142,7 @@ At times we have two absolute paths, and we need to derive the relative path fro
 ## dirname(path)
 Return the directory name of a path. Similar to the Unix dirname command.
 
-**Returns**: `String` - the directory name of a path  
+**Returns**: `string` - the directory name of a path  
 **Throws**:
 
 - `Error` if `path` is not a string
@@ -150,7 +150,7 @@ Return the directory name of a path. Similar to the Unix dirname command.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` \| `Entry` | the path to evaluate |
+| path | `string` \| `Entry` | the path to evaluate |
 
 
 
@@ -160,7 +160,7 @@ Return the directory name of a path. Similar to the Unix dirname command.
 Return the last portion of a path. Similar to the Unix basename command.
 Often used to extract the file name from a fully qualified path.
 
-**Returns**: `String` - the last portion of a path  
+**Returns**: `string` - the last portion of a path  
 **Throws**:
 
 - `Error` if `path` is not a string or if `ext` is given and is not a string
@@ -168,8 +168,8 @@ Often used to extract the file name from a fully qualified path.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` \| `Entry` | the path to evaluate |
-| [ext] | `String` | an extension to remove from the result |
+| path | `string` \| `Entry` | the path to evaluate |
+| [ext] | `string` | an extension to remove from the result |
 
 
 
@@ -179,7 +179,7 @@ Often used to extract the file name from a fully qualified path.
 Return the extension of the path, from the last '.' to end of string in the last portion of the path.
 If there is no '.' in the last portion of the path or the first character of it is '.', then it returns an empty string.
 
-**Returns**: `String` - the extension of the path  
+**Returns**: `string` - the extension of the path  
 **Throws**:
 
 - `Error` if `path` is not a string
@@ -187,7 +187,7 @@ If there is no '.' in the last portion of the path or the first character of it 
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` \| `Entry` | the path to evaluate |
+| path | `string` \| `Entry` | the path to evaluate |
 
 
 
@@ -196,7 +196,7 @@ If there is no '.' in the last portion of the path or the first character of it 
 ## parse(path)
 Returns an object from a path string - the opposite of format().
 
-**Returns**: `object` - ParsedPath  
+**Returns**: `Object` - { dir: `string`, root: `string`, base: `string`, name: `string`, ext: `string` }  
 **Throws**:
 
 - `Error` if `path` is not a string
@@ -204,7 +204,7 @@ Returns an object from a path string - the opposite of format().
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` \| `Entry` | path to evaluate |
+| path | `string` \| `Entry` | path to evaluate |
 
 
 
@@ -213,11 +213,11 @@ Returns an object from a path string - the opposite of format().
 ## format(pathObject)
 Returns a path string from an object - the opposite of parse().
 
-**Returns**: `String` - a path string from an object  
+**Returns**: `string` - a path string from an object  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| pathObject | `object` | path to evaluate |
+| pathObject | `Object` - { dir: `string`, root: `string`, base: `string`, name: `string`, ext: `string` } | path to evaluate |
 
 
   
