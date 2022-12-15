@@ -2,7 +2,7 @@
 <a name="plugin" id="plugin"></a>
 
 # Plugin
-Plugin object recieved in the PluginManager.getPlugins list, used for IPC(Inter Plugin Communication)
+Plugin object received in the PluginManager.getPlugins list, used for IPC(Inter Plugin Communication)
 
 
 
@@ -51,7 +51,7 @@ Get plugin enabled/disabled state
 ## showPanel(panelId)
 Show panel with the given ID. This api may be routed to the host app which can chose to disallow it.
 Used for commmunicating with other plugins (IPC : Inter Plugin Communication)
-Note: Currently there is no API to hide a panel, panels can be shown but can not be hid.
+Note: Currently there is no API to hide a panel, panels can be shown but can not be hidden.
 
 **Returns**: `Promise`  
 
