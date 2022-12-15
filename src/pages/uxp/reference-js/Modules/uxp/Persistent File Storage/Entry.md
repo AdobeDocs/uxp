@@ -28,7 +28,7 @@ Creates an instance of Entry.
 
 <a name="module-storage-entry-isentry" id="module-storage-entry-isentry"></a>
 
-## isEntry : `Boolean`
+## isEntry : `boolean`
 Indicates that this instance is an `Entry`. Useful for type-checking.
 
 **Example**  
@@ -41,7 +41,7 @@ if (something.isEntry) {
 
 <a name="module-storage-entry-isfile" id="module-storage-entry-isfile"></a>
 
-## isFile : `Boolean`
+## isFile : `boolean`
 **Read only**
 Indicates that this instance is **not** a `File`. Useful for type-
 checking.
@@ -56,7 +56,7 @@ if (!anEntry.isFile) {
 
 <a name="module-storage-entry-isfolder" id="module-storage-entry-isfolder"></a>
 
-## isFolder : `Boolean`
+## isFolder : `boolean`
 **Read only**
 Indicates that this instance is **not** a folder. Useful for type-
 checking.
@@ -71,7 +71,7 @@ if (!anEntry.isFolder) {
 
 <a name="module-storage-entry-name" id="module-storage-entry-name"></a>
 
-## name : `String`
+## name : `string`
 **Read only**
 The name of this entry. Read-only.
 
@@ -97,7 +97,7 @@ if (entryOne.provider !== entryTwo.provider) {
 
 <a name="module-storage-entry-url" id="module-storage-entry-url"></a>
 
-## url : `String`
+## url : `string`
 **Read only**
 The url of this entry. You can use this url as input to other entities of the extension system like for eg: set as src attribute of a Image widget in UI. Read-only.
 
@@ -109,7 +109,7 @@ console.log(anEntry.url);
 
 <a name="module-storage-entry-nativepath" id="module-storage-entry-nativepath"></a>
 
-## nativePath : `String`
+## nativePath : `string`
 **Read only**
 The platform native file-system path of this entry. Read-only
 
@@ -124,7 +124,7 @@ console.log(anEntry.nativePath);
 ## toString()
 Returns the details of the given entry like name, type and native path in a readable string format.
 
-**Returns**: `String`  
+**Returns**: `string`  
 
 
 <a name="module-storage-entry-copyto" id="module-storage-entry-copyto"></a>
@@ -144,8 +144,8 @@ Copies this entry to the specified `folder`.
 | --- | --- | --- | --- |
 | folder | `Folder` |  | the folder to which to copy this entry |
 | options | `*` |  |  |
-| [options.overwrite] | `Boolean` | `false` | if `true`, allows overwriting existing entries |
-| [options.allowFolderCopy] | `Boolean` | `false` | if `true`, allows copying the folder |
+| [options.overwrite] | `boolean` | `false` | if `true`, allows overwriting existing entries |
+| [options.allowFolderCopy] | `boolean` | `false` | if `true`, allows copying the folder |
 
 **Example**  
 ```js
@@ -172,8 +172,8 @@ Moves this entry to the target folder, optionally specifying a new name.
 | --- | --- | --- | --- |
 | folder | `Folder` |  | the folder to which to move this entry |
 | options | `*` |  |  |
-| [options.overwrite] | `Boolean` | `false` | If `true` allows the move to overwrite existing files |
-| [options.newName] | `String` |  | If specified, the entry is renamed to this name |
+| [options.overwrite] | `boolean` | `false` | If `true` allows the move to overwrite existing files |
+| [options.newName] | `string` |  | If specified, the entry is renamed to this name |
 
 **Example**  
 ```js

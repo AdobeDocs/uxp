@@ -27,9 +27,9 @@ If an encoding is not supplied, the file is assumed to be a binary format.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` | path where the file to read is located |
+| path | `string` | path where the file to read is located |
 | options | `any` |  |
-| [options.encoding] | `String` | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
+| [options.encoding] | `string` | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -49,13 +49,13 @@ Reads data from the path synchronously.
 The file format can be specified with the encoding options.
 If an encoding is not supplied, the file is assumed to be a binary format.
 
-**Returns**: `String` \| `ArrayBuffer` - the contents of the file  
+**Returns**: `string` \| `ArrayBuffer` - the contents of the file  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` | path where the file to read is located |
+| path | `string` | path where the file to read is located |
 | options | `any` |  |
-| [options.encoding] | `String` | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
+| [options.encoding] | `string` | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
 
 **Example**  
 ```js
@@ -73,16 +73,16 @@ const text = fs.readFileSync("plugin-data:/textFile.txt", {encoding: "utf-8"});
 Writes data to the path asynchronously, appending if desired.
 The format of the file is controlled via the encoding option, and defaults to a binary format.
 
-**Returns**: `Promise<int>` - the length of contents written to the file  
+**Returns**: `Promise<number>` - the length of contents written to the file  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| path | `String` |  | path where the file to write is located |
-| data | `String` \| `ArrayBuffer` \| `ArrayBufferView` |  | the data to write to the file |
+| path | `string` |  | path where the file to write is located |
+| data | `string` \| `ArrayBuffer` \| `ArrayBufferView` |  | the data to write to the file |
 | options | `any` |  |  |
-| [options.flag] | `int` \| `String` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
-| [options.mode] | `int` \| `String` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
-| [options.encoding] | `String` |  | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
+| [options.flag] | `int` \| `string` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
+| [options.mode] | `int` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
+| [options.encoding] | `string` |  | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
 | callback | `function` |  | if not provided, this function will return Promise object |
 
 **Example**  
@@ -101,16 +101,16 @@ const strLen = await fs.writeFile("plugin-data:/textFile.txt", "It was a dark an
 Writes data to a path synchronously, appending if desired.
 The format of the file is controlled via the encoding option, and defaults to a binary format.
 
-**Returns**: `int` - the length of contents written to the file  
+**Returns**: `Promise<number>` - the length of contents written to the file  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| path | `String` |  | path where the file to write is located |
-| data | `String` \| `ArrayBuffer` \| `ArrayBufferView` |  | the data to write to the file |
+| path | `string` |  | path where the file to write is located |
+| data | `string` \| `ArrayBuffer` \| `ArrayBufferView` |  | the data to write to the file |
 | options | `any` |  |  |
-| [options.flag] | `int` \| `String` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
-| [options.mode] | `int` \| `String` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
-| [options.encoding] | `String` |  | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
+| [options.flag] | `int` \| `string` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
+| [options.mode] | `int` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
+| [options.encoding] | `string` |  | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
 
 **Example**  
 ```js
@@ -127,13 +127,13 @@ const strLen = fs.writeFileSync("plugin-data:/textFile.txt", "It was a dark and 
 ## open(path, [flag], [mode], callback)
 Opens or a creates a file asynchronously
 
-**Returns**: `Promise<int>` - fd(file descriptor)  
+**Returns**: `Promise<number>` - fd(file descriptor)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| path | `String` |  | path where to open a file |
-| [flag] | `int` \| `String` | `r` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
-| [mode] | `int` \| `String` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
+| path | `string` |  | path where to open a file |
+| [flag] | `int` \| `string` | `r` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
+| [mode] | `int` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
 | callback | `function` |  | if not provided, this function will return Promise object |
 
 **Example**  
@@ -147,7 +147,7 @@ const fd = await fs.open("plugin-data:/fileToRead.txt", "r");
 ## close(fd, callback)
 Closes a file descriptor asynchronously
 
-**Returns**: `int` - 0 if succeeded, otherwise throws an Error  
+**Returns**: `number` - 0 if succeeded, otherwise throws an Error  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -239,7 +239,7 @@ Note: Some methods or properties may not be supportive for the return object due
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` | path where the file to get its information is located |
+| path | `string` | path where the file to get its information is located |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -259,7 +259,7 @@ Note: Some methods or properties may not be supportive for the return object due
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` | path where the file to get its information is located |
+| path | `string` | path where the file to get its information is located |
 
 **Example**  
 ```js
@@ -277,8 +277,8 @@ Renames or moves, if required, the file from the oldPath to the newPath
 
 | Param | Type | Description |
 | --- | --- | --- |
-| oldPath | `String` | path where the old file name to change is located |
-| newPath | `String` | path where the new file name will be |
+| oldPath | `string` | path where the old file name to change is located |
+| newPath | `string` | path where the new file name will be |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -296,8 +296,8 @@ Copies a file or a folder from the source path to the destination path
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| srcPath | `String` |  | path where the source file to copy is located |
-| destPath | `String` |  | path where the source file will be copied to |
+| srcPath | `string` |  | path where the source file to copy is located |
+| destPath | `string` |  | path where the source file will be copied to |
 | flags | `int` | `0` | see flags in [uv_fs_copyfile](https://docs.libuv.org/en/v1.x/fs.html) |
 | callback | `function` |  | if not provided, this function will return Promise object |
 
@@ -316,7 +316,7 @@ Deletes a name with the file it refers to asynchronously
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` | path where the file to delete is located |
+| path | `string` | path where the file to delete is located |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -334,7 +334,7 @@ Creates a directory of the path asynchronously
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` | path where to create the directory |
+| path | `string` | path where to create the directory |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -352,7 +352,7 @@ Removes a directory asynchronously
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` | path where to remove the directory |
+| path | `string` | path where to remove the directory |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -366,11 +366,11 @@ await fs.rmdir("plugin-data:/dirToRemove");
 ## readdir(path, callback)
 Reads a directory to list the containing files and directories asynchronously
 
-**Returns**: `Promise<Array<String>>` - string array of containing files and directories in the path  
+**Returns**: `Promise<Array<string>>` - string array of containing files and directories in the path  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` | path where to read the directory |
+| path | `string` | path where to read the directory |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -384,11 +384,11 @@ const paths = await fs.readdir("plugin-data:/dirToRead");
 ## readdirSync(path)
 Reads a directory to list the containing files and directories synchronously
 
-**Returns**: `Array<String>` - string array of containing files and directories in the path  
+**Returns**: `Array<string>` - string array of containing files and directories in the path  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| path | `String` | path where to read the directory |
+| path | `string` | path where to read the directory |
 
 **Example**  
 ```js

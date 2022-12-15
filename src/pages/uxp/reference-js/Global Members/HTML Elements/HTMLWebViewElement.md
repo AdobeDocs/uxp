@@ -6,13 +6,13 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| uxpallowinspector | `Boolean` | Enable Developer tools for WebView <br></br> e.g., `<webview src="https://www.adobe.com" uxpallowinspector="true"></webview>` |
+| uxpallowinspector | `boolean` | Enable Developer tools for WebView <br></br> e.g., `<webview src="https://www.adobe.com" uxpallowinspector="true"></webview>` |
 
 
 
 <a name="htmlwebviewelement-src" id="htmlwebviewelement-src"></a>
 
-## src : `String`
+## src : `string`
 The url of the webview
 
 

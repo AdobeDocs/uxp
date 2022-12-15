@@ -13,7 +13,7 @@ already been created for you by UXP.
 
 <a name="module-storage-filesystemprovider-isfilesystemprovider" id="module-storage-filesystemprovider-isfilesystemprovider"></a>
 
-## isFileSystemProvider: `Boolean`
+## isFileSystemProvider: `boolean`
 Indicates that this is a `FileSystemProvider`. Useful for type-checking.
 
 
@@ -46,9 +46,9 @@ Multiple files can be returned if the `allowMultiple` option` is `true`.
 | --- | --- | --- | --- |
 | options | `*` |  |  |
 | [options.initialDomain] | `Symbol` |  | the preferred initial location of the file picker. If not defined, the most recently used domain from a file picker is used instead. |
-| [options.types] | `Array<String>` | `[&#x27;.*&#x27;]` | array of file types that the file open picker displays. |
+| [options.types] | `Array<string>` | `[&#x27;.*&#x27;]` | array of file types that the file open picker displays. |
 | [options.initialLocation] | `File` \| `Folder` |  | the initial location of the file picker. You can pass an existing file or folder entry to suggest the picker to start at this location. If this is a file entry then the method will pick its parent folder as initial location. This will override initialDomain option. |
-| [options.allowMultiple] | `Boolean` | `false` | if true, multiple files can be selected |
+| [options.allowMultiple] | `boolean` | `false` | if true, multiple files can be selected |
 
 **Example**  
 ```js
@@ -81,10 +81,10 @@ will prompt the user to confirm before returning a result to you.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| suggestedName | `String` | Required when `options.types` is not defined. |
+| suggestedName | `string` | Required when `options.types` is not defined. |
 | options | `Object` |  |
 | [options.initialDomain] | `Symbol` | The preferred initial location of the file picker. If not defined, the most recently used domain from a file picker is used instead. |
-| [options.types] | `Array<String>` | Allowed file extensions, with no "." prefix. |
+| [options.types] | `Array<string>` | Allowed file extensions, with no "." prefix. |
 
 **Example**  
 ```js
@@ -140,7 +140,7 @@ const temp = await fs.getTemporaryFolder();
 Returns a folder that can be used for extension's data storage without user interaction.
 It is persistent across host-app version upgrades.
 
-**Returns**: `Promise<Folder>`  
+**Returns**: `Promise<Folder>`
 
 
 <a name="module-storage-filesystemprovider-getpluginfolder" id="module-storage-filesystemprovider-getpluginfolder"></a>
@@ -149,7 +149,7 @@ It is persistent across host-app version upgrades.
 Returns an plugin's folder – this folder and everything within it are read only.
 This contains all the Plugin related packaged assets.
 
-**Returns**: `Promise<Folder>`  
+**Returns**: `Promise<Folder>`
 
 
 <a name="module-storage-filesystemprovider-getfsurl" id="module-storage-filesystemprovider-getfsurl"></a>
@@ -157,7 +157,7 @@ This contains all the Plugin related packaged assets.
 ## getFsUrl(entry)
 Returns the fs url of given entry.
 
-**Returns**: `String`  
+**Returns**: `string`
 
 | Param | Type |
 | --- | --- |
@@ -170,7 +170,7 @@ Returns the fs url of given entry.
 ## getNativePath(entry)
 Returns the platform native file system path of given entry.
 
-**Returns**: `String`  
+**Returns**: `string`  
 
 | Param | Type |
 | --- | --- |
@@ -185,7 +185,7 @@ Returns a token suitable for use with certain host-specific APIs (such as Photos
 
 Note: When using the Photoshop DOM API, pass the instance of the file instead of a session token -- Photoshop will convert the entry into a session token automatically on your behalf.
 
-**Returns**: `String` - the session token for the given entry  
+**Returns**: `string` - the session token for the given entry  
 
 | Param | Type |
 | --- | --- |
@@ -215,7 +215,7 @@ Returns the file system Entry that corresponds to the session token obtained fro
 
 | Param | Type |
 | --- | --- |
-| token | `String` | 
+| token | `string` | 
 
 
 
@@ -224,7 +224,7 @@ Returns the file system Entry that corresponds to the session token obtained fro
 ## createPersistentToken(entry)
 Returns a token suitable for use with host-specific APIs (such as Photoshop), or for storing a persistent reference to an entry (useful if you want to only ask for permission to access a file or folder once). A persistent token is not guaranteed to last forever -- certain scenarios can cause the token to longer work (including moving files, changing permissions, or OS-specific limitations). If a persistent token cannot be reused, you'll get an error at the time of use.
 
-**Returns**: `Promise<String>` - the persistent token for the given entry  
+**Returns**: `Promise<string>` - the persistent token for the given entry  
 
 | Param | Type |
 | --- | --- |
@@ -250,7 +250,7 @@ Note: retrieving an entry for a persistent token does _not_ guarantee that the e
 
 | Param | Type |
 | --- | --- |
-| token | `String` | 
+| token | `string` | 
 
 **Example**  
 ```js
@@ -280,7 +280,7 @@ if (!success) {
 Checks if the supplied object is a `FileSystemProvider`. It's safe to use even
 if the object is `null` or `undefined`. Useful for type checking.
 
-**Returns**: `Boolean` - If `true`, the object is a file system provider  
+**Returns**: `boolean` - If `true`, the object is a file system provider  
 
 | Param | Type | Description |
 | --- | --- | --- |

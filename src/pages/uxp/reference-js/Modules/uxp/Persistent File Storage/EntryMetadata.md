@@ -18,7 +18,7 @@ You'll not instantiate this directly; use [Entry#getMetadata](/uxp/reference-js/
 
 <a name="module-storage-entrymetadata-name" id="module-storage-entrymetadata-name"></a>
 
-## name : `String`
+## name : `string`
 The name of the entry.
 
 
@@ -46,14 +46,14 @@ The date this entry was modified.
 
 <a name="module-storage-entrymetadata-isfile" id="module-storage-entrymetadata-isfile"></a>
 
-## isFile : `Boolean`
+## isFile : `boolean`
 Indicates if the entry is a file
 
 
 
 <a name="module-storage-entrymetadata-isfolder" id="module-storage-entrymetadata-isfolder"></a>
 
-## isFolder : `Boolean`
+## isFolder : `boolean`
 Indicates if the entry is a folder
 
 
