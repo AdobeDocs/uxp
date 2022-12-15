@@ -27,16 +27,16 @@ The platform-specific file delimiter. ';' or ':'.
 <a name="path-posix" id="path-posix"></a>
 
 ## posix: `Object`
-Posix specific pathing.
-Same as parent object on posix.
+Posix specific pathing. It provides access to POSIX specific implementations of the path methods.
+Same as parent object on Posix.
 
 
 
 <a name="path-win32" id="path-win32"></a>
 
 ## win32: `Object`
-Windows specific pathing.
-Same as parent object on windows
+Windows specific pathing. It provides access to Windows-specific implementations of the path methods.
+Same as parent object on Windows
 
 
 
