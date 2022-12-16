@@ -199,7 +199,7 @@ let token = fs.createSessionToken(entry);
 let result = await require('photoshop').action.batchPlay([{
     _obj: "open",
     "target": {
-       _path: token, // Rather than a system path, this expects a session token
+        _path: token, // Rather than a system path, this expects a session token
         _kind: "local",
     }
 }], {});
