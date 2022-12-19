@@ -165,7 +165,7 @@ await fs.close(fd);
 ## read(fd, buffer, offset, length, position, callback)
 Reads data in chunks from the file it refers to the file descriptor
 
-**Returns**: `Promise<Object>` - { bytesRead, buffer }  
+**Returns**: `Promise<Object>` - { bytesRead: number, buffer: ArrayBuffer }  
 **Throws**:
 
 - `Error` if invalid file descriptor is passed.
