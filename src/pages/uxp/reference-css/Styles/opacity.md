@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # opacity
 
-**Since :** UXP 2
+**Since:** UXP v2.0
 
 Sets the opacity of an element. The value is between 0 (transparent) and 1 (opaque).
 

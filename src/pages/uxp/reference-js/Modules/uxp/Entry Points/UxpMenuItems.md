@@ -43,9 +43,9 @@ Get menu item at specified index
 
 ## insertAt(index, newItem)
 Inserts/replaces the menu item at the specified index with the new menu item.
-         index < size of menuItems array : replaces the existing menu item
-         index = size of menuItems array : Inserts menu item at end
-         index > size of menuItems array : throws invalid index exception
+index < size of menuItems array : replaces the existing menu item
+index = size of menuItems array : Inserts menu item at end
+index > size of menuItems array : throws invalid index exception
 
 
 | Param | Type | Description |

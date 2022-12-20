@@ -5,3 +5,4 @@
 * [HTML DOM](HTML%20DOM/index.md)
 * [HTML Elements](HTML%20Elements/index.md)
 * [HTML Events](HTML%20Events/index.md)
+* [Path](Path/index.md)

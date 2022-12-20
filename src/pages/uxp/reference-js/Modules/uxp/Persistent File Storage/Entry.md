@@ -124,15 +124,15 @@ console.log(anEntry.nativePath);
 ## toString()
 Returns the details of the given entry like name, type and native path in a readable string format.
 
-**Returns**: `string`
+**Returns**: `string`  
+
 
 <a name="module-storage-entry-copyto" id="module-storage-entry-copyto"></a>
 
 ## copyTo(folder, options)
 Copies this entry to the specified `folder`.
 
-**Returns**: `Promise<File|Folder>`
-
+**Returns**: `Promise<File | Folder>`  
 **Throws**:
 
 - `EntryExists` if the attempt would overwrite an entry and `overwrite` is `false`
@@ -166,6 +166,7 @@ await someFolder.copyTo(anotherFolder, {overwrite: true, allowFolderCopy: true})
 ## moveTo(folder, options)
 Moves this entry to the target folder, optionally specifying a new name.
 
+**Returns**: `Promise<void>`  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -173,8 +174,6 @@ Moves this entry to the target folder, optionally specifying a new name.
 | options | `*` |  |  |
 | [options.overwrite] | `boolean` | `false` | If `true` allows the move to overwrite existing files |
 | [options.newName] | `string` |  | If specified, the entry is renamed to this name |
-
-**Returns**: `Promise<void>`
 
 **Example**  
 ```js
@@ -204,8 +203,7 @@ await someFile.moveTo(someFolder, {newName: 'novel.txt', {overwrite: true})
 Removes this entry from the file system. If the entry is a folder, all the
 contents will also be removed.
 
-**Returns**: `Promise<number>` - the number is 0 if succeeded, otherwise throws an Error 
-
+**Returns**: `Promise<number>` - the number is 0 if succeeded, otherwise throws an Error  
 **Example**  
 ```js
 await aFile.delete();

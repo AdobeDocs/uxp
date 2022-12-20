@@ -23,14 +23,14 @@ Reads data from the path asynchronously.
 The file format can be specified with the encoding options.
 If an encoding is not supplied, the file is assumed to be a binary format.
 
+**Returns**: `Promise<String|ArrayBuffer>` - the contents of the file  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | path | `string` | path where the file to read is located |
 | options | `any` |  |
 | [options.encoding] | `string` | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
 | callback | `function` | if not provided, this function will return Promise object |
-
-**Returns**: `Promise<(string|ArrayBuffer)>` - the contents of the file  
 
 **Example**  
 ```js
@@ -49,13 +49,13 @@ Reads data from the path synchronously.
 The file format can be specified with the encoding options.
 If an encoding is not supplied, the file is assumed to be a binary format.
 
+**Returns**: `string` \| `ArrayBuffer` - the contents of the file  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | path | `string` | path where the file to read is located |
 | options | `any` |  |
 | [options.encoding] | `string` | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
-
-**Returns**: `string` | `ArrayBuffer` - the contents of the file  
 
 **Example**  
 ```js
@@ -73,6 +73,8 @@ const text = fs.readFileSync("plugin-data:/textFile.txt", {encoding: "utf-8"});
 Writes data to the path asynchronously, appending if desired.
 The format of the file is controlled via the encoding option, and defaults to a binary format.
 
+**Returns**: `Promise<number>` - the length of contents written to the file  
+
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | path | `string` |  | path where the file to write is located |
@@ -82,8 +84,6 @@ The format of the file is controlled via the encoding option, and defaults to a 
 | [options.mode] | `int` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
 | [options.encoding] | `string` |  | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
 | callback | `function` |  | if not provided, this function will return Promise object |
-
-**Returns**: `Promise<int>` - the length of contents written to the file  
 
 **Example**  
 ```js
@@ -101,6 +101,8 @@ const strLen = await fs.writeFile("plugin-data:/textFile.txt", "It was a dark an
 Writes data to a path synchronously, appending if desired.
 The format of the file is controlled via the encoding option, and defaults to a binary format.
 
+**Returns**: `Promise<number>` - the length of contents written to the file  
+
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | path | `string` |  | path where the file to write is located |
@@ -109,8 +111,6 @@ The format of the file is controlled via the encoding option, and defaults to a 
 | [options.flag] | `int` \| `string` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
 | [options.mode] | `int` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
 | [options.encoding] | `string` |  | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
-
-**Returns**: `int` - the length of contents written to the file  
 
 **Example**  
 ```js
@@ -127,14 +127,14 @@ const strLen = fs.writeFileSync("plugin-data:/textFile.txt", "It was a dark and 
 ## open(path, [flag], [mode], callback)
 Opens or a creates a file asynchronously
 
+**Returns**: `Promise<number>` - fd(file descriptor)  
+
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | path | `string` |  | path where to open a file |
 | [flag] | `int` \| `string` | `r` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
 | [mode] | `int` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
 | callback | `function` |  | if not provided, this function will return Promise object |
-
-**Returns**: `Promise<int>` - fd(file descriptor)  
 
 **Example**  
 ```js
@@ -147,12 +147,12 @@ const fd = await fs.open("plugin-data:/fileToRead.txt", "r");
 ## close(fd, callback)
 Closes a file descriptor asynchronously
 
+**Returns**: `number` - 0 if succeeded, otherwise throws an Error  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | fd | `int` | file descriptor of the file to close |
 | callback | `function` | if not provided, this function will return Promise object |
-
-**Returns**: `int` - 0 if succeeded, otherwise throws an Error  
 
 **Example**  
 ```js
@@ -165,7 +165,9 @@ await fs.close(fd);
 ## read(fd, buffer, offset, length, position, callback)
 Reads data in chunks from the file it refers to the file descriptor
 
+**Returns**: `Promise<Object>` - { bytesRead: number, buffer: ArrayBuffer }  
 **Throws**:
+
 - `Error` if invalid file descriptor is passed.
  if invalid parameter format or value is passed.
 
@@ -178,8 +180,6 @@ Reads data in chunks from the file it refers to the file descriptor
 | length | `int` | the length to read |
 | position | `int` | the position of the file to read from. if -1, the current file position to read from. when the bytes are read, the current file position advances by size of the read bytes. if the value is greater than or equal to 0, it specifies a file position to read from. after the bytes are read, a current file position stayed the same |
 | callback | `function` | if not provided, this function will return Promise object |
-
-**Returns**: `Promise<Object>` - { bytesRead, buffer }  
 
 **Example**  
 ```js
@@ -384,7 +384,7 @@ const paths = await fs.readdir("plugin-data:/dirToRead");
 ## readdirSync(path)
 Reads a directory to list the containing files and directories synchronously
 
-**Returns**: `Array.<string>` - string array of containing files and directories in the path  
+**Returns**: `Array<string>` - string array of containing files and directories in the path  
 
 | Param | Type | Description |
 | --- | --- | --- |

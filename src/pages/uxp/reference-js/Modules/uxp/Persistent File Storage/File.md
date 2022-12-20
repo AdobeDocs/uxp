@@ -13,6 +13,7 @@ you'll get access via a [storage.FileSystemProvider](/uxp/reference-js/Modules/u
 
 <a name="module-storage-file-isfile" id="module-storage-file-isfile"></a>
 
+
 ## isFile
 Indicates that this instance is a file.
 
@@ -67,6 +68,7 @@ const data = await myNovel.read({format: formats.binary});
 Writes data to a file, appending if desired. The format of the file
 is controlled via the `format` option, and defaults to UTF8.
 
+**Returns**: `Promise<number>` -  the length of the contents written to the file  
 **Throws**:
 
 - `FileIsReadOnly` if writing to a read-only file
@@ -79,8 +81,6 @@ is controlled via the `format` option, and defaults to UTF8.
 | options | `any` |  |  |
 | [options.format] | `Symbol` | `formats.utf8` | the format of the file; see [utf8](utf8) and [binary](binary) |
 | [options.append] | `boolean` | `false` | if `true`, the data is written to the end of the file |
-
-**Returns**: `Promise<number>` - the length of the contents written to the file
 
 **Example**  
 ```js

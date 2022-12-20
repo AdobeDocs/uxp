@@ -173,15 +173,21 @@ Indicates if the element will focus automatically when it is loaded
 <a name="element-innerhtml" id="element-innerhtml"></a>
 
 ## innerHTML : `string`
-
+**Read only**
 
 <a name="element-innerhtml" id="element-innerhtml"></a>
 
-## innerHTML
+## innerHTML(value)
 **See**
 
 - https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
 - https://w3c.github.io/DOM-Parsing/#the-innerhtml-mixin
+
+
+| Param | Type |
+| --- | --- |
+| value | `string` | 
+
 
 
 <a name="element-outerhtml" id="element-outerhtml"></a>

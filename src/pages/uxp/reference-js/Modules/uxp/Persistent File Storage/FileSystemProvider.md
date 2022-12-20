@@ -22,8 +22,7 @@ Indicates that this is a `FileSystemProvider`. Useful for type-checking.
 
 ## supportedDomains: `Array<Symbol>`
 An array of the domains this file system supports. If the file system can
-open a file picker to the user's `documents` folder, for example, then
-[userDocuments](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/domains/#module-storage-domains-userdocuments) will be in this list.
+open a file picker to the user's `documents` folder, for example, then [userDocuments](/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/domains/#module-storage-domains-userdocuments) will be in this list.
 
 **Example**  
 ```js
@@ -41,7 +40,7 @@ opening them. Files are read-only.
 
 Multiple files can be returned if the `allowMultiple` option` is `true`.
 
-**Returns**: `Promise<File|Array<File>>` - based on `allowMultiple`. Returns empty if no file was selected.  
+**Returns**: `Promise<File|Array<File>>` based on `allowMultiple`. Return empty if no file was selected.  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -84,9 +83,8 @@ will prompt the user to confirm before returning a result to you.
 | --- | --- | --- |
 | suggestedName | `string` | Required when `options.types` is not defined. |
 | options | `Object` |  |
-| [options.types] | `Array<string>` | Allowed file extensions, with no "." prefix. |
 | [options.initialDomain] | `Symbol` | The preferred initial location of the file picker. If not defined, the most recently used domain from a file picker is used instead. |
-
+| [options.types] | `Array<string>` | Allowed file extensions, with no "." prefix. |
 
 **Example**  
 ```js
@@ -129,8 +127,7 @@ const text = await myNovel.read();
 Returns a temporary folder. The contents of the folder will be removed when
 the extension is disposed.
 
-**Returns**: `Promise<Folder>`
-
+**Returns**: `Promise<Folder>`  
 **Example**  
 ```js
 const temp = await fs.getTemporaryFolder();
@@ -144,7 +141,6 @@ Returns a folder that can be used for extension's data storage without user inte
 It is persistent across host-app version upgrades.
 
 **Returns**: `Promise<Folder>`
-
 
 
 <a name="module-storage-filesystemprovider-getpluginfolder" id="module-storage-filesystemprovider-getpluginfolder"></a>
@@ -161,34 +157,33 @@ This contains all the Plugin related packaged assets.
 ## getFsUrl(entry)
 Returns the fs url of given entry.
 
+**Returns**: `string`
+
 | Param | Type |
 | --- | --- |
 | entry | `Entry` | 
 
-**Returns**: `string`
+
 
 <a name="module-storage-filesystemprovider-getnativepath" id="module-storage-filesystemprovider-getnativepath"></a>
 
 ## getNativePath(entry)
 Returns the platform native file system path of given entry.
 
+**Returns**: `string`  
+
 | Param | Type |
 | --- | --- |
 | entry | `Entry` | 
 
-**Returns**: `string`
 
 
 <a name="module-storage-filesystemprovider-createsessiontoken" id="module-storage-filesystemprovider-createsessiontoken"></a>
 
 ## createSessionToken(entry)
-Returns a token suitable for use with certain host-specific APIs (such as Photoshop). This
-token is valid only for the current plugin session. As such, it is of no use if you
-serialize the token to persistent storage, as the token will be invalid in the future.
+Returns a token suitable for use with certain host-specific APIs (such as Photoshop). This token is valid only for the current plugin session. As such, it is of no use if you serialize the token to persistent storage, as the token will be invalid in the future.
 
-> **Note:** When using the Photoshop DOM API, pass the instance of the file instead of
-a session token -- Photoshop will convert the entry into a session token automatically
-on your behalf.
+Note: When using the Photoshop DOM API, pass the instance of the file instead of a session token -- Photoshop will convert the entry into a session token automatically on your behalf.
 
 **Returns**: `string` - the session token for the given entry  
 
@@ -227,12 +222,7 @@ Returns the file system Entry that corresponds to the session token obtained fro
 <a name="module-storage-filesystemprovider-createpersistenttoken" id="module-storage-filesystemprovider-createpersistenttoken"></a>
 
 ## createPersistentToken(entry)
-Returns a token suitable for use with host-specific APIs (such as Photoshop), or
-for storing a persistent reference to an entry (useful if you want to only ask for
-permission to access a file or folder once). A persistent token is not guaranteed
-to last forever -- certain scenarios can cause the token to longer work (including
-moving files, changing permissions, or OS-specific limitations). If a persistent
-token cannot be reused, you'll get an error at the time of use.
+Returns a token suitable for use with host-specific APIs (such as Photoshop), or for storing a persistent reference to an entry (useful if you want to only ask for permission to access a file or folder once). A persistent token is not guaranteed to last forever -- certain scenarios can cause the token to longer work (including moving files, changing permissions, or OS-specific limitations). If a persistent token cannot be reused, you'll get an error at the time of use.
 
 **Returns**: `Promise<string>` - the persistent token for the given entry  
 
@@ -252,15 +242,9 @@ localStorage.setItem("persistent-file", token);
 <a name="module-storage-filesystemprovider-getentryforpersistenttoken" id="module-storage-filesystemprovider-getentryforpersistenttoken"></a>
 
 ## getEntryForPersistentToken(token)
-Returns the file system Entry that corresponds to the persistent token obtained from
-`createPersistentToken`. If an entry cannot be found that matches the token, then a
-`Reference Error: token is not defined` error is thrown.
+Returns the file system Entry that corresponds to the persistent token obtained from `createPersistentToken`. If an entry cannot be found that matches the token, then a `Reference Error: token is not defined` error is thrown.
 
-> **Note:** retrieving an entry for a persistent token does _not_ guarantee that the
-entry is valid for use. You'll need to properly handle the case where the entry no
-longer exists on the disk, or the permissions have changed by catching the appropriate
-errors. If that occurs, the suggested practice is to prompt the user for the entry
-again and store the new token.
+Note: retrieving an entry for a persistent token does _not_ guarantee that the entry is valid for use. You'll need to properly handle the case where the entry no longer exists on the disk, or the permissions have changed by catching the appropriate errors. If that occurs, the suggested practice is to prompt the user for the entry again and store the new token.
 
 **Returns**: `Promise<Entry>` - the corresponding entry for the persistent token  
 
