@@ -152,6 +152,29 @@ This contains all the Plugin related packaged assets.
 **Returns**: `Promise<Folder>`
 
 
+<a name="module-storage-filesystemprovider-getentrywithurl" id="module-storage-filesystemprovider-getentrywithurl"></a>
+
+## getEntryWithUrl(url)
+Returns an Entry object of the given url.
+
+**Returns**: `Promise<File|Folder>` the File or Folder object for the given url  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| url | `string` | the url to get an Entry object Note that file: scheme has limited support in UWP due to the strict [File access permissions](https://learn.microsoft.com/en-us/windows/uwp/files/file-access-permissions) |
+
+**Example**  
+```js
+const tmpFolder = await fs.getEntryWithUrl("plugin-temp:/tmp");
+const docFolder = await fs.getEntryWithUrl("file:/Users/user/Documents");
+```
+**Example**  
+```js
+const tmpFile = await fs.getEntryWithUrl("plugin-temp:/tmp/test.dat");
+const docFile = await fs.getEntryWithUrl("file:/Users/user/Documents/test.txt");
+```
+
+
 <a name="module-storage-filesystemprovider-getfsurl" id="module-storage-filesystemprovider-getfsurl"></a>
 
 ## getFsUrl(entry)
