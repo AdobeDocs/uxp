@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Styles/bottom";
+import Content from "uxp-documentation/src/pages/uxp-ref/reference-css/Styles/bottom";
 
 <Content query="product=photoshop"/>

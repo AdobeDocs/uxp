@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Styles/align-items";
+import Content from "uxp-documentation/src/pages/uxp-ref/reference-css/Styles/align-items";
 
 <Content query="product=photoshop"/>

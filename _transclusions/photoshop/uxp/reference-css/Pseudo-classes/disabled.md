@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Pseudo-classes/disabled";
+import Content from "uxp-documentation/src/pages/uxp-ref/reference-css/Pseudo-classes/disabled";
 
 <Content query="product=photoshop"/>

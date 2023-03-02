@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-js/Modules/FileSystem.md";
+import Content from "uxp-documentation/src/pages/uxp-ref/reference-js/Modules/FileSystem.md";
 
 <Content query="product=xd"/>

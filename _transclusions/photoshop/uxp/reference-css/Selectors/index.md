@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css//Selectors/index.md";
+import Content from "uxp-documentation/src/pages/uxp-ref/reference-css//Selectors/index.md";
 
 <Content query="product=photoshop"/>

@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-spectrum/Overview/Using with React";
+import Content from "uxp-documentation/src/pages/uxp-ref/reference-spectrum/Overview/Using with React";
 
 <Content query="product=photoshop"/>

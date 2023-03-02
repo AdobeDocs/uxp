@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-js/Global Members/HTML Elements/HTMLStyleElement";
+import Content from "uxp-documentation/src/pages/uxp-ref/reference-js/Global Members/HTML Elements/HTMLStyleElement";
 
 <Content query="product=photoshop"/>
