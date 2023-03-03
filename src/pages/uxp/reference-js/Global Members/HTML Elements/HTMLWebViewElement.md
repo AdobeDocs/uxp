@@ -2,700 +2,244 @@
 <a name="htmlwebviewelement" id="htmlwebviewelement"></a>
 
 # window.HTMLWebViewElement
+**Since**: v6.0
+
+
+<a name="new-htmlwebviewelement-new" id="new-htmlwebviewelement-new"></a>
+
+## HTMLWebViewElement() 
+WebViews in Adobe UXP is a component that allows the developer to embed web content in their plugins.
+They are essentially a browser window that is displayed inside the plugin, allowing the developer to load web pages,
+and interact with them using JavaScript.
+WebViews can be used to display complex web pages inside the plugin.
+WebViews can be controlled by the plugin using the JavaScript API provided by UXP.
+They can also communicate with the plugin using `postMessage`,
+allowing the plugin to interact with WebView and vice versa.
+WebViews can be used to access external web services, to create custom UI
+and to isolate the web content from the rest of the plugin.<br></br>
+UXP has introduced WebView support primarily to accelerate migration of CEP plugins to UXP
+where the developer is blocked due to missing UXP features.
+
+<InlineAlert variant="warning" slots="text"/>
+
+WebViews are resource intensive since it launches multiple processes per plugin and therefore should be used only in cases where the developer cannot create the plugin using UXP features.
+
+**Note:**<br></br>
+1. WebViews support was introduced in UXP v6.0 to be used only in **Dialogs**. The reasoning here was to limit WebViews usage in persistent panels. Later due to overwhelming requests from the developer, WebView support was added for `Panels` with UXP v6.4.
+2. WebViews will need manifest version v5 or above.
+3. Checkout the template available in `UXP Developer Tool` for a quick getting starter plugin for WebView in UXP.
+4. `requiredPermissions.webview.enableMessageBridge=“localAndRemote”` is required for Plugin & WebView communication via postMessage.
+
+**Limitations:**<br></br>
+1. Only remote content (including localhost) is allowed at present. This means you will not be able to load local html files from plugin folders in UXP WebView. This behaviour is due to limitations on WindowsOS and **<i>may</i>** be enabled in later releases.
+2. Any links in a UXP WebView will not open in a new window.
+e.g., In a browser, clicking `<a href="https://www.adobe.com" target="_blank">` would create a new Window
+and open `https://www.adobe.com` from the new Window or JavaScript alert() pops up a new Window. UXP WebView doesn't permit this.
+
+In your plugin's code, add a WebView element in the desired location.
+The element can take attributes such as id , height , and src to specify the WebView's properties<br></br>
+
+```
+<webview id="webviewsample" width="100%" height="360px" src="https://www.adobe.com" uxpAllowInspector="true" ></webview>
+```
+
+<br></br>
+<h3>Manifest requirements for UXP WebView</h3>
+In order to use UXP WebView, the plugin should have the following manifest v5 permissions.<br></br>
+
+<table>
+ <tr>
+     <th>Key</th>
+     <th>Value</th>
+     <th>Description</th>
+     <th>Mandatory/Optional</th>
+</tr>
+<tr>
+     <td>.domains</td>
+     <td>string[]</td>
+     <td>Allows access to the specified domains. Wildcards (except top-level) are supported. e.g "https://*.adobe.com". <br></br> Recommended</td>
+     <td>Mandatory</td>
+</tr>
+<tr>
+     <td>.domains</td>
+     <td>"all"</td>
+     <td>Allows access to all domains.<br></br>Not recommended, may affect performance, security and privacy. Plugin may be blocked by enterprises.</td>
+     <td>Mandatory</td>
+</tr>
+<tr>
+     <td>.allow</td>
+     <td>"yes"</td>
+     <td>Enables WebView access to the plugin</td>
+     <td>Mandatory</td>
+</tr>
+<tr>
+     <td>.enableMessageBridge</td>
+     <td>"localAndRemote"</td>
+     <td>Allows Plugin & the content loaded on WebView to communicate regardless of where the content is loaded from **locally or remotely.**<br></br>
+         **Note: ** At this stage only remote content is allowed. Refer **Limitations** section for more details</td>
+     <td>Optional</td>
+</tr>
+<tr>
+     <td>.enableMessageBridge</td>
+     <td>"no"</td>
+     <td>Not allow WebView & the content loaded on WebView to communicate</td>
+     <td>Optional</td>
+</tr>
+</table><br></br>
+
+**Example**  
+```js
+// In your `manifest.json` update the following
+{
+"manifestVersion": 5,
+"requiredPermissions": {
+    "webview": {
+       "allow": "yes",
+        // domains --> string[] | "all"
+        "domains": [ "https://*.adobe.com", "https://*.google.com"],
+        // enableMessageBridge can use either of these data "localAndRemote" | "localOnly" | "no"
+        "enableMessageBridge": "localAndRemote"
+     }
+  }
+}
+```
+
+
+<a name="htmlwebviewelement-htmlwebviewelement-new" id="htmlwebviewelement-htmlwebviewelement-new"></a>
+
+## HTMLWebViewElement()
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| uxpallowinspector | `boolean` | Enable Developer tools for WebView <br></br> e.g., `<webview src="https://www.adobe.com" uxpallowinspector="true"></webview>` |
+| uxpallowinspector | `boolean` | Enable Developer tools for debugging in UXP WebView<br></br>                                       **Note:** Not supported in UWP platform<br></br>                                       eg: `<webview id="webviewsample" width="100%" height="360px" src="https://www.adobe.com" uxpAllowInspector="true" ></webview>` |
+| src | `string` | The url to load in the WebView |
+| width | `string` | Width of the WebView |
+| height | `string` | Height of the WebView |
 
 
 
 <a name="htmlwebviewelement-src" id="htmlwebviewelement-src"></a>
 
 ## src : `string`
-The url of the webview
+The url to load in the WebView. Only remote content (including `localhost`) is allowed at present.
 
-
-
-<a name="htmlelement-dataset" id="htmlelement-dataset"></a>
-
-## dataset
-Access to all the custom data attributes (data-*) set.
-
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset  
-
-
-<a name="htmlelement-innertext" id="htmlelement-innertext"></a>
-
-## innerText : `string`
-
-
-<a name="htmlelement-lang" id="htmlelement-lang"></a>
-
-## lang : `string`
-
-
-<a name="element-nodename" id="element-nodename"></a>
-
-## nodeName : `string`
-**Read only**
-
-
-<a name="element-localname" id="element-localname"></a>
-
-## localName : `string`
-**Read only**
-
-
-<a name="element-tagname" id="element-tagname"></a>
-
-## tagName : `string`
-**Read only**
-
-
-<a name="element-nodetype" id="element-nodetype"></a>
-
-## nodeType : `number`
-**Read only**
-
-
-<a name="element-namespaceuri" id="element-namespaceuri"></a>
-
-## namespaceURI : `string`
-**Read only**
-
-
-<a name="element-id" id="element-id"></a>
-
-## id : `string`
-
-
-<a name="element-tabindex" id="element-tabindex"></a>
-
-## tabIndex : `number`
-
-
-<a name="element-classname" id="element-classname"></a>
-
-## className : `string`
-
-
-<a name="element-attributes" id="element-attributes"></a>
-
-## attributes : `NamedNodeMap`
-**Read only**
-
-
-<a name="element-style" id="element-style"></a>
-
-## style : `Style`
-**Read only**
-
-
-<a name="element-clientleft" id="element-clientleft"></a>
-
-## clientLeft : `number`
-**Read only**
-
-
-<a name="element-clienttop" id="element-clienttop"></a>
-
-## clientTop : `number`
-**Read only**
-
-
-<a name="element-clientwidth" id="element-clientwidth"></a>
-
-## clientWidth : `number`
-**Read only**
-
-
-<a name="element-clientheight" id="element-clientheight"></a>
-
-## clientHeight : `number`
-**Read only**
-
-
-<a name="element-height" id="element-height"></a>
-
-## height : `string` \| `Number`
-The height of the element
-
-
-
-<a name="element-width" id="element-width"></a>
-
-## width : `string` \| `Number`
-The width of the element
-
-
-
-<a name="element-offsetparent" id="element-offsetparent"></a>
-
-## offsetParent : `Element`
-**Read only**
-
-
-<a name="element-offsetleft" id="element-offsetleft"></a>
-
-## offsetLeft : `number`
-**Read only**
-
-
-<a name="element-offsettop" id="element-offsettop"></a>
-
-## offsetTop : `number`
-**Read only**
-
-
-<a name="element-offsetwidth" id="element-offsetwidth"></a>
-
-## offsetWidth : `number`
-**Read only**
-
-
-<a name="element-offsetheight" id="element-offsetheight"></a>
-
-## offsetHeight : `number`
-**Read only**
-
-
-<a name="element-scrollleft" id="element-scrollleft"></a>
-
-## scrollLeft : `number`
-
-
-<a name="element-scrolltop" id="element-scrolltop"></a>
-
-## scrollTop : `number`
-
-
-<a name="element-scrollwidth" id="element-scrollwidth"></a>
-
-## scrollWidth : `number`
-**Read only**
-
-
-<a name="element-scrollheight" id="element-scrollheight"></a>
-
-## scrollHeight : `number`
-**Read only**
-
-
-<a name="element-autofocus" id="element-autofocus"></a>
-
-## autofocus : `boolean`
-Indicates if the element will focus automatically when it is loaded
-
-
-
-<a name="element-uxpcontainer" id="element-uxpcontainer"></a>
-
-## uxpContainer : `number`
-**Read only**
-
-
-<a name="element-disabled" id="element-disabled"></a>
-
-## disabled : `boolean`
-
-
-<a name="element-innerhtml" id="element-innerhtml"></a>
-
-## innerHTML : `string`
-
-
-<a name="element-outerhtml" id="element-outerhtml"></a>
-
-## outerHTML : `string`
-
-
-<a name="node-contenteditable" id="node-contenteditable"></a>
-
-## contentEditable
-**Read only**
-
-
-<a name="node-isconnected" id="node-isconnected"></a>
-
-## isConnected : `boolean`
-**Read only**
-
-
-<a name="node-parentnode" id="node-parentnode"></a>
-
-## parentNode : `Node`
-**Read only**
-
-
-<a name="node-parentelement" id="node-parentelement"></a>
-
-## parentElement : `Element`
-**Read only**
-
-
-<a name="node-firstchild" id="node-firstchild"></a>
-
-## firstChild : `Node`
-**Read only**
-
-
-<a name="node-lastchild" id="node-lastchild"></a>
-
-## lastChild : `Node`
-**Read only**
-
-
-<a name="node-previoussibling" id="node-previoussibling"></a>
-
-## previousSibling : `Node`
-**Read only**
-
-
-<a name="node-nextsibling" id="node-nextsibling"></a>
-
-## nextSibling : `Node`
-**Read only**
-
-
-<a name="node-firstelementchild" id="node-firstelementchild"></a>
-
-## firstElementChild : `Node`
-**Read only**
-
-
-<a name="node-lastelementchild" id="node-lastelementchild"></a>
-
-## lastElementChild : `Node`
-**Read only**
-
-
-<a name="node-previouselementsibling" id="node-previouselementsibling"></a>
-
-## previousElementSibling : `Node`
-**Read only**
-
-
-<a name="node-nextelementsibling" id="node-nextelementsibling"></a>
-
-## nextElementSibling : `Node`
-**Read only**
-
-
-<a name="node-textcontent" id="node-textcontent"></a>
-
-## textContent : `string`
-
-
-<a name="node-childnodes" id="node-childnodes"></a>
-
-## childNodes : `NodeList`
-**Read only**
-
-
-<a name="node-children" id="node-children"></a>
-
-## children : `HTMLCollection`
-**Read only**
-
-
-<a name="node-ownerdocument" id="node-ownerdocument"></a>
-
-## ownerDocument
-**Read only**
 
 
 <a name="htmlwebviewelement-postmessage" id="htmlwebviewelement-postmessage"></a>
 
 ## postMessage(message, targetOrigin, transfer)
-Post a message to the content in the webview.
-Note that the content in the webview can also post a message to plugin via window.uxpHost.postMessage(msg).
-The message sent to HTMLWebViewElement is also stringified & parsed by JSON.
-Plugin can receive the messages from WebView via 'message' event.
+The plugin and the content within the WebView can communicate with each other using `postMessage` and listening to the 'message' event.
 
 [Plugin]
 - send messages to the content in the WebView `HTMLWebViewElement.postMessage(msg)`
-- receive messages from the content in the WebView `window.addEventListener("message", (e) => { ... })`
-  where `e: Event { origin: URL of the content, source: window.uxpHost, data: message }`
+- receive messages from the content in the WebView `window.addEventListener("message", (e) => {...})` where `e: Event { origin: url of the content, source: window.HTMLWebViewElement, data: message }`
 
 [Content in the WebView]
-- send messages to plugin `window.uxpHost.postMessage(message)`
-- receive messages from plugin `window.addEventListener("message", (e) => { ... })` where `e: Event { origin: plugin id, source: WebView element, data: message }`
-
-
-| Param | Type | Description |
-| --- | --- | --- |
-| message | `Object` | A message sent to the webview. Please note that the message is stringified & parsed by JSON |
-| targetOrigin | `String` | The origin of webview for the event to be dispatched. The literal string "*" indicates no preference |
-| transfer | `Object` | Not supported yet. |
-
-
-
-<a name="element-scrollto" id="element-scrollto"></a>
-
-## scrollTo(xOrOptions, y)
-Scrolls the element to the new x and y positions. If options object is used with behavior: "smooth" then the element is smoothly scrolled.
-
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo  
+- send messages to plugin `window.uxpHost.postMessage(msg)`
+- receive messages from plugin `window.addEventListener("message", (e) => { ... })` where `e: Event { origin: plugin id, source: window.uxpHost, data: message }`
 
 | Param | Type | Description |
 | --- | --- | --- |
-| xOrOptions | `*` | either the new scrollLeft position or an options object. |
-| y | `*` | the optional new scrollTop position. |
-
-
-
-<a name="element-scrollintoview" id="element-scrollintoview"></a>
-
-## scrollIntoView(alignToTop)
-
-| Param | Type |
-| --- | --- |
-| alignToTop | `boolean` | 
-
-
-
-<a name="element-scrollintoviewifneeded" id="element-scrollintoviewifneeded"></a>
-
-## scrollIntoViewIfNeeded()
-
-
-<a name="element-focus" id="element-focus"></a>
-
-## focus()
-
-
-<a name="element-blur" id="element-blur"></a>
-
-## blur()
-
-
-<a name="element-getattribute" id="element-getattribute"></a>
-
-## getAttribute(name)
-**Returns**: `string`  
-
-| Param | Type |
-| --- | --- |
-| name | `string` | 
-
-
-
-<a name="element-setattribute" id="element-setattribute"></a>
-
-## setAttribute(name, value)
-
-| Param | Type |
-| --- | --- |
-| name | `string` | 
-| value | `string` | 
-
-
-
-<a name="element-removeattribute" id="element-removeattribute"></a>
-
-## removeAttribute(name)
-
-| Param | Type |
-| --- | --- |
-| name | `string` | 
-
-
-
-<a name="element-hasattribute" id="element-hasattribute"></a>
-
-## hasAttribute(name)
-**Returns**: `boolean`  
-
-| Param | Type |
-| --- | --- |
-| name | `string` | 
-
-
-
-<a name="element-getattributenode" id="element-getattributenode"></a>
-
-## getAttributeNode(name)
-**Returns**: `*`  
-
-| Param | Type |
-| --- | --- |
-| name | `string` | 
-
-
-
-<a name="element-setattributenode" id="element-setattributenode"></a>
-
-## setAttributeNode(newAttr)
-
-| Param | Type |
-| --- | --- |
-| newAttr | `*` | 
-
-
-
-<a name="element-removeattributenode" id="element-removeattributenode"></a>
-
-## removeAttributeNode(oldAttr)
-
-| Param | Type |
-| --- | --- |
-| oldAttr | `*` | 
-
-
-
-<a name="element-click" id="element-click"></a>
-
-## click()
-
-
-<a name="element-getelementsbyclassname" id="element-getelementsbyclassname"></a>
-
-## getElementsByClassName(name)
-**Returns**: `NodeList`  
-
-| Param | Type |
-| --- | --- |
-| name | `string` | 
-
-
-
-<a name="element-getelementsbytagname" id="element-getelementsbytagname"></a>
-
-## getElementsByTagName(name)
-**Returns**: `NodeList`  
-
-| Param | Type |
-| --- | --- |
-| name | `string` | 
-
-
-
-<a name="element-queryselector" id="element-queryselector"></a>
-
-## querySelector(selector)
-**Returns**: `Element`  
-
-| Param | Type |
-| --- | --- |
-| selector | `string` | 
-
-
-
-<a name="element-queryselectorall" id="element-queryselectorall"></a>
-
-## querySelectorAll(selector)
-**Returns**: `NodeList`  
-
-| Param | Type |
-| --- | --- |
-| selector | `string` | 
-
-
-
-<a name="element-getboundingclientrect" id="element-getboundingclientrect"></a>
-
-## getBoundingClientRect()
-**Returns**: `*`  
-
-
-<a name="element-closest" id="element-closest"></a>
-
-## closest(selectorString)
-**Returns**: `Element`  
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/closest  
-
-| Param | Type |
-| --- | --- |
-| selectorString | `string` | 
-
-
-
-<a name="element-matches" id="element-matches"></a>
-
-## matches(selectorString)
-**Returns**: `boolean`  
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/matches  
-
-| Param | Type |
-| --- | --- |
-| selectorString | `string` | 
-
-
-
-<a name="element-insertadjacenthtml" id="element-insertadjacenthtml"></a>
-
-## insertAdjacentHTML(position, value)
-
-| Param | Type |
-| --- | --- |
-| position |  | 
-| value | `string` | 
-
-
-
-<a name="element-insertadjacentelement" id="element-insertadjacentelement"></a>
-
-## insertAdjacentElement(position, node)
-**Returns**: `Node`  
-
-| Param | Type |
-| --- | --- |
-| position | `*` | 
-| node | `*` | 
-
-
-
-<a name="element-insertadjacenttext" id="element-insertadjacenttext"></a>
-
-## insertAdjacentText(position, text)
-
-| Param | Type |
-| --- | --- |
-| position | `*` | 
-| text | `*` | 
-
-
-
-<a name="node-haschildnodes" id="node-haschildnodes"></a>
-
-## hasChildNodes()
-**Returns**: `boolean`  
-
-
-<a name="node-clonenode" id="node-clonenode"></a>
-
-## cloneNode(deep)
-**Returns**: `Node`  
-
-| Param | Type |
-| --- | --- |
-| deep | `boolean` | 
-
-
-
-<a name="node-appendchild" id="node-appendchild"></a>
-
-## appendChild(child)
-**Returns**: `Node`  
-
-| Param | Type |
-| --- | --- |
-| child | `Node` | 
-
-
-
-<a name="node-insertbefore" id="node-insertbefore"></a>
-
-## insertBefore(child, before)
-**Returns**: `Node`  
-
-| Param | Type |
-| --- | --- |
-| child | `Node` | 
-| before | `Node` | 
-
-
-
-<a name="node-replacechild" id="node-replacechild"></a>
-
-## replaceChild(newChild, oldChild)
-**Returns**: `Node`  
-
-| Param | Type |
-| --- | --- |
-| newChild | `Node` | 
-| oldChild | `Node` | 
-
-
-
-<a name="node-removechild" id="node-removechild"></a>
-
-## removeChild(child)
-**Returns**: `Node`  
-
-| Param | Type |
-| --- | --- |
-| child | `Node` | 
-
-
-
-<a name="node-remove" id="node-remove"></a>
-
-## remove()
-
-
-<a name="node-before" id="node-before"></a>
-
-## before(...nodes)
-
-| Param | Type |
-| --- | --- |
-| ...nodes | `Array<Node>` | 
-
-
-
-<a name="node-after" id="node-after"></a>
-
-## after(...nodes)
-
-| Param | Type |
-| --- | --- |
-| ...nodes | `Array<Node>` | 
-
-
-
-<a name="node-replacewith" id="node-replacewith"></a>
-
-## replaceWith(...nodes)
-
-| Param | Type |
-| --- | --- |
-| ...nodes | `Array<Node>` | 
-
-
-
-<a name="node-contains" id="node-contains"></a>
-
-## contains(node)
-
-| Param | Type |
-| --- | --- |
-| node | `Node` | 
-
-
-
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
-
-## addEventListener(eventName, callback, [capture])
-
-| Param | Type | Default |
+| message | `Object` | A message sent to the WebView. Please note that the message is stringified & parsed by JSON |
+| targetOrigin | `string` | `[Optional]` - The origin of WebView for the event to be dispatched. The literal string "*" indicates no preference |
+| transfer | `Object` | `Optional` and `not functional yet`. Will be enabled in future release. |
+
+**Example**  
+```js
+// Send message from plugin to WebView
+let webViewDisplay = document.getElementById("webviewSample");
+webViewDisplay.postMessage("PluginMessage1");
+
+// Plugin receives message from WebView via "message" event.
+window.addEventListener("message", (e) => {
+  console.log(`Message from WebView(Origin:${e.origin}): ${e.data}\n`);
+  
+  if (e.data === "webviewmessage1") {
+    webViewDisplay.postMessage(" Thanks, Message1 recieved successfully");
+  }
+});
+```
+**Example**  
+```js
+// WebView sends message to Plugin
+window.uxpHost.postMessage("webviewmessage1");
+
+// WebView receives messages from Plugin
+window.addEventListener("message", (e) => {
+  // (e) from Plugin
+  // e.origin would be 'plugin id'
+  // e.source would be 'window.uxpHost'
+  // e.data is 'JSON.parse(JSON.stringify("PluginMessage1"))' which is "PluginMessage1"
+  if (e.data === "PluginMessage1") {
+    console.log(e.data);
+  }
+});
+```
+
+<a name="htmlwebviewelement-event-loadstart" id="htmlwebviewelement-event-loadstart"></a>
+
+## loadstart
+Event fired when loading has started.
+
+**Properties**
+
+| Name | Type | Description |
 | --- | --- | --- |
-| eventName | `*` |  | 
-| callback | `*` |  | 
-| [capture] | `boolean` | `false` | 
+| type | `string` | "loadstart" |
+| url | `string` | url which WebView navigates to |
+
+**Example**  
+```js
+const webview = document.getElementById("webviewSample");
+// Print the url when loading has started
+webview.addEventListener("loadstart", (e) => {
+  console.log(`webview.loadstart ${e.url}`);
+});
+```
 
 
+<a name="htmlwebviewelement-event-loadstop" id="htmlwebviewelement-event-loadstop"></a>
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
+## loadstop
+Event fired when loading has completed.
 
-## removeEventListener(eventName, callback, [capture])
+**Properties**
 
-| Param | Type | Default |
+| Name | Type | Description |
 | --- | --- | --- |
-| eventName | `*` |  | 
-| callback | `*` |  | 
-| [capture] | `boolean` | `false` | 
+| type | `string` | "loadstop" |
+| url | `string` | url which WebView navigates to |
+
+**Example**  
+```js
+// Print the url when loading has completed
+webview.addEventListener("loadstop", (e) => {
+  console.log(`webview.loadstop ${e.url}`);
+});
+```
 
 
+<a name="htmlwebviewelement-event-loaderror" id="htmlwebviewelement-event-loaderror"></a>
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
+## loaderror
+Event fired when loading has failed.
 
-## dispatchEvent(event)
+**Properties**
 
-| Param | Type |
-| --- | --- |
-| event | `*` | 
+| Name | Type | Description |
+| --- | --- | --- |
+| type | `string` | "loaderror" |
+| url | `string` | url which WebView navigates to |
+| code | `number` | Platform specific error code. Below are the Error Code details for the following platforms<br></br> 1. [Mac Error Codes](https://developer.apple.com/documentation/foundation/1448136-nserror_codes)<br></br> 2. [Windows Error Code](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2weberrorstatus?view=webview2-dotnet-1.0.1587.40)<br></br> 3. [Windows Common HRESULT codes](https://learn.microsoft.com/en-us/windows/win32/seccrypto/common-hresult-values)<br></br> |
+| message | `string` | Error description |
 
+**Example**  
+```js
+// Print the url, code and message when loading has failed
+webview.addEventListener("loaderror", (e) => {
+  console.log(`webview.loaderror ${e.url}, code:${e.code}, message:${e.message}`);
+});
+```
 
   
