@@ -1,13 +1,13 @@
 
 <a name="htmlwebviewelement" id="htmlwebviewelement"></a>
 
-# `window.HTMLWebViewElement`
-**Since**: v6.0  
+# window.HTMLWebViewElement
+**Since**: v6.0
 
 
 <a name="new-htmlwebviewelement-new" id="new-htmlwebviewelement-new"></a>
 
-## HTMLWebViewElement()
+## HTMLWebViewElement() 
 WebViews in Adobe UXP is a component that allows the developer to embed web content in their plugins.
 They are essentially a browser window that is displayed inside the plugin, allowing the developer to load web pages,
 and interact with them using JavaScript.
@@ -16,32 +16,36 @@ WebViews can be controlled by the plugin using the JavaScript API provided by UX
 They can also communicate with the plugin using `postMessage`,
 allowing the plugin to interact with WebView and vice versa.
 WebViews can be used to access external web services, to create custom UI
-and to isolate the web content from the rest of the plugin.<br>
+and to isolate the web content from the rest of the plugin.<br></br>
 UXP has introduced WebView support primarily to accelerate migration of CEP plugins to UXP
 where the developer is blocked due to missing UXP features.
 
-> **Caution:**<br>
-WebViews are resource intensive since it launches multiple processes per plugin
-and therefore should be used only in cases where the developer cannot create the plugin using UXP features.<br>
+<InlineAlert variant="warning" slots="text"/>
 
-<b>Note:</b><br>
-1. WebViews support was introduced in UXP v6.0 to be used only in <b>Dialogs</b>. The reasoning here was to limit WebViews usage in persistent panels. Later due to overwhelming requests from the developer, WebView support was added for `Panels` with UXP v6.4.
+WebViews are resource intensive since it launches multiple processes per plugin and therefore should be used only in cases where the developer cannot create the plugin using UXP features.
+
+**Note:**<br></br>
+1. WebViews support was introduced in UXP v6.0 to be used only in **Dialogs**. The reasoning here was to limit WebViews usage in persistent panels. Later due to overwhelming requests from the developer, WebView support was added for `Panels` with UXP v6.4.
 2. WebViews will need manifest version v5 or above.
 3. Checkout the template available in `UXP Developer Tool` for a quick getting starter plugin for WebView in UXP.
 4. `requiredPermissions.webview.enableMessageBridge=“localAndRemote”` is required for Plugin & WebView communication via postMessage.
 
-> **Limitations:**<br>
-> 1. Only remote content (including localhost) is allowed at present. This means you will not be able to load local html files from plugin folders in UXP WebView. This behaviour is due to limitations on WindowsOS and <b><i>may</i></b> be enabled in later releases.
-> 2. Any links in a UXP WebView will not open in a new window.
+**Limitations:**<br></br>
+1. Only remote content (including localhost) is allowed at present. This means you will not be able to load local html files from plugin folders in UXP WebView. This behaviour is due to limitations on WindowsOS and **<i>may</i>** be enabled in later releases.
+2. Any links in a UXP WebView will not open in a new window.
 e.g., In a browser, clicking `<a href="https://www.adobe.com" target="_blank">` would create a new Window
 and open `https://www.adobe.com` from the new Window or JavaScript alert() pops up a new Window. UXP WebView doesn't permit this.
 
 In your plugin's code, add a WebView element in the desired location.
-The element can take attributes such as id , height , and src to specify the WebView's properties<br>
-`<webview id="webviewsample" width="100%" height="360px" src="https://www.adobe.com" uxpAllowInspector="true" ></webview>`<br>
-<br>
-<b><u><h3>Manifest requirements for UXP WebView</u></h3></b><br>
-In order to use UXP WebView, the plugin should have the following manifest v5 permissions.<br>
+The element can take attributes such as id , height , and src to specify the WebView's properties<br></br>
+
+```
+<webview id="webviewsample" width="100%" height="360px" src="https://www.adobe.com" uxpAllowInspector="true" ></webview>
+```
+
+<br></br>
+<h3>Manifest requirements for UXP WebView</h3>
+In order to use UXP WebView, the plugin should have the following manifest v5 permissions.<br></br>
 
 <table>
  <tr>
@@ -53,13 +57,13 @@ In order to use UXP WebView, the plugin should have the following manifest v5 pe
 <tr>
      <td>.domains</td>
      <td>string[]</td>
-     <td>Allows access to the specified domains. Wildcards (except top-level) are supported. e.g "https://*.adobe.com". <br> Recommended</td>
+     <td>Allows access to the specified domains. Wildcards (except top-level) are supported. e.g "https://*.adobe.com". <br></br> Recommended</td>
      <td>Mandatory</td>
 </tr>
 <tr>
      <td>.domains</td>
      <td>"all"</td>
-     <td>Allows access to all domains.<br>Not recommended, may affect performance, security and privacy. Plugin may be blocked by enterprises.</td>
+     <td>Allows access to all domains.<br></br>Not recommended, may affect performance, security and privacy. Plugin may be blocked by enterprises.</td>
      <td>Mandatory</td>
 </tr>
 <tr>
@@ -71,8 +75,8 @@ In order to use UXP WebView, the plugin should have the following manifest v5 pe
 <tr>
      <td>.enableMessageBridge</td>
      <td>"localAndRemote"</td>
-     <td>Allows Plugin & the content loaded on WebView to communicate regardless of where the content is loaded from <b>locally or remotely.</b><br>
-         <b>Note: </b> At this stage only remote content is allowed. Refer <b>Limitations</b> section for more details</td>
+     <td>Allows Plugin & the content loaded on WebView to communicate regardless of where the content is loaded from **locally or remotely.**<br></br>
+         **Note: ** At this stage only remote content is allowed. Refer **Limitations** section for more details</td>
      <td>Optional</td>
 </tr>
 <tr>
@@ -81,7 +85,7 @@ In order to use UXP WebView, the plugin should have the following manifest v5 pe
      <td>Not allow WebView & the content loaded on WebView to communicate</td>
      <td>Optional</td>
 </tr>
-</table><br>
+</table><br></br>
 
 **Example**  
 ```js
@@ -108,7 +112,7 @@ In order to use UXP WebView, the plugin should have the following manifest v5 pe
 
 | Name | Type | Description |
 | --- | --- | --- |
-| uxpallowinspector | `boolean` | Enable Developer tools for debugging in UXP WebView<br>                                       <b>Note:</b> Not supported in UWP platform<br>                                       eg: `<webview id="webviewsample" width="100%" height="360px" src="https://www.adobe.com" uxpAllowInspector="true" ></webview>` |
+| uxpallowinspector | `boolean` | Enable Developer tools for debugging in UXP WebView<br></br>                                       **Note:** Not supported in UWP platform<br></br>                                       eg: `<webview id="webviewsample" width="100%" height="360px" src="https://www.adobe.com" uxpAllowInspector="true" ></webview>` |
 | src | `string` | The url to load in the WebView |
 | width | `string` | Width of the WebView |
 | height | `string` | Height of the WebView |
@@ -125,20 +129,15 @@ The url to load in the WebView. Only remote content (including `localhost`) is a
 <a name="htmlwebviewelement-postmessage" id="htmlwebviewelement-postmessage"></a>
 
 ## postMessage(message, targetOrigin, transfer)
-Post a message to the content in the WebView.
-Note that the content in the WebView can also post a message to plugin via window.uxpHost.postMessage(msg).
-The message sent to HTMLWebViewElement is also stringified & parsed by JSON.
-Plugin can receive the messages from WebView via 'message' event.
+The plugin and the content within the WebView can communicate with each other using `postMessage` and listening to the 'message' event.
 
-<b>[Plugin]</b>
+[Plugin]
 - send messages to the content in the WebView `HTMLWebViewElement.postMessage(msg)`
-- receive messages from the content in the WebView `window.addEventListener("message", (e) => { ... })`
-  where `e: Event { origin: url of the content, source: window.HTMLWebViewElement, data: message }`
+- receive messages from the content in the WebView `window.addEventListener("message", (e) => {...})` where `e: Event { origin: url of the content, source: window.HTMLWebViewElement, data: message }`
 
-<b>[Content in the WebView]</b>
-- send messages to plugin `window.uxpHost.postMessage(message)`
+[Content in the WebView]
+- send messages to plugin `window.uxpHost.postMessage(msg)`
 - receive messages from plugin `window.addEventListener("message", (e) => { ... })` where `e: Event { origin: plugin id, source: window.uxpHost, data: message }`
-
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -154,11 +153,11 @@ webViewDisplay.postMessage("PluginMessage1");
 
 // Plugin receives message from WebView via "message" event.
 window.addEventListener("message", (e) => {
- console.log(`Message from WebView(Origin:${e.origin}): ${e.data}\n`);
-
- if (e.data === "webviewmessage1") {
-     webViewDisplay.postMessage(" Thanks, Message1 recieved successfully");
- }
+  console.log(`Message from WebView(Origin:${e.origin}): ${e.data}\n`);
+  
+  if (e.data === "webviewmessage1") {
+    webViewDisplay.postMessage(" Thanks, Message1 recieved successfully");
+  }
 });
 ```
 **Example**  
@@ -168,16 +167,15 @@ window.uxpHost.postMessage("webviewmessage1");
 
 // WebView receives messages from Plugin
 window.addEventListener("message", (e) => {
-// (e) from Plugin
-// e.origin would be 'plugin id'
-// e.source would be 'window.uxpHost'
-// e.data is 'JSON.parse(JSON.stringify("PluginMessage1"))' which is "PluginMessage1"
-if (e.data === "PluginMessage1") {
-     console.log(e.data);
- }
+  // (e) from Plugin
+  // e.origin would be 'plugin id'
+  // e.source would be 'window.uxpHost'
+  // e.data is 'JSON.parse(JSON.stringify("PluginMessage1"))' which is "PluginMessage1"
+  if (e.data === "PluginMessage1") {
+    console.log(e.data);
+  }
 });
 ```
-
 
 <a name="htmlwebviewelement-event-loadstart" id="htmlwebviewelement-event-loadstart"></a>
 
@@ -196,7 +194,7 @@ Event fired when loading has started.
 const webview = document.getElementById("webviewSample");
 // Print the url when loading has started
 webview.addEventListener("loadstart", (e) => {
-     console.log(`webview.loadstart ${e.url}`);
+  console.log(`webview.loadstart ${e.url}`);
 });
 ```
 
@@ -217,7 +215,7 @@ Event fired when loading has completed.
 ```js
 // Print the url when loading has completed
 webview.addEventListener("loadstop", (e) => {
-     console.log(`webview.loadstop ${e.url}`);
+  console.log(`webview.loadstop ${e.url}`);
 });
 ```
 
@@ -233,14 +231,14 @@ Event fired when loading has failed.
 | --- | --- | --- |
 | type | `string` | "loaderror" |
 | url | `string` | url which WebView navigates to |
-| code | `number` | Platform specific error code. Below are the Error Code details for the following platforms<br> 1. [Mac Error Codes](https://developer.apple.com/documentation/foundation/1448136-nserror_codes)<br> 2. [Windows Error Code](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2weberrorstatus?view=webview2-dotnet-1.0.1587.40)<br> 3. [Windows Common HRESULT codes](https://learn.microsoft.com/en-us/windows/win32/seccrypto/common-hresult-values)<br> |
+| code | `number` | Platform specific error code. Below are the Error Code details for the following platforms<br></br> 1. [Mac Error Codes](https://developer.apple.com/documentation/foundation/1448136-nserror_codes)<br></br> 2. [Windows Error Code](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2weberrorstatus?view=webview2-dotnet-1.0.1587.40)<br></br> 3. [Windows Common HRESULT codes](https://learn.microsoft.com/en-us/windows/win32/seccrypto/common-hresult-values)<br></br> |
 | message | `string` | Error description |
 
 **Example**  
 ```js
 // Print the url, code and message when loading has failed
 webview.addEventListener("loaderror", (e) => {
-     console.log(`webview.loaderror ${e.url}, code:${e.code}, message:${e.message}`);
+  console.log(`webview.loaderror ${e.url}, code:${e.code}, message:${e.message}`);
 });
 ```
 
