@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp-ref/reference-html/General/Unsupported Attributes";
+import Content from "uxp-documentation/src/pages/api-ref/reference-html/General/Unsupported Attributes";
 
 <Content query="product=xd"/>

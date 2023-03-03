@@ -5,7 +5,7 @@ jsDoc: true
 
 **Since:** UXP v4.1
 
-Renders a dropdown with menu items. The dropdown must contain a [sp-menu](/uxp-ref/reference-spectrum/User%20Interface/sp-menu/) with `slot="options"`, and inside the `sp-menu`, a series of `sp-menu-item` or `sp-menu-divider` elements.
+Renders a dropdown with menu items. The dropdown must contain a [sp-menu](/api-ref/reference-spectrum/User%20Interface/sp-menu/) with `slot="options"`, and inside the `sp-menu`, a series of `sp-menu-item` or `sp-menu-divider` elements.
 
 ![Dropdowns](../assets/sp-dropdown.png)
 

@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp-ref/reference-css/Styles/border-bottom-style";
+import Content from "uxp-documentation/src/pages/api-ref/reference-css/Styles/border-bottom-style";
 
 <Content query="product=xd"/>
