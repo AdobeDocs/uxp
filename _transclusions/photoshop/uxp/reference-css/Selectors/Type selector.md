@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/api-ref/reference-css/Selectors/Type selector";
+import Content from "uxp-documentation/src/pages/api/reference-css/Selectors/Type selector";
 
 <Content query="product=photoshop"/>

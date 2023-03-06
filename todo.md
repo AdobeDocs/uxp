@@ -10,7 +10,7 @@
     * `version3P.md`
     * `known-issues.md`
     * `changelog3P.md`
-    * `src/pages/api-ref/index.md`
+    * `src/pages/api/index.md`
     * `reference-spectrum/index.md`
     * `reference-js/index.md`
     * `HTMLWebViewElement.md`

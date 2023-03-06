@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/api-ref/reference-spectrum/index.md";
+import Content from "uxp-documentation/src/pages/api/reference-spectrum/index.md";
 
 <Content query="product=xd"/>

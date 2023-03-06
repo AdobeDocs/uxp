@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/api-ref/reference-css/Styles/visibility";
+import Content from "uxp-documentation/src/pages/api/reference-css/Styles/visibility";
 
 <Content query="product=xd"/>

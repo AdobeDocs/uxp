@@ -22,7 +22,7 @@ Indicates that this is a `FileSystemProvider`. Useful for type-checking.
 
 ## supportedDomains: `Array<Symbol>`
 An array of the domains this file system supports. If the file system can
-open a file picker to the user's `documents` folder, for example, then [userDocuments](/api-ref/reference-js/Modules/uxp/Persistent%20File%20Storage/domains/#module-storage-domains-userdocuments) will be in this list.
+open a file picker to the user's `documents` folder, for example, then [userDocuments](/api/reference-js/Modules/uxp/Persistent%20File%20Storage/domains/#module-storage-domains-userdocuments) will be in this list.
 
 **Example**  
 ```js
@@ -101,7 +101,7 @@ await file.write("It was a dark and stormy night");
 
 ## getFolder(options)
 Gets a folder from the file system via a folder picker dialog. The files
-and folders within can be accessed via [Folder#getEntries](/api-ref/reference-js/Modules/uxp/Persistent%20File%20Storage/Folder/#module-storage-folder-getentries). Any
+and folders within can be accessed via [Folder#getEntries](/api/reference-js/Modules/uxp/Persistent%20File%20Storage/Folder/#module-storage-folder-getentries). Any
 files within are read-write.
 
 If the user dismisses the picker, `null` is returned instead.

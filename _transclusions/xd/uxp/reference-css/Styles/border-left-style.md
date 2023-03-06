@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/api-ref/reference-css/Styles/border-left-style";
+import Content from "uxp-documentation/src/pages/api/reference-css/Styles/border-left-style";
 
 <Content query="product=xd"/>

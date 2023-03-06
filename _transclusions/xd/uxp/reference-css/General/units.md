@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/api-ref/reference-css/General/units";
+import Content from "uxp-documentation/src/pages/api/reference-css/General/units";
 
 <Content query="product=xd"/>

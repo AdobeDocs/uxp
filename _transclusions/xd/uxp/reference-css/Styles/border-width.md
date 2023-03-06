@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/api-ref/reference-css/Styles/border-width";
+import Content from "uxp-documentation/src/pages/api/reference-css/Styles/border-width";
 
 <Content query="product=xd"/>
