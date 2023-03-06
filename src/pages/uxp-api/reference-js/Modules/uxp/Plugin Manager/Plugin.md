@@ -2,7 +2,8 @@
 <a name="plugin" id="plugin"></a>
 
 # Plugin
-Plugin object received in the PluginManager.getPlugins list, used for IPC(Inter Plugin Communication)
+Plugin object received in the PluginManager.getPlugins list,
+used for IPC(Inter Plugin Communication)
 
 
 
