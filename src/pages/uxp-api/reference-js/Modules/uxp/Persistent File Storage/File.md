@@ -7,7 +7,7 @@ jsDoc: true
 # require('uxp').storage.File
 Represents a file on a file system. Provides methods for reading from and
 writing to the file. You'll never instantiate a `File` directly; instead
-you'll get access via a [storage.FileSystemProvider](/api/reference-js/Modules/uxp/Persistent%20File%20Storage/FileSystemProvider/).
+you'll get access via a [storage.FileSystemProvider](/uxp-api/reference-js/Modules/uxp/Persistent%20File%20Storage/FileSystemProvider/).
 
 
 

@@ -12,7 +12,7 @@ Metadata for an entry. It includes useful information such as:
 * date modified
 * name
 
-You'll not instantiate this directly; use [Entry#getMetadata](/api/reference-js/Modules/uxp/Persistent%20File%20Storage/Entry/#module-storage-entry-getmetadata) to do so.
+You'll not instantiate this directly; use [Entry#getMetadata](/uxp-api/reference-js/Modules/uxp/Persistent%20File%20Storage/Entry/#module-storage-entry-getmetadata) to do so.
 
 
 

@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/api/reference-css/Styles/margin-right";
+import Content from "uxp-documentation/src/pages/uxp-api/reference-css/Styles/margin-right";
 
 <Content query="product=xd"/>

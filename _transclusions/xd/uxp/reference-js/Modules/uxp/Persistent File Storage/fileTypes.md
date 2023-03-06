@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/api/reference-js/Modules/uxp/Persistent File Storage/fileTypes";
+import Content from "uxp-documentation/src/pages/uxp-api/reference-js/Modules/uxp/Persistent File Storage/fileTypes";
 
 <Content query="product=xd"/>
