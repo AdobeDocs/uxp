@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-js/Global Members/HTML Events/GestureEvent";
+import Content from "uxp-documentation/src/pages/uxp-api/reference-js/Global Members/HTML Events/GestureEvent";
 
 <Content query="product=photoshop"/>

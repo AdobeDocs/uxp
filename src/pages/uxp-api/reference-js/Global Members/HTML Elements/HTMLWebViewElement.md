@@ -8,8 +8,8 @@
 <a name="new-htmlwebviewelement-new" id="new-htmlwebviewelement-new"></a>
 
 ## HTMLWebViewElement() 
-WebViews in Adobe UXP is a component that allows the developer to embed web content in their plugins.
-They are essentially a browser window that is displayed inside the plugin, allowing the developer to load web pages,
+WebViews in Adobe UXP is a component that allows you to embed web content in your plugins.
+They are essentially a browser window that is displayed inside the plugin, allowing you to load web pages,
 and interact with them using JavaScript.
 WebViews can be used to display complex web pages inside the plugin.
 WebViews can be controlled by the plugin using the JavaScript API provided by UXP.
@@ -17,15 +17,13 @@ They can also communicate with the plugin using `postMessage`,
 allowing the plugin to interact with WebView and vice versa.
 WebViews can be used to access external web services, to create custom UI
 and to isolate the web content from the rest of the plugin.<br></br>
-UXP has introduced WebView support primarily to accelerate migration of CEP plugins to UXP
-where the developer is blocked due to missing UXP features.
 
 <InlineAlert variant="warning" slots="text"/>
 
-WebViews are resource intensive since it launches multiple processes per plugin and therefore should be used only in cases where the developer cannot create the plugin using UXP features.
+WebViews are resource intensive since it launches multiple processes per plugin and therefore should be used only in cases where you cannot create the plugin using UXP features.
 
 **Note:**<br></br>
-1. WebViews support was introduced in UXP v6.0 to be used only in **Dialogs**. The reasoning here was to limit WebViews usage in persistent panels. Later due to overwhelming requests from the developer, WebView support was added for `Panels` with UXP v6.4.
+1. WebViews support was introduced in UXP v6.0 to be used only in **Dialogs**. The reasoning here was to limit WebViews usage in persistent panels. Later due to overwhelming requests, WebView support was added for `Panels` with UXP v6.4.
 2. WebViews will need manifest version v5 or above.
 3. Checkout the template available in `UXP Developer Tool` for a quick getting starter plugin for WebView in UXP.
 4. `requiredPermissions.webview.enableMessageBridge=“localAndRemote”` is required for Plugin & WebView communication via postMessage.

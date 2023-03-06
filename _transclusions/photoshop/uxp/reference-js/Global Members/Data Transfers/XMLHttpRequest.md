@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-js/Global Members/Data Transfers/XMLHttpRequest";
+import Content from "uxp-documentation/src/pages/uxp-api/reference-js/Global Members/Data Transfers/XMLHttpRequest";
 
 <Content query="product=photoshop"/>

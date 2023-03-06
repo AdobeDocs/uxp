@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-js/Global Members/HTML DOM/index.md";
+import Content from "uxp-documentation/src/pages/uxp-api/reference-js/Global Members/HTML DOM/index.md";
 
 <Content query="product=photoshop"/>

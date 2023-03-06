@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Styles/visibility";
+import Content from "uxp-documentation/src/pages/uxp-api/reference-css/Styles/visibility";
 
 <Content query="product=photoshop"/>

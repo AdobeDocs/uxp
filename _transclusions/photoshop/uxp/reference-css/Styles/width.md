@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Styles/width";
+import Content from "uxp-documentation/src/pages/uxp-api/reference-css/Styles/width";
 
 <Content query="product=photoshop"/>

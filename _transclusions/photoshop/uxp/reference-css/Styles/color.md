@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Styles/color";
+import Content from "uxp-documentation/src/pages/uxp-api/reference-css/Styles/color";
 
 <Content query="product=photoshop"/>

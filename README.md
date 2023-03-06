@@ -6,12 +6,13 @@ It isn't intended to be hosted by itself, but instead should be imported into ho
 
 The documentation is based on the [`AdobeDocs/dev-site-documentation-template`](https://github.com/AdobeDocs/dev-site-documentation-template).
 
-## Documentation Pages using docs from this repository
+## Documentation website using docs from this repository
 
 | Page                                | Repository                                                              |
 | ----------------------------------- | ----------------------------------------------------------------------- |
-| https://www.adobe.io/photoshop/uxp/ | [`AdobeDocs/uxp-photoshop`](https://github.com/AdobeDocs/uxp-photoshop) |
-| https://www.adobe.io/xd/uxp/        | [`AdobeDocs/uxp-xd`](https://github.com/AdobeDocs/uxp-xd)               |
+| https://developer.adobe.com/photoshop/uxp/ | [`AdobeDocs/uxp-photoshop`](https://github.com/AdobeDocs/uxp-photoshop) |
+| https://developer.adobe.com/xd/uxp/        | [`AdobeDocs/uxp-xd`](https://github.com/AdobeDocs/uxp-xd)               |
+| https://developer.adobe.com/indesign/uxp/  | [`AdobeDocs/uxp-xd`](https://github.com/AdobeDocs/uxp-indesign)    |
 
 
 ## Run this project
@@ -30,7 +31,7 @@ UXP_REPO_SOURCE_DOCS="<path-to-torq-native>/docs/dist"
 
 ### Transclusions
 
-- Transclusions play an important role when the content from this repo has to be imported into `AdobeDocs/uxp-photoshop` and `AdobeDocs/uxp-xd`. It carries the reference to the actual markdown content inside `src/pages`. 
+- Transclusions play an important role when the content from this repo has to be imported into `AdobeDocs/uxp-photoshop`, `AdobeDocs/uxp-xd`, and `AdobeDocs/uxp-indesign`. It carries the reference to the actual markdown content inside `src/pages`. 
 - `uxp_documentation` is the alias name given to this repo when it is referred from other repos mentioned above.
 - It carries references to pages in `src/pages` location
 

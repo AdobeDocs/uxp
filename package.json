@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "uxp-documentation",
-  "version": "6.5.1",
+  "version": "6.5.2",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -11,16 +11,16 @@
     "predev": "npm run prepare-docs",
     "prebuild": "npm run prepare-docs",
     "postbuild": "touch public/.nojekyll",
-    
-    "_copy-docs-html": ". .env && rm -rf src/pages/uxp/reference-html     && mkdir -p src/pages/uxp/reference-html     && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-html/ src/pages/uxp/reference-html/",
-    "_copy-docs-spectrum": ". .env && rm -rf src/pages/uxp/reference-spectrum && mkdir -p src/pages/uxp/reference-spectrum && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/ src/pages/uxp/reference-spectrum/",
-    "_copy-docs-css": ". .env && rm -rf src/pages/uxp/reference-css      && mkdir -p src/pages/uxp/reference-css      && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-css/ src/pages/uxp/reference-css/",
-    "_copy-docs-js": ". .env && rm -rf src/pages/uxp/reference-js       && mkdir -p src/pages/uxp/reference-js       && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-js/ src/pages/uxp/reference-js/",
+
+    "_copy-docs-html": ". .env && rm -rf src/pages/uxp-api/reference-html     && mkdir -p src/pages/uxp-api/reference-html     && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-html/ src/pages/uxp-api/reference-html/",
+    "_copy-docs-spectrum": ". .env && rm -rf src/pages/uxp-api/reference-spectrum && mkdir -p src/pages/uxp-api/reference-spectrum && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/ src/pages/uxp-api/reference-spectrum/",
+    "_copy-docs-css": ". .env && rm -rf src/pages/uxp-api/reference-css      && mkdir -p src/pages/uxp-api/reference-css      && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-css/ src/pages/uxp-api/reference-css/",
+    "_copy-docs-js": ". .env && rm -rf src/pages/uxp-api/reference-js       && mkdir -p src/pages/uxp-api/reference-js       && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-js/ src/pages/uxp-api/reference-js/",
     "copy-docs": "npm run _copy-docs-js && npm run _copy-docs-css && npm run _copy-docs-html && npm run _copy-docs-spectrum",
     "_copy-spectrum-assets-transclusions": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/assets ./_transclusions/photoshop/uxp/reference-spectrum/",
-    "_copy-spectrum-assets": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/assets ./src/pages/uxp/reference-spectrum/",
+    "_copy-spectrum-assets": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/assets ./src/pages/uxp-api/reference-spectrum/",
     "copy-assets": "npm run _copy-spectrum-assets && npm run _copy-spectrum-assets-transclusions",
-    "_copy-other-files": ". .env && cp \"$UXP_REPO_SOURCE_DOCS\"/*.md src/pages/uxp/",
+    "_copy-other-files": ". .env && cp \"$UXP_REPO_SOURCE_DOCS\"/*.md src/pages/uxp-api/",
     "prepare-docs": "npm run copy-docs && npm run copy-assets && npm run _copy-other-files"
   }
 }

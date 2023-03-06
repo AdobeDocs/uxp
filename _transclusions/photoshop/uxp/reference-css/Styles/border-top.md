@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Styles/border-top";
+import Content from "uxp-documentation/src/pages/uxp-api/reference-css/Styles/border-top";
 
 <Content query="product=photoshop"/>
