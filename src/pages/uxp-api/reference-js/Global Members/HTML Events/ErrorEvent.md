@@ -88,6 +88,12 @@ Creates an instance of ErrorEvent.
 **Read only**
 
 
+<a name="event-composed" id="event-composed"></a>
+
+## composed : `boolean`
+**Read only**
+
+
 <a name="event-eventphase" id="event-eventphase"></a>
 
 ## eventPhase
@@ -114,6 +120,18 @@ Creates an instance of ErrorEvent.
 | typeArg | `string` | 
 | bubblesArg | `boolean` | 
 | cancelableArg | `boolean` | 
+
+
+
+<a name="event-composedpath" id="event-composedpath"></a>
+
+## composedPath()
+Returns the event's path
+
+**See**
+
+- https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath
+- https://dom.spec.whatwg.org/#dom-event-composedpath
 
 
 

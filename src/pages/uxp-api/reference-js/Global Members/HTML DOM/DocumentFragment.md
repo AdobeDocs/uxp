@@ -2,249 +2,56 @@
 <a name="documentfragment" id="documentfragment"></a>
 
 # window.DocumentFragment
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment  
+**See**: [Web APIs - DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment)  
 
 
-<a name="node-contenteditable" id="node-contenteditable"></a>
+<a name="documentfragment-childelementcount" id="documentfragment-childelementcount"></a>
 
-## contentEditable
+## childElementCount : `number`
 **Read only**
+A number representing the number of children of the element.
 
+**See**: [DocumentFragment - childElementCount](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/childElementCount)  
 
-<a name="node-isconnected" id="node-isconnected"></a>
 
-## isConnected : `boolean`
-**Read only**
+<a name="documentfragment-queryselector" id="documentfragment-queryselector"></a>
 
+## querySelector(selector)
+Returns the first Element node within the DocumentFragment matching the selector string
 
-<a name="node-parentnode" id="node-parentnode"></a>
+**Returns**: `Element`  
+**See**: [DocumentFragment - querySelector](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/querySelector)  
 
-## parentNode : `Node`
-**Read only**
-
-
-<a name="node-parentelement" id="node-parentelement"></a>
-
-## parentElement : `Element`
-**Read only**
-
-
-<a name="node-firstchild" id="node-firstchild"></a>
-
-## firstChild : `Node`
-**Read only**
-
-
-<a name="node-lastchild" id="node-lastchild"></a>
-
-## lastChild : `Node`
-**Read only**
-
-
-<a name="node-previoussibling" id="node-previoussibling"></a>
-
-## previousSibling : `Node`
-**Read only**
-
-
-<a name="node-nextsibling" id="node-nextsibling"></a>
-
-## nextSibling : `Node`
-**Read only**
-
-
-<a name="node-firstelementchild" id="node-firstelementchild"></a>
-
-## firstElementChild : `Node`
-**Read only**
-
-
-<a name="node-lastelementchild" id="node-lastelementchild"></a>
-
-## lastElementChild : `Node`
-**Read only**
-
-
-<a name="node-previouselementsibling" id="node-previouselementsibling"></a>
-
-## previousElementSibling : `Node`
-**Read only**
-
-
-<a name="node-nextelementsibling" id="node-nextelementsibling"></a>
-
-## nextElementSibling : `Node`
-**Read only**
-
-
-<a name="node-textcontent" id="node-textcontent"></a>
-
-## textContent : `string`
-
-
-<a name="node-childnodes" id="node-childnodes"></a>
-
-## childNodes : `NodeList`
-**Read only**
-
-
-<a name="node-children" id="node-children"></a>
-
-## children : `HTMLCollection`
-**Read only**
-
-
-<a name="node-ownerdocument" id="node-ownerdocument"></a>
-
-## ownerDocument
-**Read only**
-
-
-<a name="node-attributes" id="node-attributes"></a>
-
-## attributes
-**Read only**
-
-
-<a name="node-haschildnodes" id="node-haschildnodes"></a>
-
-## hasChildNodes()
-**Returns**: `boolean`  
-
-
-<a name="node-clonenode" id="node-clonenode"></a>
-
-## cloneNode(deep)
-**Returns**: `Node`  
-
-| Param | Type |
-| --- | --- |
-| deep | `boolean` | 
-
-
-
-<a name="node-appendchild" id="node-appendchild"></a>
-
-## appendChild(child)
-**Returns**: `Node`  
-
-| Param | Type |
-| --- | --- |
-| child | `Node` | 
-
-
-
-<a name="node-insertbefore" id="node-insertbefore"></a>
-
-## insertBefore(child, before)
-**Returns**: `Node`  
-
-| Param | Type |
-| --- | --- |
-| child | `Node` | 
-| before | `Node` | 
-
-
-
-<a name="node-replacechild" id="node-replacechild"></a>
-
-## replaceChild(newChild, oldChild)
-**Returns**: `Node`  
-
-| Param | Type |
-| --- | --- |
-| newChild | `Node` | 
-| oldChild | `Node` | 
-
-
-
-<a name="node-removechild" id="node-removechild"></a>
-
-## removeChild(child)
-**Returns**: `Node`  
-
-| Param | Type |
-| --- | --- |
-| child | `Node` | 
-
-
-
-<a name="node-remove" id="node-remove"></a>
-
-## remove()
-
-
-<a name="node-before" id="node-before"></a>
-
-## before(...nodes)
-
-| Param | Type |
-| --- | --- |
-| ...nodes | `Array<Node>` | 
-
-
-
-<a name="node-after" id="node-after"></a>
-
-## after(...nodes)
-
-| Param | Type |
-| --- | --- |
-| ...nodes | `Array<Node>` | 
-
-
-
-<a name="node-replacewith" id="node-replacewith"></a>
-
-## replaceWith(...nodes)
-
-| Param | Type |
-| --- | --- |
-| ...nodes | `Array<Node>` | 
-
-
-
-<a name="node-contains" id="node-contains"></a>
-
-## contains(node)
-
-| Param | Type |
-| --- | --- |
-| node | `Node` | 
-
-
-
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
-
-## addEventListener(eventName, callback, [capture])
-
-| Param | Type | Default |
+| Param | Type | Description |
 | --- | --- | --- |
-| eventName | `*` |  | 
-| callback | `*` |  | 
-| [capture] | `boolean` | `false` | 
+| selector | `string` | A string containing one or more CSS selectors separated by commas |
 
 
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
+<a name="documentfragment-queryselectorall" id="documentfragment-queryselectorall"></a>
 
-## removeEventListener(eventName, callback, [capture])
+## querySelectorAll(selector)
+Returns the list of nodes within the DocumentFragment matcthing the selectors
 
-| Param | Type | Default |
+**Returns**: `NodeList`  
+**See**: [DocumentFragment - querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/querySelectorAll)  
+
+| Param | Type | Description |
 | --- | --- | --- |
-| eventName | `*` |  | 
-| callback | `*` |  | 
-| [capture] | `boolean` | `false` | 
+| selector | `string` | A string containing one or more CSS selectors separated by commas |
 
 
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
+<a name="documentfragment-append" id="documentfragment-append"></a>
 
-## dispatchEvent(event)
+## append(...args)
+inserts a set of Node objects or string objects after the last child of the document fragment
 
-| Param | Type |
-| --- | --- |
-| event | `*` | 
+**See**: [DocumentFragment - append](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/append)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| ...args | `any` | A set of Node or string objects to insert. |
 
 
   

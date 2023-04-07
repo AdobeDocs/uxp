@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="module-storage-entry" id="module-storage-entry"></a>
 
@@ -221,3 +218,4 @@ Returns this entry's metadata.
 const metadata = aFile.getMetadata();
 ```
 
+  

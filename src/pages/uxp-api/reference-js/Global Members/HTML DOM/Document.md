@@ -2,7 +2,7 @@
 <a name="document" id="document"></a>
 
 # window.Document
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/Document  
+**See**: [Web APIs - Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)  
 
 
 <a name="new-document-new" id="new-document-new"></a>
@@ -34,8 +34,8 @@ Indicates if the computer is online
 
 <a name="document-uxpcontainer" id="document-uxpcontainer"></a>
 
-## uxpContainer ⇒ `UXPContainer`
-**Returns**: `UXPContainer`  
+## uxpContainer : `UXPContainer`
+**Read only**
 
 
 <a name="document-activeelement" id="document-activeelement"></a>
@@ -201,7 +201,7 @@ Indicates if the computer is online
 <a name="document-createevent" id="document-createevent"></a>
 
 ## createEvent(eventType)
-**See**: https://dom.spec.whatwg.org/#dom-document-createevent  
+**See**: [dom-document-createevent](https://dom.spec.whatwg.org/#dom-document-createevent)  
 
 | Param | Type |
 | --- | --- |
@@ -223,12 +223,12 @@ Indicates if the computer is online
 
 <a name="document-createtextnode" id="document-createtextnode"></a>
 
-## createTextNode([text])
+## createTextNode([text&#x3D;])
 **Returns**: `Text`  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| [text] | `string` | `&quot;\&quot;\&quot;&quot;` | 
+| Param | Type |
+| --- | --- |
+| [text=] | `string` | 
 
 
 
@@ -247,6 +247,23 @@ Indicates if the computer is online
 
 ## createDocumentFragment()
 **Returns**: `DocumentFragment`  
+
+
+<a name="document-createtreewalker" id="document-createtreewalker"></a>
+
+## createTreeWalker(root, whatToShow, filter)
+[ This feature is behind a feature flag. You must turn on `enableSWCSupport` in the featureFlags section of plugin manifest to use the same ]
+
+This represents the nodes of a document subtree and a position within them
+
+**Returns**: `TreeWalker`  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| root | `Node` | A Node representing the root node as specified when the TreeWalker was created |
+| whatToShow | `number` | An unsigned long being a bitmask made of constants describing the types of Node that must be presented |
+| filter | `NodeFilter` | NodeFilter used to select the relevant nodes |
+
 
 
 <a name="document-clonenode" id="document-clonenode"></a>
@@ -433,6 +450,17 @@ Indicates if the computer is online
 | Param | Type |
 | --- | --- |
 | node | `Node` | 
+
+
+
+<a name="node-getrootnode" id="node-getrootnode"></a>
+
+## getRootNode(options)
+**Returns**: `Node` - root node  
+
+| Param | Type |
+| --- | --- |
+| options | `Object` | 
 
 
 

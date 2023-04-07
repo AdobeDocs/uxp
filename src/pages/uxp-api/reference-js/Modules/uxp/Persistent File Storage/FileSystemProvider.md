@@ -1,11 +1,8 @@
----
-jsDoc: true
----
 
 <a name="module-storage-filesystemprovider" id="module-storage-filesystemprovider"></a>
 
 # require('uxp').storage.FileSystemProvider
-Provides access to files and folders on a file system. You'll never
+Provides access to files and folders on a file system. You'll typically not
 instantiate this directly; instead you'll use an instance of one that has
 already been created for you by UXP.
 
@@ -13,16 +10,16 @@ already been created for you by UXP.
 
 <a name="module-storage-filesystemprovider-isfilesystemprovider" id="module-storage-filesystemprovider-isfilesystemprovider"></a>
 
-## isFileSystemProvider: `boolean`
+## isFileSystemProvider : `boolean`
 Indicates that this is a `FileSystemProvider`. Useful for type-checking.
 
 
 
 <a name="module-storage-filesystemprovider-supporteddomains" id="module-storage-filesystemprovider-supporteddomains"></a>
 
-## supportedDomains: `Array<Symbol>`
+## supportedDomains : `Array<Symbol>`
 An array of the domains this file system supports. If the file system can
-open a file picker to the user's `documents` folder, for example, then [userDocuments](/uxp-api/reference-js/Modules/uxp/Persistent%20File%20Storage/domains/#module-storage-domains-userdocuments) will be in this list.
+open a file picker to the user's `documents` folder, for example, then [userDocuments](./domains#module-storage-domains-userdocuments) will be in this list.
 
 **Example**  
 ```js
@@ -101,7 +98,7 @@ await file.write("It was a dark and stormy night");
 
 ## getFolder(options)
 Gets a folder from the file system via a folder picker dialog. The files
-and folders within can be accessed via [Folder#getEntries](/uxp-api/reference-js/Modules/uxp/Persistent%20File%20Storage/Folder/#module-storage-folder-getentries). Any
+and folders within can be accessed via [Folder#getEntries](./Folder#getentries). Any
 files within are read-write.
 
 If the user dismisses the picker, `null` is returned instead.
@@ -140,7 +137,7 @@ const temp = await fs.getTemporaryFolder();
 Returns a folder that can be used for extension's data storage without user interaction.
 It is persistent across host-app version upgrades.
 
-**Returns**: `Promise<Folder>`
+**Returns**: `Promise<Folder>`  
 
 
 <a name="module-storage-filesystemprovider-getpluginfolder" id="module-storage-filesystemprovider-getpluginfolder"></a>
@@ -149,15 +146,54 @@ It is persistent across host-app version upgrades.
 Returns an plugin's folder – this folder and everything within it are read only.
 This contains all the Plugin related packaged assets.
 
-**Returns**: `Promise<Folder>`
+**Returns**: `Promise<Folder>`  
+
+
+<a name="module-storage-filesystemprovider-createentrywithurl" id="module-storage-filesystemprovider-createentrywithurl"></a>
+
+## createEntryWithUrl(url, options)
+Creates an entry for the given url and returns the appropriate instance.
+
+**Returns**: `Promise<File|Folder>` the File or Folder object which is created for the given url  
+**Throws**:
+
+- `Error` if invalid file url format or value is passed.
+if the parent folder of the file/folder to be created does not exist.
+if a folder already exists at the url.
+if a file already exists at the url and it is requested to create a folder.
+if a file already exists at the url and the overwrite option is not set to true to create a file.
+
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| url | `string` |  | the url to create an Entry object. Note that file: scheme has limited support in UWP due to the strict [File access permissions](https://learn.microsoft.com/en-us/windows/uwp/files/file-access-permissions) |
+| options | `*` |  |  |
+| [options.type] | `Symbol` | `types.file` | indicates which kind of entry to create. Pass types.folder to create a new folder. Note that if the type is file then this method just create"s" a file entry object and not the actual file on the disk. File on the storage is created when data is written into the file. eg: call write method on the file entry object. |
+| [options.overwrite] | `Boolean` | `false` | if true, the create attempt can overwrite an existing file |
+
+**Example**  
+```js
+const newImgFolder = await fs.createEntryWithUrl("plugin-temp:/img", { type: types.folder });
+const newTmpFolder = await fs.createEntryWithUrl("file:/Users/user/Documents/tmp", { type: types.folder });
+```
+**Example**  
+```js
+const newDatFile = await fs.createEntryWithUrl("plugin-temp:/tmp/test.dat", { overwrite: true });
+const newTxtFile = await fs.createEntryWithUrl("file:/Users/user/Documents/test.txt", { overwrite: true });
+```
 
 
 <a name="module-storage-filesystemprovider-getentrywithurl" id="module-storage-filesystemprovider-getentrywithurl"></a>
 
 ## getEntryWithUrl(url)
-Returns an Entry object of the given url.
+Gets an entry of the given url and returns the appropriate instance.
 
 **Returns**: `Promise<File|Folder>` the File or Folder object for the given url  
+**Throws**:
+
+- `Error` if invalid file url format or value is passed.
+if the file/folder does not exist at the url.
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -180,7 +216,7 @@ const docFile = await fs.getEntryWithUrl("file:/Users/user/Documents/test.txt");
 ## getFsUrl(entry)
 Returns the fs url of given entry.
 
-**Returns**: `string`
+**Returns**: `string`  
 
 | Param | Type |
 | --- | --- |
@@ -222,7 +258,7 @@ let token = fs.createSessionToken(entry);
 let result = await require('photoshop').action.batchPlay([{
     _obj: "open",
     "target": {
-        _path: token, // Rather than a system path, this expects a session token
+       _path: token, // Rather than a system path, this expects a session token
         _kind: "local",
     }
 }], {});
@@ -310,3 +346,4 @@ if the object is `null` or `undefined`. Useful for type checking.
 | fs | `any` | the object to check |
 
 
+  
