@@ -3,7 +3,7 @@
 
 # window.AbortController
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/AbortController
-<br>See also [AbortSignal](./AbortSignal.md#module:global.AbortSignal)  
+<br></br>See also [AbortSignal](./AbortSignal.md#module:global.AbortSignal)  
 
 
 <a name="abortcontroller-signal" id="abortcontroller-signal"></a>

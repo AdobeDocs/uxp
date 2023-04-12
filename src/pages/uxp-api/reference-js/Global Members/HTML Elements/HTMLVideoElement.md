@@ -6,8 +6,8 @@
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| preload | `string` |  | Determines how much the media data be loaded when the plugin loads.      This can be one of the followings. Default is "metadata".      <ul>          <li>'none': Video should not be loaded</li>          <li>'metadata': Only video metadata is fetched</li>          <li>'auto': The whole video file can be downloaded</li>          <li>''(empty string): Synonym of the 'auto' value</li>      </ul>      example: <br>`<video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" preload="metadata"></video>` |
-| autoplay | `boolean` | `false` | Video automatically begins to play back as soon as loading the data.      example: <br>`<video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" autoplay></video>` |
+| preload | `string` |  | Determines how much the media data be loaded when the plugin loads.      This can be one of the followings. Default is "metadata".      <ul>          <li>'none': Video should not be loaded</li>          <li>'metadata': Only video metadata is fetched</li>          <li>'auto': The whole video file can be downloaded</li>          <li>''(empty string): Synonym of the 'auto' value</li>      </ul>      example: <br></br>`<video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" preload="metadata"></video>` |
+| autoplay | `boolean` | `false` | Video automatically begins to play back as soon as loading the data.      example: <br></br>`<video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" autoplay></video>` |
 
 
 
@@ -197,7 +197,7 @@ The amount of media data that is prefetched is determined by the value of 'prelo
 
 ## play()
 Attempts to begin playback of the media.
-<br>Note that it returns a resolved Promise regardless of the actual result.
+<br></br>Note that it returns a resolved Promise regardless of the actual result.
 It notifies an error over the error event.
 
 **Returns**: `Promise<void>` Resolved when playback has been started, or rejected if playback cannot be started.  

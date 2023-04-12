@@ -2,8 +2,8 @@
 <a name="canvasrenderingcontext2d" id="canvasrenderingcontext2d"></a>
 
 # window.CanvasRenderingContext2D
-**See**: [Web APIs - CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) for more details<br>
-Also, refer to the interface [HTMLCanvasElement](../HTML%20Elements/HTMLCanvasElement.md#module:global.htmlcanvaselement)<br>  
+**See**: [Web APIs - CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) for more details<br></br>
+Also, refer to the interface [HTMLCanvasElement](../HTML%20Elements/HTMLCanvasElement.md#module:global.htmlcanvaselement)<br></br>  
 **Since**: v7.0.0  
 
 
@@ -252,7 +252,7 @@ Strokes (outlines) the current or given path with the current stroke style.
 <a name="canvasrenderingcontext2d-fill" id="canvasrenderingcontext2d-fill"></a>
 
 ## fill(pathOrFillRule)
-Fills the current or given path with the current fillStyle.<br>
+Fills the current or given path with the current fillStyle.<br></br>
 
 **See**: [CanvasRenderingContext2D - fill](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fill) for more details  
 

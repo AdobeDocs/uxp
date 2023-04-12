@@ -2,14 +2,17 @@
 <a name="htmlcanvaselement" id="htmlcanvaselement"></a>
 
 # window.HTMLCanvasElement
-**See**: [Web APIs - HTMLCanvasElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement) for more details
-<br></br> Note: UXP HTMLCanvasElement supports only `basic shapes`
-<br></br>Also, refer the following interfaces<br></br>
-1. [CanvasRenderingContext2D](../HTML%20DOM/CanvasRenderingContext2D.md#module:global.canvasrenderingcontext2d)<br></br>
-2. [CanvasGradient](../HTML%20DOM/CanvasGradient.md#module:global.canvasgradient)<br></br>
-3. [Path2D](../HTML%20DOM/Path2D.md#module:global.path2d)<br></br>  
 **Since**: v7.0.0  
+**See**: [Web APIs - HTMLCanvasElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement) for more details
 
+<InlineAlert variant="info" slots="text"/>
+
+UXP HTMLCanvasElement supports only basic shapes for now.
+
+Also, refer the following interfaces
+1. [CanvasRenderingContext2D](../HTML%20DOM/CanvasRenderingContext2D.md)
+2. [CanvasGradient](../HTML%20DOM/CanvasGradient.md)
+3. [Path2D](../HTML%20DOM/Path2D.md)
 
 <a name="htmlcanvaselement-height" id="htmlcanvaselement-height"></a>
 

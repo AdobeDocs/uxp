@@ -2,8 +2,8 @@
 <a name="path2d" id="path2d"></a>
 
 # window.Path2D
-**See**: [Web APIs - Path2D](https://developer.mozilla.org/en-US/docs/Web/API/Path2D) for more details<br>
-Also, refer to the interface [HTMLCanvasElement](../HTML%20Elements/HTMLCanvasElement.md#module:global.htmlcanvaselement)<br>  
+**See**: [Web APIs - Path2D](https://developer.mozilla.org/en-US/docs/Web/API/Path2D) for more details<br></br>
+Also, refer to the interface [HTMLCanvasElement](../HTML%20Elements/HTMLCanvasElement.md#module:global.htmlcanvaselement)<br></br>
 **Since**: v7.0.0  
 
 
@@ -22,7 +22,7 @@ Creates an instance of Path2D.
 <a name="path2d-addpath" id="path2d-addpath"></a>
 
 ## addPath(path)
-Adds one Path2D object to another Path2D object.<br>
+Adds one Path2D object to another Path2D object.<br></br>
 
 **See**: [Path2D - addPath](https://developer.mozilla.org/en-US/docs/Web/API/Path2D/addPath) for more details  
 

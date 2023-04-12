@@ -126,17 +126,18 @@ module.exports=[
             "pages": [
               {
                 "title": "Alert",
-                "path": "/uxp-api/reference-js/Global Members/HTML DOM/alert/"
+                "path": "/uxp-api/reference-js/Global Members/HTML DOM/Alerts/alert/"
               },
               {
                 "title": "Confirm",
-                "path": "/uxp-api/reference-js/Global Members/HTML DOM/confirm/"
+                "path": "/uxp-api/reference-js/Global Members/HTML DOM/Alerts/confirm/"
               },
               {
                 "title": "Prompt",
-                "path": "/uxp-api/reference-js/Global Members/HTML DOM/prompt/"
+                "path": "/uxp-api/reference-js/Global Members/HTML DOM/Alerts/prompt/"
               }
-            ]
+            ],
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/Alerts/"
           },
           {
             "title": "Attr",
@@ -376,7 +377,7 @@ module.exports=[
     "pages": [
       {
         "title": "fs",
-        "path": "/uxp-api/reference-js/Modules/fs/fs"
+        "path": "/uxp-api/reference-js/Modules/fs/"
       },
       {
         "title": "os",

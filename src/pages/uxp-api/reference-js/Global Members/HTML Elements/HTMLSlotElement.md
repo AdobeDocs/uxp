@@ -18,7 +18,7 @@ A string used to get and set slot's name.
 
 ## assignedNodes(options)
 returns a sequence of the nodes assigned to this slot. If options object is used with flatten: "true",
-If slottables is the empty list, then append each slottable child of slot, in tree order, to slottables.<br>
+If slottables is the empty list, then append each slottable child of slot, in tree order, to slottables.<br></br>
 Refer [find-flattened-slotables](https://dom.spec.whatwg.org/#find-flattened-slotables)
 
 **Returns**: `Array` - An array of nodes  
@@ -40,7 +40,7 @@ Refer [find-flattened-slotables](https://dom.spec.whatwg.org/#find-flattened-slo
 
 ## assignedElements(options)
 returns a sequence of the elements assigned to this slot. If options object is used with flatten: "true",
-If slottables is the empty list, then append each slottable child of slot, in tree order, to slottables.<br>
+If slottables is the empty list, then append each slottable child of slot, in tree order, to slottables.<br></br>
 Refer [find-flattened-slotables](https://dom.spec.whatwg.org/#find-flattened-slotables)
 
 **Returns**: `Array` - An array of elements  
@@ -54,7 +54,7 @@ Refer [find-flattened-slotables](https://dom.spec.whatwg.org/#find-flattened-slo
 
 | Name | Type | Description |
 | --- | --- | --- |
-| options.flatten | `boolean` | A boolean value indicating whether to return the assigned elements of any available child <slot> elements (true) or not (false). Defaults to false |
+| options.flatten | `boolean` | A boolean value indicating whether to return the assigned elements of any available child `<slot>` elements (true) or not (false). Defaults to false |
 
 
   

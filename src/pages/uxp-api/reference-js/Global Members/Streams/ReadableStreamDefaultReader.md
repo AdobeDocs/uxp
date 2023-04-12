@@ -58,11 +58,11 @@ It will reject with a TypeError (without attempting to cancel the stream) if the
 ## read()
 Returns a promise that allows access to the next chunk from the stream’s internal queue, if available.
 
-**Returns**: `Promise<Object>` - <br>&emsp;If a chunk is available, the promise will be fulfilled with an object of the form
+**Returns**: `Promise<Object>` - <br></br>&emsp;If a chunk is available, the promise will be fulfilled with an object of the form
          { value: theChunk, done: false }.
-     <br>&emsp;If the stream becomes closed, the promise will be fulfilled with an object of the form
+     <br></br>&emsp;If the stream becomes closed, the promise will be fulfilled with an object of the form
          { value: undefined, done: true }.
-     <br>&emsp;If the stream becomes errored, the promise will be rejected with the relevant error.  
+     <br></br>&emsp;If the stream becomes errored, the promise will be rejected with the relevant error.  
 **Throws**:
 
 - `TypeError` thrown if the source is not a ReadableStreamDefaultReader or if the source is not readable.
