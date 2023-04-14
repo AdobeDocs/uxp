@@ -18,7 +18,7 @@ index_desc: Changelog in UXP version
         - [Element.shadowRoot](./reference-js/Global%20Members/HTML%20DOM/Element.md#shadowroot--shadowroot)
         - [CustomElementRegistry.upgrade](./reference-js/Global%20Members/HTML%20DOM/CustomElementRegistry.md#upgraderoot)
         - [CustomElementRegistry.whenDefined](./reference-js/Global%20Members/HTML%20DOM/CustomElementRegistry.md#whendefinedname)
-- [Spectrum Web Components (Beta)](./reference-spectrum-web-component/index.md) Support for Adobe SWC.
+- [Spectrum Web Components (Beta)](./reference-spectrum/swc/index.md) Support for Adobe SWC.
 - Several augmentations to the JS API set
     - Properties
         - [HTMLElement.lang](./reference-js/Global%20Members/HTML%20Elements/HTMLElement.md#lang--string)
@@ -36,7 +36,7 @@ index_desc: Changelog in UXP version
 - New focus events to support React 16
     - [Focusin Event](https://developer.mozilla.org/en-US/docs/Web/API/Element/focusin_event)
     - [Focusout Event](https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event)
-- HTML [2D Canvas Support](./reference-js/Global%20Members/HTML%20Elements/HTMLCanvasElement.md) for Basic Shapes and Styling.
+- HTML [2D Canvas Support](./reference-js/Global%20Members/HTML%20Elements/HTMLCanvasElement.md) for basic shapes and styling.
 - Alerts
     - [alert()](./reference-js/Global%20Members/HTML%20DOM/alert.md)
     - [prompt()](./reference-js/Global%20Members/HTML%20DOM/prompt.md)

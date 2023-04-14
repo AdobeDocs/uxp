@@ -12,7 +12,7 @@ The documentation is based on the [`AdobeDocs/dev-site-documentation-template`](
 | ----------------------------------- | ----------------------------------------------------------------------- |
 | https://developer.adobe.com/photoshop/uxp/ | [`AdobeDocs/uxp-photoshop`](https://github.com/AdobeDocs/uxp-photoshop) |
 | https://developer.adobe.com/xd/uxp/        | [`AdobeDocs/uxp-xd`](https://github.com/AdobeDocs/uxp-xd)               |
-| https://developer.adobe.com/indesign/uxp/  | [`AdobeDocs/uxp-xd`](https://github.com/AdobeDocs/uxp-indesign)    |
+| https://developer.adobe.com/indesign/uxp/  | [`AdobeDocs/uxp-indesign`](https://github.com/AdobeDocs/uxp-indesign)    |
 
 
 ## Run this project
