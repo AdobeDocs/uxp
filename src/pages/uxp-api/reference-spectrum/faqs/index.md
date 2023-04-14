@@ -20,7 +20,7 @@ Also, compared to Spectrum UXP Widgets, you can debug SWC like a standard Web Co
 <br></br>
 
 ### Q: Can I use Spectrum UXP Widgets and SWC with other frameworks such as React?
-A: Yes. These components are framework agnostic, and you can use them with any framework that works with UXP. Do note, however, that some frameworks do have special idioms for working with web components, so be sure to read the documentation for your framework. Check out the [Use with React](../Spectrum%20UXP%20widgets/Using%20with%20React/) section.
+A: Yes. These components are framework agnostic, and you can use them with any framework that works with UXP. Do note, however, that some frameworks do have special idioms for working with web components, so be sure to read the documentation for your framework. Check out the [Use with React](../Spectrum%20UXP%20Widgets/Using%20with%20React/) section.
 
 A React wrapper for SWC is also in progress. A sample plugin will soon be added.
 
