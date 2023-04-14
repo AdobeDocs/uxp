@@ -3,7 +3,7 @@
 
 # window.CanvasGradient
 **See**: [Web APIs - CanvasGradient](https://developer.mozilla.org/en-US/docs/Web/API/CanvasGradient) for more details<br></br>
-Also, refer to the interface [HTMLCanvasElement](../HTML%20Elements/HTMLCanvasElement.md#module:global.htmlcanvaselement)<br></br>
+Also, refer to the interface [HTMLCanvasElement](../HTML%20Elements/HTMLCanvasElement.md#module:global.htmlcanvaselement)<br></br>  
 **Since**: v7.0.0  
 
 
