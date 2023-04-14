@@ -1,3 +1,15 @@
+---
+keywords:
+  - SWC
+  - SWC in UXP
+  - Spectrum Web Components
+  - Spectrum Web Components in UXP
+title: Spectrum Web Components in UXP
+description: Describes the Spectrum Web Components within UXP 
+contributors:
+  - https://github.com/padmkris123
+---
+
 # Spectrum Web Component (Beta)
 
 
@@ -27,7 +39,7 @@ __Step 1__: Enable SWC in manifest.json
  "host": [
    {
      "app": "PS",
-     "minVersion": "23.0"
+     "minVersion": "24.4"
    }
  ],
  "featureFlags": {
@@ -58,7 +70,7 @@ import '@spectrum-web-components/button/sp-button.js';
 ```
 
 
-This [sample plugin](https://github.com/AdobeDocs/uxp-photoshop-plugin-samples/tree/main/spectrum-web-component-starter) can get you started quickly. Make sure you follow the instructions in the README.
+This [sample plugin](https://github.com/AdobeDocs/uxp-photoshop-plugin-samples/tree/main/swc-uxp-starter) can get you started quickly. Make sure you follow the instructions in the README.
 
 
 

@@ -40,7 +40,7 @@ Checkout the list of supported HTML [tags](../reference-html/) and [elements](..
    <sp-button variant="primary">I'm a Spectrum button</sp-button>
    ```
 
-   Take a look at the list of UXP-supported Spectrum widgets - [User Interface](./%20Spectrum%20UXP%20Widgets/User%20Interface/) and [Typography](./%20Spectrum%20UXP%20Widgets/Typography/)
+   Take a look at the list of UXP-supported Spectrum widgets - [User Interface](./Spectrum%20UXP%20Widgets/User%20Interface/) and [Typography](./Spectrum%20UXP%20Widgets/Typography/)
 
 
 - UXP Spectrum web components (Beta)
@@ -72,8 +72,7 @@ Now that you know the various options, you must understand their differences and
 - HTML elements
    Keep in mind that UXP is not a browser. It's a platform that provides the ease of using web technologies to build plugins/scripts for desktop applications. Hence, it does not support all the HTML/CSS capabilities you can use in a browser. In fact, the tags that are _not_ supported are treated like simple `<div>`.
 
-
-   Do take a look at the list of HTML [elements](../reference-html/General/Unsupported%20Elements/), and [attributes](../reference-html/General/Unsupported%20Attributes/) that are not supported.
+   Do take a look at the list of HTML [elements](../reference-html/General/Unsupported%20Elements/), and [attributes](../reference-html/General/Unsupported%20Attributes/) that are _not_ supported.
   
 - Spectrum UXP widgets
    Remember that these are built-in within UXP. Therefore, they may appear to be a black-box solution that does not allow you to peek into the details or alter their behavior easily.
@@ -119,5 +118,5 @@ If you are thinking of upgrading your existing UI, you should check out the new 
 
 
 Visit the following topics to learn about them in detail
-- [Spectrum Web Components](SWC/index.md)
-- [Spectrum UXP widgets](Spectrum%20UXP%20widgets/index.md)
+- [Spectrum Web Components](swc/index.md)
+- [Spectrum UXP widgets](Spectrum%20UXP%20Widgets/index.md)

@@ -1,6 +1,13 @@
 ---
-jsDoc: true
+keywords:
+  - Spectrum UXP Widgets
+  - Spectrum UXP Widgets in UXP
+title: Spectrum UXP Widgets in UXP
+description: Describes the Spectrum UXP Widgets within UXP 
+contributors:
+  - https://github.com/padmkris123
 ---
+
 # Spectrum UXP Widgets
 
 

@@ -1,9 +1,10 @@
 ---
 keywords:
-  - UXP Hybrid
+  - Spectrum Web Components FAQs
+  - UXP SWC FAQs
   - FAQs
-title: UXP Hybrid plugin - FAQs
-description: FAQs for UXP Hybrid plugin
+title: Spectrum Web Components - FAQs
+description: FAQs for Adone Spectrum Web Components in UXP
 contributors:
   - https://github.com/padmkris123
 ---
@@ -19,7 +20,9 @@ Also, compared to Spectrum UXP Widgets, you can debug SWC like a standard Web Co
 <br></br>
 
 ### Q: Can I use Spectrum UXP Widgets and SWC with other frameworks such as React?
-A: Yes. These components are framework agnostic, and you can use them with any framework that works with UXP. Do note, however, that some frameworks do have special idioms for working with web components, so be sure to read the documentation for your framework. Check out the [Use with React](link to react doc) section.
+A: Yes. These components are framework agnostic, and you can use them with any framework that works with UXP. Do note, however, that some frameworks do have special idioms for working with web components, so be sure to read the documentation for your framework. Check out the [Use with React](../Spectrum%20UXP%20widgets/Using%20with%20React/) section.
+
+A React wrapper for SWC is also in progress. A sample plugin will soon be added.
 
 <br></br>
 
@@ -36,7 +39,7 @@ A: Certain components, such as `<sp-button>` and `<sp-link>`, are available as b
 ### Q: Can Spectrum UXP widgets and SWC co-exist?
 A: Yes. You can combine the two worlds seamlessly. For example,
 ```
-<sp-banner> <!-- SWC -->
+<sp-banner> <!-- Spectrum Web Components -->
    <div slot="header">Header text</div>
    <div slot="content">Content of the banner</div>
 </sp-banner>
