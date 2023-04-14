@@ -1,10 +1,7 @@
----
-jsDoc: true
----
 
 <a name="module-storage-errors" id="module-storage-errors"></a>
 
-# require('uxp').storage.errors : `Errors`
+# require('uxp').storage.errors
 
 
 <a name="module-storage-errors-abstractmethodinvocationerror" id="module-storage-errors-abstractmethodinvocationerror"></a>
@@ -109,3 +106,4 @@ Unsupported format type
 Data and Format mismatch
 
 
+  

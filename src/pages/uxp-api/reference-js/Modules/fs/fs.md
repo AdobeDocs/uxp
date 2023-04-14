@@ -1,29 +1,31 @@
-<a name="module-storage-filesystem" id="module-storage-filesystem"></a>
+
+<a name="fs" id="fs"></a>
 
 # require('fs')
-
 UXP Provides Node.js style file system API, FSAPI.
 Unlike [Entry](./uxp/Persistent%20File%20Storage/Entry/) based [File](./uxp/Persistent%20File%20Storage/File/) or [Folder](./uxp/Persistent%20File%20Storage/Folder/) classes,
 these methods can directly access a local file or folder with path or file descriptor.
 The starting point of a path in the native filesystem depends on the scheme.
 UXP supports plugin-specific storage schemes, such as "plugin:", "plugin-data:",
-and "plugin-temp:", as well as a native "file:" scheme for the path parameter.<br/>
-Note1: [UWP](https://learn.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide)(Universal Windows Platform)
+and "plugin-temp:", as well as a native "file:" scheme for the path parameter.<br></br>
+
+Note:
+1. If there are no schemes defined for the path parameter of FSAPI methods, it considers to have "file:" scheme for the path.
+2. [Universal Windows Platform (UWP)](https://learn.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide)
 has the strict [File access permissions](https://learn.microsoft.com/en-us/windows/uwp/files/file-access-permissions),
-and UXP FSAPI may have access issues with anonymous filepaths.
-So, XD does not support this feature for compatibility across platforms.<br/>
-Note2: The native layer of UXP FSAPI is based on [libUV](https://libuv.org/) except UWP powered features, such as FilePicker and Drag&Drop on Win10 XD.
+and UXP FSAPI may have access issues with anonymous filepaths. So, XD does not support this feature for compatibility across platforms.
+3. The native layer of UXP FSAPI is based on [libUV](https://libuv.org/) except UWP powered features, such as FilePicker and Drag&Drop on Win10 XD.
 
 
 
-<a name="module-storage-filesystem-readfile" id="module-storage-filesystem-readfile"></a>
+<a name="fs-readfile" id="fs-readfile"></a>
 
 ## readFile(path, options, callback)
 Reads data from the path asynchronously.
 The file format can be specified with the encoding options.
 If an encoding is not supplied, the file is assumed to be a binary format.
 
-**Returns**: `Promise<String|ArrayBuffer>` - the contents of the file  
+**Returns**: `Promise<string|ArrayBuffer>` - the contents of the file  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -42,7 +44,7 @@ const text = await fs.readFile("plugin-data:/textFile.txt", {encoding: "utf-8"})
 ```
 
 
-<a name="module-storage-filesystem-readfilesync" id="module-storage-filesystem-readfilesync"></a>
+<a name="fs-readfilesync" id="fs-readfilesync"></a>
 
 ## readFileSync(path, options)
 Reads data from the path synchronously.
@@ -67,7 +69,7 @@ const text = fs.readFileSync("plugin-data:/textFile.txt", {encoding: "utf-8"});
 ```
 
 
-<a name="module-storage-filesystem-writefile" id="module-storage-filesystem-writefile"></a>
+<a name="fs-writefile" id="fs-writefile"></a>
 
 ## writeFile(path, data, options, callback)
 Writes data to the path asynchronously, appending if desired.
@@ -80,8 +82,8 @@ The format of the file is controlled via the encoding option, and defaults to a 
 | path | `string` |  | path where the file to write is located |
 | data | `string` \| `ArrayBuffer` \| `ArrayBufferView` |  | the data to write to the file |
 | options | `any` |  |  |
-| [options.flag] | `int` \| `string` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
-| [options.mode] | `int` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
+| [options.flag] | `number` \| `string` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
+| [options.mode] | `number` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
 | [options.encoding] | `string` |  | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
 | callback | `function` |  | if not provided, this function will return Promise object |
 
@@ -95,21 +97,21 @@ const strLen = await fs.writeFile("plugin-data:/textFile.txt", "It was a dark an
 ```
 
 
-<a name="module-storage-filesystem-writefilesync" id="module-storage-filesystem-writefilesync"></a>
+<a name="fs-writefilesync" id="fs-writefilesync"></a>
 
 ## writeFileSync(path, data, options)
 Writes data to a path synchronously, appending if desired.
 The format of the file is controlled via the encoding option, and defaults to a binary format.
 
-**Returns**: `Promise<number>` - the length of contents written to the file  
+**Returns**: `number` - the length of contents written to the file  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | path | `string` |  | path where the file to write is located |
 | data | `string` \| `ArrayBuffer` \| `ArrayBufferView` |  | the data to write to the file |
 | options | `any` |  |  |
-| [options.flag] | `int` \| `string` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
-| [options.mode] | `int` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
+| [options.flag] | `number` \| `string` | `w` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
+| [options.mode] | `number` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
 | [options.encoding] | `string` |  | the encoding of the file can be "utf-8", "utf-16be" or "utf-16le" |
 
 **Example**  
@@ -122,7 +124,7 @@ const strLen = fs.writeFileSync("plugin-data:/textFile.txt", "It was a dark and 
 ```
 
 
-<a name="module-storage-filesystem-open" id="module-storage-filesystem-open"></a>
+<a name="fs-open" id="fs-open"></a>
 
 ## open(path, [flag], [mode], callback)
 Opens or a creates a file asynchronously
@@ -132,8 +134,8 @@ Opens or a creates a file asynchronously
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | path | `string` |  | path where to open a file |
-| [flag] | `int` \| `string` | `r` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
-| [mode] | `int` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
+| [flag] | `number` \| `string` | `r` | see [file-system-flags](https://nodejs.org/api/fs.html#file-system-flags) in Node.js |
+| [mode] | `number` \| `string` | `0o666` | see [File modes](https://nodejs.org/api/fs.html#file-modes) in Node.js |
 | callback | `function` |  | if not provided, this function will return Promise object |
 
 **Example**  
@@ -142,7 +144,7 @@ const fd = await fs.open("plugin-data:/fileToRead.txt", "r");
 ```
 
 
-<a name="module-storage-filesystem-close" id="module-storage-filesystem-close"></a>
+<a name="fs-close" id="fs-close"></a>
 
 ## close(fd, callback)
 Closes a file descriptor asynchronously
@@ -151,7 +153,7 @@ Closes a file descriptor asynchronously
 
 | Param | Type | Description |
 | --- | --- | --- |
-| fd | `int` | file descriptor of the file to close |
+| fd | `number` | file descriptor of the file to close |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -160,7 +162,7 @@ await fs.close(fd);
 ```
 
 
-<a name="module-storage-filesystem-read" id="module-storage-filesystem-read"></a>
+<a name="fs-read" id="fs-read"></a>
 
 ## read(fd, buffer, offset, length, position, callback)
 Reads data in chunks from the file it refers to the file descriptor
@@ -174,11 +176,11 @@ Reads data in chunks from the file it refers to the file descriptor
 
 | Param | Type | Description |
 | --- | --- | --- |
-| fd | `int` | a file descriptor obtained from fs.open |
+| fd | `number` | a file descriptor obtained from fs.open |
 | buffer | `ArrayBuffer` | the buffer where read bytes are written to |
-| offset | `int` | the offset to the buffer where read bytes are written from |
-| length | `int` | the length to read |
-| position | `int` | the position of the file to read from. if -1, the current file position to read from. when the bytes are read, the current file position advances by size of the read bytes. if the value is greater than or equal to 0, it specifies a file position to read from. after the bytes are read, a current file position stayed the same |
+| offset | `number` | the offset to the buffer where read bytes are written from |
+| length | `number` | the length to read |
+| position | `number` | the position of the file to read from. if -1, the current file position to read from. when the bytes are read, the current file position advances by size of the read bytes. if the value is greater than or equal to 0, it specifies a file position to read from. after the bytes are read, a current file position stayed the same |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -198,7 +200,7 @@ await fs.close(fd);
 ```
 
 
-<a name="module-storage-filesystem-write" id="module-storage-filesystem-write"></a>
+<a name="fs-write" id="fs-write"></a>
 
 ## write(fd, buffer, offset, length, position, callback)
 Writes data in chunks to the file it refers to the file descriptor
@@ -212,11 +214,11 @@ if invalid parameter format or value is passed
 
 | Param | Type | Description |
 | --- | --- | --- |
-| fd | `int` | the file descriptor obtained from fs.open |
+| fd | `number` | the file descriptor obtained from fs.open |
 | buffer | `ArrayBuffer` | the buffer where the data to write with |
-| offset | `int` | the offset of the buffer where write bytes start from |
-| length | `int` | the length to write |
-| position | `int` | the position of the file to write from. if -1,writing will start from the current file position. when the bytes are written, the current file position advances by size of the written bytes. if the value is greater than or equal to 0, it specifies a file position to write from. After writing, it will not change the file position |
+| offset | `number` | the offset of the buffer where write bytes start from |
+| length | `number` | the length to write |
+| position | `number` | the position of the file to write from. if -1,writing will start from the current file position. when the bytes are written, the current file position advances by size of the written bytes. if the value is greater than or equal to 0, it specifies a file position to write from. After writing, it will not change the file position |
 | callback | `function` | if not provided, this function will return Promise object |
 
 **Example**  
@@ -229,7 +231,7 @@ await fs.close(fd);
 ```
 
 
-<a name="module-storage-filesystem-lstat" id="module-storage-filesystem-lstat"></a>
+<a name="fs-lstat" id="fs-lstat"></a>
 
 ## lstat(path, callback)
 Gets information asynchronously from a file or a folder of the path
@@ -249,7 +251,7 @@ const isFile = stats.isFile();
 ```
 
 
-<a name="module-storage-filesystem-lstatsync" id="module-storage-filesystem-lstatsync"></a>
+<a name="fs-lstatsync" id="fs-lstatsync"></a>
 
 ## lstatSync(path)
 Gets information synchronously from a file or a folder of the path
@@ -268,12 +270,12 @@ const birthTime = stats.birthtime;
 ```
 
 
-<a name="module-storage-filesystem-rename" id="module-storage-filesystem-rename"></a>
+<a name="fs-rename" id="fs-rename"></a>
 
 ## rename(oldPath, newPath, callback)
 Renames or moves, if required, the file from the oldPath to the newPath
 
-**Returns**: `Promise<int>` - 0 if succeeded, otherwise throws an Error  
+**Returns**: `Promise<number>` - 0 if succeeded, otherwise throws an Error  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -287,18 +289,18 @@ fs.rename("plugin-data:/oldName.txt", "plugin-temp:/newName.txt");
 ```
 
 
-<a name="module-storage-filesystem-copyfile" id="module-storage-filesystem-copyfile"></a>
+<a name="fs-copyfile" id="fs-copyfile"></a>
 
 ## copyFile(srcPath, destPath, flags, callback)
 Copies a file or a folder from the source path to the destination path
 
-**Returns**: `Promise<int>` - 0 if succeeded, otherwise throws an Error  
+**Returns**: `Promise<number>` - 0 if succeeded, otherwise throws an Error  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | srcPath | `string` |  | path where the source file to copy is located |
 | destPath | `string` |  | path where the source file will be copied to |
-| flags | `int` | `0` | see flags in [uv_fs_copyfile](https://docs.libuv.org/en/v1.x/fs.html) |
+| flags | `number` | `0` | see flags in [uv_fs_copyfile](https://docs.libuv.org/en/v1.x/fs.html) |
 | callback | `function` |  | if not provided, this function will return Promise object |
 
 **Example**  
@@ -307,12 +309,12 @@ const data = fs.copyFile("plugin-data:/copyFrom.txt", "plugin-temp:/copyTo.txt")
 ```
 
 
-<a name="module-storage-filesystem-unlink" id="module-storage-filesystem-unlink"></a>
+<a name="fs-unlink" id="fs-unlink"></a>
 
 ## unlink(path, callback)
 Deletes a name with the file it refers to asynchronously
 
-**Returns**: `Promise<int>` - 0 if succeeded, otherwise throws an Error  
+**Returns**: `Promise<number>` - 0 if succeeded, otherwise throws an Error  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -325,17 +327,19 @@ await fs.unlink("plugin-data:/fileToDelete.txt");
 ```
 
 
-<a name="module-storage-filesystem-mkdir" id="module-storage-filesystem-mkdir"></a>
+<a name="fs-mkdir" id="fs-mkdir"></a>
 
-## mkdir(path, callback)
+## mkdir(path, options, callback)
 Creates a directory of the path asynchronously
 
-**Returns**: `Promise<int>` - 0 if succeeded, otherwise throws an Error  
+**Returns**: `Promise<number>` - 0 if succeeded, otherwise throws an Error  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| path | `string` | path where to create the directory |
-| callback | `function` | if not provided, this function will return Promise object |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| path | `string` |  | path where to create the directory |
+| options | `*` |  |  |
+| [options.recursive] | `boolean` | `false` | whether parents folders should be created |
+| callback | `function` |  | if not provided, this function will return Promise object |
 
 **Example**  
 ```js
@@ -343,12 +347,12 @@ await fs.mkdir("plugin-data:/newDir");
 ```
 
 
-<a name="module-storage-filesystem-rmdir" id="module-storage-filesystem-rmdir"></a>
+<a name="fs-rmdir" id="fs-rmdir"></a>
 
 ## rmdir(path, callback)
 Removes a directory asynchronously
 
-**Returns**: `Promise<int>` - 0 if succeeded, otherwise throws an Error  
+**Returns**: `Promise<number>` - 0 if succeeded, otherwise throws an Error  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -361,7 +365,7 @@ await fs.rmdir("plugin-data:/dirToRemove");
 ```
 
 
-<a name="module-storage-filesystem-readdir" id="module-storage-filesystem-readdir"></a>
+<a name="fs-readdir" id="fs-readdir"></a>
 
 ## readdir(path, callback)
 Reads a directory to list the containing files and directories asynchronously
@@ -379,7 +383,7 @@ const paths = await fs.readdir("plugin-data:/dirToRead");
 ```
 
 
-<a name="module-storage-filesystem-readdirsync" id="module-storage-filesystem-readdirsync"></a>
+<a name="fs-readdirsync" id="fs-readdirsync"></a>
 
 ## readdirSync(path)
 Reads a directory to list the containing files and directories synchronously
@@ -394,3 +398,4 @@ Reads a directory to list the containing files and directories synchronously
 ```js
 const paths = fs.readdirSync("plugin-data:/dirToRead");
 ```
+

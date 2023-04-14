@@ -1,14 +1,10 @@
----
-jsDoc: true
----
 
 <a name="module-storage-folder" id="module-storage-folder"></a>
 
 # require('uxp').storage.Folder
 Represents a folder on a file system. You'll never instantiate this directly,
-but will get it by calling [FileSystemProvider.getTemporaryFolder](/uxp-api/reference-js/Modules/uxp/Persistent%20File%20Storage/FileSystemProvider/#module-storage-filesystemprovider-gettemporaryfolder),
-[FileSystemProvider.getFolder](/uxp-api/reference-js/Modules/uxp/Persistent%20File%20Storage/FileSystemProvider/#module-storage-filesystemprovider-getfolder),
-or via [Folder.getEntries](/uxp-api/reference-js/Modules/uxp/Persistent%20File%20Storage/Folder/#module-storage-folder-getentries).
+but will get it by calling [FileSystemProvider.getTemporaryFolder](./FileSystemProvider#gettemporaryfolder),
+[FileSystemProvider.getFolder](./FileSystemProvider#getfolderoptions), or via [Folder.getEntries](./Folder#getentries).
 
 
 
@@ -43,7 +39,7 @@ Creates an entry within this folder and returns the appropriate instance.
 | --- | --- | --- | --- |
 | name | `string` |  | the name of the entry to create |
 | options | `any` |  |  |
-| [options.type] | `Symbol` | `types.file` | Indicates which kind of entry to create. Pass [Folder](/uxp-api/reference-js/Modules/uxp/Persistent%20File%20Storage/Folder/) to create a new folder. Note that if the type is file then this method just create a file entry object and not the actual file on the disk. The file actually gets created when you call for eg: write method on the file entry object. |
+| [options.type] | `Symbol` | `types.file` | Indicates which kind of entry to create. Pass `Folder` to create a new folder. Note that if the type is file then this method just create a file entry object and not the actual file on the disk. The file actually gets created when you call for eg: write method on the file entry object. |
 | [options.overwrite] | `boolean` | `false` | If `true`, the create attempt can overwrite an existing file |
 
 **Example**  
@@ -144,3 +140,4 @@ Checks if an entry is a folder. Safe to use if entry might be `null` or
 | entry | `any` | the entry to check |
 
 
+  

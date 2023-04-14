@@ -1,10 +1,12 @@
----
-jsDoc: true
----
 
 <a name="module-storage-types" id="module-storage-types"></a>
 
 # require('uxp').storage.types
+
+
+<a name="new-module-storage-types-new" id="new-module-storage-types-new"></a>
+
+## types()
 This namespace describes the type of the entry. Whether file or folder etc.
 
 
@@ -22,3 +24,4 @@ A file; used when creating an entity
 A folder; used when creating an entity
 
 
+  

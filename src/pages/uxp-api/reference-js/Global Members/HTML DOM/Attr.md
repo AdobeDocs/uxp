@@ -273,6 +273,17 @@ Creates an instance of Attr.
 
 
 
+<a name="node-getrootnode" id="node-getrootnode"></a>
+
+## getRootNode(options)
+**Returns**: `Node` - root node  
+
+| Param | Type |
+| --- | --- |
+| options | `Object` | 
+
+
+
 <a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
 
 ## addEventListener(eventName, callback, [capture])

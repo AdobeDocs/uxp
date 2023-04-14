@@ -1,10 +1,12 @@
----
-jsDoc: true
----
 
 <a name="module-storage-modes" id="module-storage-modes"></a>
 
 # require('uxp').storage.modes
+
+
+<a name="new-module-storage-modes-new" id="new-module-storage-modes-new"></a>
+
+## modes()
 This namespace describes the file open modes. for eg: open file in read-only or both read-write
 
 
@@ -22,3 +24,4 @@ The file is read-only; attempts to write will fail.
 The file is read-write.
 
 
+  

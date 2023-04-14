@@ -1,10 +1,12 @@
----
-jsDoc: true
----
 
 <a name="module-storage-filetypes" id="module-storage-filetypes"></a>
 
 # require('uxp').storage.fileTypes
+
+
+<a name="new-module-storage-filetypes-new" id="new-module-storage-filetypes-new"></a>
+
+## fileTypes()
 This namespace describes the various file type extensions that can used be used in some FS file open methods.
 
 
@@ -27,3 +29,6 @@ Image file extensions
 
 ## all : `Array<string>`
 All file types
+
+
+  

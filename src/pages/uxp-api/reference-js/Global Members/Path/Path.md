@@ -12,30 +12,30 @@ However, local file schemes, such as `plugin-data:` or `plugin-temp:`, will not 
 
 <a name="path-sep" id="path-sep"></a>
 
-## sep: `string`
+## sep : `string`
 The platform-specific file separator. '\\' or '/'.
 
 
 
 <a name="path-delimiter" id="path-delimiter"></a>
 
-## delimiter: `string`
+## delimiter : `string`
 The platform-specific file delimiter. ';' or ':'.
 
 
 
 <a name="path-posix" id="path-posix"></a>
 
-## posix: `Object`
-Posix specific pathing. It provides access to POSIX specific implementations of the path methods.
-Same as parent object on Posix.
+## posix : `Object`
+It provides access to POSIX specific implementations of the path methods.
+Same as parent object on posix.
 
 
 
 <a name="path-win32" id="path-win32"></a>
 
-## win32: `Object`
-Windows specific pathing. It provides access to Windows-specific implementations of the path methods.
+## win32 : `Object`
+It provides access to Windows-specific implementations of the path methods.
 Same as parent object on Windows
 
 
@@ -196,7 +196,7 @@ If there is no '.' in the last portion of the path or the first character of it 
 ## parse(path)
 Returns an object from a path string - the opposite of format().
 
-**Returns**: `Object` - { dir: `string`, root: `string`, base: `string`, name: `string`, ext: `string` }  
+**Returns**: `object` - { dir: `string`, root: `string`, base: `string`, name: `string`, ext: `string` }    
 **Throws**:
 
 - `Error` if `path` is not a string
@@ -217,7 +217,5 @@ Returns a path string from an object - the opposite of parse().
 
 | Param | Type | Description |
 | --- | --- | --- |
-| pathObject | `Object` - { dir: `string`, root: `string`, base: `string`, name: `string`, ext: `string` } | path to evaluate |
+| pathObject | `Object` | { dir: `string`, root: `string`, base: `string`, name: `string`, ext: `string` } path to evaluate |
 
-
-  

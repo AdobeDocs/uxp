@@ -2,15 +2,21 @@
 <a name="uxpmenuitems" id="uxpmenuitems"></a>
 
 # UxpMenuItems
+
+
+<a name="new-uxpmenuitems-new" id="new-uxpmenuitems-new"></a>
+
+## UxpMenuItems()
 Class describing the menu of a panel.
+
 
 
 <a name="uxpmenuitems-size" id="uxpmenuitems-size"></a>
 
-## size ⇒ `Number`
+## size : `Number`
+**Read only**
 Get number of menu items
 
-**Returns**: `Number`  
 
 
 <a name="uxpmenuitems-getitem" id="uxpmenuitems-getitem"></a>
@@ -42,10 +48,7 @@ Get menu item at specified index
 <a name="uxpmenuitems-insertat" id="uxpmenuitems-insertat"></a>
 
 ## insertAt(index, newItem)
-Inserts/replaces the menu item at the specified index with the new menu item.
-index < size of menuItems array : replaces the existing menu item
-index = size of menuItems array : Inserts menu item at end
-index > size of menuItems array : throws invalid index exception
+Inserts/replaces the menu item at the specified index with the new menu item.index < size of menuItems array : replaces the existing menu itemindex = size of menuItems array : Inserts menu item at endindex > size of menuItems array : throws invalid index exception
 
 
 | Param | Type | Description |

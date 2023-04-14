@@ -1,6 +1,3 @@
----
-jsDoc: true
----
 
 <a name="module-storage-entrymetadata" id="module-storage-entrymetadata"></a>
 
@@ -57,3 +54,4 @@ Indicates if the entry is a file
 Indicates if the entry is a folder
 
 
+  

@@ -1,8 +1,6 @@
----
-jsDoc: true
----
 
-<a name="module-storage-localfilesystem" id="module-storage-localfilesystem"></a>
+<a name="module-storage--localfilesystem" id="module-storage--localfilesystem"></a>
 
-# require('uxp').storage.localFileSystem : `LocalFileSystemProvider`
+# require('uxp').storage.localFileSystem
 
+  

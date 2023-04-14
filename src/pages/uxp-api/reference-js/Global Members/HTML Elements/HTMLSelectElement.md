@@ -45,7 +45,7 @@ Determines if control renders quietly
 ## dataset
 Access to all the custom data attributes (data-*) set.
 
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset  
+**See**: [HTMLElement - dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)  
 
 
 <a name="htmlelement-innertext" id="htmlelement-innertext"></a>
@@ -56,6 +56,9 @@ Access to all the custom data attributes (data-*) set.
 <a name="htmlelement-lang" id="htmlelement-lang"></a>
 
 ## lang : `string`
+Base language of an element's attribute values and text content.
+
+**See**: [HTMLElement - lang](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/lang)  
 
 
 <a name="element-nodename" id="element-nodename"></a>
@@ -68,12 +71,18 @@ Access to all the custom data attributes (data-*) set.
 
 ## localName : `string`
 **Read only**
+A string representing the local part of the qualified name of the element
+
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/localName  
 
 
 <a name="element-tagname" id="element-tagname"></a>
 
 ## tagName : `string`
 **Read only**
+A string indicating the element's tag name
+
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/tagName  
 
 
 <a name="element-nodetype" id="element-nodetype"></a>
@@ -86,11 +95,17 @@ Access to all the custom data attributes (data-*) set.
 
 ## namespaceURI : `string`
 **Read only**
+Returns the namespace URI of the element, or null if the element is not in a namespace.
+
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/namespaceURI  
 
 
 <a name="element-id" id="element-id"></a>
 
 ## id : `string`
+Returns the property of the `Element` interface represents the element's identifier, reflecting the id global attribute.
+
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/id  
 
 
 <a name="element-tabindex" id="element-tabindex"></a>
@@ -137,20 +152,6 @@ Access to all the custom data attributes (data-*) set.
 
 ## clientHeight : `number`
 **Read only**
-
-
-<a name="element-height" id="element-height"></a>
-
-## height : `string` \| `Number`
-The height of the element
-
-
-
-<a name="element-width" id="element-width"></a>
-
-## width : `string` \| `Number`
-The width of the element
-
 
 
 <a name="element-offsetparent" id="element-offsetparent"></a>
@@ -218,6 +219,17 @@ Indicates if the element will focus automatically when it is loaded
 **Read only**
 
 
+<a name="element-shadowroot" id="element-shadowroot"></a>
+
+## shadowRoot : `ShadowRoot`
+**Read only**
+[ This feature is behind a feature flag. You must turn on `enableSWCSupport` in the featureFlags section of plugin manifest to use the same ]
+
+Returns the open shadow root that is hosted by the element, or null if no open shadow root is present.
+
+**See**: [Element - shadowRoot](https://developer.mozilla.org/en-US/docs/Web/API/Element/shadowRoot)  
+
+
 <a name="element-disabled" id="element-disabled"></a>
 
 ## disabled : `boolean`
@@ -225,12 +237,30 @@ Indicates if the element will focus automatically when it is loaded
 
 <a name="element-innerhtml" id="element-innerhtml"></a>
 
-## innerHTML : `string`
+## innerHTML
+**Read only**
 
 
 <a name="element-outerhtml" id="element-outerhtml"></a>
 
 ## outerHTML : `string`
+
+
+<a name="element-slot" id="element-slot"></a>
+
+## slot : `string`
+[ This feature is behind a feature flag. You must turn on `enableSWCSupport` in the featureFlags section of plugin manifest to use the same ]
+
+**See**: [Element - slot](https://developer.mozilla.org/en-US/docs/Web/API/Element/slot)  
+
+
+<a name="element-assignedslot" id="element-assignedslot"></a>
+
+## assignedSlot : `HTMLSlotElement`
+**Read only**
+[ This feature is behind a feature flag. You must turn on `enableSWCSupport` in the featureFlags section of plugin manifest to use the same ]
+
+**See**: [Element - assignedSlot](https://developer.mozilla.org/en-US/docs/Web/API/Element/assignedSlot)  
 
 
 <a name="node-contenteditable" id="node-contenteditable"></a>
@@ -357,6 +387,22 @@ Scrolls the element to the new x and y positions. If options object is used with
 ## scrollIntoViewIfNeeded()
 
 
+<a name="element-attachshadow" id="element-attachshadow"></a>
+
+## attachShadow(init)
+[ This feature is behind a feature flag. You must turn on `enableSWCSupport` in the featureFlags section of plugin manifest to use the same ]
+
+Attaches a shadow DOM tree to the specified element and returns a reference to its ShadowRoot.
+
+**Returns**: `ShadowRoot`  
+**See**: [Element - attachShadow](https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow)  
+
+| Param | Description |
+| --- | --- |
+| init | An object which contains the fields : mode(open/closed) , delegatesFocus ,slotAssignment |
+
+
+
 <a name="element-focus" id="element-focus"></a>
 
 ## focus()
@@ -371,27 +417,30 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 ## getAttribute(name)
 **Returns**: `string`  
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute  
 
-| Param | Type |
-| --- | --- |
-| name | `string` | 
+| Param | Type | Description |
+| --- | --- | --- |
+| name | `string` | Name of the attribute whose value you want to get. |
 
 
 
 <a name="element-setattribute" id="element-setattribute"></a>
 
 ## setAttribute(name, value)
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute  
 
-| Param | Type |
-| --- | --- |
-| name | `string` | 
-| value | `string` | 
+| Param | Type | Description |
+| --- | --- | --- |
+| name | `string` | Name of the attribute whose value is to be set |
+| value | `string` | Value to assign to the attribute |
 
 
 
 <a name="element-removeattribute" id="element-removeattribute"></a>
 
 ## removeAttribute(name)
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute  
 
 | Param | Type |
 | --- | --- |
@@ -403,6 +452,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 ## hasAttribute(name)
 **Returns**: `boolean`  
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttribute  
 
 | Param | Type |
 | --- | --- |
@@ -410,10 +460,29 @@ Scrolls the element to the new x and y positions. If options object is used with
 
 
 
+<a name="element-hasattributes" id="element-hasattributes"></a>
+
+## hasAttributes()
+Returns a boolean value indicating whether the current element has any attributes or not.
+
+**Returns**: `boolean`  
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttributes  
+
+
+<a name="element-getattributenames" id="element-getattributenames"></a>
+
+## getAttributeNames()
+Returns the attribute names of the element as an Array of strings
+
+**Returns**: `Array`  
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttributeNames  
+
+
 <a name="element-getattributenode" id="element-getattributenode"></a>
 
 ## getAttributeNode(name)
 **Returns**: `*`  
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttributeNode  
 
 | Param | Type |
 | --- | --- |
@@ -424,6 +493,7 @@ Scrolls the element to the new x and y positions. If options object is used with
 <a name="element-setattributenode" id="element-setattributenode"></a>
 
 ## setAttributeNode(newAttr)
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttributeNode  
 
 | Param | Type |
 | --- | --- |
@@ -659,6 +729,17 @@ Scrolls the element to the new x and y positions. If options object is used with
 | Param | Type |
 | --- | --- |
 | node | `Node` | 
+
+
+
+<a name="node-getrootnode" id="node-getrootnode"></a>
+
+## getRootNode(options)
+**Returns**: `Node` - root node  
+
+| Param | Type |
+| --- | --- |
+| options | `Object` | 
 
 
 

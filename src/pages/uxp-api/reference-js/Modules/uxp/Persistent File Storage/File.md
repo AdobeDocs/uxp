@@ -1,18 +1,14 @@
----
-jsDoc: true
----
 
 <a name="module-storage-file" id="module-storage-file"></a>
 
 # require('uxp').storage.File
 Represents a file on a file system. Provides methods for reading from and
 writing to the file. You'll never instantiate a `File` directly; instead
-you'll get access via a [storage.FileSystemProvider](/uxp-api/reference-js/Modules/uxp/Persistent%20File%20Storage/FileSystemProvider/).
+you'll get access via a [storage.FileSystemProvider](./FileSystemProvider).
 
 
 
 <a name="module-storage-file-isfile" id="module-storage-file-isfile"></a>
-
 
 ## isFile
 Indicates that this instance is a file.
@@ -28,7 +24,7 @@ if (anEntry.isFile) {
 <a name="module-storage-file-mode" id="module-storage-file-mode"></a>
 
 ## mode : `Symbol`
-Indicates whether this file is read-only or read-write. See [readOnly](readOnly) and [readWrite](readWrite).
+Indicates whether this file is read-only or read-write. See [readOnly](./modes#readonly--symbol) and [readWrite](./modes#readwrite--symbol).
 
 **Example**  
 ```js
@@ -45,12 +41,12 @@ Reads data from the file and returns it. The file format can be specified
 with the `format` option. If a format is not supplied, the file is assumed
 to be a text file using UTF8 encoding.
 
-**Returns**: `Promise<(string\|ArrayBuffer)>` - the contents of the file  
+**Returns**: `Promise<string|ArrayBuffer>` the contents of the file  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | options | `any` |  |  |
-| [options.format] | `Symbol` | `formats.utf8` | The format of the file; see [utf8](utf8) and [binary](binary). |
+| [options.format] | `Symbol` | `formats.utf8` | The format of the file; see [utf8](./formats#utf8--symbol) and [binary](./formats#binary--symbol). |
 
 **Example**  
 ```js
@@ -79,7 +75,7 @@ is controlled via the `format` option, and defaults to UTF8.
 | --- | --- | --- | --- |
 | data | `string` \| `ArrayBuffer` |  | the data to write to the file |
 | options | `any` |  |  |
-| [options.format] | `Symbol` | `formats.utf8` | the format of the file; see [utf8](utf8) and [binary](binary) |
+| [options.format] | `Symbol` | `formats.utf8` | the format of the file; see [utf8](./formats#utf8--symbol) and [binary](./formats#binary--symbol). |
 | [options.append] | `boolean` | `false` | if `true`, the data is written to the end of the file |
 
 **Example**  
@@ -107,3 +103,4 @@ entry is `null` or `undefined`.
 | entry | `any` | the entry to check |
 
 
+  

@@ -2,15 +2,21 @@
 <a name="uxpmenuitem" id="uxpmenuitem"></a>
 
 # UxpMenuItem
+
+
+<a name="new-uxpmenuitem-new" id="new-uxpmenuitem-new"></a>
+
+## UxpMenuItem()
 Class describing a single menu item of a panel
+
 
 
 <a name="uxpmenuitem-id" id="uxpmenuitem-id"></a>
 
-## id ⇒ `string`
+## id : `string`
+**Read only**
 Get menu item id
 
-**Returns**: `string`  
 
 
 <a name="uxpmenuitem-label" id="uxpmenuitem-label"></a>

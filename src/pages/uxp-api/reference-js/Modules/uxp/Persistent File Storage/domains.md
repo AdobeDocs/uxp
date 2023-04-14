@@ -1,10 +1,12 @@
----
-jsDoc: true
----
 
 <a name="module-storage-domains" id="module-storage-domains"></a>
 
 # require('uxp').storage.domains
+
+
+<a name="new-module-storage-domains-new" id="new-module-storage-domains-new"></a>
+
+## domains()
 Common locations that we can use when displaying a file picker.
 
 
@@ -92,3 +94,4 @@ Roaming application data
 Roaming application library data
 
 
+  

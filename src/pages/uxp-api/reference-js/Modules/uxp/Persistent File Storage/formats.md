@@ -1,10 +1,12 @@
----
-jsDoc: true
----
 
 <a name="module-storage-formats" id="module-storage-formats"></a>
 
 # require('uxp').storage.formats
+
+
+<a name="new-module-storage-formats-new" id="new-module-storage-formats-new"></a>
+
+## formats()
 This namespace describes the file content formats supported in FS methods like read and write.
 
 
@@ -22,3 +24,4 @@ UTF8 File encoding
 Binary file encoding
 
 
+  
