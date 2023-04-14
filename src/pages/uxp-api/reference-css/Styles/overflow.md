@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # overflow
 
-**Since:** UXP v3.0
+**Since :** UXP v3.0
 
 Shorthand which determines what is done with content that overflows the element's bounds.
 

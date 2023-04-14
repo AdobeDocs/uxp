@@ -1,7 +1,10 @@
 # HTML DOM
 * [AbortController](AbortController.md)
 * [AbortSignal](AbortSignal.md)
-* [Alerts](Alerts/index.md)
+* Alerts
+    * [Alert](alert.md)
+    * [Confirm](confirm.md)
+    * [Prompt](prompt.md)
 * [Attr](Attr.md)
 * [CanvasGradient](CanvasGradient.md)
 * [CanvasRenderingContext2D](CanvasRenderingContext2D.md)
