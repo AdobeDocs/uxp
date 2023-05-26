@@ -1,10 +1,18 @@
 
 <a name="module-storage-folder" id="module-storage-folder"></a>
 
-# require('uxp').storage.Folder
+# Folder
 Represents a folder on a file system. You'll never instantiate this directly,
-but will get it by calling [FileSystemProvider.getTemporaryFolder](./FileSystemProvider#gettemporaryfolder),
-[FileSystemProvider.getFolder](./FileSystemProvider#getfolderoptions), or via [Folder.getEntries](./Folder#getentries).
+but will get it by calling [FileSystemProvider.getTemporaryFolder](./storage#gettemporaryfolder),
+[FileSystemProvider.getFolder](./storage#getfolderoptions), or via [Folder.getEntries](./Folder#getentries).
+
+<b>Example</b>
+```js
+// Get the Folder instance via localFileSystem
+const fs = require('uxp').storage.localFileSystem;
+const folder = await fs.getTemporaryFolder(); // Gets the Folder instance
+console.log(folder.isFolder); // returns true
+```
 
 
 

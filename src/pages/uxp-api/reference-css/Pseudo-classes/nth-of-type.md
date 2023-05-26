@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # :nth-of-type
 
-**Since:** UXP v3.0
+**Since** UXP v3.0
 
 Matches only the Nth child of a given type. Can use an expression or `even` or `odd`.
 

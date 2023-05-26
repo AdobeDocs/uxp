@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # head
 
-**Since:** UXP v2.0
+**Since** UXP v2.0
 
 Specifies various metadata about the UXP HTML document, including additional styles, scripts, etc.
 

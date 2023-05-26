@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # margin-top
 
-**Since:**  UXP v2.0
+**Since**  UXP v2.0
 
 Specifies the top margin for an element.
 

@@ -1,11 +1,11 @@
 # Persistent File Storage
 
 * [localFileSystem](localFileSystem.md)
+* [FileSystemProvider](FileSystemProvider.md)
 * [Entry](Entry.md)
 * [EntryMetadata](EntryMetadata.md)
 * [File](File.md)
 * [Folder](Folder.md)
-* [FileSystemProvider](FileSystemProvider.md)
 * [domains](domains.md)
 * [types](types.md)
 * [formats](formats.md)

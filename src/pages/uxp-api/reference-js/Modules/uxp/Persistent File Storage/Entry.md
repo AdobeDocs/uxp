@@ -1,25 +1,19 @@
 
 <a name="module-storage-entry" id="module-storage-entry"></a>
 
-# require('uxp').storage.Entry
-An `Entry` is the base class for `File` and `Folder`. You'll
-typically never instantiate an `Entry` directly, but it provides
-the common fields and methods that both `File` and `Folder`
-share.
+# Entry
+An `Entry` is the base class for `File` and `Folder`.
+You can get an instance of Entry via the `localFileSystem` by fetching an instance of a File or Folder
 
+```js
+// Since Entry cannot be called directly we can use a File or Folder object to invoke Entry as shown below
+const fs =  require('uxp').storage.localFileSystem;
+const distFolder = await fs.getPluginFolder(); // returns a Folder instance
+const distEntry = await distFolder.getEntry("entryName.txt");
 
-
-<a name="new-module-storage-entry-new" id="new-module-storage-entry-new"></a>
-
-## Entry(name, provider, id)
-Creates an instance of Entry.
-
-
-| Param | Type |
-| --- | --- |
-| name | `*` | 
-| provider | `*` | 
-| id | `*` | 
+// Now we can use distEntry to invoke the APIs provided by Entry
+console.log(distEntry.isEntry); // isEntry is an API of Entry, in this example it will return true
+```
 
 
 
@@ -197,8 +191,9 @@ await someFile.moveTo(someFolder, {newName: 'novel.txt', {overwrite: true})
 <a name="module-storage-entry-delete" id="module-storage-entry-delete"></a>
 
 ## delete()
-Removes this entry from the file system. If the entry is a folder, all the
-contents will also be removed.
+Removes this entry from the file system. If the entry is a folder, it must be empty before deletion.
+Note: Currently when using this method, a permission denied error will occur if attempting to delete
+a folder that was selected from a storage picker or added via drag-and-drop.
 
 **Returns**: `Promise<number>` - the number is 0 if succeeded, otherwise throws an Error  
 **Example**  

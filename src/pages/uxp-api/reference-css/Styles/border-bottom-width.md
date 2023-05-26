@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-bottom-width
 
-**Since:** UXP v2.0
+**Since** UXP v2.0
 
 Sets the width of the bottom border.
 

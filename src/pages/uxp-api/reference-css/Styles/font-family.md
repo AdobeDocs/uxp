@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # font-family
 
-**Since:** UXP v2.0
+**Since** UXP v2.0
 
 Sets the font family for a given element's text.
 

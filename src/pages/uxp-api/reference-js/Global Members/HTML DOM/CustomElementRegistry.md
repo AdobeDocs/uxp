@@ -24,7 +24,7 @@ Defines a new custom element.
 <a name="customelementregistry-get" id="customelementregistry-get"></a>
 
 ## get(name)
-Returns the constuctor for the named custom element
+Returns the constructor for the named custom element
 
 **See**: [CustomElementRegistry - get](https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/get)  
 

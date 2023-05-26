@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # calc
 
-**Since:** UXP v3.0
+**Since** UXP v3.0
 
 You can use `calc` to evaluate arbitrary expressions in the context of a CSS style rule. 
 

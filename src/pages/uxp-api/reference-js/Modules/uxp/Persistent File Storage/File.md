@@ -1,10 +1,19 @@
 
 <a name="module-storage-file" id="module-storage-file"></a>
 
-# require('uxp').storage.File
+# File
 Represents a file on a file system. Provides methods for reading from and
 writing to the file. You'll never instantiate a `File` directly; instead
 you'll get access via a [storage.FileSystemProvider](./FileSystemProvider).
+Keep in mind that `File` as such doesn't need a `require()` statement, however a `localFileSystem` will need it.
+
+<b>Example</b>
+```js
+// Get the object of a File instance
+const fs = require('uxp').storage.localFileSystem;
+const file = await fs.createEntryWithUrl("file:/Users/user/Documents/tmp"); // Gets a File instance
+console.log(file.isFile); // returns true
+```
 
 
 

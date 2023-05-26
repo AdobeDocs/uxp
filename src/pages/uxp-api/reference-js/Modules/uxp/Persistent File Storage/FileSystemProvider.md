@@ -1,7 +1,7 @@
 
 <a name="module-storage-filesystemprovider" id="module-storage-filesystemprovider"></a>
 
-# require('uxp').storage.FileSystemProvider
+# require('uxp').storage.localFileSystem
 Provides access to files and folders on a file system. You'll typically not
 instantiate this directly; instead you'll use an instance of one that has
 already been created for you by UXP.
@@ -49,8 +49,8 @@ Multiple files can be returned if the `allowMultiple` option` is `true`.
 
 **Example**  
 ```js
-const folder = await fs.getFolder({initialDomain = domains.userDocuments});
-const file = await fs.getFileForOpening({initialLocation = folder});
+const folder = await fs.getFolder({initialDomain: domains.userDocuments});
+const file = await fs.getFileForOpening({initialLocation: folder});
 if (!file) {
     // no file selected
     return;

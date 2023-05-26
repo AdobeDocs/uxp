@@ -519,6 +519,94 @@ Returns the attribute names of the element as an Array of strings
 
 
 
+<a name="element-setpointercapture" id="element-setpointercapture"></a>
+
+## setPointerCapture(pointerId)
+Sets pointer capture for the element. This implementation does not dispatch the `gotpointercapture` event on the element.
+
+**Throws**:
+
+- `DOMException` If the element is not connected to the DOM.
+
+**See**: [Element - setPointerCapture](https://developer.mozilla.org/en-US/docs/Web/API/Element/setPointerCapture)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| pointerId | `number` | The unique identifier of the pointer to be captured. |
+
+**Example**  
+```js
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test HTML</title>
+  <style>
+    div {
+        width: 140px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fbe;
+        position: absolute;
+    }
+  </style>
+</head>
+<body>
+    <div id="slider">SLIDE ME</div>
+    <script>
+        function beginSliding(e) {
+            slider.setPointerCapture(e.pointerId);
+            slider.addEventListener("pointermove", slide);
+        }
+
+        function stopSliding(e) {
+            slider.releasePointerCapture(e.pointerId);
+            slider.removeEventListener("pointermove", slide);
+        }
+
+        function slide(e) {
+            slider.style.left = e.clientX;
+        }
+
+        const slider = document.getElementById("slider");
+
+        slider.addEventListener("pointerdown", beginSliding);
+        slider.addEventListener("pointerup", stopSliding);
+    </script>
+</body>
+</html>
+```
+
+
+<a name="element-releasepointercapture" id="element-releasepointercapture"></a>
+
+## releasePointerCapture(pointerId)
+Releases pointer capture for the element. This implementation does not dispatch the `lostpointercapture` event on the element.
+
+**See**: [Element - releasePointerCapture](https://developer.mozilla.org/en-US/docs/Web/API/Element/releasePointerCapture)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| pointerId | `number` | The unique identifier of the pointer to be released. |
+
+
+
+<a name="element-haspointercapture" id="element-haspointercapture"></a>
+
+## hasPointerCapture(pointerId)
+Checks if the element has pointer capture for the specified pointer.
+
+**Returns**: `boolean` - True if the element has pointer capture for the specified pointer, false otherwise.  
+**See**: [Element - hasPointerCapture](https://developer.mozilla.org/en-US/docs/Web/API/Element/hasPointerCapture)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| pointerId | `number` | The unique identifier of the pointer to check. |
+
+
+
 <a name="element-getboundingclientrect" id="element-getboundingclientrect"></a>
 
 ## getBoundingClientRect()

@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # font-weight
 
-**Since:** UXP v3.0
+**Since** UXP v3.0
 
 Sets the font weight for the element. Supports `normal` (default), `bold`, `lighter`, and `bolder`, as well as the following numeric weights: `50`, `100`, `200`, `300`, `400`, `500`, `550`, `600`, `700`, `800`, `850`, `900`, `950`, and `1000`.
 

@@ -1,10 +1,11 @@
 
 <a name="path" id="path"></a>
 
-# window.Path
+# window.path
 The `path` module provides utilities for working with file and directory paths.
 This module accepts string and Entry object as path parameters.
 However, local file schemes, such as `plugin-data:` or `plugin-temp:`, will not be resolved to a native path in string paths.
+The `path` module is registered in the global scope and can be used without declaration.
 
 **See**: https://nodejs.org/api/path.html  
 **Since**: UXP v6.4.0  
@@ -196,7 +197,7 @@ If there is no '.' in the last portion of the path or the first character of it 
 ## parse(path)
 Returns an object from a path string - the opposite of format().
 
-**Returns**: `object` - { dir: `string`, root: `string`, base: `string`, name: `string`, ext: `string` }    
+**Returns**: `Object` - { dir: `string`, root: `string`, base: `string`, name: `string`, ext: `string` }  
 **Throws**:
 
 - `Error` if `path` is not a string
@@ -219,3 +220,5 @@ Returns a path string from an object - the opposite of parse().
 | --- | --- | --- |
 | pathObject | `Object` | { dir: `string`, root: `string`, base: `string`, name: `string`, ext: `string` } path to evaluate |
 
+
+  

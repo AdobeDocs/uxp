@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # padding-bottom
 
-**Since:**  UXP v2.0
+**Since**  UXP v2.0
 
 Specifies the bottom padding for an element.
 

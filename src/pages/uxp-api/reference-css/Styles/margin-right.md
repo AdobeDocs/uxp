@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # margin-right
 
-**Since:**  UXP v2.0
+**Since**  UXP v2.0
 
 Specifies the right margin for an element.
 
