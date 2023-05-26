@@ -37,6 +37,7 @@ Base language of an element's attribute values and text content.
 The text writing directionality of the content of the current element limited to only known values.
 
 **See**: [HTMLElement - dir](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dir)  
+**Since**: v7.1  
 
 
 <a name="element-nodename" id="element-nodename"></a>
@@ -548,6 +549,7 @@ Sets pointer capture for the element. This implementation does not dispatch the 
 - `DOMException` If the element is not connected to the DOM.
 
 **See**: [Element - setPointerCapture](https://developer.mozilla.org/en-US/docs/Web/API/Element/setPointerCapture)  
+**Since**: v7.1  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -605,6 +607,7 @@ Sets pointer capture for the element. This implementation does not dispatch the 
 Releases pointer capture for the element. This implementation does not dispatch the `lostpointercapture` event on the element.
 
 **See**: [Element - releasePointerCapture](https://developer.mozilla.org/en-US/docs/Web/API/Element/releasePointerCapture)  
+**Since**: v7.1  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -619,6 +622,7 @@ Checks if the element has pointer capture for the specified pointer.
 
 **Returns**: `boolean` - True if the element has pointer capture for the specified pointer, false otherwise.  
 **See**: [Element - hasPointerCapture](https://developer.mozilla.org/en-US/docs/Web/API/Element/hasPointerCapture)  
+**Since**: v7.1  
 
 | Param | Type | Description |
 | --- | --- | --- |

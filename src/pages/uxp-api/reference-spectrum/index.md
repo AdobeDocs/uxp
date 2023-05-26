@@ -11,6 +11,7 @@ description: Describes the Spectrum-related UI options available within UXP
 contributors:
   - https://github.com/padmkris123
 ---
+
 # Spectrum UXP Reference
 
 

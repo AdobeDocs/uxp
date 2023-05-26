@@ -38,9 +38,9 @@ and open `https://www.adobe.com` from the new Window or JavaScript alert() pops 
 In your plugin's code, add a WebView element in the desired location.
 The element can take attributes such as id , height , and src to specify the WebView's properties<br></br>
 
-**Example**  
 ```js
 <webview id="webviewsample" width="100%" height="360px" src="https://www.adobe.com" uxpAllowInspector="true" ></webview>
+```
 
 <br></br>
 <h3>Manifest requirements for UXP WebView</h3>
@@ -136,7 +136,7 @@ The plugin and the content within the WebView can communicate with each other us
 
 [Content in the WebView]
 - send messages to plugin `window.uxpHost.postMessage(msg)`
-- receive messages from plugin `window.addEventListener("message", (e) => {...})` where `e: Event { origin: plugin id, source: window.uxpHost, data: message }`
+- receive messages from plugin `window.addEventListener("message", (e) => { ... })` where `e: Event { origin: plugin id, source: window.uxpHost, data: message }`
 
 
 | Param | Type | Description |
@@ -155,7 +155,7 @@ webViewDisplay.postMessage("PluginMessage1");
 window.addEventListener("message", (e) => {
   console.log(`Message from WebView(Origin:${e.origin}): ${e.data}\n`);
 
-  if(e.data === "webviewmessage1") {
+  if (e.data === "webviewmessage1") {
     webViewDisplay.postMessage("Thanks, Message1 recieved successfully");
   }
 });
@@ -171,7 +171,7 @@ window.addEventListener("message", (e) => {
   // e.origin would be 'plugin id'
   // e.source would be 'window.uxpHost'
   // e.data is 'JSON.parse(JSON.stringify("PluginMessage1"))' which is "PluginMessage1"
-  if(e.data === "PluginMessage1") {
+  if (e.data === "PluginMessage1") {
     console.log(e.data);
   }
 });
