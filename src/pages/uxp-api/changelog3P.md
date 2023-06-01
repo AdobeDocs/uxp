@@ -28,7 +28,7 @@ html {
 </svg>
 // shows a yellow circle
 ```  
-    
+
 ## UXP v7.0.0
 
 ### New
@@ -43,7 +43,7 @@ html {
         - [Element.shadowRoot](./reference-js/Global%20Members/HTML%20DOM/Element.md#shadowroot--shadowroot)
         - [CustomElementRegistry.upgrade](./reference-js/Global%20Members/HTML%20DOM/CustomElementRegistry.md#upgraderoot)
         - [CustomElementRegistry.whenDefined](./reference-js/Global%20Members/HTML%20DOM/CustomElementRegistry.md#whendefinedname)
-- [Spectrum Web Components (Beta)](./reference-spectrum-web-component/index.md) Support for Adobe SWC.
+- [Spectrum Web Components (Beta)](./reference-spectrum/swc/index.md) Support for Adobe SWC.
 - Several augmentations to the JS API set
     - Properties
         - [HTMLElement.lang](./reference-js/Global%20Members/HTML%20Elements/HTMLElement.md#lang--string)

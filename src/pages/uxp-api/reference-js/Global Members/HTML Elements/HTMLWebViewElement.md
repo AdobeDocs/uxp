@@ -44,7 +44,7 @@ The element can take attributes such as id , height , and src to specify the Web
 
 <br></br>
 <h3>Manifest requirements for UXP WebView</h3>
-In order to use UXP WebView, the plugin should have the following manifest v5 permissions.<br></br><br></br>
+In order to use UXP WebView, the plugin should have the following manifest v5 permissions.<br></br>
 
 <table>
  <tr>
