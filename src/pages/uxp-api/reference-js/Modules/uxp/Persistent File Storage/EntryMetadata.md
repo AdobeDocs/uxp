@@ -10,7 +10,7 @@ Metadata for an `Entry`. It includes useful information such as:
 * name
 
 Instantiate `EntryMetadata` by using [Entry's - getMetadata()](./Entry.md#module-storage-entry-getmetadata).
-In order to instantiate `Entry`, you will need to first invoke the `localFileSystem` and then fetch an instance of a File or Folder
+In order to instantiate `Entry`, you will need to first invoke the `localFileSystem` and then fetch an instance of a File or Folder.
 
 <b>Example</b>
 ```js

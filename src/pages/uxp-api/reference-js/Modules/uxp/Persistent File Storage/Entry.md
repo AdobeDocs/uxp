@@ -5,14 +5,15 @@
 An `Entry` is the base class for `File` and `Folder`.
 You can get an instance of Entry via the `localFileSystem` by fetching an instance of a File or Folder
 
+<b>Example</b>
 ```js
 // Since Entry cannot be called directly we can use a File or Folder object to invoke Entry as shown below
 const fs =  require('uxp').storage.localFileSystem;
-const distFolder = await fs.getPluginFolder(); // returns a Folder instance
-const distEntry = await distFolder.getEntry("entryName.txt");
+const folder = await fs.getPluginFolder(); // returns a Folder instance
+const folderEntry = await folder.getEntry("entryName.txt");
 
-// Now we can use distEntry to invoke the APIs provided by Entry
-console.log(distEntry.isEntry); // isEntry is an API of Entry, in this example it will return true
+// Now we can use folderEntry to invoke the APIs provided by Entry
+console.log(folderEntry.isEntry); // isEntry is an API of Entry, in this example it will return true
 ```
 
 
