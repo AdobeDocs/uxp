@@ -33,12 +33,7 @@ Get command description, localized string
 ## shortcut ⇒ `Object`
 Get command shortcut
 
-**Returns**: `Object` - which consists of following keys:
-{string} shortcutKey
-{boolean} commandKey
-{boolean} altKey
-{boolean} shiftKey
-{boolean} ctrlKey  
+**Returns**: `Object` - which consists of following keys:{string} shortcutKey{boolean} commandKey{boolean} altKey{boolean} shiftKey{boolean} ctrlKey  
 
 
 <a name="uxpcommandinfo-ismanifestcommand" id="uxpcommandinfo-ismanifestcommand"></a>

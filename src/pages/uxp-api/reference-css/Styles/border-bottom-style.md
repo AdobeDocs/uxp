@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-bottom-style
 
-**Since:**  UXP v2.0
+**Since**  UXP v2.0
 
 Specifies the [style](../border-style/) of bottom border to render.
 

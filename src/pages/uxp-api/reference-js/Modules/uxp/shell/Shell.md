@@ -1,7 +1,7 @@
 
 <a name="shell" id="shell"></a>
 
-# require('shell')
+# require('uxp').shell
 To get an instance: `require("uxp").shell`<br/>
 These APIs require UXP Manifest v5 configurations. see [Launch Process](https://developer.adobe.com/photoshop/uxp/2022/guides/uxp_guide/uxp-misc/manifest-v5/#launch-process)
 

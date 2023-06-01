@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # border-left-color
 
-**Since:** UXP v2.0
+**Since** UXP v2.0
 
 Specifies the top border color for an element. Supported color formats are as follows:
 

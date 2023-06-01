@@ -114,7 +114,7 @@ If you are looking for a ready-made Adobe Spectrum-styled UI or are just getting
 However, if you prefer vanilla HTML and don't mind undertaking the efforts of styling, use the HTML elements along with your custom stylesheet. In fact, you can build your own custom tags using Web Components.
 
 
-If you are thinking of upgrading your existing UI, you should check out the new components in SWC that are not available with Spectrum UXP widgets. Migrating your existing UI to SWC is very easy. Use the [sample plugin](link to sample plugin) to get started.
+If you are thinking of upgrading your existing UI, you should check out the new components in SWC that are not available with Spectrum UXP widgets.
 
 
 Visit the following topics to learn about them in detail

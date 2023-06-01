@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # :only-child
 
-**Since:** UXP v3.0
+**Since** UXP v3.0
 
 Matches only an element with no siblings.
 

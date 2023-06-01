@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # CSS Units
 
-**Since:** UXP v3.0
+**Since** UXP v3.0
 
 UXP supports several CSS units to make layout easier. Units supported are `em`, `rem`, `vh`, `vw`, `vmin`, `vmax`, `cm`, `mm`, `in`, `pc`, `pt`, `px`.
 

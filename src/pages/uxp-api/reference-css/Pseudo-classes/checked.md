@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # :checked
 
-**Since:** UXP v3.0
+**Since** UXP v3.0
 
 Matches when the selected element is checked. 
 

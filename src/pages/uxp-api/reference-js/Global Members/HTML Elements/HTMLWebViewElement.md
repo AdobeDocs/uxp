@@ -2,12 +2,12 @@
 <a name="htmlwebviewelement" id="htmlwebviewelement"></a>
 
 # window.HTMLWebViewElement
-**Since**: v6.0
+**Since**: v6.0  
 
 
 <a name="new-htmlwebviewelement-new" id="new-htmlwebviewelement-new"></a>
 
-## HTMLWebViewElement() 
+## HTMLWebViewElement()
 WebViews in Adobe UXP is a component that allows you to embed web content in your plugins.
 They are essentially a browser window that is displayed inside the plugin, allowing you to load web pages,
 and interact with them using JavaScript.
@@ -20,7 +20,8 @@ and to isolate the web content from the rest of the plugin.<br></br>
 
 <InlineAlert variant="warning" slots="text"/>
 
-WebViews are resource intensive since it launches multiple processes per plugin and therefore should be used only in cases where you cannot create the plugin using UXP features.
+WebViews are resource intensive since it launches multiple processes per plugin
+and therefore should be used only in cases where you cannot create the plugin using UXP features.<br></br>
 
 **Note:**<br></br>
 1. WebViews support was introduced in UXP v6.0 to be used only in **Dialogs**. The reasoning here was to limit WebViews usage in persistent panels. Later due to overwhelming requests, WebView support was added for `Panels` with UXP v6.4.
@@ -37,7 +38,7 @@ and open `https://www.adobe.com` from the new Window or JavaScript alert() pops 
 In your plugin's code, add a WebView element in the desired location.
 The element can take attributes such as id , height , and src to specify the WebView's properties<br></br>
 
-```
+```js
 <webview id="webviewsample" width="100%" height="360px" src="https://www.adobe.com" uxpAllowInspector="true" ></webview>
 ```
 
@@ -137,6 +138,7 @@ The plugin and the content within the WebView can communicate with each other us
 - send messages to plugin `window.uxpHost.postMessage(msg)`
 - receive messages from plugin `window.addEventListener("message", (e) => { ... })` where `e: Event { origin: plugin id, source: window.uxpHost, data: message }`
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | message | `Object` | A message sent to the WebView. Please note that the message is stringified & parsed by JSON |
@@ -152,9 +154,9 @@ webViewDisplay.postMessage("PluginMessage1");
 // Plugin receives message from WebView via "message" event.
 window.addEventListener("message", (e) => {
   console.log(`Message from WebView(Origin:${e.origin}): ${e.data}\n`);
-  
+
   if (e.data === "webviewmessage1") {
-    webViewDisplay.postMessage(" Thanks, Message1 recieved successfully");
+    webViewDisplay.postMessage("Thanks, Message1 recieved successfully");
   }
 });
 ```
@@ -174,6 +176,7 @@ window.addEventListener("message", (e) => {
   }
 });
 ```
+
 
 <a name="htmlwebviewelement-event-loadstart" id="htmlwebviewelement-event-loadstart"></a>
 
@@ -236,7 +239,7 @@ Event fired when loading has failed.
 ```js
 // Print the url, code and message when loading has failed
 webview.addEventListener("loaderror", (e) => {
-  console.log(`webview.loaderror ${e.url}, code:${e.code}, message:${e.message}`);
+     console.log(`webview.loaderror ${e.url}, code:${e.code}, message:${e.message}`);
 });
 ```
 

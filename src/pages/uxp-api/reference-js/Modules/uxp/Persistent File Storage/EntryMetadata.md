@@ -1,15 +1,24 @@
 
 <a name="module-storage-entrymetadata" id="module-storage-entrymetadata"></a>
 
-# require('uxp').storage.EntryMetadata
-Metadata for an entry. It includes useful information such as:
+# EntryMetadata
+Metadata for an `Entry`. It includes useful information such as:
 
 * size of the file (if a file)
 * date created
 * date modified
 * name
 
-You'll not instantiate this directly; use [Entry#getMetadata](/uxp-api/reference-js/Modules/uxp/Persistent%20File%20Storage/Entry/#module-storage-entry-getmetadata) to do so.
+Instantiate `EntryMetadata` by using [Entry's - getMetadata()](./Entry.md#module-storage-entry-getmetadata).
+In order to instantiate `Entry`, you will need to first invoke the `localFileSystem` and then fetch an instance of a File or Folder.
+
+<b>Example</b>
+```js
+const fs = require('uxp').storage.localFileSystem;
+const folder = await fs.getPluginFolder(); // Gets an instance of Folder (or Entry)
+const entryMetaData = await folder.getMetadata(); 
+console.log(entryMetaData.name);
+```
 
 
 

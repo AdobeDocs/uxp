@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # :first-child
 
-**Since:** UXP v3.0
+**Since** UXP v3.0
 
 Matches only the first child.
 

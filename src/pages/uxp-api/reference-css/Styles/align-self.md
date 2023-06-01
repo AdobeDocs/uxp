@@ -3,7 +3,7 @@ jsDoc: true
 ---
 # align-self
 
-**Since:** UXP v3.0
+**Since** UXP v3.0
 
 Supported values are `flex-start`, `flex-end`, `center`, `stretch`.
 

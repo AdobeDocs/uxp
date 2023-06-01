@@ -187,3 +187,5 @@ Get the data contained within the Blob as a ReadableStream
 Get contents of the Blob as a string in UTF-8 format.
 
 **Returns**: `Promise<String>`  
+
+  
