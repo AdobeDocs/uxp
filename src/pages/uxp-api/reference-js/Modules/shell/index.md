@@ -1,2 +1,0 @@
-# shell
-* [Shell](Shell.md)
