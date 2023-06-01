@@ -7,17 +7,18 @@ Displays an Alert message dialog putting the application in a modal state while 
 
 <InlineAlert variant="info" slots="text"/>
 
-UXP behaviour is different from the standard behaviour of blocking the JavaScript thread of execution until the dialog has been dismissed.  
+UXP behaviour is different from the standard behaviour of blocking the JavaScript thread of execution until the dialog has been dismissed.
+
+The following are additional simple alerts supported by UXP
+1. [confirm()](./confirm.md)
+2. [prompt()](./prompt.md)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| message | `string` | A message you want to display in the alert dialog |
+| message | `string` | A message you want to display in the alert dialog<br></br> |
 
 **Example**  
 ```js
 alert("This is alert message");
 ```
 
-The following are additional simple alerts supported by UXP 
-1. [confirm()](./confirm.md) 
-2. [prompt()](./prompt.md)
