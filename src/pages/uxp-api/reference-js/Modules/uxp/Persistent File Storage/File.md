@@ -7,7 +7,7 @@ writing to the file. You'll never instantiate a `File` directly; instead
 you'll get access via a [storage.FileSystemProvider](./FileSystemProvider).
 Keep in mind that `File` as such doesn't need a `require()` statement, however a `localFileSystem` will need it.
 
-<b>Example</b>
+**Example**
 ```js
 // Get the object of a File instance
 const fs = require('uxp').storage.localFileSystem;

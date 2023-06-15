@@ -25,13 +25,10 @@ But before we proceed, it's important to understand some terminology
 
 
 With that in mind, let's get into the details:
-- HTML elements
-   These are pure HTML elements following the web standards. For example, `<img>`, `<dialog>` etc. You have the flexibility to style them with your custom stylesheet.
-
-
-Checkout the list of supported HTML [tags](../reference-html/) and [elements](../reference-js/Global%20Members/HTML%20Elements/).
+- **HTML elements** <br></br>
+   These are pure HTML elements following the web standards. For example, `<img>`, `<dialog>` etc. You have the flexibility to style them with your custom stylesheet. Checkout the list of supported HTML [tags](../reference-html/) and [elements](../reference-js/Global%20Members/HTML%20Elements/).
   
-- Spectrum UXP widgets
+- **Spectrum UXP widgets** <br></br>
    These are built-in Spectrum-styled UXP components. These widgets mimic the Adobe SWC library APIs and expose a subset of the functionality of the corresponding SWC. 
 
    You can use them as you would any other HTML tag. For example,
@@ -43,7 +40,7 @@ Checkout the list of supported HTML [tags](../reference-html/) and [elements](..
    Take a look at the list of UXP-supported Spectrum widgets - [User Interface](./Spectrum%20UXP%20Widgets/User%20Interface/) and [Typography](./Spectrum%20UXP%20Widgets/Typography/)
 
 
-- UXP Spectrum web components (Beta)
+- **UXP Spectrum web components (Beta)** <br></br>
    These are the Adobe Spectrum Web Components, now supported by UXP v7.0 onwards. It's built using Web Components technology.
 
 
@@ -69,18 +66,18 @@ Checkout the list of supported HTML [tags](../reference-html/) and [elements](..
 Now that you know the various options, you must understand their differences and limitations
 
 
-- HTML elements
+- **HTML elements** <br></br>
    Keep in mind that UXP is not a browser. It's a platform that provides the ease of using web technologies to build plugins/scripts for desktop applications. Hence, it does not support all the HTML/CSS capabilities you can use in a browser. In fact, the tags that are _not_ supported are treated like simple `<div>`.
 
    Do take a look at the list of HTML [elements](../reference-html/General/Unsupported%20Elements/), and [attributes](../reference-html/General/Unsupported%20Attributes/) that are _not_ supported.
   
-- Spectrum UXP widgets
+- **Spectrum UXP widgets**<br></br>
    Remember that these are built-in within UXP. Therefore, they may appear to be a black-box solution that does not allow you to peek into the details or alter their behavior easily.
 
    ![Debug Spectrum UXP Widgets](./assets/debug-sp.png)
 
 
-- UXP Spectrum web components (Beta)
+- **UXP Spectrum web components (Beta)** <br></br>
    Since this is in the beta phase and we are working on supporting more components in the future, you may not find all the components you need. 
   
    Moreover, these components follow the principles of SWC and web components, which means
