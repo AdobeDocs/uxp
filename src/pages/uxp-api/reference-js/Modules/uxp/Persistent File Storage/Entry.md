@@ -5,7 +5,7 @@
 An `Entry` is the base class for `File` and `Folder`.
 You can get an instance of Entry via the `localFileSystem` by fetching an instance of a File or Folder
 
-<b>Example</b>
+**Example**
 ```js
 // Since Entry cannot be called directly we can use a File or Folder object to invoke Entry as shown below
 const fs =  require('uxp').storage.localFileSystem;
