@@ -10,7 +10,11 @@
 ## define(name, constructor, options)
 Defines a new custom element.
 
-**See**: [CustomElementRegistry - define](https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define)  
+**See**
+
+- [CustomElementRegistry - define](https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define)
+- [HTML Spec - Element definition](https://html.spec.whatwg.org/multipage/custom-elements.html#element-definition)
+
 
 | Param | Type | Description |
 | --- | --- | --- |

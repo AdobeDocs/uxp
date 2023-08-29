@@ -40,11 +40,10 @@ With that in mind, let's get into the details:
    Take a look at the list of UXP-supported Spectrum widgets - [User Interface](./Spectrum%20UXP%20Widgets/User%20Interface/) and [Typography](./Spectrum%20UXP%20Widgets/Typography/)
 
 
-- **UXP Spectrum web components (Beta)** <br></br>
+- **UXP Spectrum web components** <br></br>
    These are the Adobe Spectrum Web Components, now supported by UXP v7.0 onwards. It's built using Web Components technology.
 
-
-   In order to use them, you require to install the components individually and then `import` them before using the component tag. For example,
+   In order to use them, you are required to install the components individually and then `import` them before using the component tag. For example,
   
    ```
    npm i @spectrum-web-components/button@0.19.8
@@ -77,10 +76,8 @@ Now that you know the various options, you must understand their differences and
    ![Debug Spectrum UXP Widgets](./assets/debug-sp.png)
 
 
-- **UXP Spectrum web components (Beta)** <br></br>
-   Since this is in the beta phase and we are working on supporting more components in the future, you may not find all the components you need. 
-  
-   Moreover, these components follow the principles of SWC and web components, which means
+- **UXP Spectrum web components** <br></br>
+   These components follow the principles of SWC and web components, which means
    1. You need to `import` individual comps before using them
    2. You can debug SWC like a regular Web Component. 
       ![Debug SWC](./assets/debug-swc.png)

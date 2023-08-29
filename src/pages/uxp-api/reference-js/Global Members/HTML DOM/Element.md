@@ -537,12 +537,8 @@ Sets pointer capture for the element. This implementation does not dispatch the 
 
 **Example**  
 ```js
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Test HTML</title>
-  <style>
+// HTML
+<style>
     div {
         width: 140px;
         height: 50px;
@@ -552,32 +548,28 @@ Sets pointer capture for the element. This implementation does not dispatch the 
         background: #fbe;
         position: absolute;
     }
-  </style>
-</head>
-<body>
-    <div id="slider">SLIDE ME</div>
-    <script>
-        function beginSliding(e) {
-            slider.setPointerCapture(e.pointerId);
-            slider.addEventListener("pointermove", slide);
-        }
+</style>
+<div id="slider">SLIDE ME</div>
 
-        function stopSliding(e) {
-            slider.releasePointerCapture(e.pointerId);
-            slider.removeEventListener("pointermove", slide);
-        }
+// JS
+function beginSliding(e) {
+     slider.setPointerCapture(e.pointerId);
+     slider.addEventListener("pointermove", slide);
+ }
 
-        function slide(e) {
-            slider.style.left = e.clientX;
-        }
+ function stopSliding(e) {
+     slider.releasePointerCapture(e.pointerId);
+     slider.removeEventListener("pointermove", slide);
+ }
 
-        const slider = document.getElementById("slider");
+ function slide(e) {
+     slider.style.left = e.clientX;
+ }
 
-        slider.addEventListener("pointerdown", beginSliding);
-        slider.addEventListener("pointerup", stopSliding);
-    </script>
-</body>
-</html>
+ const slider = document.getElementById("slider");
+
+ slider.addEventListener("pointerdown", beginSliding);
+ slider.addEventListener("pointerup", stopSliding);
 ```
 
 

@@ -122,6 +122,22 @@ TextTrackList object listing all of the TextTrack objects representing the media
 **See:**: https://developer.mozilla.org/en-US/docs/Web/API/TextTrackList  
 
 
+<a name="htmlvideoelement-videowidth" id="htmlvideoelement-videowidth"></a>
+
+## videoWidth : `number`
+**Read only**
+Width of the video in pixel.
+
+
+
+<a name="htmlvideoelement-videoheight" id="htmlvideoelement-videoheight"></a>
+
+## videoHeight : `number`
+**Read only**
+Height of the video in pixel.
+
+
+
 <a name="htmlvideoelement-playbackrate" id="htmlvideoelement-playbackrate"></a>
 
 ## playbackRate : `number`
@@ -172,6 +188,14 @@ The text writing directionality of the content of the current element limited to
 
 **See**: [HTMLElement - dir](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dir)  
 **Since**: v7.1  
+
+
+<a name="htmlelement-hidden" id="htmlelement-hidden"></a>
+
+## hidden : `boolean` \| `string`
+Indicates the browser should not render the contents of the element. Note: "until-found" is not supported.
+
+**See**: [HTMLElement - hidden](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden), [Spec - `hidden` attribute](https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute)  
 
 
 <a name="element-nodename" id="element-nodename"></a>
@@ -759,7 +783,7 @@ Sets pointer capture for the element. This implementation does not dispatch the 
     }
 </style>
 <div id="slider">SLIDE ME</div>
-   
+
 // JS
 function beginSliding(e) {
      slider.setPointerCapture(e.pointerId);
