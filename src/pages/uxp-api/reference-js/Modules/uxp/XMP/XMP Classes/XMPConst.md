@@ -146,6 +146,7 @@ Constant values for the namespace URI strings used in all get and set property o
         <td>string</td>
         <td>Read-only</td>
         <td>The XML namespace for the DM schema.</td>
+    </tr>
     <tr>
         <td>NS_ADOBE_STOCK_PHOTO</td>
         <td>string</td>

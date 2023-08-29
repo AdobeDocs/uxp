@@ -78,12 +78,12 @@ Refer to the table below for the list of the components and their variants.
 
 
 The status color of each variant represents its development state: <br></br>
-🟢 (Ready) Component and variants are working as per the specs of the latest SWC(web) version. <br></br>
-🟠 (Known Issues) Component/Variants have known issues and the fixes are in the pipeline<br></br>
-🌑 (Pending) Component/Variants have issues due to missing UXP core platform features. Will be addressed only in later releases
-<br></br>
+🟢 (Ready) Component and variants are working as per the specs of the latest SWC(web) version.<br></br>
+🟠 (Known Issues) Component/Variants have known issues and the fixes are in the pipeline.<br></br>
+🌑 (Pending) Component/Variants have issues due to missing UXP core platform features. Will be addressed only in later releases.<br></br>
 🔵 (N/A) Versions of locked Component/Variants do not support the variant. This would be fixed when UXP  moves to newer versions of the SWC components.
 
+<br></br>
 
 | Components      | Variants with status | Version |
 | --------------- | -------------------- | ------- |
