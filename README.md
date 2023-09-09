@@ -2,7 +2,7 @@
 
 This repository contains the source files for the documentation of UXP. It consumes the md files generated from the internal `torq-native` repository.
 
-It isn't intended to be hosted by itself, but instead should be imported into host-specific documentation for applications providing UXP-based extensibility (such as Photoshop and XD)
+It isn't intended to be hosted by itself but instead should be imported into host-specific documentation for applications providing UXP-based extensibility (such as Photoshop and XD)
 
 The documentation is based on the [`AdobeDocs/dev-site-documentation-template`](https://github.com/AdobeDocs/dev-site-documentation-template).
 
@@ -17,9 +17,9 @@ The documentation is based on the [`AdobeDocs/dev-site-documentation-template`](
 
 ## Run this project
 
-This repo is run manually and locally to pull-in markdowns generated from `torq-native` using JSDocs. 
+This repo is run manually and locally to pull in markdowns generated from `torq-native` using JSDocs. 
 
-1. You must first ensure that the markdowns in `torq-native` are available locally in your machine.
+1. You must first ensure that the markdowns in `torq-native` are available locally on your machine.
 2. Create an .env file and define UXP_REPO_SOURCE_DOCS pointing to the markdown folder.
 Example
 ```

@@ -35,6 +35,14 @@ The text writing directionality of the content of the current element limited to
 **Since**: v7.1  
 
 
+<a name="htmlelement-hidden" id="htmlelement-hidden"></a>
+
+## hidden : `boolean` \| `string`
+Indicates the browser should not render the contents of the element. Note: "until-found" is not supported.
+
+**See**: [HTMLElement - hidden](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden), [Spec - `hidden` attribute](https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute)  
+
+
 <a name="element-nodename" id="element-nodename"></a>
 
 ## nodeName : `string`
@@ -578,7 +586,7 @@ Sets pointer capture for the element. This implementation does not dispatch the 
     }
 </style>
 <div id="slider">SLIDE ME</div>
-   
+
 // JS
 function beginSliding(e) {
      slider.setPointerCapture(e.pointerId);

@@ -40,18 +40,17 @@ With that in mind, let's get into the details:
    Take a look at the list of UXP-supported Spectrum widgets - [User Interface](./Spectrum%20UXP%20Widgets/User%20Interface/) and [Typography](./Spectrum%20UXP%20Widgets/Typography/)
 
 
-- **UXP Spectrum web components (Beta)** <br></br>
-   These are the Adobe Spectrum Web Components, now supported by UXP v7.0 onwards. It's built using Web Components technology.
+- **UXP Spectrum web components** <br></br>
+   These are the Adobe Spectrum Web Components, supported from UXP v7.0 onwards. It's built using Web Components technology.
 
-
-   In order to use them, you require to install the components individually and then `import` them before using the component tag. For example,
+   In order to use them, you are required to install the components individually and then `import` them before using the component tag. For example,
   
    ```
-   npm i @spectrum-web-components/button@0.19.8
+   npm i @swc-uxp-wrappers/button
    ```
   
    ```js
-   import '@spectrum-web-components/button/sp-button.js';
+   import '@swc-uxp-wrappers/button/sp-button.js';
    ```
 
 
@@ -72,17 +71,16 @@ Now that you know the various options, you must understand their differences and
    Do take a look at the list of HTML [elements](../reference-html/General/Unsupported%20Elements/), and [attributes](../reference-html/General/Unsupported%20Attributes/) that are _not_ supported.
   
 - **Spectrum UXP widgets**<br></br>
-   Remember that these are built-in within UXP. Therefore, they may appear to be a black-box solution that does not allow you to peek into the details or alter their behavior easily.
+   Remember that these are built-in within UXP. Therefore, they may appear to be a black-box solution that does not allow you to peek into the details during debugging or alter their behavior easily.
 
    ![Debug Spectrum UXP Widgets](./assets/debug-sp.png)
 
 
-- **UXP Spectrum web components (Beta)** <br></br>
-   Since this is in the beta phase and we are working on supporting more components in the future, you may not find all the components you need. 
-  
-   Moreover, these components follow the principles of SWC and web components, which means
-   1. You need to `import` individual comps before using them
-   2. You can debug SWC like a regular Web Component. 
+- **UXP Spectrum web components** <br></br>
+   The support for SWC in UXP is more extensive. It has 30 components including some unique ones that are not available in Spectrum widgets such as table, toast, card etc.
+   Plus, these components follow the principles of SWC and web components, which means
+   1. You need to `install` and `import` individual comps before using them
+   2. You can debug SWC like a regular Web Component 
       ![Debug SWC](./assets/debug-swc.png)
 
 
@@ -105,7 +103,7 @@ That said, you can mix and match these three offerings to suit your use case. Fo
 The choice you make depends on your use case and the stage of development you are in.
 
 
-If you are looking for a ready-made Adobe Spectrum-styled UI or are just getting started with programming your UI, we recommend you start your journey with SWC. Fall back to Spectrum UXP widgets for the comps that are not available yet. And use plain HTML elements when they are not available in either.
+If you are looking for a ready-made Adobe Spectrum-styled UI or are just getting started with programming your UI, we recommend you start your journey with SWC. Fall back to Spectrum UXP widgets for variants in the comps that are not available yet. And use plain HTML elements when they are not available in either.
 
 
 However, if you prefer vanilla HTML and don't mind undertaking the efforts of styling, use the HTML elements along with your custom stylesheet. In fact, you can build your own custom tags using Web Components.

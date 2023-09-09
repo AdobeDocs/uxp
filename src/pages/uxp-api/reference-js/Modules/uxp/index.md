@@ -5,4 +5,5 @@
 * [Persistent File Storage](Persistent%20File%20Storage/index.md)
 * [Plugin Manager](Plugin%20Manager/index.md)
 * [Versions](Versions/index.md)
+* [XMP](XMP/index.md)
 * [Shell](shell/index.md)
