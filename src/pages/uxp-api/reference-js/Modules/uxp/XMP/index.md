@@ -5,7 +5,7 @@ Adobe's XMP (Extensible Metadata Platform) is a metadata standard developed by A
 
 XMP is extensible and customizable, supporting various types of information and user-defined schemas. It is compatible with Adobe software and third-party applications, promoting interoperability.
 
-Based on open standards, XMP follows XML syntax and RDF model. It enhances searchability, organization, and rights management of files. Overall, XMP facilitates efficient metadata management and effective digital asset management.
+Based on open standards, XMP follows XML syntax and RDF model. It enhances the searchability, organization, and rights management of files. Overall, XMP facilitates efficient metadata management and effective digital asset management.
 For more information about XMP metadata, see the [XMP Specification at Adobe Developer Center](https://www.adobe.com/devnet/xmp.html).
 
 
@@ -49,7 +49,7 @@ You can create a new, empty XMPMeta object with the constructor, and use its met
 This code creates an empty XMPMeta object, uses it to set a metadata property, and serializes it to a string, which you could pass to an authoring tool, for example, or store in a file.
 
 ```js
-const {XMPMeta, XMPConst} = require("uxp").xmp;
+const { XMPMeta, XMPConst } = require("uxp").xmp;
 let xmp = new XMPMeta();
 xmp.setProperty( XMPConst.NS_XMP, "CreatorTool", "My Script" );
 let xmpStr = xmp.serialize(); // Serialize the XMP packet to XML
@@ -84,33 +84,38 @@ Deletes the list of existing creators, and adds a new creator value.
 Writes the modified metadata back to the file.
 
 ```js
-console.log( "XMPFiles batch processing example" );
 // Load the XMPScript library
-const {XMPMeta, XMPConst, XMPFile} = require("uxp").xmp;
+const { XMPMeta, XMPConst, XMPFile } = require("uxp").xmp;
 
 // Iterate through the photos in the folder
 const uxpfs = require("uxp").storage;
 const ufs = uxpfs.localFileSystem;
-let folder = await ufs.getFolder({initialDomain: uxpfs.domains.userDocuments});
-let files = await folder.getEntries();
-files.forEach((file) => {
-     console.log( "Process file: " + file.name );
 
-     // Applies only to files, not to folders
-     if ( file instanceof Entry ) {
-         let xmpFile = new XMPFile( file.nativePath, XMPConst.UNKNOWN, XMPConst.OPEN_FOR_UPDATE );
-         let xmp = xmpFile.getXMP();
+async function xmpBatchProcessing() {
+  console.log("XMPFiles batch processing example");
+  let folder = await ufs.getFolder({initialDomain: uxpfs.domains.userDocuments});
+  let files = await folder.getEntries();
 
-         // Delete existing authors and add a new one
-         // Existing metadata stays untouched
-         xmp.deleteProperty( XMPConst.NS_DC, "creator" );
-         xmp.appendArrayItem( XMPConst.NS_DC, "creator", "Judy", 0, XMPConst.ARRAY_IS_ORDERED );
+  // async function xmpBatchProcessing() {
+  files.forEach((file) => {
+    console.log("Process file: " + file.name);
+    // Applies only to files, not to folders
+    if(file instanceof Entry) {
+      let xmpFile = new XMPFile( file.nativePath, XMPConst.UNKNOWN, XMPConst.OPEN_FOR_UPDATE );
+      let xmp = xmpFile.getXMP();
+      // Delete existing authors and add a new one
+      // Existing metadata stays untouched
+      xmp.deleteProperty( XMPConst.NS_DC, "creator" );
+      xmp.appendArrayItem( XMPConst.NS_DC, "creator", "Judy", 0, XMPConst.ARRAY_IS_ORDERED );
 
-         // Write updated metadata into the file
-         if ( xmpFile.canPutXMP( xmp ) ) {
-             xmpFile.putXMP( xmp );
-         }
-         xmpFile.closeFile( XMPConst.CLOSE_UPDATE_SAFELY );
-     }
+      // Write updated metadata into the file
+      if (xmpFile.canPutXMP(xmp)) {
+        xmpFile.putXMP(xmp);
+      }
+      xmpFile.closeFile(XMPConst.CLOSE_UPDATE_SAFELY);
+    }
+  });
 }
+
+// Call the async function xmpBatchProcessing()
 ```  

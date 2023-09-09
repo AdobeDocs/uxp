@@ -24,13 +24,10 @@ To understand Spectrum Web Components (popularly known as SWC), you must first f
 [Spectrum Web Components](https://opensource.adobe.com/spectrum-web-components/) are open-source Adobe Spectrum-styled Web Components. UXP v7.0 introduces the support for Web Components and Spectrum Web Components (SWC).
 
 
-
-
 ## Getting started
 
-
 __Step 1__: Enable SWC in manifest.json
-- USE `manifestVersion` version 4 or above
+- Use `manifestVersion` version 4 or above
 - Enable the `enableSWCSupport` feature flag
 
 
@@ -65,8 +62,9 @@ import '@swc-uxp-wrappers/button/sp-button.js';
 <sp-button variant="primary">I'm a button</sp-button>
 ```
 
+## Sample plugin
 
-This [sample plugin](https://github.com/AdobeDocs/uxp-photoshop-plugin-samples/tree/main/swc-uxp-starter) and [react sample plugin](https://github.com/AdobeDocs/uxp-photoshop-plugin-samples/tree/main/swc-uxp-react-starter) can get you started quickly. Make sure you follow the instructions in the README.
+This [starter plugin](https://github.com/AdobeDocs/uxp-photoshop-plugin-samples/tree/main/swc-uxp-starter)can get you started quickly. Make sure you follow the instructions in the README.
 
 
 ## List of supported SWC
