@@ -13,67 +13,67 @@ Do not store passwords or other secure forms of data using `localStorage`. Inste
 
 <a name="localstorage-length" id="localstorage-length"></a>
 
-## length ⇒ `int`
+## length : `number`
 **Read only**
-Returns number of items stored in the local storage.
+Number of items stored in the local storage.
 
-**Returns**: `int` - returns the number of items  
 
 
 <a name="localstorage-key" id="localstorage-key"></a>
 
-## key()
-Returns key which is stored at the given index
+## key(index)
+Returns the name of the nth key in the local storage.
 
-**Returns**: `int` - Returns key which is stored at the given index.  
+**Returns**: `string` - Name of the key. If the index does not exist, null is returned.  
 
-| Param | Type |
-| --- | --- |
-| index. | `number` | 
+| Param | Type | Description |
+| --- | --- | --- |
+| index | `number` | Integer representing the number of the key |
 
 
 
 <a name="localstorage-getitem" id="localstorage-getitem"></a>
 
 ## getItem(key)
-Get value from the local storage for the key.
+Gets the value for the key from the local storage.
+Returns null if the key does not exist.
 
-**Returns**: `string` - returns value corresponding to the key as string. If key doesn't exist, this function returns null.  
+**Returns**: `string` - Value corresponding to the key as string. If the key does not exist, null is returned.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| key | `string` | A key to get value. |
+| key | `string` | Key to retrieve the value of. |
 
 
 
 <a name="localstorage-setitem" id="localstorage-setitem"></a>
 
 ## setItem(key, value)
-Set key and value to the local storage.
-If the key is newly set or value is different from old value, an update event will be fired later.
+Adds key and value to the local storage.
+Updates the value if the given key already exists.
 
 **Throws**:
 
-- `Error` throw an error if fails to store
+- `Error` If it fails to store
 
 
 | Param | Type | Description |
 | --- | --- | --- |
-| key | `string` | A key to set value |
-| value | `string` | A value for the key |
+| key | `string` | Key to set value |
+| value | `string` | Value for the key |
 
 
 
 <a name="localstorage-removeitem" id="localstorage-removeitem"></a>
 
 ## removeItem(key)
-Remove a key/value pair from the local storage.
-If the key exists in the local storage, an update event will be fired later.
+Removes a key/value pair from the local storage if it exists.
+Nothing happens if there's no item associated with the given key.
 
 
 | Param | Type | Description |
 | --- | --- | --- |
-| key | `string` | A key to set value |
+| key | `string` | Key to remove |
 
 
 
@@ -81,7 +81,6 @@ If the key exists in the local storage, an update event will be fired later.
 
 ## clear()
 Remove all key/value pairs from the local storage.
-An update event will be fired later.
 
 
   

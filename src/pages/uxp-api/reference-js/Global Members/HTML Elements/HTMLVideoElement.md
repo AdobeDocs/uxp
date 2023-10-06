@@ -22,7 +22,9 @@ URL of a media resource.
 
 ## currentTime : `number`
 Current playback time in seconds.
+The seeked event is fired since v7.3.0
 
+**Emits**: `event:seeked`  
 
 
 <a name="htmlvideoelement-duration" id="htmlvideoelement-duration"></a>
@@ -120,22 +122,6 @@ VideoTrackList object listing all of the VideoTrack objects representing the med
 TextTrackList object listing all of the TextTrack objects representing the media's text tracks
 
 **See:**: https://developer.mozilla.org/en-US/docs/Web/API/TextTrackList  
-
-
-<a name="htmlvideoelement-videowidth" id="htmlvideoelement-videowidth"></a>
-
-## videoWidth : `number`
-**Read only**
-Width of the video in pixel.
-
-
-
-<a name="htmlvideoelement-videoheight" id="htmlvideoelement-videoheight"></a>
-
-## videoHeight : `number`
-**Read only**
-Height of the video in pixel.
-
 
 
 <a name="htmlvideoelement-playbackrate" id="htmlvideoelement-playbackrate"></a>
