@@ -544,7 +544,7 @@ module.exports=[
           },
           {
             "title": "User Information",
-            "path": "/uxp-api/reference-js/Modules/uxp/User Information/UserInfo/"
+            "path": "/uxp-api/reference-js/Modules/uxp/User Information/"
           },
           {
             "title": "XMP",

@@ -42,7 +42,7 @@ index_desc: Changelog in UXP version
 ## UXP v7.2.0
 ### New
 - Support for XMP in Photoshop
-    - [Get Started With XMP](./reference-js/Modules/uxp/XMP/Get%20Started%20With%20XMP/xmp.md)
+    - [Get Started With XMP](./reference-js/Modules/uxp/XMP/getting-started/index.md)
     - [XMP Classes](./reference-js/Modules/uxp/XMP/XMP%20Classes/index.md)
 - Support for [pointer-events:none](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) `CSS` property
 - Support for pseudoElement in [getComputedStyle(element, pseudoElement)](./reference-js/Global%20Members/HTML%20DOM/getComputedStyle.md) API
