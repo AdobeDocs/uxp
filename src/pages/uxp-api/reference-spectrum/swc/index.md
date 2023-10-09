@@ -74,8 +74,8 @@ The following samples are available for you to get started quickly
 - [Photoshop React-based SWC starter plugin](https://github.com/AdobeDocs/uxp-photoshop-plugin-samples/tree/main/swc-uxp-react-starter) (since UXP v7.3).
 
 ### InDesign
-- [InDesign SWC starter plugin](https://github.com/AdobeDocs/uxp-indesign-samples/tree/main/swc-uxp-starter)
-- [InDesign React-based SWC starter plugin](https://github.com/AdobeDocs/uxp-indesign-samples/tree/main/swc-uxp-react-starter) (since UXP v7.3).
+- [InDesign SWC starter plugin](https://github.com/AdobeDocs/uxp-indesign-samples/tree/main/plugins/swc-uxp-starter)
+- [InDesign React-based SWC starter plugin](https://github.com/AdobeDocs/uxp-indesign-samples/tree/main/plugins/swc-uxp-react-starter) (since UXP v7.3).
 
 Make sure you follow the `README` of the above `plugins`.
 
