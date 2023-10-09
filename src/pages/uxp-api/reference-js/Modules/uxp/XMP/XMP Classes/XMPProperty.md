@@ -1,7 +1,7 @@
 
 <a name="xmpproperty" id="xmpproperty"></a>
 
-# XMPIterator
+# XMPProperty
 **Since**: v7.2.0  
 
 

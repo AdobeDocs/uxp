@@ -6,7 +6,8 @@ Represents a folder on a file system. You'll never instantiate this directly,
 but will get it by calling [FileSystemProvider.getTemporaryFolder](./storage#gettemporaryfolder),
 [FileSystemProvider.getFolder](./storage#getfolderoptions), or via [Folder.getEntries](./Folder#getentries).
 
-**Example**
+<b>Example</b>
+
 ```js
 // Get the Folder instance via localFileSystem
 const fs = require('uxp').storage.localFileSystem;

@@ -34,6 +34,6 @@ Generates cryptographically strong random values
 ## randomUUID()
 Generates a new version 4 UUID
 
-**Returns**: `String` - A string containing a randomly generated, 36 character long v4 UUID  
+**Returns**: `string` - String containing a randomly generated, 36 character long v4 UUID  
 
   

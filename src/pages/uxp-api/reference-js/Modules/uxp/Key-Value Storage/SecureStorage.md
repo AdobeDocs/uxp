@@ -24,75 +24,74 @@ should be able to be regenerated from plugins after the time of loss.
 
 <a name="securestorage-length" id="securestorage-length"></a>
 
-## length ⇒ `int`
+## length : `number`
 **Read only**
-Returns number of items stored in the secure storage.
+Number of items stored in the secure storage.
 
-**Returns**: `int` - returns the number of items  
 
 
 <a name="securestorage-setitem" id="securestorage-setitem"></a>
 
 ## setItem(key, value)
-Store a key and value pair after the value is encrypted in a secure storage
+Stores a key and value pair after the value is encrypted in a secure storage.
 
-**Returns**: `Promise<void>` - : resolved when the value is stored. rejected when the value is empty or not stored.  
+**Returns**: `Promise<void>` Promise that resolves when the value is stored, rejected when the value is empty or not stored.  
 **Throws**:
 
-- `TypeError` : thrown when either key or value doesn't have one of acceptable types.
+- `TypeError` If either key or value doesn't have one of acceptable types.
 
 
 | Param | Type | Description |
 | --- | --- | --- |
-| key | `string` | : a key to set value |
-| value | `string` \| `ArrayBuffer` \| `TypedArray` | : a value for a key. |
+| key | `string` | Key to set value |
+| value | `string` \| `ArrayBuffer` \| `TypedArray` | Value for a key. |
 
 
 
 <a name="securestorage-getitem" id="securestorage-getitem"></a>
 
 ## getItem(key)
-Retrieve a value associated with a provided key after the value is being decrypted from a secure storage.
+Retrieves a value associated with a provided key after the value is being decrypted from a secure storage.
 
-**Returns**: `Promise<Uint8Array>` - : a value as buffer  
+**Returns**: `Promise<Uint8Array>` Promise that resolves with an Uint8Array  
 **Throws**:
 
-- `TypeError` : thrown when a key doesn't have an acceptable type.
+- `TypeError` If a key doesn't have an acceptable type.
 
 
 | Param | Type | Description |
 | --- | --- | --- |
-| key | `string` | : a key to get value |
+| key | `string` | Key to get value |
 
 
 
 <a name="securestorage-removeitem" id="securestorage-removeitem"></a>
 
 ## removeItem(key)
-Remove a value associated with a provided key
+Removes a value associated with a provided key.
 
-**Returns**: `Promise<void>` - : resolved when the value associated with the key is removed. rejected when the value is neither removed nor found.  
+**Returns**: `Promise<void>` Promise that resolves when the value associated with the key is removed, rejected when the value is neither removed nor found.  
 **Throws**:
 
-- `TypeError` : thrown when a key doesn't have an acceptable type.
+- `TypeError` If a key doesn't have an acceptable type.
 
 
 | Param | Type | Description |
 | --- | --- | --- |
-| key | `string` | : a key to remove value |
+| key | `string` | Key to remove value |
 
 
 
 <a name="securestorage-key" id="securestorage-key"></a>
 
-## key()
-Returns a key which is stored at the given index
+## key(index)
+Returns a key which is stored at the given index.
 
-**Returns**: `int` - Returns the key which is stored at the given index.  
+**Returns**: `number` - Key which is stored at the given index.  
 
-| Param | Type |
-| --- | --- |
-| index. | `number` | 
+| Param | Type | Description |
+| --- | --- | --- |
+| index | `number` | Integer representing the number of the key |
 
 
 
@@ -101,6 +100,6 @@ Returns a key which is stored at the given index
 ## clear()
 Clear all values in a secure storage.
 
-**Returns**: `Promise<void>` - : resolved when all the items are cleared. rejected when there is no item to clear or clear failed.  
+**Returns**: `Promise<void>` Promise that resolves when all the items are cleared. rejected when there is no item to clear or clear failed.  
 
   

@@ -224,8 +224,11 @@ if invalid parameter format or value is passed
 ```js
 const fd = await fs.open("plugin-data:/fileToWrite.txt", "w+");
 const data = "It was a dark and stormy night.\n";
-const srcBuffer = new TextEncoder().encode(data).buffer;
-const { bytesWritten } = await fs.write(fd, srcBuffer, 0, data.length, 0);
+const srcBuffer = new Uint8Array(data.length);
+for (let i = 0; i < data.length; i++) {
+ srcBuffer[i] = data.charCodeAt(i);
+}
+const { bytesWritten } = await fs.write(fd, srcBuffer.buffer, 0, srcBuffer.length, 0);
 await fs.close(fd);
 ```
 
