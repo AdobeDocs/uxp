@@ -19,8 +19,8 @@ index_desc: Changelog in UXP version
 
 
 ### Updated
-- [FormData's append](./reference-js/Global%20Members/Data%20Transfers/FormData.md#append--namevaluefilename) now supports `Blob` as additional parameter.
-- `Spectrum Web Components` support in `React` context is now available for all the 30 components.
+- [FormData's append](./reference-js/Global%20Members/Data%20Transfers/FormData.md#append--namevaluefilename) now supports `Blob` as an additional parameter.
+- `Spectrum Web Components` support in `React` context is now available for all 30 components.
     - Sample plugin for UXP-SWC plugin in React context can be referred [here](https://github.com/AdobeDocs/uxp-photoshop-plugin-samples/tree/main/swc-uxp-react-starter)
 ### Fixed
 - Tab Navigation not working for several SWC Components is now fixed
@@ -29,6 +29,15 @@ index_desc: Changelog in UXP version
     - [alert()](./reference-js/Global%20Members/HTML%20DOM/alert.md)
     - [prompt()](./reference-js/Global%20Members/HTML%20DOM/prompt.md)
     - [confirm()](./reference-js/Global%20Members/HTML%20DOM/confirm.md)
+
+## UDT v2.0
+
+### New
+- UXP Playground to experiment with APIs. Click on the 'Playground' tab next to 'Developer Workspace' to select an app and get started.
+
+### Updated
+- Plugin actions are surfaced based on the 'Status' of your plugin in the Developer Workspace
+
 
 ## UXP v7.2.0
 ### New

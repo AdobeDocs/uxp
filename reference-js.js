@@ -587,7 +587,7 @@ module.exports=[
                 "path": "/uxp-api/reference-js/Modules/uxp/XMP/XMP Classes/XMPPacketInfo/"
               },
             ],
-            "path": "/uxp-api/reference-js/Modules/uxp/XMP/"
+            "path": "/uxp-api/reference-js/Modules/uxp/XMP/getting-started/"
           }
         ],
         "path": "/uxp-api/reference-js/Modules/uxp/"

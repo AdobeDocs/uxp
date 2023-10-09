@@ -19,6 +19,6 @@ Fetches a resource from the network.
 | [init.method] | `string` | HTTP request method. The default value is "GET". |
 | [init.headers] | `Headers` | HTTP request headers to add. |
 | [init.body] | `string` \| `ArrayBuffer` \| `TypedArray` \| `Blob` \| `FormData` \| `ReadableStream` \| `URLSearchParams` | Body to add to HTTP request. |
-| [init.credentials] | `string` | Indicates whether to send cookies. The default value is "include". Possible values and functions are as follows: <ul style="list-style: none;">  <li>"omit" : cookies are NOT sent.  <li>"include" : cookies are sent. </ul> |
+| [init.credentials] | `string` | Indicates whether to send cookies. The default value is "include". Possible values and functions are as follows: <ul style="list-style: none;">  <li>"omit" : cookies are NOT sent.  </li><li>"include" : cookies are sent.</li> </ul> |
 
 

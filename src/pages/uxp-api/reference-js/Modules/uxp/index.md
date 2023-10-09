@@ -6,5 +6,5 @@
 * [Plugin Manager](Plugin%20Manager/index.md)
 * [User Information](User%20Information/index.md)
 * [Versions](Versions/index.md)
-* [XMP](XMP/index.md)
+* [XMP](XMP/getting-started/index.md)
 * [shell](shell/index.md)

@@ -20,22 +20,95 @@ const xmp = require("uxp").xmp;
 
 After importing the module, you can access the top-level objects of the XMP scripting API.
 
-| Class | Description |
-| --- | --- |
-| [XMPMeta](../XMP%20Classes/XMPMeta.md) | Provides interface to work with XMP metadata (got via the hosts DOM APIs) for reading, writing and modifying. |
-| [XMPFile](../XMP%20Classes/XMPFile.md) | Provides interface to work with XMP metadata on a file directly, (instead of depending on host to fetch the XMP metadata contents). |
-| [XMPUtils](../XMP%20Classes/XMPUtils.md) | Provides additional utility functions for array handling. |
-| [XMPDateTime](../XMP%20Classes/XMPDateTime.md) | Represents date-time values. |
-| [XMPConst](../XMP%20Classes/XMPConst.md) | Contains numeric and string constant values for use with the JavaScript API. |
+<table columnWidths="20,80">
+    <tr>
+        <th>Class</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>
+            <a href="../XMP%20Classes/XMPMeta.md">XMPMeta</a>
+        </td>
+        <td>
+            Provides interface to work with XMP metadata (got via the hosts DOM APIs) for reading, writing and
+            modifying.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../XMP%20Classes/XMPFile.md">XMPFile</a>
+        </td>
+        <td>
+            Provides interface to work with XMP metadata on a file directly, (instead of depending on host to fetch the
+            XMP metadata contents).
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../XMP%20Classes/XMPUtils.md">XMPUtils</a>
+        </td>
+        <td>
+            Provides additional utility functions for array handling.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../XMP%20Classes/XMPDateTime.md">XMPDateTime</a>
+        </td>
+        <td>
+            Represents date-time values
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../XMP%20Classes/XMPConst.md">XMPConst</a>
+        </td>
+        <td>
+            Contains numeric and string constant values for use with the JavaScript API
+        </td>
+    </tr>
+</table>
 
 The top-level objects provide access to additional support classes that encapsulate individual metadata properties, file information, and XMP packet information, and a utility that allows iteration through properties.
 
-| Class | Description |
-| --- | --- |
-| [XMPIterator](../XMP%20Classes/XMPIterator.md) | Allows iteration through properties in an XMPMeta object. |
-| [XMPProperty](../XMP%20Classes/XMPProperty.md) | Describes a metadata property. |
-| [XMPFileInfo](../XMP%20Classes/XMPFileInfo.md) | Describes a file. |
-| [XMPPacketInfo](../XMP%20Classes/XMPPacketInfo.md) | Describes a raw XMP packet in a file. |
+<table columnWidths="20,80">
+    <tr>
+        <th>Class</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>
+            <a href="../XMP%20Classes/XMPIterator.md">XMPIterator</a>
+        </td>
+        <td>
+            Allows iteration through properties in an XMPMeta object.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../XMP%20Classes/XMPProperty.md">XMPProperty</a>
+        </td>
+        <td>
+            Describes a metadata property.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../XMP%20Classes/XMPFileInfo.md">XMPFileInfo</a>
+        </td>
+        <td>
+            Describes a file.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../XMP%20Classes/XMPPacketInfo.md">XMPPacketInfo</a>
+        </td>
+        <td>
+            Describes a raw XMP packet in a file
+        </td>
+    </tr>
+</table>
 
 See specific object reference for details of the class, its properties and methods.
 
@@ -102,7 +175,7 @@ Reads and parses the metadata. If an image file does not contain XMP metadata, t
 Deletes the list of existing creators, and adds a new creator value.
 
 Writes the modified metadata back to the file.
-
+<br></br>
 <b>Note:</b> The below code snippet shows the recommended way to work with XMP data without opening the files in the host application.
 
 ```js
@@ -145,7 +218,7 @@ async function xmpBatchProcessing() {
 
  <h3>Photoshop Only - Writing to an active document</h3>
  The below example will be honoured only in <b>Photoshop</b> and must NOT be included for other Adobe host apps.
- 
+ <br></br>
  <b>Note:</b> The below code snippet shows the recommended way to get XMP data using batchplay from an opened documents(active documents) in Photoshop.
 
  ```js
