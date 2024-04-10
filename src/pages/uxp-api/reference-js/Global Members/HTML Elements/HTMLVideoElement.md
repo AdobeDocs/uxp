@@ -124,6 +124,24 @@ TextTrackList object listing all of the TextTrack objects representing the media
 **See:**: https://developer.mozilla.org/en-US/docs/Web/API/TextTrackList  
 
 
+<a name="htmlvideoelement-videowidth" id="htmlvideoelement-videowidth"></a>
+
+## videoWidth : `number`
+**Read only**
+Width of the video in pixel.
+
+**Since**: v7.4.0  
+
+
+<a name="htmlvideoelement-videoheight" id="htmlvideoelement-videoheight"></a>
+
+## videoHeight : `number`
+**Read only**
+Height of the video in pixel.
+
+**Since**: v7.4.0  
+
+
 <a name="htmlvideoelement-playbackrate" id="htmlvideoelement-playbackrate"></a>
 
 ## playbackRate : `number`
@@ -526,6 +544,16 @@ It notifies an error over the error event.
 Pause the playback of the media. If the media is already in a paused state, no effect.
 
 **Emits**: `event:uxpvideopause`  
+
+
+<a name="htmlvideoelement-fastseek" id="htmlvideoelement-fastseek"></a>
+
+## fastSeek()
+Seeks the media to the new time quickly with precision tradeoff.
+
+**Emits**: `event:seeked`  
+**See**: [fastSeek](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/fastSeek)  
+**Since**: v7.4.0  
 
 
 <a name="htmlvideoelement-stop" id="htmlvideoelement-stop"></a>
@@ -1006,25 +1034,27 @@ Checks if the element has pointer capture for the specified pointer.
 
 <a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
 
-## addEventListener(eventName, callback, [capture])
+## addEventListener(eventName, callback, options)
+**See**: [EventTarget - addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)  
 
-| Param | Type | Default |
+| Param | Type | Description |
 | --- | --- | --- |
-| eventName | `*` |  | 
-| callback | `*` |  | 
-| [capture] | `boolean` | `false` | 
+| eventName | `*` |  |
+| callback | `*` |  |
+| options | `boolean` \| `Object` | Boolean value denoting capture value or options object. Currently supports only capture in options object ({ capture: bool_value }). |
 
 
 
 <a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
 
-## removeEventListener(eventName, callback, [capture])
+## removeEventListener(eventName, callback, options)
+**See**: [EventTarget - removeEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)  
 
-| Param | Type | Default |
+| Param | Type | Description |
 | --- | --- | --- |
-| eventName | `*` |  | 
-| callback | `*` |  | 
-| [capture] | `boolean` | `false` | 
+| eventName | `*` |  |
+| callback | `*` |  |
+| options | `boolean` \| `Object` | Boolean value denoting capture value or options object. Currently supports only capture in options object ({ capture: bool_value }). |
 
 
 

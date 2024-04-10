@@ -9,6 +9,27 @@
 ## WebSocket(url, protocols)
 WebSocket provides the API for creating and managing a WebSocket connection to a server,
 as well as for sending and receiving data on the connection.
+In order to leverage `WebSocket`, update the `manifest.json` with the `network.domains` permission shown in the example section
+<br><b>Example:</b></br>
+```json
+{
+  "permissions": {
+      "network": {
+          "domains": [
+              "https://www.adobe.com",
+              "https://*.adobeprerelease.com",
+              "wss://*.myplugin.com"
+          ]
+      }
+  }
+}
+```
+<b>Limitation:</b>
+From UXP v7.4.0 onwards `permissions.network.domains` does not support WildCards in top-level domains.
+Example:
+```json
+"domains": [ "https://www.adobe.*", "https://www.*" ]
+```
 
 **Throws**:
 
@@ -32,11 +53,33 @@ var ws = new WebSocket("wss://demos.kaazing.com/echo","wss");
 **Read only**
 Current state of the WebSocket connection.
 One of the following values:
-
-     CONNECTING(0)   : Socket has been created. The connection is not yet open.
-     OPEN(1)         : Connection is open and ready to communicate.
-     CLOSING(2)      : Connection is in the process of closing.
-     CLOSED(3)       : Connection is closed or couldn't be opened.
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Status</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>CONNECTING</td>
+    <td>Socket has been created. The connection is not yet opened.</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>OPEN</td>
+    <td>Connection is open and ready to communicate.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>CLOSING</td>
+    <td>Connection is in the process of closing.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>CLOSED</td>
+    <td>Connection is closed or couldn't be opened.</td>
+  </tr>
+</table>
 
 
 
@@ -67,23 +110,16 @@ This value does not reset to zero when the connection is closed;
 If you keep calling send(), this will continue to climb.
 
 
-<a name="module-global-websocket-binarytype" id="module-global-websocket-binarytype"></a>
 
-## binaryType
+<a name="module-global--websocket-binarytype" id="module-global--websocket-binarytype"></a>
 
-| Param | Type | Description |
-| --- | --- | --- |
-| data | `string` | A string indicating the type of binary data being transmitted by the connection. This should be either "blob" if DOM Blob objects are being used or "arraybuffer" if ArrayBuffer objects are being used. |
-
+## binaryType : `string`
+Type of the binary data being received over WebSocket connection.
+Available binary types: "blob", "arraybuffer".
 
 
-<a name="module-global-websocket-binarytype" id="module-global-websocket-binarytype"></a>
 
-## binaryType ⇒ `string`
-**Returns**: `string` - returns the string indicating the binary data type.  
-
-
-<a name="module-global-websocket-send" id="module-global-websocket-send"></a>
+<a name="module-global--websocket-send" id="module-global--websocket-send"></a>
 
 ## send(data)
 Enqueues the specified data to be transmitted to the other end over the WebSocket connection,
