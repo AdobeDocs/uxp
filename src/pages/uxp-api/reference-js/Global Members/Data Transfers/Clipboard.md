@@ -47,8 +47,8 @@ navigator.clipboard.getContent();
 
 <a name="clipboard-write" id="clipboard-write"></a>
 
-## write(text)
-Write data to clipboard.This can be used to implement cut and copy functionality.
+## write(data)
+Write data to clipboard. This can be used to implement cut and copy functionality.
 
 **Returns**: `Promise`  
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write  
@@ -56,7 +56,7 @@ Write data to clipboard.This can be used to implement cut and copy functionality
 
 | Param | Type | Description |
 | --- | --- | --- |
-| text | `object` | The text to set. |
+| data | `object` | The data to set. |
 
 **Example**  
 ```js
@@ -67,7 +67,7 @@ navigator.clipboard.write({"text/plain": "Hello!"});
 <a name="clipboard-writetext" id="clipboard-writetext"></a>
 
 ## writeText(text)
-Write text to clipboard.This can be used to implement cut and copy text functionality.
+Write text to clipboard. This can be used to implement cut and copy text functionality.
 
 **Returns**: `Promise`  
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText  

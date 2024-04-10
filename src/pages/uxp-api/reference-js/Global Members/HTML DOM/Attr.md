@@ -286,25 +286,27 @@ Creates an instance of Attr.
 
 <a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
 
-## addEventListener(eventName, callback, [capture])
+## addEventListener(eventName, callback, options)
+**See**: [EventTarget - addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)  
 
-| Param | Type | Default |
+| Param | Type | Description |
 | --- | --- | --- |
-| eventName | `*` |  | 
-| callback | `*` |  | 
-| [capture] | `boolean` | `false` | 
+| eventName | `*` |  |
+| callback | `*` |  |
+| options | `boolean` \| `Object` | Boolean value denoting capture value or options object. Currently supports only capture in options object ({ capture: bool_value }). |
 
 
 
 <a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
 
-## removeEventListener(eventName, callback, [capture])
+## removeEventListener(eventName, callback, options)
+**See**: [EventTarget - removeEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)  
 
-| Param | Type | Default |
+| Param | Type | Description |
 | --- | --- | --- |
-| eventName | `*` |  | 
-| callback | `*` |  | 
-| [capture] | `boolean` | `false` | 
+| eventName | `*` |  |
+| callback | `*` |  |
+| options | `boolean` \| `Object` | Boolean value denoting capture value or options object. Currently supports only capture in options object ({ capture: bool_value }). |
 
 
 

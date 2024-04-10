@@ -20,6 +20,7 @@ However, if the value is a File object value, the File object is cloned but its 
 Consequently, the File object and the cloned one refer to the same content.
 
 **See**: [FormData - append](https://developer.mozilla.org/en-US/docs/Web/API/FormData/append)  
+**Since**: v7.3.0  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -35,6 +36,7 @@ Consequently, the File object and the cloned one refer to the same content.
 Removes all entries from FormData whose name is same with the input name.
 
 **See**: [FormData - delete](https://developer.mozilla.org/en-US/docs/Web/API/FormData/delete)  
+**Since**: v7.3.0  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -50,6 +52,7 @@ The key of each pair is a string object and the value is either a string or a Bl
 
 **Returns**: `iterator` - Iterator for all key-value pairs in FormData.  
 **See**: [FormData - entries](https://developer.mozilla.org/en-US/docs/Web/API/FormData/entries)  
+**Since**: v7.3.0  
 
 
 <a name="module-global--formdata-get" id="module-global--formdata-get"></a>
@@ -60,6 +63,7 @@ Use getAll() if you expect multiple values and want all of them.
 
 **Returns**: `string` \| `Blob` - Value whose key matches the specified name. Otherwise, null.  
 **See**: [FormData - get](https://developer.mozilla.org/en-US/docs/Web/API/FormData/get)  
+**Since**: v7.3.0  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -74,6 +78,7 @@ Returns all the values associated with a given key from within a FormData object
 
 **Returns**: `Array` - Array of values whose key matches the specified name. Otherwise, an empty list.  
 **See**: [FormData - getAll](https://developer.mozilla.org/en-US/docs/Web/API/FormData/getAll)  
+**Since**: v7.3.0  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -88,6 +93,7 @@ Test if a FormData object contains a certain key.
 
 **Returns**: `boolean` - True if a key of FormData matches the specified name. Otherwise, false.  
 **See**: [FormData - has](https://developer.mozilla.org/en-US/docs/Web/API/FormData/has)  
+**Since**: v7.3.0  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -103,6 +109,7 @@ The keys are strings.
 
 **Returns**: `iterator` - Iterator of FormData's keys.  
 **See**: [FormData - keys](https://developer.mozilla.org/en-US/docs/Web/API/FormData/keys)  
+**Since**: v7.3.0  
 
 
 <a name="module-global--formdata-set" id="module-global--formdata-set"></a>
@@ -113,6 +120,7 @@ replaces the first existing entry with new entry and removes the others.
 If not, appends a new entry with name/value.
 
 **See**: [FormData - set](https://developer.mozilla.org/en-US/docs/Web/API/FormData/set)  
+**Since**: v7.3.0  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -130,5 +138,6 @@ The values are strings or Blob objects.
 
 **Returns**: `iterator` - Iterator of FormData's values.  
 **See**: [FormData - values](https://developer.mozilla.org/en-US/docs/Web/API/FormData/values)  
+**Since**: v7.3.0  
 
   

@@ -24,16 +24,25 @@ WebViews are resource intensive since it launches multiple processes per plugin
 and therefore should be used only in cases where you cannot create the plugin using UXP features.<br></br>
 
 **Note:**<br></br>
-1. WebViews support was introduced in UXP v6.0 to be used only in **Dialogs**. The reasoning here was to limit WebViews usage in persistent panels. Later due to overwhelming requests, WebView support was added for `Panels` with UXP v6.4.
-2. WebViews will need manifest version v5 or above.
-3. Checkout the template available in `UXP Developer Tool` for a quick getting starter plugin for WebView in UXP.
-4. `requiredPermissions.webview.enableMessageBridge=“localAndRemote”` is required for Plugin & WebView communication via postMessage.
+1. WebViews need manifest version v5 or above.
+2. Checkout the template available in `UXP Developer Tool` for a quick getting starter plugin for WebView in UXP.
+3. `requiredPermissions.webview.enableMessageBridge=“localAndRemote”` is required for Plugin & WebView communication via postMessage.
 
 **Limitations:**<br></br>
 1. Only remote content (including localhost) is allowed at present. This means you will not be able to load local html files from plugin folders in UXP WebView. This behaviour is due to limitations on WindowsOS and **<i>may</i>** be enabled in later releases.
 2. Any links in a UXP WebView will not open in a new window.
 e.g., In a browser, clicking `<a href="https://www.adobe.com" target="_blank">` would create a new Window
-and open `https://www.adobe.com` from the new Window or JavaScript alert() pops up a new Window. UXP WebView doesn't permit this.
+and open `https://www.adobe.com` from the new Window or JavaScript alert() pops up a new Window. UXP WebView doesn't permit this.<br></br>
+3. From UXP v7.4 onwards the manifest permission `requiredPermissions.webview.domains` does not allow `wildcard (*)` in the top-level domain names.
+e.g., Domain lists below are NOT supported
+```json
+"requiredPermissions": {
+ "webview": {
+     "domains": ["https://www.*", "https://www.adobe.*"],
+     "allow": "yes"
+  }
+}
+```
 
 In your plugin's code, add a WebView element in the desired location.
 The element can take attributes such as id , height , and src to specify the WebView's properties<br></br>
