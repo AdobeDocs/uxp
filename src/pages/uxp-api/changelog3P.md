@@ -8,11 +8,13 @@ index_desc: Changelog in UXP version
 - UXP Alerts ([alert](./reference-js/Global%20Members/HTML%20DOM/alert.md), [prompt](./reference-js/Global%20Members/HTML%20DOM/prompt.md), [confirm](./reference-js/Global%20Members/HTML%20DOM/confirm.md)) have been moved back to beta due to a few inherent instabilities in this feature. While we work on addressing these issues, the feature can be accessed using the feature flag `enableAlerts` in the manifest.json file. Also, note that UXP alerts will be `available only in Plugins` and `not in scripts`.
 - [WebView](./reference-js/Global%20Members/HTML%20Elements/HTMLWebViewElement.md) no longer supports `wildcards` at the top-level `domain` name.
 
+
 ### Fixed
 - XMP in Scripts.
 - Plugin crashes while using [fit-content](https://forums.creativeclouddeveloper.com/t/ps-2024-crashes-when-opening-my-uxp-plugin/6840/7) 
 - WebView support for [file selector](https://forums.creativeclouddeveloper.com/t/macos-uxp-webview-for-photoshop-is-missing-file-selector/6843) in MacOS
 - GUID returning hashed empty string
+- Updated missing docs for pseudo-class [defined](./reference-css/Pseudo-classes/defined.md) (Available since UXP v6.0)
 
 ## UXP v7.3.0
 ### New

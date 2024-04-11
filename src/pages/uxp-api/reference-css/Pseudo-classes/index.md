@@ -1,6 +1,7 @@
 # Pseudo-classes
 * [active](active.md)
 * [checked](checked.md)
+* [defined](defined.md)
 * [disabled](disabled.md)
 * [empty](empty.md)
 * [enabled](enabled.md)
