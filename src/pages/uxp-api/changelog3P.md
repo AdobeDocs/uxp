@@ -6,7 +6,8 @@ index_desc: Changelog in UXP version
 ## UXP v7.4.0
 ### Updated
 - UXP Alerts ([alert](./reference-js/Global%20Members/HTML%20DOM/alert.md), [prompt](./reference-js/Global%20Members/HTML%20DOM/prompt.md), [confirm](./reference-js/Global%20Members/HTML%20DOM/confirm.md)) have been moved back to beta due to a few inherent instabilities in this feature. While we work on addressing these issues, the feature can be accessed using the feature flag `enableAlerts` in the manifest.json file. Also, note that UXP alerts will be `available only in Plugins` and `not in scripts`.
-- [WebView](./reference-js/Global%20Members/HTML%20Elements/HTMLWebViewElement.md) no longer supports `wildcards` at the top-level `domain` name.
+- Wildcards (*) at the top-level `domain` name are not allowed. Please ensure you revisit the `permissions` setup in manifest.json for [WebView](./reference-js/Global%20Members/HTML%20Elements/HTMLWebViewElement.md), and network calls [XMLHttp](./reference-js/Global%20Members/Data%20Transfers/XMLHttpRequest.md) [fetch](./reference-js/Global%20Members/Data%20Transfers/fetch.md)
+- New doc for tracking the [mapping between Spectrum widgets and Spectrum Web Components](./reference-spectrum/spectrum-widgets-to-swc-mapping/index.md) in UXP
 
 
 ### Fixed
