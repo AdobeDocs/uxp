@@ -10,8 +10,11 @@
 XMLHttpRequest objects are used to interact with servers.
 You can retrieve data from a URL without having to do a full page refresh.
 This enables a Web page to update just part of a page without disrupting what the user is doing.
+
 In order to leverage `XMLHttpRequest`, update the `manifest.json` with the `network.domains` permission shown in the example section
-<br><b> Example <b></br>
+
+<b> Example <b>
+
 ```json
 {
   "permissions": {
@@ -25,9 +28,10 @@ In order to leverage `XMLHttpRequest`, update the `manifest.json` with the `netw
   }
 }
 ```
+
 <b>Limitation:</b>
-From UXP v7.4.0 onwards `permissions.network.domains` does not support WildCards in top-level domains.
-Example:
+From UXP v7.4.0 onwards `permissions.network.domains` does not support WildCards in top-level domains. Example:
+
 ```json
 "domains": [ "https://www.adobe.*", "https://www.*" ]
 ```
@@ -491,7 +495,7 @@ xhr.send();
 ```js
 const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = () => {
-    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200){
         console.log(xhr.responseText);
     }
 };

@@ -27,6 +27,7 @@ confirm("This is confirmation message");
 
 <b> Note: </b>
 1. Since UXP v7.4, `confirm()` can only be invoked in `plugin` via the featureFlags `enableAlerts`. Update your Manifest v5 with the following
+
 ```json
 "featureFlags": {
      "enableAlerts": true

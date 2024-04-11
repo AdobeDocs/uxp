@@ -10,7 +10,8 @@
 WebSocket provides the API for creating and managing a WebSocket connection to a server,
 as well as for sending and receiving data on the connection.
 In order to leverage `WebSocket`, update the `manifest.json` with the `network.domains` permission shown in the example section
-<br><b>Example:</b></br>
+<b>Example:</b>
+
 ```json
 {
   "permissions": {

@@ -16,6 +16,7 @@ Fetches a resource from the network.
 In order to leverage `fetch`, update the `manifest.json` with the `network.domains` permission shown below.
 
 <b>Example:</b>
+
 ```json
 {
   "permissions": {
@@ -31,7 +32,8 @@ In order to leverage `fetch`, update the `manifest.json` with the `network.domai
 ```
 <b>Limitation:</b>
 From UXP v7.4.0 onwards `permissions.network.domains` does not support wildCards in top-level domains.
-<br><b>Example:</b></br>
+<b>Example:</b>
+
 ```json
 "domains": [ "https://www.adobe.*", "https://www.*" ]
 ```
