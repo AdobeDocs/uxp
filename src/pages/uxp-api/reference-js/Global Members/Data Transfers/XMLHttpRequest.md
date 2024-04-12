@@ -13,7 +13,7 @@ This enables a Web page to update just part of a page without disrupting what th
 
 In order to leverage `XMLHttpRequest`, update the `manifest.json` with the `network.domains` permission shown in the example section
 
-<b> Example <b>
+<b> Example </b>
 
 ```json
 {
