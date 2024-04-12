@@ -28,7 +28,7 @@ There are several variations that are supported.
 Renders a "call to action"-style button. This is the default variant if no variant is provided.
 
 ```html
-<sp-button variant="cta">Click me</sp-buttom>
+<sp-button variant="cta">Click me</sp-button>
 ```
 
 ### Primary
@@ -36,7 +36,7 @@ Renders a "call to action"-style button. This is the default variant if no varia
 Renders a "primary" button.
 
 ```html
-<sp-button variant="primary">Click me</sp-buttom>
+<sp-button variant="primary">Click me</sp-button>
 ```
 
 ### Secondary
@@ -44,7 +44,7 @@ Renders a "primary" button.
 Renders a "secondary" button.
 
 ```html
-<sp-button variant="secondary">Click me</sp-buttom>
+<sp-button variant="secondary">Click me</sp-button>
 ```
 
 ### Warning
@@ -56,7 +56,7 @@ Renders a button intended to be used to indicate negative consequences to the ac
 Spectrum Web Components now uses a `negative` variant. This will be addressed in a future update.
 
 ```html
-<sp-button variant="warning">Click me</sp-buttom>
+<sp-button variant="warning">Click me</sp-button>
 ```
 
 ### Over Background
@@ -64,7 +64,7 @@ Spectrum Web Components now uses a `negative` variant. This will be addressed in
 Renders a button that's suitable over a background (such as an image).
 
 ```html
-<sp-button variant="overBackground">Over an Image</sp-buttom>
+<sp-button variant="overBackground">Over an Image</sp-button>
 ```
 
 ### Disabled
