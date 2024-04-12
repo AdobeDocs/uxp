@@ -2,13 +2,14 @@
 <a name="request" id="request"></a>
 
 # window.Request
+Request class represents a resource request.
+
+**Since**: v7.3.0  
 
 
 <a name="new-request-new" id="new-request-new"></a>
 
 ## Request(input, options)
-Request class represents a resource request.
-
 **Throws**:
 
 - `TypeError` If options.body exists and options.method is either "GET" or "HEAD".
@@ -17,7 +18,7 @@ Request class represents a resource request.
 | Param | Type | Description |
 | --- | --- | --- |
 | input | `string` \| `Request` | Defines the resource that you wish to fetch. This can either be:          A string containing the URL of the resource you want to fetch.          A Request object. |
-| options | `Object` | 'Optional' object containing any custom settings that you want to apply to the request. |
+| options | `Object` | '(Optional)' object containing any custom settings that you want to apply to the request. |
 | options.method | `string` | Request method. The default is "GET". |
 | options.headers | `string` \| `Headers` | Any headers you want to add to your request. |
 | options.body | `Blob` \| `ArrayBuffer` \| `TypedArray` \| `FormData` \| `string` \| `ReadableStream` \| `URLSearchParams` | Any body that you want add to your request. |

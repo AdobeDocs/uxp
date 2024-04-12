@@ -2,17 +2,18 @@
 <a name="headers" id="headers"></a>
 
 # windows.Headers
+Headers class represents HTTP request and response headers.
+
+**Since**: v7.3.0  
 
 
 <a name="new-headers-new" id="new-headers-new"></a>
 
-## Headers(init)
-Headers class represents HTTP request and response headers.
-
+## Headers([init])
 
 | Param | Type | Description |
 | --- | --- | --- |
-| init | `string` \| `Headers` | Object containing any HTTP headers you want to pre-populate your Headers with. |
+| [init] | `Headers` \| `Array<{string, string}>` \| `Object` | An existing Headers object, an array of name-value pairs or object literal with string values. |
 
 
 

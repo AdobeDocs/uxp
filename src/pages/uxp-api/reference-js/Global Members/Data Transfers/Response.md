@@ -2,13 +2,14 @@
 <a name="response" id="response"></a>
 
 # window.Response
+Response class represents a resource request.
+
+**Since**: v7.3.0  
 
 
 <a name="new-response-new" id="new-response-new"></a>
 
 ## Response([body], [options])
-Response class represents a resource request.
-
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |

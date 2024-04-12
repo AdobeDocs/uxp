@@ -24,12 +24,10 @@ To understand Spectrum Web Components (popularly known as SWC), you must first f
 [Spectrum Web Components](https://opensource.adobe.com/spectrum-web-components/) are open-source Adobe Spectrum-styled Web Components. UXP v7.0 introduces the support for Web Components and Spectrum Web Components (SWC).
 
 
-
-
 ## Getting started
 
-
 __Step 1__: Enable SWC in manifest.json
+
 - Use `manifestVersion` version 5 or above
 - Enable the `enableSWCSupport` feature flag
 
@@ -79,7 +77,6 @@ The following samples are available for you to get started quickly
 
 Make sure you follow the `README` of the above `plugins`.
 
-
 ## List of supported SWC
 Refer to the table below for the list of the components and their variants.
 
@@ -99,7 +96,6 @@ The status color of each variant represents its development state: <br></br>
 There are some known issues across components which include :
 1. `RTL` Direction parameter not working with sp-theme.
 2. Keyboard accessibility issues with some components(tab-navigation issue with Tags, side-nav , Switch, Checkbox, Picker-button, radio, Toast, button and Spacebar action on buttons)
-
 
 
 
