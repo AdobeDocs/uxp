@@ -6,8 +6,8 @@
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| preload | `string` |  | Determines how much the media data be loaded when the plugin loads.      This can be one of the followings. Default is "metadata".      <ul>          <li>'none': Video should not be loaded</li>          <li>'metadata': Only video metadata is fetched</li>          <li>'auto': The whole video file can be downloaded</li>          <li>''(empty string): Synonym of the 'auto' value</li>      </ul>      example: <br></br>`<video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" preload="metadata"></video>` |
-| autoplay | `boolean` | `false` | Video automatically begins to play back as soon as loading the data.      example: <br></br>`<video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" autoplay></video>` |
+| preload | `string` |  | Determines how much the media data be loaded when the plugin loads.      This can be one of the followings. Default is "metadata".      <ul>          <li>'none': Video should not be loaded</li>          <li>'metadata': Only video metadata is fetched</li>          <li>'auto': The whole video file can be downloaded</li>          <li>''(empty string): Synonym of the 'auto' value</li>      </ul>      example: <br></br>`<video src="https://images-tv.adobe.com/mpcv3/b6a5d5f7-5a6c-4bd6-9ee9-ddb6c9c779b3_1564010305.854x480at800_h264.mp4" preload="metadata"></video>` |
+| autoplay | `boolean` | `false` | Video automatically begins to play back as soon as loading the data.      example: <br></br>`<video src="https://images-tv.adobe.com/mpcv3/b6a5d5f7-5a6c-4bd6-9ee9-ddb6c9c779b3_1564010305.854x480at800_h264.mp4" autoplay></video>` |
 
 
 
@@ -25,6 +25,19 @@ Current playback time in seconds.
 The seeked event is fired since v7.3.0
 
 **Emits**: `event:seeked`  
+**Example**  
+```js
+<video id="sampleVideo"  src="https://images-tv.adobe.com/mpcv3/b6a5d5f7-5a6c-4bd6-9ee9-ddb6c9c779b3_1564010305.854x480at800_h264.mp4" preload="metadata">
+</video>
+<script>
+let vid = document.getElementById("sampleVideo");
+vid.play();
+vid.currentTime = 10;
+vid.addEventListener("seeked", (ev) => {
+    console.log("Event - seeked");
+});
+</script>
+```
 
 
 <a name="htmlvideoelement-duration" id="htmlvideoelement-duration"></a>
@@ -32,6 +45,17 @@ The seeked event is fired since v7.3.0
 ## duration : `number`
 Length of the media in seconds.
 
+**Example**  
+```js
+<video id="sampleVideo"  src="https://images-tv.adobe.com/mpcv3/b6a5d5f7-5a6c-4bd6-9ee9-ddb6c9c779b3_1564010305.854x480at800_h264.mp4" preload="metadata">
+</video>
+<script>
+let vid = document.getElementById("sampleVideo");
+vid.addEventListener("loadeddata", (ev) => {
+    vid.currentTime = vid.duration; //seek to the end of the video
+});
+</script>
+```
 
 
 <a name="htmlvideoelement-muted" id="htmlvideoelement-muted"></a>
@@ -524,7 +548,22 @@ Resets the media to its initial state and begins the process of selecting a medi
 and loading the media in preparation for playback.
 The amount of media data that is prefetched is determined by the value of 'preload' attribute.
 
-**Emits**: `event:uxpvideoload`  
+**Emits**: `event:loadedmetadata`, `event:loadeddata`, `event:uxpvideoload - Deprecated: Use loadeddata instead`  
+**Example**  
+```js
+<video id="sampleVideo"  src="https://images-tv.adobe.com/mpcv3/b6a5d5f7-5a6c-4bd6-9ee9-ddb6c9c779b3_1564010305.854x480at800_h264.mp4" preload="none">
+</video>
+<script>
+let vid = document.getElementById("sampleVideo");
+vid.load();
+vid.addEventListener("loadedmetadata", (ev) => {
+    console.log("Event - loadedmetadata");
+});
+vid.addEventListener("loadeddata", (ev) => {
+    console.log("Event - loadeddata");
+});
+</script>
+```
 
 
 <a name="htmlvideoelement-play" id="htmlvideoelement-play"></a>
@@ -535,7 +574,19 @@ Attempts to begin playback of the media.
 It notifies an error over the error event.
 
 **Returns**: `Promise<void>` Resolved when playback has been started, or rejected if playback cannot be started.  
-**Emits**: `event:uxpvideoplay`, `event:uxpvideocomplete`  
+**Emits**: `event:play`, `event:uxpvideoplay - Deprecated: Use play instead`, `event:ended`, `event:uxpvideocomplete - Deprecated: Use ended instead`  
+**Example**  
+```js
+<video id="sampleVideo"  src="https://images-tv.adobe.com/mpcv3/b6a5d5f7-5a6c-4bd6-9ee9-ddb6c9c779b3_1564010305.854x480at800_h264.mp4" preload="metadata">
+</video>
+<script>
+let vid = document.getElementById("sampleVideo");
+vid.play();
+vid.addEventListener("play", (ev) => {
+    console.log("Event - play");
+});
+</script>
+```
 
 
 <a name="htmlvideoelement-pause" id="htmlvideoelement-pause"></a>
@@ -543,7 +594,20 @@ It notifies an error over the error event.
 ## pause()
 Pause the playback of the media. If the media is already in a paused state, no effect.
 
-**Emits**: `event:uxpvideopause`  
+**Emits**: `event:pause`, `event:uxpvideopause - Deprecated: Use pause instead`  
+**Example**  
+```js
+<video id="sampleVideo"  src="https://images-tv.adobe.com/mpcv3/b6a5d5f7-5a6c-4bd6-9ee9-ddb6c9c779b3_1564010305.854x480at800_h264.mp4" preload="metadata">
+</video>
+<script>
+let vid = document.getElementById("sampleVideo");
+vid.play();
+vid.pause();
+vid.addEventListener("pause", (ev) => {
+    console.log("Event - pause");
+});
+</script>
+```
 
 
 <a name="htmlvideoelement-fastseek" id="htmlvideoelement-fastseek"></a>
@@ -554,6 +618,19 @@ Seeks the media to the new time quickly with precision tradeoff.
 **Emits**: `event:seeked`  
 **See**: [fastSeek](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/fastSeek)  
 **Since**: v7.4.0  
+**Example**  
+```js
+<video id="sampleVideo"  src="https://images-tv.adobe.com/mpcv3/b6a5d5f7-5a6c-4bd6-9ee9-ddb6c9c779b3_1564010305.854x480at800_h264.mp4" preload="metadata">
+</video>
+<script>
+let vid = document.getElementById("sampleVideo");
+vid.play();
+vid.fastSeek(10);
+vid.addEventListener("seeked", (ev) => {
+    console.log("Event - seeked");
+});
+</script>
+```
 
 
 <a name="htmlvideoelement-stop" id="htmlvideoelement-stop"></a>
@@ -561,7 +638,65 @@ Seeks the media to the new time quickly with precision tradeoff.
 ## stop()
 Pause the playback of the media and set the current playback time to the beginning.
 
-**Emits**: `event:uxpvideostop`  
+**Emits**: `event:uxpvideostop`, `event:seeked`  
+**Example**  
+```js
+<video id="sampleVideo"  src="https://images-tv.adobe.com/mpcv3/b6a5d5f7-5a6c-4bd6-9ee9-ddb6c9c779b3_1564010305.854x480at800_h264.mp4" preload="metadata">
+</video>
+<script>
+let vid = document.getElementById("sampleVideo");
+vid.play();
+vid.stop();
+vid.addEventListener("uxpvideostop", (ev) => {
+    console.log("Event - uxpvideostop");
+});
+vid.addEventListener("seeked", (ev) => {
+    console.log("Event - seeked");
+});
+</script>
+```
+
+
+<a name="element-append" id="element-append"></a>
+
+## append(...nodes)
+Inserts a set of Node objects or string objects after the last child of the Element.
+
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/append  
+**Since**: v8.0  
+
+| Param | Type |
+| --- | --- |
+| ...nodes | `Array<Node>` | 
+
+
+
+<a name="element-prepend" id="element-prepend"></a>
+
+## prepend(...nodes)
+Inserts a set of Node objects or string objects before the first child of the Element.
+
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend  
+**Since**: v8.0  
+
+| Param | Type |
+| --- | --- |
+| ...nodes | `Array<Node>` | 
+
+
+
+<a name="element-replacechildren" id="element-replacechildren"></a>
+
+## replaceChildren(...nodes)
+Replaces the existing children of a Node with a specified new set of children. These can be string or Node objects.
+
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceChildren  
+**Since**: v8.0  
+
+| Param | Type |
+| --- | --- |
+| ...nodes | `Array<Node>` | 
+
 
 
 <a name="element-scrollto" id="element-scrollto"></a>

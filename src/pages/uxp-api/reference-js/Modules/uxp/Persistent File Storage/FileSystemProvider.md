@@ -6,6 +6,8 @@ Provides access to files and folders on a file system. You'll typically not
 instantiate this directly; instead you'll use an instance of one that has
 already been created for you by UXP.
 
+These APIs work with UXP Manifest version v5 and above.
+
 
 
 <a name="module-storage-filesystemprovider-isfilesystemprovider" id="module-storage-filesystemprovider-isfilesystemprovider"></a>
@@ -113,7 +115,7 @@ If the user dismisses the picker, `null` is returned instead.
 **Example**  
 ```js
 const folder = await fs.getFolder();
-const myNovel = (await fs.getEntries()).filter(entry => entry.name.indexOf('novel') > 0);
+const myNovel = (await folder.getEntries()).filter(entry => entry.name.indexOf('novel') > 0);
 const text = await myNovel.read();
 ```
 

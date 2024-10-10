@@ -16,7 +16,7 @@ In order to instantiate `Entry`, you will need to first invoke the `localFileSys
 ```js
 const fs = require('uxp').storage.localFileSystem;
 const folder = await fs.getPluginFolder(); // Gets an instance of Folder (or Entry)
-const entryMetaData = await folder.getMetadata(); 
+const entryMetaData = await folder.getMetadata();
 console.log(entryMetaData.name);
 ```
 

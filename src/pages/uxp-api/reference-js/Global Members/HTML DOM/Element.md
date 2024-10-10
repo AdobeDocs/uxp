@@ -317,6 +317,48 @@ Returns the open shadow root that is hosted by the element, or null if no open s
 **Read only**
 
 
+<a name="element-append" id="element-append"></a>
+
+## append(...nodes)
+Inserts a set of Node objects or string objects after the last child of the Element.
+
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/append  
+**Since**: v8.0  
+
+| Param | Type |
+| --- | --- |
+| ...nodes | `Array<Node>` | 
+
+
+
+<a name="element-prepend" id="element-prepend"></a>
+
+## prepend(...nodes)
+Inserts a set of Node objects or string objects before the first child of the Element.
+
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend  
+**Since**: v8.0  
+
+| Param | Type |
+| --- | --- |
+| ...nodes | `Array<Node>` | 
+
+
+
+<a name="element-replacechildren" id="element-replacechildren"></a>
+
+## replaceChildren(...nodes)
+Replaces the existing children of a Node with a specified new set of children. These can be string or Node objects.
+
+**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceChildren  
+**Since**: v8.0  
+
+| Param | Type |
+| --- | --- |
+| ...nodes | `Array<Node>` | 
+
+
+
 <a name="element-scrollto" id="element-scrollto"></a>
 
 ## scrollTo(xOrOptions, y)

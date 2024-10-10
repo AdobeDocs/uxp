@@ -75,11 +75,11 @@ Write text to clipboard. This can be used to implement cut and copy text functio
 
 | Param | Type | Description |
 | --- | --- | --- |
-| text | `object` | The text to set. Note, currently this will fail unless this is an object of the form {"text/plain": "text to set"}. This will be fixed in a future release. |
+| text | `string` \| `object` | text string to set or an object of the form {"text/plain": "text to set"}.                               Note that the object format will be deprecated and shouldn't be used. |
 
 **Example**  
 ```js
-navigator.clipboard.writeText({"text/plain": "Hello!"});
+navigator.clipboard.writeText("Hello!");
 ```
 
 
