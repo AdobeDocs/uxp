@@ -62,7 +62,7 @@ The following resources are available for you to get started quickly
 
 
 ### Command line Templates
-We also have command-line tools (starter templates) for setting up a new UXP-based React/Vanilla app with SWC bundling. It helps you quickly scaffold a project optimized for building UXP plugins using SWC.
+Use command-line tools (starter templates) for setting up a new UXP-based React/Vanilla app with SWC bundling. It helps you quickly scaffold a project optimized for building UXP plugins using SWC.
 - [Vanilla starter template](https://www.npmjs.com/package/@swc-uxp-wrappers/create-swc-uxp-app)
 - [React starter template](https://www.npmjs.com/package/@swc-uxp-wrappers/create-swc-uxp-react-app)
 
