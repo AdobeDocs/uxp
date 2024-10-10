@@ -9,14 +9,14 @@ Metadata for an `Entry`. It includes useful information such as:
 * date modified
 * name
 
-Instantiate `EntryMetadata` by using [Entry's - getMetadata()](./Entry.md#module-storage-entry-getmetadata).
+Instantiate `EntryMetadata` by using [Entry's - getMetadata()](Entry.md#getmetadata).
 In order to instantiate `Entry`, you will need to first invoke the `localFileSystem` and then fetch an instance of a File or Folder.
 
 **Example**
 ```js
 const fs = require('uxp').storage.localFileSystem;
 const folder = await fs.getPluginFolder(); // Gets an instance of Folder (or Entry)
-const entryMetaData = await folder.getMetadata(); 
+const entryMetaData = await folder.getMetadata();
 console.log(entryMetaData.name);
 ```
 

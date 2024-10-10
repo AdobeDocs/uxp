@@ -21,32 +21,34 @@ and to isolate the web content from the rest of the plugin.<br></br>
 <InlineAlert variant="warning" slots="text"/>
 
 WebViews are resource intensive since it launches multiple processes per plugin
-and therefore should be used only in cases where you cannot create the plugin using UXP features.<br></br>
+and therefore should be used only in cases where you cannot create the plugin using UXP features.
+<br></br>
 
-**Note:**<br></br>
+**Note:**br></br>
 1. WebViews need manifest version v5 or above.
-2. Checkout the template available in `UXP Developer Tool` for a quick getting starter plugin for WebView in UXP.
+2. Checkout the template available in `UXP Developer Tool` for getting a quick starter plugin for WebView in UXP.
 3. `requiredPermissions.webview.enableMessageBridge=“localAndRemote”` is required for Plugin & WebView communication via postMessage.
 
 **Limitations:**<br></br>
-1. Only remote content (including localhost) is allowed at present. This means you will not be able to load local html files from plugin folders in UXP WebView. This behaviour is due to limitations on WindowsOS and **<i>may</i>** be enabled in later releases.
+1. UXP v7.4.3 and below allows only remote content. This means you will not be able to load local HTML files from plugin folders in UXP WebView unless you have UXP v8.0 or higher.
 2. Any links in a UXP WebView will not open in a new window.
 e.g., In a browser, clicking `<a href="https://www.adobe.com" target="_blank">` would create a new Window
-and open `https://www.adobe.com` from the new Window or JavaScript alert() pops up a new Window. UXP WebView doesn't permit this.<br></br>
-3. From UXP v7.4 onwards the manifest permission `requiredPermissions.webview.domains` does not allow `wildcard (*)` in the top-level domain names.
+and open `https://www.adobe.com` from the new Window or JavaScript alert() pops up a new Window. UXP WebView doesn't permit this.
+3. The manifest permission `requiredPermissions.webview.domains` does not allow `wildcard(*)` in the top-level domain names.
 e.g., Domain lists below are NOT supported
+
 ```json
 "requiredPermissions": {
- "webview": {
-     "domains": ["https://www.*", "https://www.adobe.*"],
-     "allow": "yes"
+  "webview": {
+    "domains": ["https://www.*", "https://www.adobe.*"],
+    "allow": "yes"
   }
 }
 ```
 
+<h2>Add a webview to your plugin</h2>
 In your plugin's code, add a WebView element in the desired location.
-The element can take attributes such as id , height , and src to specify the WebView's properties<br></br>
-
+The element can take attributes such as id , height , and src to specify the WebView's properties.<br></br>
 ```js
 <webview id="webviewsample" width="100%" height="360px" src="https://www.adobe.com" uxpAllowInspector="true" ></webview>
 ```
@@ -65,13 +67,13 @@ In order to use UXP WebView, the plugin should have the following manifest v5 pe
 <tr>
      <td>.domains</td>
      <td>string[]</td>
-     <td>Allows access to the specified domains. Wildcards (except top-level) are supported. e.g "https://*.adobe.com". <br></br> Recommended</td>
+     <td>Allows access to the specified domains. Wildcards (except top-level) are supported. e.g "https://*.adobe.com".<br></br> Recommended</td>
      <td>Mandatory</td>
 </tr>
 <tr>
      <td>.domains</td>
      <td>"all"</td>
-     <td>Allows access to all domains.<br></br>Not recommended, may affect performance, security and privacy. Plugin may be blocked by enterprises.</td>
+     <td>Allows access to all domains.<br></br> Not recommended, may affect performance, security and privacy. Plugin may be blocked by enterprises.</td>
      <td>Mandatory</td>
 </tr>
 <tr>
@@ -81,10 +83,21 @@ In order to use UXP WebView, the plugin should have the following manifest v5 pe
      <td>Mandatory</td>
 </tr>
 <tr>
+     <td>.allowLocalRendering</td>
+     <td>"yes"</td>
+     <td>Enables WebView to load local contents (supported from UXP v8.0.0❗) </td>
+     <td>Optional</td>
+</tr>
+<tr>
      <td>.enableMessageBridge</td>
      <td>"localAndRemote"</td>
-     <td>Allows Plugin & the content loaded on WebView to communicate regardless of where the content is loaded from **locally or remotely.**<br></br>
-         **Note: ** At this stage only remote content is allowed. Refer **Limitations** section for more details</td>
+     <td>Allows Plugin & the content loaded on WebView to communicate regardless of where the content is loaded from **locally or remotely.**
+     <td>Optional</td>
+</tr>
+<tr>
+     <td>.enableMessageBridge</td>
+     <td>"localOnly"</td>
+     <td>Allows Plugin & the content loaded on WebView to communicate if the content is loaded from **locally.** (supported from UXP v8.0.0❗)
      <td>Optional</td>
 </tr>
 <tr>
@@ -112,6 +125,81 @@ In order to use UXP WebView, the plugin should have the following manifest v5 pe
 }
 ```
 
+<a name="htmlwebviewelement-local-contents" id="htmlwebviewelement-local-contents"></a>
+
+# Load local content onto WebView
+From UXP v8.0.0 onwards, UXP plugins can load contents located in plugin, plugin-data and plugin-temp folders.
+
+## Manifest Permissions
+
+Manifest Permission is required to load local contents onto WebView<br></br>
+requiredPermissions.webview.allowLocalRendering should be "yes".<br></br>
+requiredPermissions.webview.enableMessageBridge should be either "localOnly" or "localAndRemote" for plugin & WebView communication via postMessage.
+
+## Example
+```json
+"requiredPermissions": {
+  "webview": {
+    "allow": "yes",
+    "domains": [],
+    "allowLocalRendering": "yes",
+    "enableMessageBridge": "localOnly"
+  }
+}
+```
+
+## Best Practice
+
+**Using a relative path for the internal resouces are highly recommended when loading local contents onto WebView.**<br></br>
+UXP WebView does not understand 'plugin:', 'plugin-data:' and 'plugin-temp:' protocols. If WebView.src property is in the form of plugin protocol URL,
+UXP internally converts those protocol URLs to URLs that WebView can understand, and then WebView loads the contents using the converted URLs.
+The contents loaded onto WebView may refer to other resources such as css, js, images and other html files.
+As mentioned, WebView does not understand plugin protocols. So if the resource is pointed out as an absolute path such as "plugin:/main.css",
+WebView would not load the resource. It should be expressed as a relative path such as "./main.css".
+
+## Limitations
+
+For security reasons, WebView does not support JS localStorage APIs if local contents are loaded onto WebView.
+When the local contents access the properties (length) or methods (setItem, getItem and so on) of JS localStorage property,
+it would return nothing (zero or null according to the return type) or throw an error.
+
+## Examples
+
+Let's assume that webview.html is located in plugin folder.
+Plugin is able to load 'webview.html' in plugin folder as follows:
+
+```html
+<webview src="plugin:/webview.html"></webview>
+```
+
+Similarly, for webview-in-plugin-data.html in plugin data folder and webview-in-plugin-temp.html in plugin temp folder:
+
+```html
+<webview src="plugin-data:/webview-in-plugin-data.html"></webview>
+<webview src="plugin-temp:/webview-in-plugin-temp.html"></webview>
+```
+
+For reference, the root folders of 'plugin', 'plugin-data', and 'plugin-temp' can be found in the following way.
+
+```json
+// Manifest permission
+"requiredPermissions": {
+  // required for localFileSystem
+  "localFileSystem": "request"
+}
+```
+
+```js
+const localFileSystem = require("uxp").storage.localFileSystem;
+const pluginFolder = await localFileSystem.getPluginFolder();
+const pluginDataFolder = await localFileSystem.getDataFolder();
+const tempFolder = await localFileSystem.getTemporaryFolder();
+
+console.log(`pluginFolder = ${pluginFolder.nativePath}`);
+console.log(`pluginDataFolder = ${pluginDataFolder.nativePath}`);
+console.log(`pluginTempFolder = ${tempFolder.nativePath}`);
+```
+
 
 <a name="htmlwebviewelement-htmlwebviewelement-new" id="htmlwebviewelement-htmlwebviewelement-new"></a>
 
@@ -130,7 +218,7 @@ In order to use UXP WebView, the plugin should have the following manifest v5 pe
 <a name="htmlwebviewelement-src" id="htmlwebviewelement-src"></a>
 
 ## src : `string`
-The url to load in the WebView. Only remote content (including `localhost`) is allowed at present.
+The url to load in the WebView.
 
 
 
