@@ -4,6 +4,10 @@ index_desc: Changelog in UXP version
 
 # UXP Changelog
 
+## UXP v8.1.0
+
+## UDT v2.1.0
+
 ## UXP v8.0.1
 
 ### Breaking Changes
