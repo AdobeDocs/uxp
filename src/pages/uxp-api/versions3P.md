@@ -3,6 +3,7 @@ index_desc: General information on UXP and its dependencies for 3rd party plugin
 -->
 
 # UXP General Information
+
 - ECMAScript Version in UXP v6.4 : ECMA-262
 - React Version Supported in UXP v6.4: React 16 or lower
 
@@ -17,6 +18,7 @@ index_desc: General information on UXP and its dependencies for 3rd party plugin
 |XD            | -       | -        | -        | -        | -        | -        | -       | -       | -       | 55       | 54	      | -        | -        | 53       | 45       |
 
 ## UXP Features Supported in Applications
+
 | Application   | UXP Plugins    | UXP C++ Hybrid Plugins | UXP Scripting |
 | ------------- | -------------- | ---------------------- | ------------- | 
 | Photoshop     | ✅	            | ✅ from 24.2           | ✅ from 24.1  |

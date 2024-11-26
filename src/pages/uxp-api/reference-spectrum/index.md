@@ -116,5 +116,5 @@ If you are thinking of upgrading your existing UI, you should check out the new 
 Visit the following topics to learn about them in detail
 - [Spectrum Web Components](swc/index.md)
 - [Spectrum UXP widgets](Spectrum%20UXP%20Widgets/index.md)
-- [Spectrum widgets to SWC Mapping](spectrum-widgets-to-swc-mapping/index.md)
+- [Spectrum widgets to SWC Mapping](Spectrum%20to%20SWC%20Mapping/index.md)
 
