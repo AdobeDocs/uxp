@@ -38,6 +38,18 @@ To configure the Webview, you will first require the `webview` permission for yo
      <th>Mandatory/Optional</th>
 </tr>
 <tr>
+     <td>.allow</td>
+     <td>"yes"</td>
+     <td>Enables WebView access to the plugin</td>
+     <td>Mandatory</td>
+</tr>
+<tr>
+     <td>.allowLocalRendering</td>
+     <td>"yes"</td>
+     <td>Enables WebView to load local contents (supported from UXP v8.0.0❗) </td>
+     <td>Optional</td>
+</tr>
+<tr>
      <td>.domains</td>
      <td>string[]</td>
      <td>Allows access to the specified domains. Wildcards (except top-level) are supported. e.g "https://*.adobe.com". <br></br> Recommended</td>
@@ -50,16 +62,15 @@ To configure the Webview, you will first require the `webview` permission for yo
      <td>Mandatory</td>
 </tr>
 <tr>
-     <td>.allow</td>
-     <td>"yes"</td>
-     <td>Enables WebView access to the plugin</td>
-     <td>Mandatory</td>
+     <td>.enableMessageBridge</td>
+     <td>"localAndRemote"</td>
+     <td>Allows Plugin & the content loaded on WebView to communicate regardless of where the content is loaded from **locally or remotely.**</td>
+     <td>Optional</td>
 </tr>
 <tr>
      <td>.enableMessageBridge</td>
-     <td>"localAndRemote"</td>
-     <td>Allows Plugin & the content loaded on WebView to communicate regardless of where the content is loaded from **locally or remotely.**<br></br>
-         **Note: ** At this stage only remote content is allowed. Refer **Limitations** section for more details</td>
+     <td>"localOnly"</td>
+     <td>Allows Plugin & the content loaded on WebView to communicate if the content is loaded from **locally.** (supported from UXP v8.0.0❗)</td>
      <td>Optional</td>
 </tr>
 <tr>
