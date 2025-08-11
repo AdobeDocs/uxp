@@ -402,6 +402,31 @@ Show the modal dialog.
                    error.code will be one of the values from HTMLDialogElement.rejectionReasons.  
 
 
+
+<a name="htmldialogelement-uxpshowmodal" id="htmldialogelement-uxpshowmodal"></a>
+
+## uxpShowModal([options])
+Similar to [`showModal`](#showmodal), but with additional customization options.
+
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [options] | `object` | `{}` | Options for the show. |
+| [options.title] | `string` |  | Title of the modal window. |
+| [options.resize] | `string` | `"none"` | Which dimensions of the modal window should be resizable. Can be `horizontal`, `vertical`, `both`, or `none`. |
+| [options.size] | `object` | `{}` | Default dimensions of the modal window. |
+| [options.size.width] | `number` |  | Default width of the modal window. |
+| [options.size.height] | `number` |  | Default height of the modal window. |
+
+**Returns**: `Promise` - A promise that resolves when the dialog is closed (**NSC**)
+                   after calling the close() method or clicking the "submit" button.
+                   The promise will be resolved with returnValue as a parameter.
+                   The promise can be rejected if the dialog was closed for other reasons
+                   e.g. the user hit escape or closed the window, or if the application
+                   does not allow showing the dialog. The error parameter will give more details.
+                   error.code will be one of the values from HTMLDialogElement.rejectionReasons.  
+
+
 <a name="htmldialogelement-close" id="htmldialogelement-close"></a>
 
 ## close([returnValue])
