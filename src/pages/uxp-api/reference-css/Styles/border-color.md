@@ -14,7 +14,7 @@ Specifies the border color for an element. Supported color formats are as follow
 
 **See**
 
-- https://developer.mozilla.org/en/docs/Web/CSS/color
+- [https://developer.mozilla.org/en/docs/Web/CSS/color](https://developer.mozilla.org/en/docs/Web/CSS/color)
 - https://github.com/colorjs/color-name/blob/master/index.js
 
 **Example**

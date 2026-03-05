@@ -1,2 +1,0 @@
-# ImageBlob
-* [ImageBlob](ImageBlob.md)

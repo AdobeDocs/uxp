@@ -1,2 +1,2 @@
 # getting-started
-* [xmp](xmp.md)
+* [xmp](../../../../modules/uxp/xmp/getting-started/xmp.md)

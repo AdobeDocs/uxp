@@ -1,3 +1,3 @@
 # Pseudo-elements
-* [after](after.md)
-* [before](before.md)
+* [after](../pseudo-elements/after.md)
+* [before](../pseudo-elements/before.md)

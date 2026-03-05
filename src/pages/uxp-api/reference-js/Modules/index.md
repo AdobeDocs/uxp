@@ -1,4 +1,4 @@
 # Modules
-* [fs](fs/index.md)
-* [os](os/index.md)
-* [uxp](uxp/index.md)
+* [fs](../modules/fs/index.md)
+* [os](../modules/os/index.md)
+* [uxp](../modules/uxp/index.md)

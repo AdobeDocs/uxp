@@ -7,8 +7,7 @@ jsDoc: true
 
 Sets the bottom right border radius.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-right-radius  
-
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-right-radius](https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-right-radius)
 ## Quirks and Exceptions
 
 * Not all Spectrum UXP components allow border overrides.
