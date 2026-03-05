@@ -1,4 +1,2 @@
 
-import Content from "uxp-documentation/src/pages/uxp-api/reference-css/index.md";
-
-<Content query="product=xd"/>
+<Fragment src="uxp-documentation/src/pages/uxp-api/reference-css/index.md"/>
