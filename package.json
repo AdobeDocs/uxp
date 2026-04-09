@@ -21,6 +21,12 @@
     "_copy-spectrum-assets": ". .env && cp -r \"$UXP_REPO_SOURCE_DOCS\"/reference-spectrum/assets ./src/pages/uxp-api/reference-spectrum/",
     "copy-assets": "npm run _copy-spectrum-assets && npm run _copy-spectrum-assets-transclusions",
     "_copy-other-files": ". .env && cp \"$UXP_REPO_SOURCE_DOCS\"/*.md src/pages/uxp-api/",
-    "prepare-docs": "npm run copy-docs && npm run copy-assets && npm run _copy-other-files"
+    "prepare-docs": "npm run copy-docs && npm run copy-assets && npm run _copy-other-files",
+    "renameFiles": "npx --yes github:AdobeDocs/adp-devsite-utils renameFiles -v",
+    "normalizeLinks": "npx --yes github:AdobeDocs/adp-devsite-utils normalizeLinks -v",
+    "lint": "npx --yes github:AdobeDocs/adp-devsite-utils runLint -v",
+    "lint:errorOnly": "npx --yes github:AdobeDocs/adp-devsite-utils runLint",
+    "link:externalLinkOnly": "npx --yes github:AdobeDocs/adp-devsite-utils runLint --external-links-only -v",
+    "link:checkAllLinks": "npx --yes github:AdobeDocs/adp-devsite-utils runLint --internal-links-only --external-links-only -v"
   }
 }

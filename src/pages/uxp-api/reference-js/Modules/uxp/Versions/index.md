@@ -1,2 +1,2 @@
 # Versions
-* [Versions](Versions.md)
+* [Versions](../../../modules/uxp/versions/versions.md)

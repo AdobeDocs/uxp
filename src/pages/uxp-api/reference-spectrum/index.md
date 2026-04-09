@@ -27,7 +27,7 @@ But before we proceed, it's important to understand some terminology
 
 With that in mind, let's get into the details:
 - **HTML elements** <br></br>
-   These are pure HTML elements following the web standards. For example, `<img>`, `<dialog>` etc. You have the flexibility to style them with your custom stylesheet. Check out the list of supported HTML [tags](../reference-html/) and [elements](../reference-js/Global%20Members/HTML%20Elements/).
+   These are pure HTML elements following the web standards. For example, `<img>`, `<dialog>` etc. You have the flexibility to style them with your custom stylesheet. Check out the list of supported HTML [tags](../reference-html/index.md) and [elements](../reference-js/Global%20Members/HTML%20Elements/).
   
 - **Spectrum UXP widgets** <br></br>
    These are built-in Spectrum-styled UXP components. These widgets mimic the Adobe SWC library APIs and expose a subset of the functionality of the corresponding SWC. 
