@@ -1,4 +1,6 @@
 ---
+title: background-color
+description: "Specifies the background color for an element. Supported color formats are as follows:"
 jsDoc: true
 ---
 # background-color

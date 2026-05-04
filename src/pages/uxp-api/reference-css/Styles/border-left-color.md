@@ -1,4 +1,6 @@
 ---
+title: border-left-color
+description: "Specifies the top border color for an element. Supported color formats are as follows:"
 jsDoc: true
 ---
 # border-left-color

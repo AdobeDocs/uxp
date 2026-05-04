@@ -1,4 +1,6 @@
 ---
+title: flex
+description: Shorthand for the flex-grow, flex-shrink, and flex-basis styles.
 jsDoc: true
 ---
 # flex

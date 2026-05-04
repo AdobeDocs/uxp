@@ -1,4 +1,6 @@
 ---
+title: align-self
+description: Supported values are flex-start, flex-end, center, stretch.
 jsDoc: true
 ---
 # align-self

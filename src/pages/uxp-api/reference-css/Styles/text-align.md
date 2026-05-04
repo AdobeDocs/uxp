@@ -1,4 +1,6 @@
 ---
+title: text-align
+description: Aligns text within its parent container. Supports left, center, right.
 jsDoc: true
 ---
 # text-align

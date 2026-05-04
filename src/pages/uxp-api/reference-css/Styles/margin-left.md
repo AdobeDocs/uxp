@@ -1,4 +1,6 @@
 ---
+title: margin-left
+description: Specifies the left margin for an element.
 jsDoc: true
 ---
 # margin-left

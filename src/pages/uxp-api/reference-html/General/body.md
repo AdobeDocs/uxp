@@ -1,4 +1,6 @@
 ---
+title: body
+description: The body element of the plugin. When a plugin has multiple panels, the body tag represents the first panel's contents, and additional panels will have a uxp-panel element inserted into the DOM to represent their corresponding bodies.
 jsDoc: true
 ---
 # body

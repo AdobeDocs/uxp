@@ -1,4 +1,6 @@
 ---
+title: bottom
+description: Sets the bottom position for an element that is relatively or absolutely positioned.
 jsDoc: true
 ---
 # bottom

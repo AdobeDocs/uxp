@@ -1,4 +1,6 @@
 ---
+title: overflow-y
+description: Shorthand which determines what is done with content that overflows the element's bounds.
 jsDoc: true
 ---
 # overflow-y

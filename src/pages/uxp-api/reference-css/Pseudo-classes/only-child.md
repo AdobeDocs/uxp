@@ -1,4 +1,6 @@
 ---
+title: ":only-child"
+description: Matches only an element with no siblings.
 jsDoc: true
 ---
 # :only-child

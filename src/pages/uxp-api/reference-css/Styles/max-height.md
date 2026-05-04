@@ -1,4 +1,6 @@
 ---
+title: max-height
+description: Specifies the maximum height for an element.
 jsDoc: true
 ---
 # max-height

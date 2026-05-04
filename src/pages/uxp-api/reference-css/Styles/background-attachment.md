@@ -1,4 +1,6 @@
 ---
+title: background-attachment
+description: Sets the attachment for the background image. Only scroll is supported (the default).
 jsDoc: true
 ---
 # background-attachment

@@ -1,4 +1,6 @@
 ---
+title: padding-left
+description: Specifies the left padding for an element.
 jsDoc: true
 ---
 # padding-left

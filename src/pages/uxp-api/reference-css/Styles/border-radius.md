@@ -1,4 +1,6 @@
 ---
+title: border-radius
+description: Shorthand for setting the border radius.
 jsDoc: true
 ---
 # border-radius

@@ -1,4 +1,6 @@
 ---
+title: font-style
+description: Sets the font style for the element. Supports normal (default) and italic.
 jsDoc: true
 ---
 # font-style

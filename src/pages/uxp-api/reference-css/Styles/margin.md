@@ -1,4 +1,6 @@
 ---
+title: margin
+description: Specifies the margin for an element.
 jsDoc: true
 ---
 # margin

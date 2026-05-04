@@ -1,4 +1,6 @@
 ---
+title: border-top-left-radius
+description: Sets the top left border radius.
 jsDoc: true
 ---
 # border-top-left-radius

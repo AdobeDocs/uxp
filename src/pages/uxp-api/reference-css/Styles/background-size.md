@@ -1,4 +1,6 @@
 ---
+title: background-size
+description: Determines the size of the background content. Also supports cover and contain.
 jsDoc: true
 ---
 # background-size

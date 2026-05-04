@@ -1,4 +1,6 @@
 ---
+title: ":disabled"
+description: Matches when the selected element is disabled.
 jsDoc: true
 ---
 # :disabled

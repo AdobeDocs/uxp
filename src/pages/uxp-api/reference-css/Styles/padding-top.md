@@ -1,4 +1,6 @@
 ---
+title: padding-top
+description: Specifies the top padding for an element.
 jsDoc: true
 ---
 # padding-top

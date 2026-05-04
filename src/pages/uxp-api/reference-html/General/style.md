@@ -1,4 +1,6 @@
 ---
+title: style
+description: Specifies an inline stylesheet.
 jsDoc: true
 ---
 # style

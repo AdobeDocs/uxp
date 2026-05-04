@@ -1,4 +1,6 @@
 ---
+title: border-width
+description: Sets the width of the border.
 jsDoc: true
 ---
 # border-width

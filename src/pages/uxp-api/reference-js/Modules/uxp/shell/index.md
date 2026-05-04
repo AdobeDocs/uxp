@@ -1,2 +1,2 @@
 # shell
-* [Shell](Shell.md)
+* [Shell](../../../modules/uxp/shell/shell.md)

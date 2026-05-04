@@ -1,4 +1,8 @@
+---
+title: General
+description: Overview of General.
+---
 # General
-* [calc](calc.md)
-* [units](units.md)
-* [variables](variables.md)
+* [calc](../general/calc.md)
+* [units](../general/units.md)
+* [variables](../general/variables.md)

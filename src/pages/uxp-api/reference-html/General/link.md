@@ -1,4 +1,6 @@
 ---
+title: link
+description: Refers to other, related content. In UXP, this tag allows you to load an external stylesheet. No other use is supported.
 jsDoc: true
 ---
 # link

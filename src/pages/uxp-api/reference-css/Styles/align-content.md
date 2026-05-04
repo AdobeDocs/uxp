@@ -1,4 +1,6 @@
 ---
+title: align-content
+description: Supported values are flex-start, flex-end, center, space-between, space-around, stretch.
 jsDoc: true
 ---
 # align-content

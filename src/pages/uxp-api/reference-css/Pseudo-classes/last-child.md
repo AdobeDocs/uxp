@@ -1,4 +1,6 @@
 ---
+title: ":last-child"
+description: Matches only the last child.
 jsDoc: true
 ---
 # :last-child

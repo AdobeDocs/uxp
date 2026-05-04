@@ -1,4 +1,6 @@
 ---
+title: flex-wrap
+description: Controls if wrapping is allowed within a flexible container. Supports nowrap (default) and wrap.
 jsDoc: true
 ---
 # flex-wrap

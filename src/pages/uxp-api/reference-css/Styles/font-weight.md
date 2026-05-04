@@ -1,4 +1,6 @@
 ---
+title: font-weight
+description: Sets the font weight for the element.
 jsDoc: true
 ---
 # font-weight

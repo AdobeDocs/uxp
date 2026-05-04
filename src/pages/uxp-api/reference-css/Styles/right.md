@@ -1,4 +1,6 @@
 ---
+title: right
+description: Sets the right position for an element that is relatively or absolutely positioned.
 jsDoc: true
 ---
 # right

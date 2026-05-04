@@ -1,4 +1,6 @@
 ---
+title: flex-basis
+description: Sets the basis for determining the size of an item in a flexible layout container.
 jsDoc: true
 ---
 # flex-basis

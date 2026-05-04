@@ -1,4 +1,6 @@
 ---
+title: padding-bottom
+description: Specifies the bottom padding for an element.
 jsDoc: true
 ---
 # padding-bottom

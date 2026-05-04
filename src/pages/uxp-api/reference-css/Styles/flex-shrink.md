@@ -1,4 +1,6 @@
 ---
+title: flex-shrink
+description: Determines if a flexible item can shrink, and if so, how it shrinks relative to other items in the flexible container.
 jsDoc: true
 ---
 # flex-shrink

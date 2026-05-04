@@ -1,4 +1,6 @@
 ---
+title: border-top-width
+description: Sets the width of the top border.
 jsDoc: true
 ---
 # border-top-width

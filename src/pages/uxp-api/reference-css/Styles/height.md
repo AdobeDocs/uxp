@@ -1,4 +1,6 @@
 ---
+title: height
+description: Specifies the height for an element.
 jsDoc: true
 ---
 # height

@@ -1,4 +1,6 @@
 ---
+title: background-image
+description: Specifies a background image. Supports multiple background images, as well as linear and radial gradients.
 jsDoc: true
 ---
 # background-image

@@ -1,4 +1,6 @@
 ---
+title: white-space
+description: Determines how white space is handled. Supports wrap (default), nowrap, pre, pre-line, and pre-wrap.
 jsDoc: true
 ---
 # white-space

@@ -1,4 +1,6 @@
 ---
+title: background
+description: Specifies an element's background. Supports colors, multiple background images, as well as linear and radial gradients.
 jsDoc: true
 ---
 # background

@@ -1,4 +1,6 @@
 ---
+title: left
+description: Sets the left position for an element that is relatively or absolutely positioned.
 jsDoc: true
 ---
 # left

@@ -1,2 +1,2 @@
 # fs
-* [fs](fs.md)
+* [fs](../../modules/fs/fs.md)

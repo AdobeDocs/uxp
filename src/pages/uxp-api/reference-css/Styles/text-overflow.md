@@ -1,4 +1,6 @@
 ---
+title: text-overflow
+description: Determines if an ellipsis should be shown when text is clipped. Supports clip (default) and ellipsis.
 jsDoc: true
 ---
 # text-overflow

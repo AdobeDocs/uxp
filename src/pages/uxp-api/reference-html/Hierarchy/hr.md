@@ -1,4 +1,6 @@
 ---
+title: hr
+description: Renders a horizontal rule.
 jsDoc: true
 ---
 # hr

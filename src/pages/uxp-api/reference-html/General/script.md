@@ -1,4 +1,6 @@
 ---
+title: script
+description: Loads and executes a script.
 jsDoc: true
 ---
 # script

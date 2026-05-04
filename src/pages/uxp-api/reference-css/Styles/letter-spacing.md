@@ -1,4 +1,6 @@
 ---
+title: letter-spacing
+description: Sets the width inserted between letters.
 jsDoc: true
 ---
 # letter-spacing

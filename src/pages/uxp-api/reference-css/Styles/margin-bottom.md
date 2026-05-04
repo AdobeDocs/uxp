@@ -1,4 +1,6 @@
 ---
+title: margin-bottom
+description: Specifies the bottom margin for an element.
 jsDoc: true
 ---
 # margin-bottom

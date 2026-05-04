@@ -1,4 +1,6 @@
 ---
+title: ":nth-of-type"
+description: Matches only the Nth child of a given type. Can use an expression or even or odd.
 jsDoc: true
 ---
 # :nth-of-type

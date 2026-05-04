@@ -1,4 +1,6 @@
 ---
+title: min-width
+description: Specifies the minimum width for an element.
 jsDoc: true
 ---
 # min-width

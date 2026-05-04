@@ -1,4 +1,6 @@
 ---
+title: border-bottom-width
+description: Sets the width of the bottom border.
 jsDoc: true
 ---
 # border-bottom-width

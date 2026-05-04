@@ -1,4 +1,6 @@
 ---
+title: ":focus"
+description: Matches when the selected element is focused. An element is considered to be active when the element has keyboard focus.
 jsDoc: true
 ---
 # :focus

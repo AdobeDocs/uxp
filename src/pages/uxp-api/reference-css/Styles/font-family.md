@@ -1,4 +1,6 @@
 ---
+title: font-family
+description: Sets the font family for a given element's text.
 jsDoc: true
 ---
 # font-family

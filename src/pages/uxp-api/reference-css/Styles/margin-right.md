@@ -1,4 +1,6 @@
 ---
+title: margin-right
+description: Specifies the right margin for an element.
 jsDoc: true
 ---
 # margin-right

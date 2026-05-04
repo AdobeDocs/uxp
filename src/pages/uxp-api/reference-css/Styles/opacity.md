@@ -1,4 +1,6 @@
 ---
+title: opacity
+description: Sets the opacity of an element. The value is between 0 (transparent) and 1 (opaque).
 jsDoc: true
 ---
 # opacity

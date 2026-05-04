@@ -1,4 +1,6 @@
 ---
+title: border-style
+description: Specifies the type of border to render.
 jsDoc: true
 ---
 # border-style

@@ -1,4 +1,6 @@
 ---
+title: margin-top
+description: Specifies the top margin for an element.
 jsDoc: true
 ---
 # margin-top

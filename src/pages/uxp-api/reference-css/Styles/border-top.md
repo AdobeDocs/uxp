@@ -1,11 +1,13 @@
 ---
+title: border-top
+description: Shorthand for specifying the style, color, and width of the top border.
 jsDoc: true
 ---
 # border-top
 
 **Since** UXP v2.0
 
-Shorthand for specifying the [style](../border-top-style/), [color](../border-top-color/), and [width](../border-top-width) of the top border.
+Shorthand for specifying the [style](./border-top-style.md), [color](./border-top-color.md), and [width](./border-top-width.md) of the top border.
 
 > **Warning**
 >

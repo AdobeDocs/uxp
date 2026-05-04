@@ -1,4 +1,6 @@
 ---
+title: display
+description: Determines the layout semantics for the element. Supports none, inline, block, inline-block, flex, and inline-flex.
 jsDoc: true
 ---
 # display

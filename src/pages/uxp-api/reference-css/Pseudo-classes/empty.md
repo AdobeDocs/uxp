@@ -1,7 +1,9 @@
 ---
+title: ":empty"
+description: Matches when the selected element has no children.
 jsDoc: true
 ---
-# :enabled
+# :empty
 
 **Since** UXP v3.0
 

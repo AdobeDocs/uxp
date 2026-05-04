@@ -1,4 +1,6 @@
 ---
+title: padding
+description: Specifies the padding for an element.
 jsDoc: true
 ---
 # padding

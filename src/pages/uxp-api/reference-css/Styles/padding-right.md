@@ -1,4 +1,6 @@
 ---
+title: padding-right
+description: Specifies the right padding for an element.
 jsDoc: true
 ---
 # padding-right

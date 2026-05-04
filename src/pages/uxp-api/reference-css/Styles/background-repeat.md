@@ -1,4 +1,6 @@
 ---
+title: background-repeat
+description: Only no-repeat is supported for background repetition.
 jsDoc: true
 ---
 # background-repeat
