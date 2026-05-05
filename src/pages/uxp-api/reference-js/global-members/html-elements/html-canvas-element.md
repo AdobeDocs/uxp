@@ -1,5 +1,7 @@
-
-<a name="htmlcanvaselement" id="htmlcanvaselement"></a>
+---
+title: window.HTMLCanvasElement
+description: "See: Web APIs - HTMLCanvasElement for more details"
+---
 
 # window.HTMLCanvasElement
 **See**: [Web APIs - HTMLCanvasElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement) for more details
@@ -9,13 +11,11 @@
 UXP HTMLCanvasElement supports only basic shapes for now.
 
 Also, refer the following interfaces
-1. [CanvasRenderingContext2D](../HTML%20DOM/CanvasRenderingContext2D.md#module:global.canvasrenderingcontext2d)
-2. [CanvasGradient](../HTML%20DOM/CanvasGradient.md#module:global.canvasgradient)
-3. [Path2D](../HTML%20DOM/Path2D.md#module:global.path2d)  
+1. [CanvasRenderingContext2D](../html-dom/canvas-rendering-context2-d.md#module:global.canvasrenderingcontext2d)
+2. [CanvasGradient](../html-dom/canvas-gradient.md#module:global.canvasgradient)
+3. [Path2D](../html-dom/path2-d.md#module:global.path2d)  
 **Since**: v7.0.0  
 
-
-<a name="htmlcanvaselement-height" id="htmlcanvaselement-height"></a>
 
 ## height : `number`
 Get the height of the canvas element.
@@ -23,19 +23,15 @@ Get the height of the canvas element.
 **See**: [HTMLCanvasElement - height](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/height) for more details  
 
 
-<a name="htmlcanvaselement-width" id="htmlcanvaselement-width"></a>
-
 ## width : `number`
 Get the width of the canvas element.
 
 **See**: [HTMLCanvasElement - width](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/width) for more details  
 
 
-<a name="htmlcanvaselement-getcontext" id="htmlcanvaselement-getcontext"></a>
-
 ## getContext(contextType)
 Creates a 2D drawing context on the canvas.
-<br></br> Note: Only '2d' context is supported.
+\<br\>\</br\> Note: Only '2d' context is supported.
 
 **Returns**: `CanvasRenderingContext2D` - A 2D rendering context (CanvasRenderingContext2D) object.  
 **See**: [HTMLCanvasElement - getContext()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext) for more details  

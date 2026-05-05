@@ -1,10 +1,14 @@
+---
+title: Global Members
+description: Overview of Global Members
+---
 # Global Members
-* [Crypto](../global-members/crypto/index.md)
-* [Data Storage](Data%20Storage/index.md)
-* [Data Transfers](Data%20Transfers/index.md)
-* [HTML DOM](HTML%20DOM/index.md)
-* [HTML Elements](HTML%20Elements/index.md)
-* [HTML Events](HTML%20Events/index.md)
-* [ImageBlob](../global-members/image-blob/index.md)
-* [Path](../global-members/path/index.md)
-* [Streams](../global-members/streams/index.md)
+* [Crypto](crypto/index.md)
+* [Data Storage](data-storage/index.md)
+* [Data Transfers](data-transfers/index.md)
+* [HTML DOM](html-dom/index.md)
+* [HTML Elements](html-elements/index.md)
+* [HTML Events](html-events/index.md)
+* [ImageBlob](image-blob/index.md)
+* [Path](path/index.md)
+* [Streams](streams/index.md)

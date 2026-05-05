@@ -1,5 +1,7 @@
-
-<a name="xmpiterator" id="xmpiterator"></a>
+---
+title: XMPIterator
+description: "Since: v7.2.0"
+---
 
 # XMPIterator
 **Since**: v7.2.0
@@ -8,22 +10,16 @@ Created by a call to [XMPMeta.iterator](../../../../modules/uxp/xmp/xmp-classes/
 The object has no JavaScript properties.  
 
 
-<a name="xmpiterator-next" id="xmpiterator-next"></a>
-
 ## next()
 Retrieves the next item in the metadata.
 
 **Returns**: `XMPProperty` \| `null`  
 
 
-<a name="xmpiterator-skipsiblings" id="xmpiterator-skipsiblings"></a>
-
 ## skipSiblings()
 Skips the subtree below and the siblings of the current node on the subsequent call to next().
 
 
-
-<a name="xmpiterator-skipsubtree" id="xmpiterator-skipsubtree"></a>
 
 ## skipSubtree()
 Skips the subtree below the current node on the subsequent call to next().

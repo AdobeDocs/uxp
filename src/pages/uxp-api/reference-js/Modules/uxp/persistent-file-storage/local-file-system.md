@@ -1,5 +1,7 @@
-
-<a name="module-storage--localfilesystem" id="module-storage--localfilesystem"></a>
+---
+title: "require('uxp').storage.localFileSystem"
+description: "Overview of require('uxp').storage.localFileSystem"
+---
 
 # require('uxp').storage.localFileSystem
 

@@ -1,2 +1,6 @@
+---
+title: Path
+description: Overview of Path
+---
 # Path
-* [Path](../../global-members/path/path.md)
+* [Path](path.md)

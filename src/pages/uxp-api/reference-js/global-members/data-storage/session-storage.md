@@ -1,10 +1,12 @@
-
-<a name="sessionstorage" id="sessionstorage"></a>
+---
+title: window.sessionStorage
+description: SessionStorage is available as window.sessionStorage
+---
 
 # window.sessionStorage
 SessionStorage is available as `window.sessionStorage`
 Provides a local key/value store useful for storing data that persists only for the plugin's current session.
-For more information about the API itself, see the [localStorage](../../global-members/data-storage/local-storage.md) API
+For more information about the API itself, see the [localStorage](local-storage.md) API
 
 
   

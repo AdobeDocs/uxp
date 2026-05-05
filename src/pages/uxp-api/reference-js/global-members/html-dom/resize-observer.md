@@ -1,12 +1,12 @@
-
-<a name="resizeobserver" id="resizeobserver"></a>
+---
+title: window.ResizeObserver
+description: "See: ResizeObserver"
+---
 
 # window.ResizeObserver
 **See**: [ResizeObserver](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver)  
 **Since**: v8.1  
 
-
-<a name="new-resizeobserver-new" id="new-resizeobserver-new"></a>
 
 ## ResizeObserver(callback)
 Provides a mechanism to observe changes to the size of an element's content or border box.
@@ -17,8 +17,6 @@ Provides a mechanism to observe changes to the size of an element's content or b
 | callback | `ResizeObserverCallback` | The function called whenever a resize event is triggered. |
 
 
-
-<a name="resizeobserver-observe" id="resizeobserver-observe"></a>
 
 ## observe(target, [options])
 Starts observing the specified target element for size changes.
@@ -34,8 +32,6 @@ Starts observing the specified target element for size changes.
 
 
 
-<a name="resizeobserver-unobserve" id="resizeobserver-unobserve"></a>
-
 ## unobserve(target)
 Stops observing the specified target element.
 
@@ -47,8 +43,6 @@ Stops observing the specified target element.
 | target | `Element` | The element to stop observing. |
 
 
-
-<a name="resizeobserver-disconnect" id="resizeobserver-disconnect"></a>
 
 ## disconnect()
 Disconnects the ResizeObserver instance from all observed target elements.

@@ -9,7 +9,7 @@ jsDoc: true
 
 Specifies the left padding for an element.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/padding-left
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/padding-left](https://developer.mozilla.org/en/docs/Web/CSS/padding-left)
 
 **Example**:
 

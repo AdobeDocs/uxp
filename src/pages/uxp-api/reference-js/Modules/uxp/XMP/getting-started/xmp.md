@@ -1,15 +1,17 @@
-
-<a name="module-xmp" id="module-xmp"></a>
+---
+title: "require('uxp').xmp"
+description: "Since: v7.2.0"
+---
 
 # require('uxp').xmp
 **Since**: v7.2.0
-<br></br>
+\<br\>\</br\>
 
 Adobe's XMP (Extensible Metadata Platform) is a metadata standard developed by Adobe Systems. It allows users to embed descriptive, rights, and other metadata into digital files.
 XMP is extensible and customizable, supporting various types of information and user-defined schemas. It is compatible with Adobe software and third-party applications, promoting interoperability.
 Based on open standards, XMP follows XML syntax and RDF model. It enhances searchability, organization, and rights management of files. Overall, XMP facilitates efficient metadata management and effective digital asset management.
 For more information about XMP metadata, see the [XMP Specification at Adobe Developer Center](https://www.adobe.com/devnet/xmp.html).
-<br></br>
+\<br\>\</br\>
 
 XMP module in UXP offers JavaScript access to the Adobe XMP Core and XMP Files libraries.
 To use the XMP objects, you must import the XMP module.

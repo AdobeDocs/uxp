@@ -1,3 +1,7 @@
+---
+title: Entry Points
+description: Overview of Entry Points
+---
 # Entry Points
 * [EntryPoints](../../../modules/uxp/entry-points/entry-points.md)
 * [EntryPointsError](../../../modules/uxp/entry-points/entry-points-error.md)

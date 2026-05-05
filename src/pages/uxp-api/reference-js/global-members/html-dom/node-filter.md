@@ -1,5 +1,7 @@
-
-<a name="nodefilter" id="nodefilter"></a>
+---
+title: window.NodeFilter
+description: "See: interface-nodefilter"
+---
 
 # window.NodeFilter
 **See**: [interface-nodefilter](https://dom.spec.whatwg.org/#interface-nodefilter)  

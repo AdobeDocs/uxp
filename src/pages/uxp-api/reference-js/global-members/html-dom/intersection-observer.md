@@ -1,12 +1,12 @@
-
-<a name="intersectionobserver" id="intersectionobserver"></a>
+---
+title: window.IntersectionObserver
+description: "See: IntersectionObserver"
+---
 
 # window.IntersectionObserver
 **See**: [IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver)  
 **Since**: v8.1  
 
-
-<a name="new-intersectionobserver-new" id="new-intersectionobserver-new"></a>
 
 ## IntersectionObserver(callback, [options])
 Provides a mechanism to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document element.
@@ -28,16 +28,12 @@ Provides a mechanism to asynchronously observe changes in the intersection of a 
 
 
 
-<a name="intersectionobserver-root" id="intersectionobserver-root"></a>
-
 ## root : `Element`
 Gets the root element being used for intersection calculation.
 
 **See**: [IntersectionObserver - root](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/root)  
 **Since**: v8.1  
 
-
-<a name="intersectionobserver-rootmargin" id="intersectionobserver-rootmargin"></a>
 
 ## rootMargin : `string`
 Gets the root margin applied to the intersection calculation.
@@ -46,8 +42,6 @@ Gets the root margin applied to the intersection calculation.
 **Since**: v8.1  
 
 
-<a name="intersectionobserver-thresholds" id="intersectionobserver-thresholds"></a>
-
 ## thresholds : `Array<number>`
 Gets the list of thresholds used for triggering the observer's callback.
 
@@ -55,16 +49,12 @@ Gets the list of thresholds used for triggering the observer's callback.
 **Since**: v8.1  
 
 
-<a name="intersectionobserver-scrollmargin" id="intersectionobserver-scrollmargin"></a>
-
 ## scrollMargin : `string`
 Gets the scroll margin applied to the scroll container during intersection calculation.
 
 **See**: [IntersectionObserver - scrollMargin](https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-scrollmargin)  
 **Since**: v8.1  
 
-
-<a name="intersectionobserver-observe" id="intersectionobserver-observe"></a>
 
 ## observe(target)
 Starts observing the specified target element for intersection changes.
@@ -82,8 +72,6 @@ Starts observing the specified target element for intersection changes.
 
 
 
-<a name="intersectionobserver-unobserve" id="intersectionobserver-unobserve"></a>
-
 ## unobserve(target)
 Stops observing the specified target element.
 
@@ -100,16 +88,12 @@ Stops observing the specified target element.
 
 
 
-<a name="intersectionobserver-disconnect" id="intersectionobserver-disconnect"></a>
-
 ## disconnect()
 Disconnects the IntersectionObserver instance from all observed target elements.
 
 **See**: [IntersectionObserver - disconnect](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/disconnect)  
 **Since**: v8.1  
 
-
-<a name="intersectionobserver-takerecords" id="intersectionobserver-takerecords"></a>
 
 ## takeRecords()
 Returns a list of IntersectionObserverEntry objects for all observed elements.

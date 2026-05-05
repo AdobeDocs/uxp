@@ -1,10 +1,14 @@
+---
+title: Data Transfers
+description: Overview of Data Transfers
+---
 # Data Transfers
-* [Blob](../../global-members/data-transfers/blob.md)
-* [Clipboard](../../global-members/data-transfers/clipboard.md)
-* [fetch](../../global-members/data-transfers/fetch.md)
-* [FormData](../../global-members/data-transfers/form-data.md)
-* [Headers](../../global-members/data-transfers/headers.md)
-* [Request](../../global-members/data-transfers/request.md)
-* [Response](../../global-members/data-transfers/response.md)
-* [WebSocket](../../global-members/data-transfers/web-socket.md)
-* [XMLHttpRequest](../../global-members/data-transfers/xml-http-request.md)
+* [Blob](blob.md)
+* [Clipboard](clipboard.md)
+* [fetch](fetch.md)
+* [FormData](form-data.md)
+* [Headers](headers.md)
+* [Request](request.md)
+* [Response](response.md)
+* [WebSocket](web-socket.md)
+* [XMLHttpRequest](xml-http-request.md)

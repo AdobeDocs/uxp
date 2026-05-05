@@ -38,7 +38,7 @@ With that in mind, let's get into the details:
    <sp-button variant="primary">I'm a Spectrum button</sp-button>
    ```
 
-   Take a look at the list of UXP-supported Spectrum widgets - [User Interface](./spectrum-uxp-widgets/user-interface/index.md) and [Typography](./spectrum-uxp-widgets/typography/index.md)
+   Take a look at the list of UXP-supported Spectrum widgets - [User Interface](spectrum-uxp-widgets/user-interface/index.md) and [Typography](spectrum-uxp-widgets/typography/index.md)
 
 
 - **UXP Spectrum web components** \<br\>\</br\>
@@ -114,7 +114,7 @@ If you are thinking of upgrading your existing UI, you should check out the new 
 
 
 Visit the following topics to learn about them in detail
-- [Spectrum Web Components](./swc/index.md)
-- [Spectrum UXP widgets](./spectrum-uxp-widgets/index.md)
-- [Spectrum widgets to SWC Mapping](./spectrum-to-swc-mapping/index.md)
+- [Spectrum Web Components](swc/index.md)
+- [Spectrum UXP widgets](spectrum-uxp-widgets/index.md)
+- [Spectrum widgets to SWC Mapping](spectrum-to-swc-mapping/index.md)
 

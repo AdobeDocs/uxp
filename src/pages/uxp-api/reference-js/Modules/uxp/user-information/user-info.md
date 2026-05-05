@@ -1,5 +1,7 @@
-
-<a name="userinfo" id="userinfo"></a>
+---
+title: "require('uxp').userInfo"
+description: Includes information about the user.
+---
 
 # require('uxp').userInfo
 Includes information about the user.
@@ -14,8 +16,6 @@ Add the below permission in your plugin's `manifest.json` file to use this API.
 
 **Since**: v7.3.0  
 
-
-<a name="userinfo-userid" id="userinfo-userid"></a>
 
 ## userId()
 **Read only**

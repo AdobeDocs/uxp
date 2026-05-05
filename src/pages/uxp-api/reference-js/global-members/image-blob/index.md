@@ -1,2 +1,6 @@
+---
+title: ImageBlob
+description: Overview of ImageBlob
+---
 # ImageBlob
-* [ImageBlob](../../global-members/image-blob/image-blob.md)
+* [ImageBlob](image-blob.md)

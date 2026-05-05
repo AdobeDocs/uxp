@@ -1,3 +1,7 @@
+---
+title: Persistent File Storage
+description: Overview of Persistent File Storage
+---
 # Persistent File Storage
 
 * [localFileSystem](../../../modules/uxp/persistent-file-storage/local-file-system.md)

@@ -1,12 +1,12 @@
-
-<a name="resizeobserversize" id="resizeobserversize"></a>
+---
+title: window.ResizeObserverSize
+description: "See: ResizeObserverSize"
+---
 
 # window.ResizeObserverSize
 **See**: [ResizeObserverSize](https://drafts.csswg.org/resize-observer/#resizeobserversize)  
 **Since**: v8.1  
 
-
-<a name="new-resizeobserversize-new" id="new-resizeobserversize-new"></a>
 
 ## ResizeObserverSize(inlineSize, blockSize)
 Represents the size of an element's observed box.
@@ -19,15 +19,11 @@ Represents the size of an element's observed box.
 
 
 
-<a name="resizeobserversize-inlinesize" id="resizeobserversize-inlinesize"></a>
-
 ## inlineSize : `number`
 **Read only**
 Gets the size of the element in the inline direction.
 
 
-
-<a name="resizeobserversize-blocksize" id="resizeobserversize-blocksize"></a>
 
 ## blockSize : `number`
 **Read only**

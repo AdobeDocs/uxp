@@ -1,3 +1,7 @@
+---
+title: XMP Classes
+description: Overview of XMP Classes
+---
 # XMP Classes
 * [XMPConst](../../../../modules/uxp/xmp/xmp-classes/xmp-const.md)
 * [XMPDateTime](../../../../modules/uxp/xmp/xmp-classes/xmp-date-time.md)

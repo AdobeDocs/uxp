@@ -1,5 +1,7 @@
-
-<a name="getcomputedstyle" id="getcomputedstyle"></a>
+---
+title: window.getComputedStyle
+description: Returns an object containing the values of all CSS properties of an element,
+---
 
 # window.getComputedStyle
 Returns an object containing the values of all CSS properties of an element,
