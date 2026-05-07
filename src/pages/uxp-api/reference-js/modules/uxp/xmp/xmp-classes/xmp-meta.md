@@ -507,7 +507,7 @@ XMPMetaObj.setQualifier(schemaNS, propName, qualNS, qualName, qualValue[, option
 ## setProperty(schemaNS, propName, propValue, [setOptions], [valueType])
 Sets the value of a simple metadata property, creating the property if necessary, or creates a new array or structure property.
 For creating array and structure properties,  [setArrayItem()](#setarrayitemschemans-arrayname-itemindex-itemvalue-itemoptions) and [setStructField()](#setstructfieldschemans-structname-fieldns-fieldname-fieldvalue-options) are preferred.
-Use this call to create or set top-level, simple properties, or after using the path-composition functions in the [[XMPUtils object](../../../../modules/uxp/xmp/xmp-classes/xmp-utils.md)](./XMPUtils.md).
+Use this call to create or set top-level, simple properties, or after using the path-composition functions in the [XMPUtils object](./xmp-utils.md).
 
 
 | Param | Type | Default | Description |
