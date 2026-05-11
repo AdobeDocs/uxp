@@ -1,6 +1,6 @@
 ---
-title: "require('uxp').storage.localFileSystem"
-description: "Provides access to files and folders on a file system. You'll typically not"
+title: require('uxp').storage.localFileSystem
+description: Provides access to files and folders on a file system. You'll typically not
 ---
 
 # require('uxp').storage.localFileSystem

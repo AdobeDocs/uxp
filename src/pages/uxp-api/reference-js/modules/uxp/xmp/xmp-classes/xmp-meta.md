@@ -1,5 +1,5 @@
 ---
-title: "require('uxp').xmp.XMPMeta"
+title: require('uxp').xmp.XMPMeta
 description: XMPMeta
 ---
 

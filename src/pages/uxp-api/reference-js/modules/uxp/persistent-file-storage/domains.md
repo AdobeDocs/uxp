@@ -1,6 +1,6 @@
 ---
-title: "require('uxp').storage.domains"
-description: "Overview of require('uxp').storage.domains"
+title: require('uxp').storage.domains
+description: Overview of require('uxp').storage.domains
 ---
 
 # require('uxp').storage.domains

@@ -1,6 +1,6 @@
 ---
-title: "require('uxp').versions"
-description: "Version information. To get an instance: require(\"uxp\").versions"
+title: require('uxp').versions
+description: Version information. To get an instance: require('uxp').versions
 ---
 
 # require('uxp').versions

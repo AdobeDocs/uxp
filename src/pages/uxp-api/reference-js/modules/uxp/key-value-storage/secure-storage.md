@@ -1,5 +1,5 @@
 ---
-title: "require('uxp').storage.secureStorage"
+title: require('uxp').storage.secureStorage
 description: SecureStorage provides a protected storage which can be used to store sensitive data
 ---
 

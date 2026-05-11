@@ -1,6 +1,6 @@
 ---
-title: "require('uxp').entrypoints"
-description: "To get an instance: require(\"uxp\").entrypoints"
+title: require('uxp').entrypoints
+description: To get an instance: require('uxp').entrypoints
 ---
 
 # require('uxp').entrypoints

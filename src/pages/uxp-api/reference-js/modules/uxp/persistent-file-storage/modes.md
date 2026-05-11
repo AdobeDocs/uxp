@@ -1,6 +1,6 @@
 ---
-title: "require('uxp').storage.modes"
-description: "Overview of require('uxp').storage.modes"
+title: require('uxp').storage.modes
+description: Overview of require('uxp').storage.modes
 ---
 
 # require('uxp').storage.modes

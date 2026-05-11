@@ -1,6 +1,6 @@
 ---
-title: "require('os')"
-description: "See: https://nodejs.org/api/os.html"
+title: require('os')
+description: See: https://nodejs.org/api/os.html
 ---
 
 # require('os')

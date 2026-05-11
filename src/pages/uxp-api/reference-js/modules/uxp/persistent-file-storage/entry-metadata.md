@@ -1,6 +1,6 @@
 ---
 title: EntryMetadata
-description: "Metadata for an Entry. It includes useful information such as:"
+description: Metadata for an Entry. It includes useful information such as:
 ---
 
 # EntryMetadata

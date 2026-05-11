@@ -1,6 +1,6 @@
 ---
 title: border-color
-description: "Specifies the border color for an element. Supported color formats are as follows:"
+description: Specifies the border color for an element. Supported color formats are as follows:
 jsDoc: true
 ---
 # border-color

@@ -1,5 +1,5 @@
 ---
-title: ":checked"
+title: :checked
 description: Matches when the selected element is checked.
 jsDoc: true
 ---

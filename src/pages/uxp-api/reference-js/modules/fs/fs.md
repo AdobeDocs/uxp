@@ -1,5 +1,5 @@
 ---
-title: "require('fs')"
+title: require('fs')
 description: UXP Provides Node.js style file system API, FSAPI.
 ---
 

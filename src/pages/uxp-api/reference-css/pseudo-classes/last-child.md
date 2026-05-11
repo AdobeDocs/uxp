@@ -1,5 +1,5 @@
 ---
-title: ":last-child"
+title: :last-child
 description: Matches only the last child.
 jsDoc: true
 ---

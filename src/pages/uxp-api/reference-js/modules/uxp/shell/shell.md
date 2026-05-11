@@ -1,6 +1,6 @@
 ---
-title: "require('uxp').shell"
-description: "To get an instance: require(\"uxp\").shell<br/>"
+title: require('uxp').shell
+description: To get an instance: require('uxp').shell<br/>
 ---
 
 # require('uxp').shell

@@ -1,5 +1,5 @@
 ---
-title: "require('uxp').host"
+title: require('uxp').host
 description: Includes useful information about the operating environment the plugin finds itself executing in.
 ---
 

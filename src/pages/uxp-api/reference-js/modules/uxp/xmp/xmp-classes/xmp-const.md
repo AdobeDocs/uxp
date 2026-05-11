@@ -1,5 +1,5 @@
 ---
-title: "require('uxp').xmp.XMPConst"
+title: require('uxp').xmp.XMPConst
 description: This object contains the read-only constant definitions for use with the JavaScript XMP API. Some of these are listed in the context in which they are used. ...
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Folder
-description: "Represents a folder on a file system. You'll never instantiate this directly,"
+description: Represents a folder on a file system. You'll never instantiate this directly,
 ---
 
 # Folder

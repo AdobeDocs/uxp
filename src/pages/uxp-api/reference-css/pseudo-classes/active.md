@@ -1,5 +1,5 @@
 ---
-title: ":active"
+title: :active
 description: Matches when the selected element is active. An element is considered to be active when the user is actively clicking on the element.
 jsDoc: true
 ---

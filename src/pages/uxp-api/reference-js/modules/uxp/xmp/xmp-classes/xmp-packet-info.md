@@ -1,6 +1,6 @@
 ---
 title: XMPPacketInfo
-description: "Since: v7.2.0"
+description: Since: v7.2.0
 ---
 
 # XMPPacketInfo

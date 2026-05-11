@@ -1,5 +1,5 @@
 ---
-title: ":empty"
+title: :empty
 description: Matches when the selected element has no children.
 jsDoc: true
 ---

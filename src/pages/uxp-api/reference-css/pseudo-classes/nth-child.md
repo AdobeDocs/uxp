@@ -1,5 +1,5 @@
 ---
-title: ":nth-child"
+title: :nth-child
 description: Matches only the Nth child. Can use an expression or even or odd.
 jsDoc: true
 ---

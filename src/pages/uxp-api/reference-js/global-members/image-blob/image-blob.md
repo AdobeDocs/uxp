@@ -1,6 +1,6 @@
 ---
 title: window.ImageBlob
-description: "Since: UXP v7.0.0"
+description: Since: UXP v7.0.0
 ---
 
 # window.ImageBlob

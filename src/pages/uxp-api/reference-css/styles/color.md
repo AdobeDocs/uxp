@@ -1,6 +1,6 @@
 ---
 title: color
-description: "Specifies the text color for an element. Supported color formats are as follows:"
+description: Specifies the text color for an element. Supported color formats are as follows:
 jsDoc: true
 ---
 # color

@@ -1,6 +1,6 @@
 ---
-title: "require('uxp').storage.errors"
-description: "Overview of require('uxp').storage.errors"
+title: require('uxp').storage.errors
+description: Overview of require('uxp').storage.errors
 ---
 
 # require('uxp').storage.errors

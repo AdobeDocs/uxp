@@ -1,5 +1,5 @@
 ---
-title: "require('uxp').userInfo"
+title: require('uxp').userInfo
 description: Includes information about the user.
 ---
 

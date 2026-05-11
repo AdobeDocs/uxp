@@ -1,6 +1,6 @@
 ---
 title: XMPProperty
-description: "Since: v7.2.0"
+description: Since: v7.2.0
 ---
 
 # XMPProperty

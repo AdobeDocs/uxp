@@ -1,5 +1,5 @@
 ---
-title: ":enabled"
+title: :enabled
 description: Matches when the selected element is enabled.
 jsDoc: true
 ---

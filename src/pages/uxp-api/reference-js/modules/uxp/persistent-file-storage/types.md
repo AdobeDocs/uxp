@@ -1,6 +1,6 @@
 ---
-title: "require('uxp').storage.types"
-description: "Overview of require('uxp').storage.types"
+title: require('uxp').storage.types
+description: Overview of require('uxp').storage.types
 ---
 
 # require('uxp').storage.types

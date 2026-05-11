@@ -1,5 +1,5 @@
 ---
-title: "::before"
+title: ::before
 description: Creates a pseudo-element before the matched element.
 jsDoc: true
 ---

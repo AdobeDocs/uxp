@@ -1,6 +1,6 @@
 ---
-title: "require('uxp').xmp.XMPFile"
-description: "Since: v7.2.0"
+title: require('uxp').xmp.XMPFile
+description: Since: v7.2.0
 ---
 
 # require('uxp').xmp.XMPFile

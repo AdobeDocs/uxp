@@ -1,5 +1,5 @@
 ---
-title: "require('uxp').script;"
+title: require('uxp').script;
 description: Script module, which contains essential properties and methods while writing scripts.
 ---
 

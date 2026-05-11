@@ -1,5 +1,5 @@
 ---
-title: "require('uxp').pluginManager"
+title: require('uxp').pluginManager
 description: To get the list of plugins in the host, used during IPC(Inter Plugin Communication)
 ---
 
